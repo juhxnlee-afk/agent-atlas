@@ -1,0 +1,345 @@
+{
+  "schema_version": 1,
+  "collected_at": "2026-10-03T06:28:25Z",
+  "timezone": "Asia/Seoul",
+  "history_start": "2026-01-01T00:00:00+09:00",
+  "recent_window_days": 7,
+  "coverage_ko": "공개 GitHub 저장소 695개와 공식 논문 출처를 선별·검색한 아카이브입니다. 최소 Stars 문턱 없이 수집했으며, 넓은 검색의 일부는 첫 페이지 표본이므로 전수 목록이 아닙니다.",
+  "limitations_ko": "저장소 설명·주제와 일부 README를 근거로 관련성을 검토했습니다. 기능 실행·보안·품질을 인증한 목록이 아닙니다. 검색 키워드와 페이지 한도에 따른 누락이 있으며, GitHub 검색 인덱스가 달라질 수 있습니다.",
+  "schedule": {
+    "enabled": false,
+    "target_time": "06:00",
+    "timezone": "Asia/Seoul"
+  },
+  "repository_provenance": {
+    "collected_at": "2026-10-03T05:57:00Z",
+    "data_observation_window_utc": {
+      "start": "2026-10-03T05:52:00Z",
+      "end": "2026-10-03T05:55:00Z"
+    },
+    "requested_history_start": "2026-01-01T00:00:00Z",
+    "latest_24h_window_utc": {
+      "start": "2026-10-02T05:52:00Z",
+      "end": "2026-10-03T05:52:00Z"
+    },
+    "source": "Official public GitHub REST repository objects and release objects via the connected GitHub read-only fetch/search tools; selected READMEs checked via GitHub file fetch",
+    "public_only": true,
+    "private_data_used": false,
+    "counts": {
+      "repositories": 27,
+      "events": 89,
+      "repository_push": 27,
+      "prerelease": 11,
+      "repository_created": 19,
+      "release": 32
+    },
+    "queries": [
+      "topic:ai-agents created:2026-01-01..2026-10-03 stars:>1000 is:public fork:false sort:stars-desc",
+      "agent in:name,description created:2026-10-02..2026-10-03 stars:>5 is:public fork:false sort:stars-desc",
+      "topic:ai-agents pushed:2026-10-02..2026-10-03 stars:>10000 is:public fork:false sort:stars-desc",
+      "topic:ai-agents created:2026-05-01..2026-06-30 stars:>1000 is:public fork:false sort:stars-desc",
+      "topic:ai-agents created:2026-07-01..2026-07-31 stars:>1000 is:public fork:false sort:stars-desc",
+      "topic:ai-agents created:2026-09-01..2026-09-30 stars:>1000 is:public fork:false sort:stars-desc",
+      "topic:ai-agents created:2026-10-02T05:52:00Z..2026-10-03T05:52:00Z stars:>1 is:public fork:false sort:stars-desc"
+    ],
+    "selection_method_ko": "검색 결과에서 에이전트 프레임워크·하네스·개인 비서·코딩/브라우저 실행·메모리·안전·관측성·학습 분야의 공개 비포크 저장소를 수동 선별했습니다. 기존 대표 프로젝트의 공식 저장소도 함께 확인했습니다.",
+    "release_coverage_ko": "10개 선별 저장소에서 최신 GitHub release 5개씩만 확인했습니다. 2026-01-01 이후 항목을 보존했으며 NVIDIA NemoClaw의 CI 테스트 아티팩트 릴리스는 이벤트 피드에서 제외했습니다.",
+    "limitations_ko": [
+      "전수 조사나 GitHub Trending 순위가 아닙니다. 검색 태그·키워드·별 수 문턱에 따른 표본 누락이 있습니다.",
+      "생성일은 저장소가 생성된 시각입니다. 비공개 저장소의 공개 전환일이나 제품 출시일을 보장하지 않습니다.",
+      "pushed_at은 가장 최근 코드 push의 시각입니다. 새 기능이나 새 버전 출시를 의미하지 않습니다.",
+      "updated_at은 저장소 메타데이터의 마지막 갱신 시각이므로 출시/코드 갱신 날짜로 사용하지 않았습니다.",
+      "누적 별 수는 조회 시점 값이며 날짜별 증가량이나 과거 날짜의 별 수는 확보하지 않았습니다.",
+      "과거 2026년 아카이브는 검증된 생성일과 일부 릴리스일로 구성한 시작 데이터입니다. 매일의 뉴스 전체나 과거 모든 push 이력을 복원한 것이 아닙니다.",
+      "프로젝트 기능은 공식 저장소 설명과 README의 자체 설명을 요약했으며 성능·보안 주장에 대한 독립 검증이나 실행 테스트는 하지 않았습니다.",
+      "GitHub 릴리스 게시 여부만 확인했으며 PyPI/npm 등의 실제 패키지 배포 완료는 별도로 확인하지 않았습니다.",
+      "날짜는 모두 UTC 원본입니다. 한국 일자별 보기를 만들 때 Asia/Seoul로 변환한 뒤 그룹화해야 합니다."
+    ],
+    "feed_rules_ko": [
+      "event_type repository_created: '저장소 생성'으로 표시",
+      "event_type repository_push: '코드 push'로 표시하고 새 릴리스와 분리",
+      "event_type release: 'GitHub 릴리스'로 표시",
+      "event_type prerelease: '개발/프리뷰 버전'으로 표시",
+      "기본 최근 소식에는 정식 릴리스와 저장소 생성부터 보여 주고 routine push는 별도 필터로 제공하는 것을 권장",
+      "GitHub prerelease=false여도 태그에 dev가 포함되면 개발 버전으로 분류했습니다."
+    ]
+  },
+  "research_provenance": {
+    "checked_at": "2026-10-03T05:56:00Z",
+    "period_start": "2026-01-01",
+    "period_end": "2026-10-03",
+    "coverage_ko": "선별한 연구·제품 동향이며 전체 문헌이나 모든 발표를 망라하지 않습니다.",
+    "paper_date_label_ko": "arXiv 최초 제출일 (UTC)",
+    "paper_note_ko": "요약은 저자 초록과 공식 서지정보를 근거로 작성했습니다. arXiv 게재 자체는 동료 심사를 뜻하지 않으며, 일부 논문에는 별도의 학회 채택 정보가 있습니다.",
+    "recent_24h_note_ko": "이번 확인에서 최근 24시간 내 최초 제출된 논문은 확인하지 못했습니다. 검색 피드의 게시일·수집일과 arXiv 최초 제출일은 다를 수 있습니다.",
+    "latest_verified_submission": "2026-10-01T12:55:07Z",
+    "date_caveats": [
+      "2608.02650의 최초 제출일은 2026-07-31입니다.",
+      "2610.00282의 최초 제출일은 2026-09-25입니다.",
+      "2610.00313의 최초 제출일은 2026-09-29입니다."
+    ],
+    "method_ko": "공식 arXiv 초록 페이지에서 제목·최초 제출일·핵심 기여를 직접 확인했습니다. 타임라인은 기업 공식 발표·공식 기술 블로그와 arXiv를 출처로 사용하며 발표, 프리뷰, 공개 베타를 구분했습니다."
+  },
+  "expanded_repository_provenance": {
+    "scope_ko": "2026년 생성 공개 GitHub 저장소를 중심으로 에이전트 프레임워크·기업/개인/코딩/브라우저 에이전트·MCP/도구·메모리·멀티에이전트·보안·평가·교육 자료를 확장 수집했습니다. 기존 주요 저장소도 별도 유지합니다.",
+    "raw_unique_candidates": 1212,
+    "reviewed_included_new_candidates": 671,
+    "included_total": 695,
+    "excluded_count": 13,
+    "new_recent_7d_count": 141,
+    "new_recent_7d_cutoff_utc": "2026-09-26T06:28:25.938725+00:00",
+    "zero_star_included_count": 142,
+    "category_counts": {
+      "에이전트 관측성": 12,
+      "자료·교육": 68,
+      "멀티에이전트": 49,
+      "코딩 에이전트": 57,
+      "MCP·도구 연동": 72,
+      "브라우저·컴퓨터 사용": 130,
+      "에이전트 보안": 71,
+      "에이전트 프레임워크": 55,
+      "에이전트 학습": 11,
+      "에이전트 신뢰성": 1,
+      "에이전트 메모리": 18,
+      "에이전트 평가": 30,
+      "개인 에이전트": 48,
+      "업무 자동화": 18,
+      "기업용 에이전트": 47,
+      "에이전트 하네스": 2,
+      "에이전트 스킬": 1,
+      "에이전트 컨텍스트": 1,
+      "브라우저 에이전트": 2,
+      "에이전트 개발 도구": 1,
+      "코드 실행 에이전트": 1
+    },
+    "year_counts": {
+      "2026": 687,
+      "2025": 4,
+      "2024": 2,
+      "2023": 2
+    },
+    "minimum_stars_filter": null,
+    "collection_sort": "GitHub default best-match relevance; no star qualifier or star threshold applied",
+    "public_only": true,
+    "exclude_github_marked_forks": true,
+    "creation_semantics": "created_at is original GitHub repository created_at. Do not substitute pushed_at, updated_at, release time or observation time. Existing pre-2026 repositories are foundations, not 2026 creations.",
+    "stars_semantics": "Cumulative stargazers_count at observed_at; not stars gained during the period.",
+    "verification_semantics": "Public GitHub API verifies identity and metadata; descriptions/topics and selected READMEs establish declared agent relevance. No general installation, runtime, security, quality or publisher-authenticity certification.",
+    "coverage_limits": [
+      "Not exhaustive across GitHub; no claim that all Agent AI repositories are present.",
+      "Broad queries exceeding 1000 results are explicitly first-page discovery samples, not silently treated as complete. Narrow recent-date partitions and smaller topic searches are separately paginated.",
+      "Recent coding-agent and browser-agent topic searches were paginated through all reported pages. The personal-ai-assistant search reported 65 but returned 64, an index-drift discrepancy retained in query log.",
+      "GitHub topics/descriptions may be absent, misleading or change; search results may change during pagination.",
+      "Current zero-star and low-star records are included; duplicate/misleading repackaging and non-agent false positives are excluded by relevance, not popularity.",
+      "Search API reported unauthenticated limit 10 requests/minute; calls were paced 6.5 seconds and rate headers retained. No rate-limit errors in completed search log unless listed."
+    ],
+    "query_count": 13,
+    "search_request_count": 17,
+    "queries": [
+      {
+        "query": "OpenClawEnterprise in:name fork:false",
+        "pages": [
+          1
+        ],
+        "reported_total_counts": [
+          1
+        ],
+        "returned_rows": 1,
+        "any_incomplete_results": false,
+        "source_urls": [
+          "https://api.github.com/search/repositories?q=OpenClawEnterprise+in%3Aname+fork%3Afalse&per_page=100&page=1"
+        ],
+        "pagination_status": "all_reported_pages_fetched"
+      },
+      {
+        "query": "topic:agent-framework created:2026-01-01..2026-10-03 fork:false",
+        "pages": [
+          1
+        ],
+        "reported_total_counts": [
+          2506
+        ],
+        "returned_rows": 100,
+        "any_incomplete_results": false,
+        "source_urls": [
+          "https://api.github.com/search/repositories?q=topic%3Aagent-framework+created%3A2026-01-01..2026-10-03+fork%3Afalse&per_page=100&page=1"
+        ],
+        "pagination_status": "partial_discovery_sample_or_index_drift"
+      },
+      {
+        "query": "\"enterprise\" \"agent\" in:description created:2026-01-01..2026-10-03 fork:false",
+        "pages": [
+          1
+        ],
+        "reported_total_counts": [
+          10314
+        ],
+        "returned_rows": 100,
+        "any_incomplete_results": false,
+        "source_urls": [
+          "https://api.github.com/search/repositories?q=%22enterprise%22+%22agent%22+in%3Adescription+created%3A2026-01-01..2026-10-03+fork%3Afalse&per_page=100&page=1"
+        ],
+        "pagination_status": "partial_discovery_sample_or_index_drift"
+      },
+      {
+        "query": "topic:personal-ai-assistant created:2026-01-01..2026-10-03 fork:false",
+        "pages": [
+          1
+        ],
+        "reported_total_counts": [
+          65
+        ],
+        "returned_rows": 64,
+        "any_incomplete_results": false,
+        "source_urls": [
+          "https://api.github.com/search/repositories?q=topic%3Apersonal-ai-assistant+created%3A2026-01-01..2026-10-03+fork%3Afalse&per_page=100&page=1"
+        ],
+        "pagination_status": "partial_discovery_sample_or_index_drift"
+      },
+      {
+        "query": "topic:coding-agent created:2026-09-26..2026-10-03 fork:false",
+        "pages": [
+          1,
+          2,
+          3
+        ],
+        "reported_total_counts": [
+          222
+        ],
+        "returned_rows": 222,
+        "any_incomplete_results": false,
+        "source_urls": [
+          "https://api.github.com/search/repositories?q=topic%3Acoding-agent+created%3A2026-09-26..2026-10-03+fork%3Afalse&per_page=100&page=1",
+          "https://api.github.com/search/repositories?q=topic%3Acoding-agent+created%3A2026-09-26..2026-10-03+fork%3Afalse&per_page=100&page=2",
+          "https://api.github.com/search/repositories?q=topic%3Acoding-agent+created%3A2026-09-26..2026-10-03+fork%3Afalse&per_page=100&page=3"
+        ],
+        "pagination_status": "all_reported_pages_fetched"
+      },
+      {
+        "query": "topic:browser-agent created:2026-01-01..2026-10-03 fork:false",
+        "pages": [
+          1,
+          2,
+          3
+        ],
+        "reported_total_counts": [
+          241
+        ],
+        "returned_rows": 241,
+        "any_incomplete_results": false,
+        "source_urls": [
+          "https://api.github.com/search/repositories?q=topic%3Abrowser-agent+created%3A2026-01-01..2026-10-03+fork%3Afalse&per_page=100&page=1",
+          "https://api.github.com/search/repositories?q=topic%3Abrowser-agent+created%3A2026-01-01..2026-10-03+fork%3Afalse&per_page=100&page=2",
+          "https://api.github.com/search/repositories?q=topic%3Abrowser-agent+created%3A2026-01-01..2026-10-03+fork%3Afalse&per_page=100&page=3"
+        ],
+        "pagination_status": "all_reported_pages_fetched"
+      },
+      {
+        "query": "topic:tool-use created:2026-01-01..2026-10-03 fork:false",
+        "pages": [
+          1
+        ],
+        "reported_total_counts": [
+          1317
+        ],
+        "returned_rows": 100,
+        "any_incomplete_results": false,
+        "source_urls": [
+          "https://api.github.com/search/repositories?q=topic%3Atool-use+created%3A2026-01-01..2026-10-03+fork%3Afalse&per_page=100&page=1"
+        ],
+        "pagination_status": "partial_discovery_sample_or_index_drift"
+      },
+      {
+        "query": "topic:agent-memory created:2026-01-01..2026-10-03 fork:false",
+        "pages": [
+          1
+        ],
+        "reported_total_counts": [
+          3983
+        ],
+        "returned_rows": 100,
+        "any_incomplete_results": false,
+        "source_urls": [
+          "https://api.github.com/search/repositories?q=topic%3Aagent-memory+created%3A2026-01-01..2026-10-03+fork%3Afalse&per_page=100&page=1"
+        ],
+        "pagination_status": "partial_discovery_sample_or_index_drift"
+      },
+      {
+        "query": "topic:multi-agent-framework created:2026-01-01..2026-10-03 fork:false",
+        "pages": [
+          1
+        ],
+        "reported_total_counts": [
+          6
+        ],
+        "returned_rows": 6,
+        "any_incomplete_results": false,
+        "source_urls": [
+          "https://api.github.com/search/repositories?q=topic%3Amulti-agent-framework+created%3A2026-01-01..2026-10-03+fork%3Afalse&per_page=100&page=1"
+        ],
+        "pagination_status": "all_reported_pages_fetched"
+      },
+      {
+        "query": "\"MCP\" \"agent\" in:description created:2026-09-26..2026-10-03 fork:false",
+        "pages": [
+          1
+        ],
+        "reported_total_counts": [
+          2070
+        ],
+        "returned_rows": 100,
+        "any_incomplete_results": false,
+        "source_urls": [
+          "https://api.github.com/search/repositories?q=%22MCP%22+%22agent%22+in%3Adescription+created%3A2026-09-26..2026-10-03+fork%3Afalse&per_page=100&page=1"
+        ],
+        "pagination_status": "partial_discovery_sample_or_index_drift"
+      },
+      {
+        "query": "\"agent security\" in:description created:2026-01-01..2026-10-03 fork:false",
+        "pages": [
+          1
+        ],
+        "reported_total_counts": [
+          1271
+        ],
+        "returned_rows": 100,
+        "any_incomplete_results": false,
+        "source_urls": [
+          "https://api.github.com/search/repositories?q=%22agent+security%22+in%3Adescription+created%3A2026-01-01..2026-10-03+fork%3Afalse&per_page=100&page=1"
+        ],
+        "pagination_status": "partial_discovery_sample_or_index_drift"
+      },
+      {
+        "query": "\"agent evaluation\" in:description created:2026-01-01..2026-10-03 fork:false",
+        "pages": [
+          1
+        ],
+        "reported_total_counts": [
+          1362
+        ],
+        "returned_rows": 100,
+        "any_incomplete_results": false,
+        "source_urls": [
+          "https://api.github.com/search/repositories?q=%22agent+evaluation%22+in%3Adescription+created%3A2026-01-01..2026-10-03+fork%3Afalse&per_page=100&page=1"
+        ],
+        "pagination_status": "partial_discovery_sample_or_index_drift"
+      },
+      {
+        "query": "topic:agent-framework created:2026-10-03 fork:false",
+        "pages": [
+          1
+        ],
+        "reported_total_counts": [
+          0
+        ],
+        "returned_rows": 0,
+        "any_incomplete_results": false,
+        "source_urls": [
+          "https://api.github.com/search/repositories?q=topic%3Aagent-framework+created%3A2026-10-03+fork%3Afalse&per_page=100&page=1"
+        ],
+        "pagination_status": "all_reported_pages_fetched"
+      }
+    ],
+    "review_completed_at": "2026-10-03T06:28:25Z"
+  }
+}

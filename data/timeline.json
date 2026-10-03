@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "collected_at": "2026-10-03T05:56:00Z",
+  "timezone": "Asia/Seoul",
+  "items": [
+    {
+      "date": "2026-01-12",
+      "title": "Claude Cowork 리서치 프리뷰",
+      "summary": "데스크톱에서 Claude의 에이전트 기능을 사용하는 Cowork가 리서치 프리뷰로 등장했다. 1월 13일 Anthropic 공식 발표가 전날 출시를 확인한다.",
+      "source_url": "https://www.anthropic.com/news/introducing-anthropic-labs",
+      "date_type": "product_release"
+    },
+    {
+      "date": "2026-01-28",
+      "title": "멀티에이전트 확장의 조건을 실험으로 검토",
+      "summary": "Google Research가 180개 구성의 비교 연구를 소개했다. 병렬화 가능한 작업의 이점과 순차 작업에서의 성능 저하를 함께 보고하며 에이전트 수보다 과제에 맞는 구조의 중요성을 강조했다.",
+      "source_url": "https://research.google/blog/towards-a-science-of-scaling-agent-systems-when-and-why-agent-systems-work/",
+      "date_type": "official_research_post"
+    },
+    {
+      "date": "2026-02-02",
+      "title": "Codex 앱, 병렬 에이전트 작업 공간으로 확장",
+      "summary": "OpenAI가 macOS용 Codex 앱을 출시했다. 여러 에이전트의 병렬 실행, 격리된 작업 트리, 재사용 스킬과 자동화를 하나의 인터페이스에서 관리하도록 설계했다.",
+      "source_url": "https://openai.com/index/introducing-the-codex-app/",
+      "date_type": "product_release"
+    },
+    {
+      "date": "2026-04-08",
+      "title": "Managed Agents의 지속 실행 아키텍처 공개",
+      "summary": "Anthropic이 장시간 에이전트를 위한 Managed Agents의 설계를 설명했다. 세션 로그·실행 하네스·샌드박스를 분리해 장애 복구와 구성요소 교체를 지원하는 접근이다.",
+      "source_url": "https://www.anthropic.com/engineering/managed-agents",
+      "date_type": "official_engineering_post"
+    },
+    {
+      "date": "2026-04-28",
+      "title": "AP2 v0.2와 에이전트 결제 표준 거버넌스",
+      "summary": "Google이 AP2 v0.2를 공개하고 Agent Payments Protocol의 FIDO Alliance 기여를 발표했다. 사전 승인된 지시에 따른 사용자 부재 중 결제와 검증 가능한 의도가 핵심 주제로 제시됐다.",
+      "source_url": "https://blog.google/products-and-platforms/platforms/google-pay/agent-payments-protocol-fido-alliance/",
+      "date_type": "protocol_release"
+    },
+    {
+      "date": "2026-05-19",
+      "title": "Google Search, 정보 모니터링 에이전트 발표",
+      "summary": "Google I/O에서 Search의 백그라운드 정보 에이전트와 확장된 예약 기능을 발표했다. 발표 시점에는 정보 에이전트의 여름 출시 계획을 안내했으며, 이 날짜를 실제 전체 출시일로 보지는 않는다.",
+      "source_url": "https://blog.google/products-and-platforms/products/search/search-io-2026/",
+      "date_type": "product_announcement"
+    },
+    {
+      "date": "2026-06-23",
+      "title": "Claude Tag, Slack 안의 팀 에이전트 발표",
+      "summary": "Anthropic이 선택한 Slack 채널에서 팀원들이 작업을 위임할 수 있는 Claude Tag를 소개했다. 연결된 도구·데이터·코드베이스와 채널 맥락을 활용하는 팀 단위 작업 방식을 제시했다.",
+      "source_url": "https://www.anthropic.com/news/introducing-claude-tag",
+      "date_type": "product_announcement"
+    },
+    {
+      "date": "2026-07-09",
+      "title": "ChatGPT Work, 앱과 파일을 넘나드는 작업 실행",
+      "summary": "OpenAI가 앱과 파일에서 정보를 모아 문서·시트·슬라이드·웹앱을 만드는 ChatGPT Work를 소개했다. 복잡한 프로젝트를 나누어 수 시간 진행하는 일반 업무용 에이전트를 전면에 내세웠다.",
+      "source_url": "https://openai.com/index/chatgpt-for-your-most-ambitious-work/",
+      "date_type": "product_announcement"
+    },
+    {
+      "date": "2026-09-10",
+      "title": "OpenAI Agents API 공개 베타",
+      "summary": "Codex의 실행 하네스와 관리형 인프라를 개발자가 API로 사용하는 공개 베타를 발표했다. 장시간 세션, 도구 사용, 하위 에이전트 조율과 관리형 샌드박스를 제공하는 방향이다.",
+      "source_url": "https://openai.com/index/introducing-the-agents-api/",
+      "date_type": "public_beta_release"
+    },
+    {
+      "date": "2026-10-01",
+      "title": "에이전트 평가 단위를 모델에서 시스템으로",
+      "summary": "Agents Are Systems, Not Models 논문이 arXiv에 최초 제출됐다. 과제 정보, 검증 도구, 시간 예산 등 실행 구성이 결과를 바꾸므로 에이전트를 시스템 전체로 평가해야 한다고 제안한다.",
+      "source_url": "https://arxiv.org/abs/2610.01618",
+      "date_type": "arxiv_first_submission"
+    }
+  ]
+}

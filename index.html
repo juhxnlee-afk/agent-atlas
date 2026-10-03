@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#193a2b">
+  <meta name="description" content="에이전트 AI 공개 저장소와 연구 논문을 한국어로 살펴보는 Agent Atlas. 원본 저장소 생성일 기준 최근 7일, 2026년 아카이브, 검증 가능한 출처.">
+  <title>Agent Atlas · 에이전트 코드와 연구의 지도</title>
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/styles.css">
+  <script type="module" src="./assets/app.mjs"></script>
+</head>
+<body>
+  <a class="skip-link" href="#content">본문으로 건너뛰기</a>
+  <div class="shell">
+    <header>
+      <a class="brand" href="./" aria-label="Agent Atlas 홈"><span class="mark" aria-hidden="true">A</span>AGENT<span class="light">ATLAS</span></a>
+      <nav class="tabs" role="tablist" aria-label="주 메뉴">
+        <button id="tab-main" role="tab" aria-selected="true" aria-controls="panel-main" data-tab="main" tabindex="0">Main</button>
+        <button id="tab-history" role="tab" aria-selected="false" aria-controls="panel-history" data-tab="history" tabindex="-1">History</button>
+        <button id="tab-paper" role="tab" aria-selected="false" aria-controls="panel-paper" data-tab="paper" tabindex="-1">Paper</button>
+      </nav>
+      <span class="edition">PUBLIC CODE / OPEN RESEARCH</span>
+    </header>
+    <main id="content" tabindex="-1">
+      <div class="eyebrow"><span>AGENT INTELLIGENCE OBSERVATORY</span><span>SEOUL · UTC+09:00</span></div>
+      <div id="app" aria-busy="true"><div class="empty loading" role="status">검증된 기록을 불러오는 중…</div></div>
+      <noscript><div class="empty">이 페이지의 검색과 기록을 보려면 JavaScript를 켜 주세요. 원본 데이터는 <a href="./data/repos.json">저장소 JSON</a>에서 확인할 수 있습니다.</div></noscript>
+    </main>
+    <footer><div><span class="brandfoot">AGENT ATLAS</span><p>공개 코드 · 확인 가능한 출처 · 한국어 요약</p></div><p>Stars는 수집 시점의 누적 수치입니다<br>저장소 생성일은 제품 출시일과 다를 수 있습니다</p><div class="footer-right"><span id="schedule">업데이트 목표 · 매일 06:00 KST</span><a href="./README.md">데이터 기준 및 업데이트 안내 ↗</a></div></footer>
+  </div>
+</body>
+</html>

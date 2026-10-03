@@ -1,0 +1,178 @@
+{
+  "schema_version": 1,
+  "collected_at": "2026-10-03T05:56:00Z",
+  "timezone": "Asia/Seoul",
+  "items": [
+    {
+      "id": "2601.10194",
+      "title": "Autonomous Quantum Simulation through Large Language Model Agents",
+      "url": "https://arxiv.org/abs/2601.10194",
+      "date": "2026-01-15",
+      "date_type": "arxiv_first_submission",
+      "description_ko": "문서 기반 인컨텍스트 학습과 멀티에이전트 분업으로 양자 다체계의 텐서 네트워크 시뮬레이션을 수행한다. 전문 과학 계산에서 에이전트 구성과 오류 유형을 비교한 연구다.",
+      "category": "과학·연구"
+    },
+    {
+      "id": "2601.11044",
+      "title": "AgencyBench: Benchmarking the Frontiers of Autonomous Agents in 1M-Token Real-World Contexts",
+      "url": "https://arxiv.org/abs/2601.11044",
+      "date": "2026-01-16",
+      "date_type": "arxiv_first_submission",
+      "description_ko": "32개 현실 시나리오와 138개 과제로 장시간 자율 작업을 평가한다. 사용자 시뮬레이션과 샌드박스 기반 채점을 결합해 모델뿐 아니라 실행 프레임워크의 영향도 살핀다.",
+      "category": "평가·벤치마크"
+    },
+    {
+      "id": "2602.11964",
+      "title": "Gaia2: Benchmarking LLM Agents on Dynamic and Asynchronous Environments",
+      "url": "https://arxiv.org/abs/2602.11964",
+      "date": "2026-02-12",
+      "date_type": "arxiv_first_submission",
+      "description_ko": "에이전트 행동과 무관하게 환경이 변하는 비동기 평가 환경을 제시한다. 시간 제약, 모호한 정보, 동적 사건과 협업을 다루며 행동 단위 검증기를 제공한다.",
+      "category": "평가·벤치마크"
+    },
+    {
+      "id": "2602.20867",
+      "title": "SoK: Agentic Skills -- Beyond Tool Use in LLM Agents",
+      "url": "https://arxiv.org/abs/2602.20867",
+      "date": "2026-02-24",
+      "date_type": "arxiv_first_submission",
+      "description_ko": "재사용 가능한 에이전트 스킬의 발견·저장·조합·평가 수명주기를 체계화한다. 스킬 배포 과정의 공급망 위험과 프롬프트 인젝션, 신뢰 수준별 실행 문제를 함께 정리한다.",
+      "category": "안전·신뢰성"
+    },
+    {
+      "id": "2603.07670",
+      "title": "Memory for Autonomous LLM Agents:Mechanisms, Evaluation, and Emerging Frontiers",
+      "url": "https://arxiv.org/abs/2603.07670",
+      "date": "2026-03-08",
+      "date_type": "arxiv_first_submission",
+      "description_ko": "에이전트 메모리를 쓰기·관리·읽기 순환으로 정리한 서베이다. 컨텍스트 압축, 검색 저장소, 자기성찰, 계층형 컨텍스트, 학습 기반 관리와 평가 과제를 비교한다.",
+      "category": "메모리"
+    },
+    {
+      "id": "2603.26034",
+      "title": "AgentCollab: A Self-Evaluation-Driven Collaboration Paradigm for Efficient LLM Agents",
+      "url": "https://arxiv.org/abs/2603.26034",
+      "date": "2026-03-27",
+      "date_type": "arxiv_first_submission",
+      "description_ko": "자기평가 신호에 따라 서로 다른 추론 능력과 비용의 모델을 동적으로 조율한다. 진행이 막힐 때 더 강한 모델로 제어를 넘기는 방식으로 정확도와 실행 효율의 균형을 연구한다.",
+      "category": "멀티에이전트"
+    },
+    {
+      "id": "2604.10547",
+      "title": "Agent^2 RL-Bench: Can LLM Agents Engineer Agentic RL Post-Training?",
+      "url": "https://arxiv.org/abs/2604.10547",
+      "date": "2026-04-12",
+      "date_type": "arxiv_first_submission",
+      "description_ko": "에이전트가 강화학습 후처리 파이프라인을 설계·구현·디버깅·실행할 수 있는지 평가한다. 제한된 예산 안에서 학습과 검증을 반복하는 여섯 과제를 통해 성공 사례와 안정성 한계를 보여준다.",
+      "category": "강화학습"
+    },
+    {
+      "id": "2605.26952",
+      "title": "Efficient Agentic Reinforcement Learning with On-Policy Intrinsic Knowledge Boundary Enhancement",
+      "url": "https://arxiv.org/abs/2605.26952",
+      "date": "2026-05-26",
+      "date_type": "arxiv_first_submission",
+      "description_ko": "도구를 쓰는 경로와 쓰지 않는 경로를 비교해 언제 외부 도구가 필요한지 학습하는 AKBE를 제안한다. 도구 호출을 무조건 줄이기보다 필요한 호출을 구별하도록 학습 신호를 구성한다.",
+      "category": "강화학습"
+    },
+    {
+      "id": "2606.05405",
+      "title": "Agents' Last Exam",
+      "url": "https://arxiv.org/abs/2606.05405",
+      "date": "2026-06-03",
+      "date_type": "arxiv_first_submission",
+      "description_ko": "검증 가능한 결과를 요구하는 장시간의 실제 전문 업무를 평가하는 벤치마크다. 정적인 문제 풀이 점수와 경제적 가치가 있는 작업의 지속적 완수 사이의 간극을 측정하려 한다.",
+      "category": "평가·벤치마크"
+    },
+    {
+      "id": "2606.31174",
+      "title": "ClawArena-Team: Benchmarking Subagent Orchestration and Dynamic Workflows in Language-Model Agents",
+      "url": "https://arxiv.org/abs/2606.31174",
+      "date": "2026-06-30",
+      "date_type": "arxiv_first_submission",
+      "description_ko": "고정된 하위 에이전트 집단을 지휘하는 주 에이전트의 관리 능력을 분리해 평가한다. 작업 정확도에 최소 권한과 모달리티 라우팅을 반영하며 동적 위임과 비동기 결과 통합을 살핀다.",
+      "category": "멀티에이전트"
+    },
+    {
+      "id": "2607.05174",
+      "title": "AgentGym2: Benchmarking Large Language Model Agents in De-Idealized Real-World Environments",
+      "url": "https://arxiv.org/abs/2607.05174",
+      "date": "2026-07-06",
+      "date_type": "arxiv_first_submission",
+      "description_ko": "정돈된 도구와 완전한 입력을 가정하지 않는 현실적인 평가 환경을 제시한다. 도구 발견, 미지의 작업을 위한 도구 조합, 노이즈와 불완전한 명세에 대한 강건성을 측정한다.",
+      "category": "평가·벤치마크"
+    },
+    {
+      "id": "2608.02650",
+      "title": "HyperAgent: Planning and Acting over Tool-Schema Hypergraphs for Tool-Use LLM Agents",
+      "url": "https://arxiv.org/abs/2608.02650",
+      "date": "2026-07-31",
+      "date_type": "arxiv_first_submission",
+      "description_ko": "도구의 입력·출력 스키마를 방향성 하이퍼그래프로 표현해 계획과 실행을 지원한다. 현재 상태에서 빠진 요구사항을 찾아 필요한 도구를 연결하는 방식의 효율을 AppWorld에서 평가한다.",
+      "category": "도구 사용"
+    },
+    {
+      "id": "2608.03327",
+      "title": "Screenshots or Tools? Eliciting Tool Use and Managing Multimodal Context in Hybrid GUI-MCP Computer-Use Agents",
+      "url": "https://arxiv.org/abs/2608.03327",
+      "date": "2026-08-04",
+      "date_type": "arxiv_first_submission",
+      "description_ko": "스크린샷과 MCP 도구를 함께 쓰는 컴퓨터 사용 에이전트를 분석한다. 도구 제공 자체보다 모델의 선택·통합 능력이 중요하며 관측 압축과 재학습이 비용·성능에 주는 영향을 비교한다.",
+      "category": "도구 사용"
+    },
+    {
+      "id": "2609.04894",
+      "title": "From Language Models to World-Acting Systems: Progress and Limits of Agentic AI across Digital, Social, Virtual, and Physical Environments",
+      "url": "https://arxiv.org/abs/2609.04894",
+      "date": "2026-09-04",
+      "date_type": "arxiv_first_submission",
+      "description_ko": "모델·실행 시스템·환경을 구분해 2026년 8월 말까지의 에이전트 연구와 공식 사양을 검토한다. 도구 확장과 실제 작업 완수·복구·권한 관리의 신뢰성을 별도로 평가해야 한다고 제안한다.",
+      "category": "안전·신뢰성"
+    },
+    {
+      "id": "2609.32091",
+      "title": "Memory as Middleware for Self-Improving AI Agents",
+      "url": "https://arxiv.org/abs/2609.32091",
+      "date": "2026-09-25",
+      "date_type": "arxiv_first_submission",
+      "description_ko": "에이전트 메모리를 교체·공유·격리가 가능한 미들웨어로 다루자는 시스템 관점을 제시한다. ALTK-Evolve 구현과 함께 출처 추적, 쓰기 일관성, 수명주기 관리 등 여섯 과제를 정리한다.",
+      "category": "메모리"
+    },
+    {
+      "id": "2610.00282",
+      "title": "Knowing When to Yield: Grounded Arbitration of User Corrections in Text-Based Embodied Agents",
+      "url": "https://arxiv.org/abs/2610.00282",
+      "date": "2026-09-25",
+      "date_type": "arxiv_first_submission",
+      "description_ko": "사용자의 수정이 틀릴 수 있을 때 수용·거부·환경 확인·질문 중 무엇을 선택할지 연구한다. 텍스트 기반 ALFWorld의 통제된 실험으로, 실제 인간·시각 입력·물리 로봇까지 검증한 결과는 아니다.",
+      "category": "안전·신뢰성"
+    },
+    {
+      "id": "2609.34385",
+      "title": "Just-In-Time Agent Memory with Runtime Agentic Research",
+      "url": "https://arxiv.org/abs/2609.34385",
+      "date": "2026-09-28",
+      "date_type": "arxiv_first_submission",
+      "description_ko": "요청 전에 고정 메모리를 만드는 대신 요청 시점에 필요한 문맥을 구성하는 JAM을 제안한다. 원본 이력을 보존하는 계층형 저장소와 증거를 반복 검색하는 Researcher를 함께 학습한다.",
+      "category": "메모리"
+    },
+    {
+      "id": "2610.00313",
+      "title": "Rules to Tools: Executable Checks for LLM Agents in Scientific Computing",
+      "url": "https://arxiv.org/abs/2610.00313",
+      "date": "2026-09-29",
+      "date_type": "arxiv_first_submission",
+      "description_ko": "과학 계산 요구사항을 실행 가능한 검사 도구로 제공해 코드 수정 과정을 평가한다. 텍스트 설명과 준비된 검사 도구를 비교하며 효과가 과제와 평가 집단에 따라 달라진다는 한계도 보고한다.",
+      "category": "과학·연구"
+    },
+    {
+      "id": "2610.01618",
+      "title": "Agents Are Systems, Not Models: Rethinking Agentic Evaluation",
+      "url": "https://arxiv.org/abs/2610.01618",
+      "date": "2026-10-01",
+      "date_type": "arxiv_first_submission",
+      "description_ko": "과제 정보·추론·자가검증·시간 예산·기반 모델을 바꾸며 에이전트를 구성 가능한 시스템으로 평가한다. 네 가지 과학 과제에서 구성의 영향과 실행 간 변동성을 분석하고 18,000개 이상의 실행 궤적을 공개한다.",
+      "category": "평가·벤치마크"
+    }
+  ]
+}
