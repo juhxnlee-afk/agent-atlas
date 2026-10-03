@@ -2,7 +2,7 @@
 import { readFile, readdir, access } from 'node:fs/promises';
 import { resolve } from 'node:path';
 import { createHash } from 'node:crypto';
-import { itemsOf, normalizeRepos, normalizePapers, normalizeTimeline, snapshotPath, time } from '../assets/logic.mjs';
+import { itemsOf, normalizeRepos, normalizePapers, normalizeTimeline, TIMELINE_START, snapshotPath, time } from '../assets/logic.mjs';
 import { normalizeNews, NEWS_START } from '../assets/news.mjs';
 const root=resolve(process.argv.find(arg=>arg.startsWith('--root='))?.slice(7) || resolve(import.meta.dirname,'..'));
 const read=async path=>JSON.parse(await readFile(resolve(root,path),'utf8'));
@@ -13,6 +13,13 @@ for(const [name,normalize] of [['repos',normalizeRepos],['papers',normalizePaper
  check(result.rejected===0,`${name}: ${result.rejected} invalid rows`);
  check(result.items.length===itemsOf(raw).length,`${name}: duplicate records`);
  console.log(`${name}: ${result.items.length} valid records`);
+ if(name==='timeline') {
+  check(result.items.every(item=>time(item.date)>=time(TIMELINE_START)),'Main timeline must start in 2025, independently of repository History');
+  check(result.items.every(item=>time(item.date)<=Date.now()),'Main timeline must not present future events as completed milestones');
+  check(result.items.every(item=>item.date_type && item.date_precision && item.date_basis),'Timeline must preserve event type, date precision and source basis');
+  check(new Set(result.items.map(item=>`${item.date}:${item.title}`)).size===result.items.length,'Duplicate timeline milestones');
+  check(Number.isFinite(time(raw.collected_at)) && time(raw.collected_at)<=Date.now()+60_000,'Timeline verification timestamp must be verified and not in the future');
+ }
  if(name==='news') {
   check(raw.started_on===NEWS_START,'News archive start date must be 2026-10-03');
   check(raw.timezone==='Asia/Seoul','News issue timezone must be Asia/Seoul');

@@ -1,77 +1,238 @@
 {
-  "schema_version": 1,
-  "collected_at": "2026-10-03T05:56:00Z",
+  "schema_version": 2,
+  "collected_at": "2026-10-03T11:04:04.827485Z",
   "timezone": "Asia/Seoul",
+  "scope": "2025-01-01 onward; major shifts in agent products, open personal-agent ecosystems, interoperability, and enterprise operations",
+  "editorial_note": "15개의 주요 전환점을 선별했습니다. 반복적인 버전 업데이트·논문·모델 성능 발표는 제외합니다. 날짜는 공식 출처의 사건·발표일이며, NanoClaw는 창작자의 Show HN 원문 게시 시각(UTC)을 보존합니다. significance는 확인된 변화의 의미를 설명하는 편집 요약입니다.",
   "items": [
     {
+      "date": "2025-01-23",
+      "title": "Operator, 브라우저를 직접 쓰는 에이전트",
+      "summary": "OpenAI가 웹페이지를 보고 클릭·입력·스크롤하는 Operator를 미국 Pro 이용자에게 리서치 프리뷰로 공개했다. 사람이 쓰는 웹 인터페이스에서 실제 작업을 수행하는 제품이었다.",
+      "significance": "대화로 답을 얻는 경험에서 브라우저 작업을 위임하는 경험으로 범위가 넓어졌다.",
+      "category": "컴퓨터 사용",
+      "source_url": "https://openai.com/index/introducing-operator/",
+      "date_type": "research_preview",
+      "date_basis": "OpenAI 공식 출시 글의 날짜",
+      "date_precision": "date"
+    },
+    {
+      "date": "2025-02-24",
+      "title": "Claude Code, 터미널에서 개발 작업을 위임",
+      "summary": "Anthropic이 Claude Code를 제한적 리서치 프리뷰로 공개했다. 코드 탐색·수정, 테스트 실행과 명령줄 도구 사용을 하나의 작업 흐름으로 묶었다.",
+      "significance": "코드 제안을 넘어 저장소 안에서 수정과 검증을 수행하는 개발 에이전트가 제품화됐다.",
+      "category": "코딩 에이전트",
+      "source_url": "https://www.anthropic.com/news/claude-3-7-sonnet",
+      "date_type": "research_preview",
+      "date_basis": "Anthropic 공식 발표일; 일반 공개 전의 제한적 프리뷰",
+      "date_precision": "date"
+    },
+    {
+      "date": "2025-04-09",
+      "title": "A2A, 서로 다른 에이전트를 연결하는 표준",
+      "summary": "Google이 Agent2Agent 프로토콜을 발표했다. 서로 다른 회사·프레임워크의 에이전트가 정보를 교환하고 작업을 조율하도록 설계됐으며, 도구·맥락 연결을 위한 MCP를 보완한다.",
+      "significance": "한 에이전트의 성능과 함께 에이전트 간 협업과 상호운용성이 중요한 과제가 됐다.",
+      "category": "연결 표준",
+      "source_url": "https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/",
+      "date_type": "protocol_release",
+      "date_basis": "Google Developers 공식 발표일",
+      "date_precision": "date"
+    },
+    {
+      "date": "2025-05-16",
+      "title": "Codex, 개발 작업을 클라우드에서 병렬 실행",
+      "summary": "OpenAI가 클라우드 코딩 에이전트 Codex의 리서치 프리뷰를 출시했다. 작업별로 분리된 저장소 환경에서 기능 구현·버그 수정·테스트와 PR 제안을 병렬로 수행했다.",
+      "significance": "개발자가 옆에서 계속 입력하는 방식에 더해, 독립적인 작업 단위를 맡기고 결과를 검토하는 흐름이 강화됐다.",
+      "category": "코딩 에이전트",
+      "source_url": "https://openai.com/index/introducing-codex/",
+      "date_type": "research_preview",
+      "date_basis": "클라우드 Codex 리서치 프리뷰 출시일; 이전 Codex 모델·CLI 공개와 구분",
+      "date_precision": "date"
+    },
+    {
+      "date": "2025-07-17",
+      "title": "ChatGPT agent, 조사와 실행을 한 작업으로 통합",
+      "summary": "OpenAI가 Operator의 웹 조작과 deep research의 조사 능력을 통합한 ChatGPT agent를 출시했다. 가상 컴퓨터에서 브라우저·터미널·연결된 앱을 활용해 조사부터 결과물 제작까지 이어갔다.",
+      "significance": "분리돼 있던 검색·분석·행동이 하나의 범용 작업 흐름으로 묶였다.",
+      "category": "범용 업무",
+      "source_url": "https://openai.com/index/introducing-chatgpt-agent/",
+      "date_type": "product_release",
+      "date_basis": "OpenAI 공식 출시일; 요금제별 순차 제공",
+      "date_precision": "date"
+    },
+    {
+      "date": "2025-10-09",
+      "title": "Gemini Enterprise, 기업 데이터와 에이전트를 한곳에",
+      "summary": "Google Cloud가 Gemini Enterprise를 출시했다. 사내 데이터 연결, 업무용 에이전트와 파트너 생태계를 통합하고 에이전트의 보안·감사를 중앙에서 관리하는 플랫폼을 제시했다.",
+      "significance": "개별 AI 도구 도입에서 조직의 데이터와 업무 흐름을 연결하는 기업용 플랫폼으로 확장됐다.",
+      "category": "엔터프라이즈",
+      "source_url": "https://cloud.google.com/blog/products/ai-machine-learning/introducing-gemini-enterprise",
+      "date_type": "product_release",
+      "date_basis": "Gemini Enterprise 최초 출시일; 2026년 Agent Platform 확장 발표와 구분",
+      "supporting_sources": [
+        {
+          "label": "출시 당일 제공 확인",
+          "url": "https://cloud.google.com/blog/topics/partners/partners-powering-the-gemini-enterprise-agent-ecosystem"
+        }
+      ],
+      "date_precision": "date"
+    },
+    {
+      "date": "2025-11",
+      "date_precision": "month",
+      "title": "OpenClaw의 출발, 직접 운영하는 개인 에이전트",
+      "summary": "Peter Steinberger가 11월 시작한 개인 프로젝트가 Clawd·Moltbot을 거쳐 OpenClaw로 발전했다. 2026년 1월 29일 공식 명칭 발표에서는 자신의 기기·서버에서 운영하며 메신저로 사용하는 개방형 에이전트 플랫폼을 소개했다.",
+      "significance": "자신의 환경에서 운영하며 일상 메신저로 부르는 개인 비서 생태계의 출발점이다.",
+      "category": "개인 에이전트",
+      "source_url": "https://openclaw.ai/blog/introducing-openclaw",
+      "date_type": "project_origin",
+      "date_basis": "창작자의 공식 회고가 시작 시점을 2025년 11월로 명시; 정확한 시작일·출시일로 단정하지 않음",
+      "supporting_sources": [
+        {
+          "label": "OpenClaw 명칭 공식 발표",
+          "url": "https://openclaw.ai/blog/introducing-openclaw",
+          "date": "2026-01-29",
+          "date_type": "naming_announcement"
+        },
+        {
+          "label": "공식 저장소",
+          "url": "https://github.com/openclaw/openclaw"
+        }
+      ]
+    },
+    {
+      "date": "2025-11-18",
+      "title": "Microsoft Agent 365, 에이전트도 기업 IT의 관리 대상",
+      "summary": "Microsoft가 Agent 365를 발표했다. Microsoft 제품뿐 아니라 외부·오픈소스 에이전트까지 등록하고, 식별자·접근 권한·관측·보안 정책을 적용하는 공통 관리 계층을 제시했다.",
+      "significance": "많은 에이전트를 실제 조직에 배치하려면 성능뿐 아니라 신원·권한·감사가 필요해졌다.",
+      "category": "엔터프라이즈",
+      "source_url": "https://www.microsoft.com/en-us/copilot/blog/2025/11/18/microsoft-agent-365-the-control-plane-for-ai-agents/",
+      "date_type": "product_announcement",
+      "date_basis": "Ignite 공식 발표일; 당시 Frontier 얼리액세스이며 일반 출시일과 구분",
+      "date_precision": "date"
+    },
+    {
       "date": "2026-01-12",
-      "title": "Claude Cowork 리서치 프리뷰",
-      "summary": "데스크톱에서 Claude의 에이전트 기능을 사용하는 Cowork가 리서치 프리뷰로 등장했다. 1월 13일 Anthropic 공식 발표가 전날 출시를 확인한다.",
+      "title": "Claude Cowork, 개발 에이전트가 일반 데스크톱 업무로",
+      "summary": "Anthropic이 Cowork를 리서치 프리뷰로 출시했다. Claude의 에이전트 기능을 데스크톱으로 가져와 개발자가 아닌 사용자도 파일과 업무를 맡기는 제품 방향을 제시했다.",
+      "significance": "코딩에서 검증된 작업 위임 방식이 일반 지식 업무로 확장됐다.",
+      "category": "범용 업무",
       "source_url": "https://www.anthropic.com/news/introducing-anthropic-labs",
-      "date_type": "product_release"
+      "date_type": "research_preview",
+      "date_basis": "1월 13일 공식 글이 Cowork를 '전날 출시'했다고 명시",
+      "supporting_sources": [
+        {
+          "label": "Cowork 공식 제품",
+          "url": "https://claude.com/product/cowork"
+        }
+      ],
+      "date_precision": "date"
     },
     {
-      "date": "2026-01-28",
-      "title": "멀티에이전트 확장의 조건을 실험으로 검토",
-      "summary": "Google Research가 180개 구성의 비교 연구를 소개했다. 병렬화 가능한 작업의 이점과 순차 작업에서의 성능 저하를 함께 보고하며 에이전트 수보다 과제에 맞는 구조의 중요성을 강조했다.",
-      "source_url": "https://research.google/blog/towards-a-science-of-scaling-agent-systems-when-and-why-agent-systems-work/",
-      "date_type": "official_research_post"
+      "date": "2026-02-01T22:49:22Z",
+      "title": "NanoClaw, 작은 코드와 컨테이너 격리로 개인 비서 구현",
+      "summary": "창작자가 NanoClaw를 Show HN에서 공개했다. 메신저 기반 개인 비서를 작은 코드베이스와 채팅별 격리 환경으로 구성해, OpenClaw와 다른 경량·보안 중심 접근을 보여줬다.",
+      "significance": "개인 에이전트 생태계가 기능 확대와 함께 코드의 이해 가능성·실행 격리라는 방향으로 분화했다.",
+      "category": "개인 에이전트",
+      "source_url": "https://news.ycombinator.com/item?id=46850205",
+      "date_type": "project_announcement",
+      "date_basis": "창작자 Show HN 게시 시각 2026-02-01 22:49:22 UTC (한국시간 2월 2일 07:49:22). 화면에는 원문 UTC 날짜를 표시하며, 저장소 생성일 1월 31일과 구분합니다.",
+      "source_published_at": "2026-02-01T22:49:22Z",
+      "supporting_sources": [
+        {
+          "label": "공식 보안 설계",
+          "url": "https://nanoclaw.dev/blog/nanoclaw-security-model",
+          "date": "2026-02-28"
+        },
+        {
+          "label": "공식 저장소",
+          "url": "https://github.com/nanocoai/nanoclaw"
+        },
+        {
+          "label": "저장소 생성 메타데이터",
+          "url": "https://api.github.com/repos/nanocoai/nanoclaw",
+          "date": "2026-01-31",
+          "date_type": "repository_creation"
+        },
+        {
+          "label": "Show HN 게시 시각",
+          "url": "https://hacker-news.firebaseio.com/v0/item/46850205.json"
+        }
+      ],
+      "date_precision": "timestamp"
     },
     {
-      "date": "2026-02-02",
-      "title": "Codex 앱, 병렬 에이전트 작업 공간으로 확장",
-      "summary": "OpenAI가 macOS용 Codex 앱을 출시했다. 여러 에이전트의 병렬 실행, 격리된 작업 트리, 재사용 스킬과 자동화를 하나의 인터페이스에서 관리하도록 설계했다.",
-      "source_url": "https://openai.com/index/introducing-the-codex-app/",
-      "date_type": "product_release"
+      "date": "2026-02-05",
+      "title": "OpenAI Frontier, 기업용 AI 동료의 운영 플랫폼",
+      "summary": "OpenAI가 Frontier를 한정된 고객에게 제공하기 시작했다. 공유 업무 맥락, 실행 환경, 평가와 개선, 에이전트별 신원·권한을 묶어 기업이 에이전트를 구축·배포·관리하도록 설계했다.",
+      "significance": "기업용 경쟁이 모델 제공에서 AI 동료를 온보딩하고 운영하는 체계로 넓어졌다.",
+      "category": "엔터프라이즈",
+      "source_url": "https://openai.com/index/introducing-openai-frontier/",
+      "date_type": "product_release",
+      "date_basis": "공식 발표 및 한정 고객 제공 시작일; 전면 일반 출시로 해석하지 않음",
+      "date_precision": "date"
+    },
+    {
+      "date": "2026-02-25",
+      "title": "Hermes Agent, 기억과 경험을 재사용하는 개인 비서",
+      "summary": "Nous Research가 Hermes Agent를 공개했다. 자체 서버에서 실행하며 기억을 유지하고, 경험을 재사용 가능한 스킬로 축적하는 학습 루프를 중심에 둔 에이전트다. Hermes 언어모델 계열과는 별도 프로젝트다.",
+      "significance": "개인 에이전트의 차별점이 일회성 작업 완료에서 세션을 넘는 기억과 경험 재사용으로 넓어졌다.",
+      "category": "개인 에이전트",
+      "source_url": "https://nousresearch.com/releases",
+      "date_type": "open_source_release",
+      "date_basis": "Nous Research 공식 Releases의 AGENT 항목 날짜; 저장소 생성일 2025-07-22와 구분",
+      "supporting_sources": [
+        {
+          "label": "공식 저장소와 설계 설명",
+          "url": "https://github.com/NousResearch/hermes-agent"
+        },
+        {
+          "label": "저장소 생성 메타데이터",
+          "url": "https://api.github.com/repos/NousResearch/hermes-agent",
+          "date": "2025-07-22",
+          "date_type": "repository_creation"
+        }
+      ],
+      "date_precision": "date"
+    },
+    {
+      "date": "2026-03-16",
+      "title": "NemoClaw, 상시 에이전트에 실행 통제와 보안 추가",
+      "summary": "NVIDIA가 OpenClaw용 NemoClaw를 발표했다. Nemotron 모델과 OpenShell 실행 환경을 묶고, 격리된 샌드박스 및 정책 기반 네트워크·개인정보 통제를 적용하는 구성을 제시했다.",
+      "significance": "개인용 상시 에이전트를 확장하려면 모델뿐 아니라 실행 환경과 접근 경계를 갖춰야 한다는 흐름을 보여줬다.",
+      "category": "보안·운영",
+      "source_url": "https://nvidianews.nvidia.com/news/nvidia-announces-nemoclaw",
+      "date_type": "product_announcement",
+      "date_basis": "NVIDIA GTC 공식 발표일; 전체 기능의 일반 출시 완료를 뜻하지 않음",
+      "date_precision": "date"
     },
     {
       "date": "2026-04-08",
-      "title": "Managed Agents의 지속 실행 아키텍처 공개",
-      "summary": "Anthropic이 장시간 에이전트를 위한 Managed Agents의 설계를 설명했다. 세션 로그·실행 하네스·샌드박스를 분리해 장애 복구와 구성요소 교체를 지원하는 접근이다.",
-      "source_url": "https://www.anthropic.com/engineering/managed-agents",
-      "date_type": "official_engineering_post"
-    },
-    {
-      "date": "2026-04-28",
-      "title": "AP2 v0.2와 에이전트 결제 표준 거버넌스",
-      "summary": "Google이 AP2 v0.2를 공개하고 Agent Payments Protocol의 FIDO Alliance 기여를 발표했다. 사전 승인된 지시에 따른 사용자 부재 중 결제와 검증 가능한 의도가 핵심 주제로 제시됐다.",
-      "source_url": "https://blog.google/products-and-platforms/platforms/google-pay/agent-payments-protocol-fido-alliance/",
-      "date_type": "protocol_release"
-    },
-    {
-      "date": "2026-05-19",
-      "title": "Google Search, 정보 모니터링 에이전트 발표",
-      "summary": "Google I/O에서 Search의 백그라운드 정보 에이전트와 확장된 예약 기능을 발표했다. 발표 시점에는 정보 에이전트의 여름 출시 계획을 안내했으며, 이 날짜를 실제 전체 출시일로 보지는 않는다.",
-      "source_url": "https://blog.google/products-and-platforms/products/search/search-io-2026/",
-      "date_type": "product_announcement"
-    },
-    {
-      "date": "2026-06-23",
-      "title": "Claude Tag, Slack 안의 팀 에이전트 발표",
-      "summary": "Anthropic이 선택한 Slack 채널에서 팀원들이 작업을 위임할 수 있는 Claude Tag를 소개했다. 연결된 도구·데이터·코드베이스와 채널 맥락을 활용하는 팀 단위 작업 방식을 제시했다.",
-      "source_url": "https://www.anthropic.com/news/introducing-claude-tag",
-      "date_type": "product_announcement"
+      "title": "Claude Managed Agents, 장시간 실행을 관리형 서비스로",
+      "summary": "Anthropic이 Claude Managed Agents를 공개 베타로 출시했다. 에이전트 실행 루프와 샌드박스, 권한, 추적, 장애 이후에도 이어지는 장시간 세션을 관리형 API로 제공했다.",
+      "significance": "에이전트를 만드는 핵심 부담이 모델 호출을 넘어 지속 실행 인프라로 이동했고, 이를 서비스가 대신 맡기 시작했다.",
+      "category": "실행 인프라",
+      "source_url": "https://claude.com/blog/claude-managed-agents",
+      "date_type": "public_beta_release",
+      "date_basis": "Claude 공식 제품 글의 공개 베타 출시일; 같은 날 엔지니어링 글은 보조 근거",
+      "supporting_sources": [
+        {
+          "label": "실행·세션·샌드박스 분리 설계",
+          "url": "https://www.anthropic.com/engineering/managed-agents"
+        }
+      ],
+      "date_precision": "date"
     },
     {
       "date": "2026-07-09",
-      "title": "ChatGPT Work, 앱과 파일을 넘나드는 작업 실행",
-      "summary": "OpenAI가 앱과 파일에서 정보를 모아 문서·시트·슬라이드·웹앱을 만드는 ChatGPT Work를 소개했다. 복잡한 프로젝트를 나누어 수 시간 진행하는 일반 업무용 에이전트를 전면에 내세웠다.",
+      "title": "ChatGPT Work, 여러 앱과 파일을 넘나드는 업무 실행",
+      "summary": "OpenAI가 ChatGPT Work를 출시했다. 앱·파일의 정보를 모아 문서·시트·슬라이드·웹앱을 만들고, 복잡한 프로젝트를 나눠 수 시간 동안 수행하는 일반 업무용 에이전트를 제시했다.",
+      "significance": "브라우저의 개별 작업 위임에서 연결된 업무 도구와 완성된 결과물을 아우르는 작업 공간으로 넓어졌다.",
+      "category": "범용 업무",
       "source_url": "https://openai.com/index/chatgpt-for-your-most-ambitious-work/",
-      "date_type": "product_announcement"
-    },
-    {
-      "date": "2026-09-10",
-      "title": "OpenAI Agents API 공개 베타",
-      "summary": "Codex의 실행 하네스와 관리형 인프라를 개발자가 API로 사용하는 공개 베타를 발표했다. 장시간 세션, 도구 사용, 하위 에이전트 조율과 관리형 샌드박스를 제공하는 방향이다.",
-      "source_url": "https://openai.com/index/introducing-the-agents-api/",
-      "date_type": "public_beta_release"
-    },
-    {
-      "date": "2026-10-01",
-      "title": "에이전트 평가 단위를 모델에서 시스템으로",
-      "summary": "Agents Are Systems, Not Models 논문이 arXiv에 최초 제출됐다. 과제 정보, 검증 도구, 시간 예산 등 실행 구성이 결과를 바꾸므로 에이전트를 시스템 전체로 평가해야 한다고 제안한다.",
-      "source_url": "https://arxiv.org/abs/2610.01618",
-      "date_type": "arxiv_first_submission"
+      "date_type": "product_release",
+      "date_basis": "OpenAI 공식 발표 및 요금제별 순차 제공 시작일",
+      "date_precision": "date"
     }
   ]
 }

@@ -1,5 +1,7 @@
 export const DAY = 86_400_000;
 export const HISTORY_START = Date.parse('2026-01-01T00:00:00+09:00');
+// Timeline dates follow their primary source, independently of repository History.
+export const TIMELINE_START = '2025-01-01';
 export const time = value => typeof value === 'string' && value.trim() ? Date.parse(value) : NaN;
 export const safeURL = value => {
   try { const url = new URL(value); return url.protocol === 'https:' || url.protocol === 'http:' ? url.href : ''; }
@@ -38,8 +40,26 @@ export function normalizePapers(payload) {
 }
 export function normalizeTimeline(payload) {
   const rows = itemsOf(payload);
-  const valid = rows.filter(m => m && typeof m.title === 'string' && Number.isFinite(time(m.date)) && safeURL(m.source_url));
+  const valid = rows.filter(m => m && typeof m.title === 'string' && m.title.trim() && typeof m.summary === 'string' && m.summary.trim() && validTimelineDate(m) && safeURL(m.source_url));
   return { items: valid.sort((a,b) => time(a.date) - time(b.date)), rejected: rows.length - valid.length };
+}
+function validTimelineDate(item) {
+  const precision = item.date_precision || 'date';
+  if (precision === 'month') return /^\d{4}-(0[1-9]|1[0-2])$/.test(item.date);
+  if (precision === 'date') return /^\d{4}-\d{2}-\d{2}$/.test(item.date) && Number.isFinite(time(item.date)) && new Date(item.date).toISOString().slice(0,10) === item.date;
+  if (precision === 'timestamp') return /^\d{4}-\d{2}-\d{2}T.+(?:Z|[+-]\d{2}:\d{2})$/.test(item.date) && Number.isFinite(time(item.date));
+  return false;
+}
+export function filterTimeline(items, {now=Date.now()}={}) {
+  return items.filter(item => time(item.date) >= time(TIMELINE_START) && time(item.date) <= now).sort((a,b) => time(a.date) - time(b.date));
+}
+export function timelineDateLabel(item) {
+  if (item.date_precision === 'month') return `${String(item.date).slice(0,4)}년 ${Number(String(item.date).slice(5,7))}월`;
+  return String(item.date).slice(0,10).replaceAll('-','.');
+}
+export function timelineDateTypeLabel(item) {
+  const labels={product_release:'제품 출시',product_announcement:'공식 발표',public_beta_release:'공개 베타',research_preview:'리서치 프리뷰',protocol_release:'프로토콜 공개',official_announcement:'공식 발표',official_research_post:'공식 연구 발표',official_engineering_post:'공식 기술 발표',arxiv_first_submission:'논문 최초 제출',repository_creation:'저장소 생성',repository_first_commit:'최초 공개 코드',project_origin:'프로젝트 시작',project_launch:'프로젝트 공개',project_announcement:'프로젝트 발표',project_rename:'이름 변경 발표',open_source_release:'오픈소스 공개',foundation_announcement:'재단 출범'};
+  return labels[item.date_type] || '원문 기준';
 }
 export function matching(item, query) {
   const fields = [item.name, item.owner, item.title, item.description_ko, item.description, item.description_original, item.summary, item.category, item.language];
