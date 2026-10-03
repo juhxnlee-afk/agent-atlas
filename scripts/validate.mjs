@@ -43,7 +43,7 @@ for(const brief of briefs){
 const html=await readFile(resolve(root,'index.html'),'utf8');
 check(/<html lang="ko">/.test(html),'Korean document language missing');
 check(!/https?:\/\//.test(html),'HTML contains a third-party dependency');
-for(const match of html.matchAll(/(?:src|href)="\.\/([^"#]+)"/g))await access(resolve(root,match[1]));
+for(const match of html.matchAll(/(?:src|href)="\.\/([^"#]+)"/g))await access(resolve(root,match[1].split("?")[0]));
 for(const name of await readdir(resolve(root,'assets')))check(!/\.(?:map|log)$/.test(name),'Unexpected build artifact');
 console.log(`${briefs.length} immutable snapshot(s) checked`);
 if(failed)process.exitCode=1;else console.log('Validation passed: data, source paths, local assets, snapshot checksums.');
