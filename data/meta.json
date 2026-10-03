@@ -7,9 +7,10 @@
   "coverage_ko": "공개 GitHub 저장소 695개와 공식 논문 출처를 선별·검색한 아카이브입니다. 최소 Stars 문턱 없이 수집했으며, 넓은 검색의 일부는 첫 페이지 표본이므로 전수 목록이 아닙니다.",
   "limitations_ko": "저장소 설명·주제와 일부 README를 근거로 관련성을 검토했습니다. 기능 실행·보안·품질을 인증한 목록이 아닙니다. 검색 키워드와 페이지 한도에 따른 누락이 있으며, GitHub 검색 인덱스가 달라질 수 있습니다.",
   "schedule": {
-    "enabled": false,
+    "enabled": true,
     "target_time": "06:00",
-    "timezone": "Asia/Seoul"
+    "timezone": "Asia/Seoul",
+    "confirmed_at": "2026-10-03T06:40:38Z"
   },
   "repository_provenance": {
     "collected_at": "2026-10-03T05:57:00Z",
@@ -113,10 +114,10 @@
       "코드 실행 에이전트": 1
     },
     "year_counts": {
-      "2026": 687,
-      "2025": 4,
+      "2023": 2,
       "2024": 2,
-      "2023": 2
+      "2025": 4,
+      "2026": 687
     },
     "minimum_stars_filter": null,
     "collection_sort": "GitHub default best-match relevance; no star qualifier or star threshold applied",
