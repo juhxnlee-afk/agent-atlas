@@ -217,6 +217,7 @@ function selectTab(tab,focus=false) {
   state.tab=tab;
   if(location.hash!==`#${tab}`)history.replaceState(null,'',`#${tab}`);
   if(state.data)render(); else updateTabs();
+  window.scrollTo({top:0,left:0,behavior:'instant'});
   if(focus)$(`#tab-${tab}`).focus();
 }
 document.querySelectorAll('[data-tab]').forEach(button=>button.addEventListener('click',()=>selectTab(button.dataset.tab)));

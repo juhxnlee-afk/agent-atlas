@@ -16,7 +16,7 @@ for(const id of ['app','schedule'])nodes.set(id,new Element(id));
 const tabs=['main','history','paper','news'].map(name=>{const el=new Element(`tab-${name}`);el.dataset.tab=name;nodes.set(el.id,el);return el;});
 const navigation=new Element();
 globalThis.document={baseURI:'http://example.test/project/',hidden:false,activeElement:null,querySelector:selector=>selector==='.tabs'?navigation:nodes.get(selector.slice(1))||null,querySelectorAll:selector=>selector==='[data-tab]'?tabs:[],addEventListener(){}};
-const windowEvents={};globalThis.window={addEventListener(name,fn){windowEvents[name]=fn;}};globalThis.location={hash:''};globalThis.history={replaceState(_s,_t,url){location.hash=url;}};
+const windowEvents={};globalThis.window={scrollTo(options){this.lastScroll=options;},addEventListener(name,fn){windowEvents[name]=fn;}};globalThis.location={hash:''};globalThis.history={replaceState(_s,_t,url){location.hash=url;}};
 const interval=globalThis.setInterval;globalThis.setInterval=()=>0;
 Date.now=()=>Date.parse('2026-10-05T07:00:00Z');
 const now=Date.now(),date=offset=>new Date(now-offset*86400000).toISOString();
@@ -124,4 +124,9 @@ test('Domestic and international news filters compose with search, preserve dail
 test('Modified navigation keys retain browser shortcuts',async()=>{
  await get('tab-main').fire('click');await navigation.fire('keydown',undefined,{key:'End',ctrlKey:true});assert.equal(location.hash,'#main');
  await navigation.fire('keydown',undefined,{key:'ArrowRight',metaKey:true});assert.equal(location.hash,'#main');
+});
+
+test('Sticky menu navigation returns to the top of the selected view',async()=>{
+ window.lastScroll=null;await get('tab-news').fire('click');assert.deepEqual(window.lastScroll,{top:0,left:0,behavior:'instant'});
+ window.lastScroll=null;await get('tab-main').fire('click');assert.deepEqual(window.lastScroll,{top:0,left:0,behavior:'instant'});
 });
