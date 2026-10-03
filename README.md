@@ -79,3 +79,39 @@ node scripts/create-snapshot.mjs --brief=/absolute/path/verified-brief.json
 텍스트는 HTML escape하고 링크는 HTTP(S)만 허용합니다. 스냅샷 경로는 `data/snapshots/` 내부 JSON만 허용합니다. 일부 파일 로딩 실패, 검증 실패, 빈 검색 결과, 수집 지연, 스냅샷 실패를 별도로 표시합니다. 키보드 탭 전환, 명시적 input label, focus ring, 화면 낭독용 검색 결과 안내, 모바일 레이아웃을 제공합니다.
 
 시계는 방문자 기기 시각에 의존합니다. 36시간 이상 수집이 지연되면 경고합니다. 공개 GitHub API의 검색 인덱스, 별 수 문턱, 언어·키워드, 결과 한도에 따른 누락이 가능합니다. 출처가 없거나 원본 생성일이 잘못된 항목은 표시하지 않습니다.
+
+## News · 일일 에이전트 AI 뉴스
+
+`News` 메뉴(`#news`)는 2026-10-03부터 날짜별 한국어 종합 요약, 개별 소식의 핵심 내용, 보도·공식 원문 링크를 보관합니다. 기본 정렬은 날짜 최신순입니다. 제목·일일 요약·주제·출처 검색과 오래된순 정렬을 지원하며 탭마다 검색 상태를 유지합니다. News 수집 시각은 저장소 수집 시각과 독립적으로 표시됩니다.
+
+### 데이터 계약
+
+`data/news.json`은 `{schema_version:1, timezone:"Asia/Seoul", started_on:"2026-10-03", collected_at:"실제 ISO 시각", items:[일일 기록]}` envelope입니다.
+
+- 일일 기록 필수: `date` (KST `YYYY-MM-DD`), `status` (`partial` 또는 `final`), `collected_at`, `headline` (한국어 핵심 제목), `summary` (그날 전체 뉴스의 한국어 종합 요약), `items` (소식 배열)
+- 선택: `coverage_note`, `correction_note`, `sources:[{label,url}]`, `window_start`, `window_end`
+- 소식 필수: `id` (안정적 고유 키), `title`, `url`, `source`, `summary`, `published_date` (원문 날짜), `published_precision` (`timestamp` 또는 `date`), `date_basis` (원문 날짜·시간대 근거)
+- 시각까지 확인되면 `published_at`에 시간대가 있는 ISO timestamp, `published_date_kst`에 실제 KST 변환 날짜를 저장합니다. 원문 `published_date`는 그대로 보존합니다.
+- 날짜만 확인되면 `published_at:null`, `published_precision:"date"`, `published_timezone` (확인된 원문 시간대 또는 `unknown`)를 사용합니다. 임의의 자정 시각이나 KST 날짜를 만들지 않습니다. `published_date_kst`는 원문 시간대가 `Asia/Seoul`로 확인된 경우 외에는 비웁니다.
+- 권장: `significance` (한국어 핵심 포인트), `topics`, `source_type` (`primary` / `reputable_report`), `supporting_sources:[{source,url,...근거}]`, `event_date`, `event_date_note`, `verification_note`
+- 게시일, 발표·시행일, 수집 시각은 서로 대체하지 않습니다. 날짜별 뉴스의 기준은 확인된 보도 게시 시각입니다. 과거 소식을 배경으로 넣으면 이전 소식임을 명시합니다. 날짜만 있는 출처는 정확한 KST 게시일을 확정하지 않았다고 표시합니다.
+
+### 매일 06:00 KST 실행
+
+기존 수집·게시 작업에서 공개 원문을 확인하고 전날의 일일 기록을 보강·마감(`final`)한 뒤, 당일은 06:00까지의 부분 기록(`partial`)으로 추가합니다. 2026-10-03 이전 기록은 만들지 않습니다. `final`은 해당 KST 날짜가 끝난 후에만 허용합니다. 확인된 기사가 없는 경우 가짜 뉴스 카드나 무의미한 문구로 채우지 말고 확인 범위와 결과만 정확히 기록합니다. 실패한 검색을 '뉴스 없음'으로 처리하지 않습니다.
+
+```sh
+# 검증한 전날+당일 이슈 envelope. 기존 날짜·소식은 보존하며 원자적으로 병합합니다.
+node scripts/update-news.mjs --input=/absolute/path/verified-news.json
+# 원본 저장소·논문 데이터 갱신 후 같은 실행의 새로운 불변 스냅샷을 생성합니다.
+node scripts/create-snapshot.mjs --brief=/absolute/path/verified-brief.json
+node --test tests/*.test.mjs
+node scripts/validate.mjs
+node --check assets/app.mjs
+node --check assets/news.mjs
+node --check scripts/update-news.mjs
+```
+
+`update-news.mjs`는 기존 날짜와 소식을 유지하고 같은 뉴스 ID의 출처 변경, 더 오래된 수집으로의 되돌림, 마감 기록의 부분 기록 전환을 거부합니다. 정정은 근거를 확인하고 `correction_note`를 추가합니다. 수집 시각은 실제 확인 시각으로만 갱신합니다. 이 스크립트 자체는 조사·예약·게시를 수행하지 않습니다.
+
+새 스냅샷은 뉴스가 있으면 `schema_version:2`로 `news` envelope와 `dataset_collected_at`을 함께 보관합니다. 기존 schema v1 스냅샷과 SHA-256은 그대로 유지합니다. 뉴스만 갱신한 경우 저장소·논문 원본의 수집 시각은 변경하지 않습니다. 현재 `news.json`은 날짜별 최신 기록이며, 이전 부분 기록·정정 전 내용은 생성 당시의 불변 스냅샷과 저장소 버전 이력에 남습니다.

@@ -114,10 +114,10 @@
       "코드 실행 에이전트": 1
     },
     "year_counts": {
-      "2023": 2,
-      "2024": 2,
+      "2026": 687,
       "2025": 4,
-      "2026": 687
+      "2024": 2,
+      "2023": 2
     },
     "minimum_stars_filter": null,
     "collection_sort": "GitHub default best-match relevance; no star qualifier or star threshold applied",
@@ -342,5 +342,19 @@
       }
     ],
     "review_completed_at": "2026-10-03T06:28:25Z"
+  },
+  "news_provenance": {
+    "started_on": "2026-10-03",
+    "collected_at": "2026-10-03T07:04:20Z",
+    "timezone": "Asia/Seoul",
+    "file": "data/news.json",
+    "selection_ko": "공식 원문과 신뢰할 수 있는 보도를 대조한 에이전트 AI 뉴스. 보도 게시일과 발표·사건일, 수집 시각을 구분합니다.",
+    "schedule": {
+      "enabled": true,
+      "target_time": "06:00",
+      "timezone": "Asia/Seoul",
+      "confirmed_at": "2026-10-03T07:03:56.279228Z"
+    },
+    "daily_policy_ko": "2026-10-03부터 시작. 매일 06:00 KST에 전날 기록을 보강·마감하고 당일은 수집 시점까지의 부분 기록으로 유지합니다. 기존 날짜를 삭제하거나 수집 전 기록을 소급 생성하지 않습니다."
   }
 }

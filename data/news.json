@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "timezone": "Asia/Seoul",
+  "started_on": "2026-10-03",
+  "items": [
+    {
+      "date": "2026-10-03",
+      "status": "partial",
+      "collected_at": "2026-10-03T07:04:20Z",
+      "headline": "생활 기기로 넓어지는 에이전트, 접근 권한은 더 신중하게",
+      "summary": "오늘 확인한 흐름은 에이전트의 활동 범위 확대와 권한 통제입니다. Meta는 Muse를 직접 만든 하드웨어와 연결하는 SDK를 공개했고, Apple은 자율성이 높아지는 AI 에이전트를 이유로 macOS 전체 디스크 접근의 통제를 강화하겠다고 밝혔습니다. 기능을 늘리는 것과 함께 사용자가 허용한 범위를 분명하게 만드는 일이 중요해지고 있습니다.",
+      "coverage_note": "한국시간 2026년 10월 3일 00:00부터 16:04까지의 중간 집계입니다. 이 시간대에 발행된 보도를 기준으로 선정하고, 핵심 사실은 공식 원문과 대조했습니다. 보도 시각과 실제 발표 날짜를 구분하며, 원문에 없는 시각은 추정하지 않았습니다. 오늘의 모든 소식을 망라한 목록은 아닙니다.",
+      "window_start": "2026-10-02T15:00:00Z",
+      "window_end": "2026-10-03T07:04:20Z",
+      "items": [
+        {
+          "id": "2026-10-03-meta-muse-gadgets",
+          "title": "Meta, Muse를 직접 만든 기기에 연결하는 오픈소스 SDK 공개",
+          "url": "https://techcrunch.com/2026/10/02/meta-wants-you-to-build-your-own-muse-gadget/",
+          "source": "TechCrunch",
+          "source_type": "reputable_report",
+          "published_at": "2026-10-03T00:45:00Z",
+          "published_date": "2026-10-02",
+          "published_precision": "timestamp",
+          "published_timezone": "America/Los_Angeles",
+          "published_date_kst": "2026-10-03",
+          "published_at_kst": "2026-10-03T09:45:00+09:00",
+          "date_basis": "TechCrunch 원문에 표시된 2026-10-02 17:45 PDT를 한국시간 2026-10-03 09:45로 변환했습니다. 기사 발행 시각이며, 공식 SDK 페이지의 게시 시각을 뜻하지 않습니다.",
+          "event_date": "2026-10-02",
+          "event_date_precision": "date",
+          "event_date_timezone": "unknown",
+          "event_date_note": "보도는 금요일(미국 현지 10월 2일) 공개로 설명합니다. 공식 프로젝트 페이지에는 게시 날짜·시각이 보이지 않습니다.",
+          "summary": "Muse Gadgets는 ESP32 보드와 Raspberry Pi·Linux 기기를 Muse에 연결할 수 있는 SDK와 펌웨어를 제공합니다. 화면·센서·버튼 같은 하드웨어로 에이전트를 확장할 수 있고, 코드는 Apache 2.0으로 공개됐습니다.",
+          "significance": "에이전트가 앱 안의 비서에서 실제 기기와 상호작용하는 도구로 확장되는 사례입니다. 연결 장치별로 실행 가능한 명령과 권한 범위를 설계하는 일이 중요합니다.",
+          "topics": [
+            "제품",
+            "오픈소스",
+            "하드웨어 연동",
+            "개인 에이전트"
+          ],
+          "verification_note": "기능과 라이선스는 공식 Muse Gadgets 페이지에서 확인했습니다. 한국 내 제공이나 기기 재고·배송 가능 여부는 단정하지 않습니다.",
+          "supporting_sources": [
+            {
+              "source": "Muse Gadgets 공식 프로젝트",
+              "url": "https://gadgets.muse.ai/",
+              "source_type": "primary",
+              "published_at": null,
+              "published_date": null,
+              "precision": "unknown",
+              "published_timezone": "unknown",
+              "verified_at": "2026-10-03T07:04:20Z",
+              "supports": "ESP32·Linux SDK, 디스플레이·센서·액추에이터 연결, Apache 2.0 라이선스"
+            },
+            {
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/10/02/meta-wants-you-to-build-your-own-muse-gadget/",
+              "source_type": "reputable_report",
+              "published_at": "2026-10-03T00:45:00Z",
+              "published_date": "2026-10-02",
+              "precision": "timestamp",
+              "published_timezone": "America/Los_Angeles",
+              "verified_at": "2026-10-03T07:04:20Z",
+              "supports": "Meta의 금요일 공개 보도와 17:45 PDT 기사 발행 시각"
+            }
+          ]
+        },
+        {
+          "id": "2026-10-03-apple-agent-disk-access",
+          "title": "Apple, AI 에이전트 위험에 대응해 Mac 전체 디스크 접근 통제 강화 예고",
+          "url": "https://theverge.com/tech/1004295/apple-limit-mac-disk-access-ai-agents",
+          "source": "The Verge",
+          "source_type": "reputable_report",
+          "published_at": "2026-10-02T20:08:00Z",
+          "published_date": "2026-10-02",
+          "published_precision": "timestamp",
+          "published_timezone": "UTC",
+          "published_date_kst": "2026-10-03",
+          "published_at_kst": "2026-10-03T05:08:00+09:00",
+          "date_basis": "The Verge 원문에 표시된 2026-10-02 20:08 UTC를 한국시간 2026-10-03 05:08로 변환했습니다. Apple 공식 발표는 10월 2일이라는 날짜만 명시합니다.",
+          "event_date": "2026-10-02",
+          "event_date_precision": "date",
+          "event_date_timezone": "unknown",
+          "event_date_note": "Apple Developer 공식 발표일은 2026-10-02이며 시각과 시간대는 표시되지 않습니다. 이를 한국시간 10월 3일에 발생한 사건으로 단정하지 않습니다.",
+          "summary": "Apple은 AI 에이전트의 자율성이 높아질수록 광범위한 데이터 접근 위험도 커진다며 macOS의 전체 디스크 접근에 추가 통제를 도입하겠다고 밝혔습니다. 사용자가 충분히 이해한 뒤 명확한 행동으로 권한을 부여하도록 하겠다는 취지이며, 적용 시점은 공개하지 않았습니다.",
+          "significance": "컴퓨터를 조작하는 에이전트는 작업 능력뿐 아니라 데이터 접근 범위와 사용자 동의 방식이 핵심 설계 요건이 됩니다. 발표 단계이므로 현재 모든 Mac에 변경이 적용됐다는 뜻은 아닙니다.",
+          "topics": [
+            "안전·보안",
+            "컴퓨터 사용",
+            "권한",
+            "개인정보"
+          ],
+          "verification_note": "핵심 내용은 Apple Developer 공식 발표와 대조했습니다. 공식 발표는 특정 회사나 에이전트를 지목하지 않아, 특정 서비스가 위반했다고 단정하지 않았습니다.",
+          "supporting_sources": [
+            {
+              "source": "Apple Developer",
+              "url": "https://developer.apple.com/news/?id=p6zjojqw",
+              "source_type": "primary",
+              "published_at": null,
+              "published_date": "2026-10-02",
+              "precision": "date",
+              "published_timezone": "unknown",
+              "verified_at": "2026-10-03T07:04:20Z",
+              "supports": "전체 디스크 접근에 추가 통제 도입 계획, AI 에이전트의 자율성과 데이터 노출 위험"
+            },
+            {
+              "source": "The Verge",
+              "url": "https://theverge.com/tech/1004295/apple-limit-mac-disk-access-ai-agents",
+              "source_type": "reputable_report",
+              "published_at": "2026-10-02T20:08:00Z",
+              "published_date": "2026-10-02",
+              "precision": "timestamp",
+              "published_timezone": "UTC",
+              "verified_at": "2026-10-03T07:04:20Z",
+              "supports": "20:08 UTC 발행 시각 및 적용 일정 미공개"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "collected_at": "2026-10-03T07:04:20Z"
+}
