@@ -84,3 +84,16 @@ test('News CLI writes atomically and schema-v2 snapshots retain data timestamps 
   assert.throws(()=>execFileSync(process.execPath,[snapshotScript,`--root=${root}`],{stdio:'pipe'}));assert.equal(await readFile(target,'utf8'),before);
  } finally {await rm(root,{recursive:true,force:true});}
 });
+
+test('Source regions filter stories while preserving the complete daily summary and counts',()=>{
+ const domestic={...story,region:'domestic'}, international={...story,id:'two',url:'https://example.com/two',region:'international',source:'Abroad',title:'Overseas workflow'};
+ const mixed={...issue,items:[domestic,international]};
+ const selected=filterNews([mixed],{region:'domestic',now})[0];
+ assert.equal(selected.items.length,1);assert.equal(selected.items[0].region,'domestic');assert.equal(selected.summary,issue.summary);assert.equal(selected.total_items,2);
+ assert.equal(filterNews([mixed],{region:'international',query:'workflow',now})[0].items.length,1);
+ assert.equal(filterNews([mixed],{region:'domestic',query:'workflow',now}).length,0);
+ assert.equal(filterNews([issue],{region:'domestic',now}).length,0);
+ assert.equal(filterNews([issue],{now}).length,1);
+ assert.equal(normalizeNews(envelope([{...issue,items:[{...story,region:'unknown'}]}])).rejected,1);
+ assert.equal(mixed.items.length,2);
+});

@@ -6,12 +6,12 @@
     {
       "date": "2026-10-03",
       "status": "partial",
-      "collected_at": "2026-10-03T07:04:20Z",
-      "headline": "생활 기기로 넓어지는 에이전트, 접근 권한은 더 신중하게",
-      "summary": "오늘 확인한 흐름은 에이전트의 활동 범위 확대와 권한 통제입니다. Meta는 Muse를 직접 만든 하드웨어와 연결하는 SDK를 공개했고, Apple은 자율성이 높아지는 AI 에이전트를 이유로 macOS 전체 디스크 접근의 통제를 강화하겠다고 밝혔습니다. 기능을 늘리는 것과 함께 사용자가 허용한 범위를 분명하게 만드는 일이 중요해지고 있습니다.",
-      "coverage_note": "한국시간 2026년 10월 3일 00:00부터 16:04까지의 중간 집계입니다. 이 시간대에 발행된 보도를 기준으로 선정하고, 핵심 사실은 공식 원문과 대조했습니다. 보도 시각과 실제 발표 날짜를 구분하며, 원문에 없는 시각은 추정하지 않았습니다. 오늘의 모든 소식을 망라한 목록은 아닙니다.",
+      "collected_at": "2026-10-03T07:39:17Z",
+      "headline": "국내는 보안·업무 자동화, 해외는 기기 연동·권한 통제",
+      "summary": "오늘 확인한 국내외 소식은 에이전트의 활용 범위 확대와 안전한 실행이라는 흐름으로 이어집니다. 국내에서는 에임인텔리전스가 인터뷰에서 자율 에이전트 보안 전략을 설명했고, IT조선은 웨인힐스의 문서·음성 기반 영상 제작 자동화를 조명했습니다. 해외에서는 Meta의 Muse 기기 연동 SDK 공개와 Apple의 Mac 전체 디스크 접근 통제 강화 계획이 보도됐습니다. 국내 두 기사는 기존 기술·사업을 다룬 인터뷰와 기획이며, 오늘의 신제품 출시를 뜻하지 않습니다.",
+      "coverage_note": "한국시간 2026년 10월 3일 00:00부터 16:39까지의 중간 집계입니다. 해당 시간대에 발행된 해외 보도와 국내 인터뷰·기획을 선별했습니다. 매체 소재지로 국내·해외를 구분하며, 기사 발행일과 실제 발표·사건 날짜를 구분합니다. 오늘의 모든 소식을 망라한 목록은 아닙니다.",
       "window_start": "2026-10-02T15:00:00Z",
-      "window_end": "2026-10-03T07:04:20Z",
+      "window_end": "2026-10-03T07:39:17Z",
       "items": [
         {
           "id": "2026-10-03-meta-muse-gadgets",
@@ -62,7 +62,8 @@
               "verified_at": "2026-10-03T07:04:20Z",
               "supports": "Meta의 금요일 공개 보도와 17:45 PDT 기사 발행 시각"
             }
-          ]
+          ],
+          "region": "international"
         },
         {
           "id": "2026-10-03-apple-agent-disk-access",
@@ -113,10 +114,107 @@
               "verified_at": "2026-10-03T07:04:20Z",
               "supports": "20:08 UTC 발행 시각 및 적용 일정 미공개"
             }
-          ]
+          ],
+          "region": "international"
+        },
+        {
+          "id": "2026-10-03-aim-agent-security-interview",
+          "region": "domestic",
+          "title": "에임인텔리전스 인터뷰: 자율 에이전트의 보안·행동 통제에 집중",
+          "url": "https://economist.co.kr/article/view/ecn202609300035",
+          "source": "이코노미스트",
+          "source_type": "reputable_report",
+          "published_at": "2026-10-03T02:00:00Z",
+          "published_date": "2026-10-03",
+          "published_precision": "timestamp",
+          "published_timezone": "Asia/Seoul",
+          "published_date_kst": "2026-10-03",
+          "published_at_kst": "2026-10-03T11:00:00+09:00",
+          "date_basis": "이코노미스트 원문의 입력 시각은 2026.10.03 11:00입니다. 국내 매체의 한국 표준시로 해석했습니다. URL의 20260930은 발행일로 사용하지 않았습니다.",
+          "event_date": null,
+          "event_date_precision": "unknown",
+          "event_date_timezone": "unknown",
+          "event_date_note": "10월 3일 발행된 대표 인터뷰입니다. 제품 출시·계약 체결일을 오늘로 단정하지 않으며, 인터뷰 진행 날짜는 기사에 명시되지 않았습니다.",
+          "summary": "에임인텔리전스 유상윤 대표는 이코노미스트 인터뷰에서 자율 에이전트의 이상 행동과 권한 오용을 통제하는 보안 전략을 설명했습니다. 취약점을 찾는 Stinger와 실시간 방어 솔루션 Starfort를 중심으로, 중소·중견기업과 피지컬 AI 분야로의 확대 계획도 밝혔습니다.",
+          "significance": "국내 에이전트 생태계가 모델 성능뿐 아니라 실행 권한과 보안 인프라를 사업 영역으로 키우는 사례입니다. 이번 기사는 기업의 전략을 다룬 인터뷰이며, 새로운 기능의 당일 출시를 의미하지 않습니다.",
+          "topics": [
+            "국내 생태계",
+            "안전·보안",
+            "권한",
+            "인터뷰"
+          ],
+          "verification_note": "원문 전체 인터뷰와 입력 시각을 확인하고, Stinger의 자동 레드티밍 및 Starfort의 실시간 가드레일·에이전트 API 통제 기능을 회사 공식 설명과 대조했습니다. 제품 효과에 대한 독립 성능 검증으로 해석하지 않습니다.",
+          "supporting_sources": [
+            {
+              "source": "에임인텔리전스 공식 사이트",
+              "url": "https://www.aim-intelligence.com/",
+              "source_type": "primary",
+              "published_at": null,
+              "published_date": null,
+              "precision": "unknown",
+              "published_timezone": "unknown",
+              "verified_at": "2026-10-03T07:39:17Z",
+              "supports": "Stinger 자동 레드티밍, 멀티모달 취약점 점검, Starfort 실시간 가드레일과 자율 에이전트의 비정상 API 호출 통제에 대한 회사 설명"
+            },
+            {
+              "source": "이코노미스트",
+              "url": "https://economist.co.kr/article/view/ecn202609300035",
+              "source_type": "reputable_report",
+              "published_at": "2026-10-03T02:00:00Z",
+              "published_date": "2026-10-03",
+              "precision": "timestamp",
+              "published_timezone": "Asia/Seoul",
+              "verified_at": "2026-10-03T07:39:17Z",
+              "supports": "11:00 기사 입력 시각, 자율 에이전트 보안 전략 및 중소·중견기업·피지컬 AI 분야 확대 계획을 밝힌 대표 인터뷰"
+            }
+          ],
+          "news_type": "인터뷰"
+        },
+        {
+          "id": "2026-10-03-waynehills-content-automation-profile",
+          "region": "domestic",
+          "title": "IT조선, 웨인힐스의 문서·음성 기반 영상 제작 자동화 조명",
+          "url": "https://it.chosun.com/news/articleView.html?idxno=2023092171171",
+          "source": "IT조선",
+          "source_type": "reputable_report",
+          "published_at": "2026-10-03T00:15:00Z",
+          "published_date": "2026-10-03",
+          "published_precision": "timestamp",
+          "published_timezone": "Asia/Seoul",
+          "published_date_kst": "2026-10-03",
+          "published_at_kst": "2026-10-03T09:15:00+09:00",
+          "date_basis": "IT조선 원문에 입력 2026.10.03 09:15로 표시됩니다. 국내 매체의 한국 표준시로 해석했습니다. 기사 식별번호의 숫자는 발행 날짜로 사용하지 않았습니다.",
+          "event_date": null,
+          "event_date_precision": "unknown",
+          "event_date_timezone": "unknown",
+          "event_date_note": "10월 3일 발행된 ‘에이전틱 AI 맵 2026’ 기업 기획 기사입니다. 기존 제품과 사업 현황을 소개하며, 당일 신제품 출시나 계약 체결 보도가 아닙니다.",
+          "summary": "IT조선·NIA 공동기획은 웨인힐스브라이언트의 기업 콘텐츠 제작 자동화를 소개했습니다. 문서에서 핵심 문장·키워드를 추출해 영상 소재를 연결하고, 음성을 텍스트로 바꿔 영상으로 구성하는 방식입니다. 회사는 국내 적용 경험을 바탕으로 미국 B2B 시장 확대 계획을 설명했습니다.",
+          "significance": "국내 에이전틱 AI 산업 기획에서 콘텐츠 제작의 여러 단계를 자동화하는 활용 사례를 보여줍니다. 기사만으로 완전 자율 에이전트 성능을 판단하거나 연구 단계의 신경 신호 기반 영상 기술을 상용 기능으로 받아들여서는 안 됩니다.",
+          "topics": [
+            "국내 생태계",
+            "콘텐츠 자동화",
+            "기업용 AI",
+            "기획"
+          ],
+          "verification_note": "IT조선 원문의 전체 본문·발행 시각을 확인했습니다. 기술 구성과 해외 사업 현황은 기사에 인용된 회사 설명입니다. 미국 계약 규모·성과나 자율성 수준에 관한 독립 검증 수치는 제시되지 않았습니다.",
+          "supporting_sources": [
+            {
+              "source": "IT조선",
+              "url": "https://it.chosun.com/news/articleView.html?idxno=2023092171171",
+              "source_type": "reputable_report",
+              "published_at": "2026-10-03T00:15:00Z",
+              "published_date": "2026-10-03",
+              "precision": "timestamp",
+              "published_timezone": "Asia/Seoul",
+              "verified_at": "2026-10-03T07:39:17Z",
+              "supports": "09:15 발행 시각, IT조선·NIA 공동기획, 문서·음성 기반 영상 제작 흐름 및 회사의 미국 B2B 확대 계획"
+            }
+          ],
+          "news_type": "기획"
         }
       ]
     }
   ],
-  "collected_at": "2026-10-03T07:04:20Z"
+  "collected_at": "2026-10-03T07:39:17Z",
+  "region_basis": "매체 소재지 기준: 국내 한국 매체는 domestic, 해외 매체는 international. 기사 언어와 기업 국적은 분류 기준이 아닙니다."
 }

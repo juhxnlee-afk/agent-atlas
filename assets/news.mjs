@@ -1,4 +1,4 @@
-import { DAY, time, itemsOf, safeURL, kstDate, matching } from './logic.mjs';
+import { DAY, time, itemsOf, safeURL, kstDate, matching } from './logic.mjs?v=20261003-design';
 
 export const NEWS_START = '2026-10-03';
 export function calendarDate(value) {
@@ -13,6 +13,7 @@ export function newsItemValid(item, issue) {
   if (!calendarDate(item.published_date) || !['timestamp','date'].includes(item.published_precision) || !text(item.date_basis)) return false;
   if (item.topics !== undefined && (!Array.isArray(item.topics) || !item.topics.every(text))) return false;
   if (!sourcesValid(item.supporting_sources)) return false;
+  if (item.region !== undefined && !['domestic','international'].includes(item.region)) return false;
   if (item.published_precision === 'timestamp') {
     if (!stamp(item.published_at) || time(item.published_at) > time(issue.collected_at)) return false;
     if (item.published_date_kst && item.published_date_kst !== kstDate(item.published_at)) return false;
@@ -44,11 +45,11 @@ export function normalizeNews(payload) {
   return { items: unique.sort((a,b) => b.date.localeCompare(a.date)), rejected: rows.length-valid.length, duplicates: valid.length-unique.length };
 }
 
-export function filterNews(issues, { query = '', sort = 'date-desc', now = Date.now() } = {}) {
+export function filterNews(issues, { query = '', sort = 'date-desc', region = 'all', now = Date.now() } = {}) {
   return issues.filter(issue => issue.date <= kstDate(now) && time(issue.collected_at) <= now).map(issue => {
     const issueMatch = matching({ title: issue.headline, summary: `${issue.date} ${issue.summary}` }, query);
-    const items = issue.items.filter(item => issueMatch || matching({ ...item, description: [item.source, item.significance, ...(item.topics || []), item.published_date].filter(Boolean).join(' ') }, query));
-    return { ...issue, items, total_items: issue.items.length, matches: issueMatch || items.length > 0 };
+    const items = issue.items.filter(item => (region === 'all' || item.region === region) && (issueMatch || matching({ ...item, description: [item.source, item.significance, ...(item.topics || []), item.published_date].filter(Boolean).join(' ') }, query)));
+    return { ...issue, items, total_items: issue.items.length, matches: items.length > 0 || region === 'all' && issueMatch && issue.items.length === 0 };
   }).filter(issue => issue.matches).sort((a,b) => (sort === 'date-asc' ? 1 : -1) * a.date.localeCompare(b.date));
 }
 

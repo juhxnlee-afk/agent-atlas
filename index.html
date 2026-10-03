@@ -3,12 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#193a2b">
+  <meta name="theme-color" content="#f5f7f2">
   <meta name="description" content="에이전트 AI 공개 저장소, 연구 논문과 일일 뉴스를 한국어로 살펴보는 Agent Atlas. 원본 저장소 생성일 기준 최근 7일, 2026년 아카이브, 검증 가능한 출처.">
   <title>Agent Atlas · 에이전트 코드와 연구의 지도</title>
   <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="./assets/styles.css?v=20261003-news">
-  <script type="module" src="./assets/app.mjs?v=20261003-news"></script>
+  <script src="./assets/theme.js?v=20261003-design"></script>
+  <link rel="stylesheet" href="./assets/styles.css?v=20261003-design">
+  <script type="module" src="./assets/app.mjs?v=20261003-design"></script>
 </head>
 <body>
   <a class="skip-link" href="#content">본문으로 건너뛰기</a>
@@ -21,7 +22,7 @@
         <button id="tab-paper" role="tab" aria-selected="false" aria-controls="panel-paper" data-tab="paper" tabindex="-1">Paper</button>
         <button id="tab-news" role="tab" aria-selected="false" aria-controls="panel-news" data-tab="news" tabindex="-1">News</button>
       </nav>
-      <span class="edition">PUBLIC CODE / OPEN RESEARCH</span>
+      <div class="header-tools"><span class="edition">OPEN CODE · OPEN RESEARCH</span><label class="theme-control" for="theme-select"><span class="sr-only">화면 테마</span><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18V3Z" fill="currentColor"/><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><select id="theme-select" aria-label="화면 테마"><option value="system">시스템</option><option value="light">라이트</option><option value="dark">다크</option></select></label></div>
     </header>
     <main id="content" tabindex="-1">
       <div class="eyebrow"><span>AGENT INTELLIGENCE OBSERVATORY</span><span>SEOUL · UTC+09:00</span></div>

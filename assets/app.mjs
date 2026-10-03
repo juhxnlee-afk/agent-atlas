@@ -1,5 +1,5 @@
-import { DAY, time, safeURL, itemsOf, normalizeRepos, normalizePapers, normalizeTimeline, filterRepos, filterPapers, kstDate, kstStamp, latestCollected, snapshotPath } from './logic.mjs';
-import { NEWS_START, normalizeNews, filterNews } from './news.mjs';
+import { DAY, time, safeURL, itemsOf, normalizeRepos, normalizePapers, normalizeTimeline, filterRepos, filterPapers, kstDate, kstStamp, latestCollected, snapshotPath } from './logic.mjs?v=20261003-design';
+import { NEWS_START, normalizeNews, filterNews } from './news.mjs?v=20261003-design';
 const TABS = ['main','history','paper','news'];
 const $ = (selector, root = document) => root.querySelector(selector);
 const escape = value => String(value ?? '').replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
@@ -8,7 +8,7 @@ const starNumber = value => new Intl.NumberFormat('en', { notation:'compact', ma
 const state = {
   tab: TABS.includes(location.hash.slice(1)) ? location.hash.slice(1) : 'main',
   data: null, failures: [], loading: false, chosen: '', snapshot: null, snapshotError: '', snapshotLoading: false,
-  filters: { main:{query:'',minStars:'',sort:'stars-desc'}, history:{query:'',minStars:'',sort:'date-desc'}, paper:{query:'',sort:'date-desc'}, news:{query:'',sort:'date-desc'} }
+  filters: { main:{query:'',minStars:'',sort:'stars-desc'}, history:{query:'',minStars:'',sort:'date-desc'}, paper:{query:'',sort:'date-desc'}, news:{query:'',sort:'date-desc',region:'all'} }
 };
 let loadGeneration = 0;
 let snapshotGeneration = 0;
@@ -85,15 +85,15 @@ function render() {
   const titles={main:'에이전트의 다음을<br><em>코드에서 읽다.</em>',history:'쌓이는 코드,<br><em>이어지는 변화.</em>',paper:'아이디어의<br><em>다음 페이지.</em>',news:'오늘의 소식,<br><em>에이전트의 방향.</em>'};
   const subtitle={main:'원본 저장소 생성일 기준 최근 7일의 코드와 핵심 흐름',history:'2026.01.01 이후 생성된 저장소와 날짜별 수집 원본',paper:'에이전트 AI 논문 · arXiv 최초 제출일 기준',news:'에이전트 AI 뉴스 · 날짜별 핵심 흐름을 한국어로'};
   const collected=tab==='news'?data.news_collected_at:data.collected_at;
-  let html=`<section id="panel-${tab}" role="tabpanel" aria-labelledby="tab-${tab}"><div class="pagehead"><div><h1>${titles[tab]}</h1><p>${subtitle[tab]}</p></div><div class="update"><span>LAST COLLECTED</span><strong>${escape(kstStamp(collected))}</strong><small>표시 시간대 · Asia/Seoul (KST)</small><button class="refresh" id="refresh" type="button">데이터 새로고침 ↻</button></div></div>`;
+  let html=`<section id="panel-${tab}" role="tabpanel" aria-labelledby="tab-${tab}"><div class="pagehead"><div><h1>${titles[tab]}</h1><p>${subtitle[tab]}</p>${tab==='main'?'<div class="page-jumps" aria-label="페이지 바로가기"><a href="#feed">최근 코드 목록 ↓</a><a href="#timeline">발전 타임라인 ↓</a></div>':''}</div><div class="update"><span>LAST COLLECTED</span><strong>${escape(kstStamp(collected))}</strong><small>표시 시간대 · Asia/Seoul (KST)</small><button class="refresh" id="refresh" type="button">데이터 새로고침 ↻</button></div></div>`;
   if(state.failures.length) html+=`<div class="banner" role="alert"><p>일부 데이터를 표시할 수 없습니다. ${escape(state.failures.join(' · '))}</p><button type="button" id="retry">다시 불러오기</button></div>`;
   if(collected && Date.now()-time(collected)>36*DAY/24) html+=`<div class="banner" role="status">최종 수집 후 36시간 이상 지났습니다. ${tab==='news'?'새로운 뉴스가 아직 반영되지 않았을 수 있습니다.':'최근 7일 범위는 현재 시각을 따르며, 새로운 저장소가 아직 반영되지 않았을 수 있습니다.'}</div>`;
   if(tab==='main') html+=`<section class="overview" aria-labelledby="brief-title"><div class="brief"><div class="sectiontag" id="brief-title">01 / DAILY BRIEF · 7D WINDOW</div>${briefHTML(data.briefs[0])}</div><div class="numbers"><div><span>CREATED IN LAST 7 DAYS</span><strong id="weekly-count">${data.available.repos?String(weekly.length).padStart(2,'0'):'—'}</strong><small>원본 생성일 · 중복 제거</small></div><div><span>2026 REPOSITORY ARCHIVE</span><strong>${data.available.repos?String(archives.length).padStart(2,'0'):'—'}<i> repos</i></strong><small>2026.01.01 이후 생성된 저장소</small></div></div></section>`;
   html+=coverageHTML();
   if(tab==='history') html+=`<section class="archivebrief" aria-labelledby="archive-title"><div><div class="sectiontag">DAILY ARCHIVE / IMMUTABLE SNAPSHOTS</div><h2 id="archive-title">그날의 관측 기록</h2></div><label for="snapshot-select">조회할 수집 기록<select id="snapshot-select"><option value="">최신 데이터 · 전체 아카이브</option>${data.briefs.map(b=>`<option value="${escape(b.id)}" ${state.chosen===b.id?'selected':''}>${escape(kstStamp(b.collected_at))}</option>`).join('')}</select></label><div class="archivebody" id="archive-body">${archiveBodyHTML()}</div></section>`;
   if(tab==='news') html+=`<section class="feed news-feed" aria-labelledby="feed-title"><div class="sectionhead"><div><span class="sectiontag">DAILY NEWS / AGENT AI</span><h2 id="feed-title">날짜별 뉴스 <span class="count" id="count">0</span></h2></div><div class="window" id="window-label"></div></div>${controlsHTML()}<p class="results-note" id="results-note" aria-live="polite" aria-atomic="true"></p><div id="results"></div></section>`;
-  else html+=`<section class="feed" aria-labelledby="feed-title"><div class="sectionhead"><div><span class="sectiontag">${tab==='main'?'02 / CODE RADAR':tab==='history'?'ORIGINAL CREATION / CODE ARCHIVE':'FIRST SUBMISSION / PAPER RADAR'}</span><h2 id="feed-title">${tab==='main'?'최근 7일':tab==='history'?'코드 히스토리':'논문 히스토리'} <span class="count" id="count">0</span></h2></div><div class="window" id="window-label"></div></div>${controlsHTML()}<p class="results-note" id="results-note" aria-live="polite" aria-atomic="true"></p><div class="tablehead"><span>${tab==='paper'?'PAPER / CONTRIBUTION':'REPOSITORY / CONTRIBUTION'}</span><span>${tab==='paper'?'FIRST SUBMITTED / UTC':'STARS / CREATED · KST'}</span></div><div id="results"></div><div id="legacy"></div></section>`;
-  if(tab==='main') html+=`<section class="timeline" aria-labelledby="timeline-title"><div class="sectionhead"><div><span class="sectiontag">03 / EVOLUTION MAP</span><h2 id="timeline-title">발전의 흐름</h2></div><span class="note">2026.01.01 — NOW</span></div><p class="note">공식 발표와 논문의 날짜를 구분한 선별 이정표 · 가로로 넘겨 전체 흐름을 확인하세요</p>${timelineHTML()}</section>`;
+  else html+=`<section class="feed" id="feed" aria-labelledby="feed-title"><div class="sectionhead"><div><span class="sectiontag">${tab==='main'?'02 / CODE RADAR':tab==='history'?'ORIGINAL CREATION / CODE ARCHIVE':'FIRST SUBMISSION / PAPER RADAR'}</span><h2 id="feed-title">${tab==='main'?'최근 7일':tab==='history'?'코드 히스토리':'논문 히스토리'} <span class="count" id="count">0</span></h2></div><div class="window" id="window-label"></div></div>${controlsHTML()}<p class="results-note" id="results-note" aria-live="polite" aria-atomic="true"></p><div class="tablehead"><span>${tab==='paper'?'PAPER / CONTRIBUTION':'REPOSITORY / CONTRIBUTION'}</span><span>${tab==='paper'?'FIRST SUBMITTED / UTC':'STARS / CREATED · KST'}</span></div><div id="results"></div><div id="legacy"></div></section>`;
+  if(tab==='main') html+=`<section class="timeline" id="timeline" aria-labelledby="timeline-title"><div class="sectionhead"><div><span class="sectiontag">03 / EVOLUTION MAP</span><h2 id="timeline-title">발전의 흐름</h2></div><span class="note">2026.01.01 — NOW</span></div><p class="note">공식 발표와 논문의 날짜를 구분한 선별 이정표 · 가로로 넘겨 전체 흐름을 확인하세요</p>${timelineHTML()}</section>`;
   html+='</section>'+TABS.filter(item=>item!==tab).map(item=>`<section id="panel-${item}" role="tabpanel" aria-labelledby="tab-${item}" hidden></section>`).join('');
   $('#app').innerHTML=html;
   $('#app').setAttribute('aria-busy','false');
@@ -102,7 +102,8 @@ function render() {
   $('#search').addEventListener('input',event=>{state.filters[state.tab].query=event.target.value;renderFeed();});
   $('#min-stars')?.addEventListener('input',event=>{state.filters[state.tab].minStars=event.target.value;renderFeed();});
   $('#sort').addEventListener('change',event=>{state.filters[state.tab].sort=event.target.value;renderFeed();});
-  $('#clear').addEventListener('click',()=>{state.filters[state.tab]={query:'',minStars:'',sort:state.tab==='main'?'stars-desc':'date-desc'};$('#search').value='';if($('#min-stars'))$('#min-stars').value='';$('#sort').value=state.filters[state.tab].sort;renderFeed();$('#search').focus();});
+  $('#clear').addEventListener('click',()=>{state.filters[state.tab]={query:'',minStars:'',sort:state.tab==='main'?'stars-desc':'date-desc',region:'all'};$('#search').value='';if($('#min-stars'))$('#min-stars').value='';$('#sort').value=state.filters[state.tab].sort;renderFeed();$('#search').focus();});
+  for(const region of ['all','domestic','international']) $(`#news-region-${region}`)?.addEventListener('click',()=>{state.filters.news.region=region;renderFeed();});
   $('#snapshot-select')?.addEventListener('change',event=>chooseSnapshot(event.target.value));
   renderFeed();
   const schedule=data.meta.schedule;
@@ -118,7 +119,12 @@ function controlsHTML() {
   const {tab}=state, filter=state.filters[tab], isNews=tab==='news', isPaper=tab==='paper', dated=isNews||isPaper;
   const options=isNews?[['date-desc','날짜 최신순'],['date-asc','날짜 오래된순']]:isPaper?[['date-desc','최초 제출 최신순'],['date-asc','최초 제출 오래된순']]:[['stars-desc','★ Stars 높은순'],['stars-asc','☆ Stars 낮은순'],['date-desc','생성일 최신순'],['date-asc','생성일 오래된순']];
   const label=isNews?'뉴스':isPaper?'논문':'저장소', placeholder=isNews?'제목, 일일 요약, 핵심 내용, 출처 검색':isPaper?'제목, 요약, 연구 분야 검색':'이름, 소유자, 설명, 분야 검색';
-  return `<div class="controls ${dated?'paper-controls':''}" role="search" aria-label="${label} 검색 및 필터"><label class="search-label" for="search">${label} 검색<input type="search" id="search" value="${escape(filter.query)}" placeholder="${placeholder}" autocomplete="off"></label>${dated?'':`<label for="min-stars">최소 Stars<input id="min-stars" type="number" min="0" step="1" inputmode="numeric" placeholder="0" value="${escape(filter.minStars)}"></label>`}<label for="sort">정렬<select id="sort">${options.map(([value,label])=>`<option value="${value}" ${value===filter.sort?'selected':''}>${label}</option>`).join('')}</select></label><button type="button" class="clear-button" id="clear">초기화</button></div>`;
+  return `${isNews?regionFiltersHTML():''}<div class="controls ${dated?'paper-controls':''}" role="search" aria-label="${label} 검색 및 필터"><label class="search-label" for="search">${label} 검색<input type="search" id="search" value="${escape(filter.query)}" placeholder="${placeholder}" autocomplete="off"></label>${dated?'':`<label for="min-stars">최소 Stars<input id="min-stars" type="number" min="0" step="1" inputmode="numeric" placeholder="0" value="${escape(filter.minStars)}"></label>`}<label for="sort">정렬<select id="sort">${options.map(([value,label])=>`<option value="${value}" ${value===filter.sort?'selected':''}>${label}</option>`).join('')}</select></label><button type="button" class="clear-button" id="clear">초기화</button></div>`;
+}
+function regionFiltersHTML() {
+  const issues=filterNews(state.data.news), items=issues.flatMap(issue=>issue.items);
+  const active=state.filters.news.region || 'all';
+  return `<div class="news-regionbar"><div class="region-filters" role="group" aria-label="뉴스 출처 구분">${[['all','전체'],['domestic','국내'],['international','해외']].map(([region,label])=>`<button type="button" id="news-region-${region}" aria-pressed="${region===active}"><span>${label}</span><span class="region-count">${items.filter(item=>region==='all'||item.region===region).length}</span></button>`).join('')}</div><span class="region-note">매체 소재지 기준 · 일일 종합 요약은 전체 뉴스 기준</span></div>`;
 }
 function archiveBodyHTML() {
   if(state.snapshotLoading) return '<div class="loading" role="status">수집 원본을 불러오는 중…</div>';
@@ -174,25 +180,27 @@ function renderFeed() {
 }
 function renderNewsFeed() {
   const {data}=state, filter=state.filters.news;
+  const regionLabel=filter.region==='domestic'?'국내 매체':filter.region==='international'?'해외 매체':'전체';
+  for(const region of ['all','domestic','international']) $(`#news-region-${region}`)?.setAttribute('aria-pressed',String(region===(filter.region || 'all')));
   const shown=filterNews(data.news,filter), total=filterNews(data.news), available=data.available.news;
   const count=shown.reduce((sum,issue)=>sum+issue.items.length,0), totalCount=total.reduce((sum,issue)=>sum+issue.items.length,0);
   $('#count').textContent=available?count:'—';
-  $('#results-note').textContent=!available?'뉴스 데이터를 불러오지 못했습니다':`${shown.length}일 · ${count} / ${totalCount}개 소식 표시${filter.query?` · 검색: ${filter.query} · 일일 요약은 원래 하루 전체 요약입니다`:''}`;
+  $('#results-note').textContent=!available?'뉴스 데이터를 불러오지 못했습니다':`${regionLabel} · ${shown.length}일 · ${count} / ${totalCount}개 소식 표시${filter.query?` · 검색: ${filter.query} · 일일 요약은 원래 하루 전체 요약입니다`:''}`;
   $('#window-label').textContent=`${NEWS_START} — 현재 · 날짜별 기록`;
   if(!available) $('#results').innerHTML='<div class="empty">뉴스 데이터를 불러오지 못했습니다.<p>상단의 데이터 새로고침으로 다시 시도해 주세요.</p></div>';
-  else if(!shown.length) $('#results').innerHTML=`<div class="empty">${filter.query?'검색에 맞는 뉴스가 없습니다.':'아직 확인된 일일 뉴스 기록이 없습니다.'}<p>${filter.query?'제목·요약·주제·출처를 다른 검색어로 찾아보세요.':'확인된 소식만 수집 후 추가하며, 빈 기록을 임의로 채우지 않습니다.'}</p></div>`;
+  else if(!shown.length) $('#results').innerHTML=`<div class="empty">${filter.query?'검색에 맞는 뉴스가 없습니다.':filter.region&&filter.region!=='all'?`아직 확인된 ${regionLabel} 뉴스가 없습니다.`:'아직 확인된 일일 뉴스 기록이 없습니다.'}<p>${filter.query?'제목·요약·주제·출처를 다른 검색어로 찾아보세요.':'확인된 소식만 수집 후 추가하며, 빈 기록을 임의로 채우지 않습니다.'}</p></div>`;
   else $('#results').innerHTML=shown.map((issue,index)=>newsIssueHTML(issue,index)).join('');
 }
 function newsIssueHTML(issue,index) {
   const status=issue.status==='final'?'일일 수집 마감':'부분 수집', sourceDateOnly=issue.items.filter(item=>item.published_precision==='date').length;
-  return `<article class="news-issue ${index===0?'lead-issue':''}" aria-labelledby="news-${escape(issue.date)}"><div class="news-dayline"><time datetime="${escape(issue.date)}">${escape(issue.date)} <span>KST 일일 기록</span></time><span class="news-status ${issue.status==='final'?'is-final':''}">${status}</span><span class="news-count">${issue.items.length}${issue.items.length!==issue.total_items?` / ${issue.total_items}`:''}개 소식</span></div><section class="news-summary"><div class="sectiontag">DAILY SYNTHESIS / 하루 핵심 요약</div><h3 id="news-${escape(issue.date)}">${escape(issue.headline)}</h3><p>${escape(issue.summary)}</p><div class="news-collected">수집 · <time datetime="${escape(issue.collected_at)}">${escape(kstStamp(issue.collected_at))}</time>${issue.status==='partial'?'<span>해당 날짜 전체가 아닌 수집 시점까지의 선별 소식</span>':'<span>마감 후 확인된 누락·정정은 후속 수집에서 보강</span>'}</div>${issue.coverage_note?`<p class="news-coverage-note">${escape(issue.coverage_note)}</p>`:''}${issue.correction_note?`<p class="news-coverage-note">정정 · ${escape(issue.correction_note)}</p>`:''}${issue.sources?.length?`<div class="sources">${sourcesHTML(issue.sources)}</div>`:''}</section><div class="news-stories">${issue.items.map((item,i)=>newsRowHTML(item,i,issue)).join('') || '<p class="note">이 수집에서 선별한 개별 뉴스가 없습니다. 수집 범위와 확인 결과는 위 요약을 참고하세요.</p>'}</div>${sourceDateOnly?'<p class="note news-date-caveat">일부 원문은 게시 시각을 제공하지 않아 원문 날짜를 표시합니다. 해당 뉴스의 정확한 KST 게시일은 확정하지 않습니다.</p>':''}</article>`;
+  return `<article class="news-issue ${index===0?'lead-issue':''}" aria-labelledby="news-${escape(issue.date)}"><div class="news-dayline"><time datetime="${escape(issue.date)}">${escape(issue.date)} <span>KST 일일 기록</span></time><span class="news-status ${issue.status==='final'?'is-final':''}">${status}</span><span class="news-count">${issue.items.length}${issue.items.length!==issue.total_items?` / ${issue.total_items}`:''}개 소식</span></div><section class="news-summary"><div class="sectiontag">DAILY SYNTHESIS / 전체 뉴스 종합 · 하루 핵심 요약</div><h3 id="news-${escape(issue.date)}">${escape(issue.headline)}</h3><p>${escape(issue.summary)}</p><div class="news-collected">수집 · <time datetime="${escape(issue.collected_at)}">${escape(kstStamp(issue.collected_at))}</time>${issue.status==='partial'?'<span>해당 날짜 전체가 아닌 수집 시점까지의 선별 소식</span>':'<span>마감 후 확인된 누락·정정은 후속 수집에서 보강</span>'}</div>${issue.coverage_note?`<p class="news-coverage-note">${escape(issue.coverage_note)}</p>`:''}${issue.correction_note?`<p class="news-coverage-note">정정 · ${escape(issue.correction_note)}</p>`:''}${issue.sources?.length?`<div class="sources">${sourcesHTML(issue.sources)}</div>`:''}</section><div class="news-stories">${issue.items.map((item,i)=>newsRowHTML(item,i,issue)).join('') || '<p class="note">이 수집에서 선별한 개별 뉴스가 없습니다. 수집 범위와 확인 결과는 위 요약을 참고하세요.</p>'}</div>${sourceDateOnly?'<p class="note news-date-caveat">일부 원문은 게시 시각을 제공하지 않아 원문 날짜를 표시합니다. 해당 뉴스의 정확한 KST 게시일은 확정하지 않습니다.</p>':''}</article>`;
 }
 function newsRowHTML(item,index,issue) {
   const precise=item.published_precision==='timestamp';
   const date=precise?kstStamp(item.published_at):`${item.published_date} · 원문 날짜 (${item.published_timezone==='unknown'?'시간대 미확인':item.published_timezone || '시간대 미확인'})`;
   const publicationDay=precise?kstDate(item.published_at):item.published_date_kst;
   const context=publicationDay && publicationDay!==issue.date;
-  return `<article class="row news-row"><span class="index" aria-hidden="true">${String(index+1).padStart(2,'0')}</span><div class="entry"><div class="news-source"><span>${escape(item.source)}</span>${item.news_type || item.source_type?`<span>${escape(item.news_type || (item.source_type==='primary'?'공식 발표':item.source_type==='reputable_report'?'보도':'출처 자료'))}</span>`:''}${context?'<span class="context-label">이전 소식 · 배경</span>':''}</div><div class="entrytop">${link(item.url,item.title)}</div><p>${escape(item.summary)}</p>${item.significance?`<p class="news-significance"><strong>핵심 포인트</strong> ${escape(item.significance)}</p>`:''}<div class="news-topics">${(item.topics || []).map(topic=>`<span class="category">${escape(topic)}</span>`).join('')}</div><div class="entrylinks">${link(item.url,'원문 읽기 ↗')}${(item.supporting_sources || []).filter(source=>source.url!==item.url).map(source=>link(source.url,`${source.source || source.label} ↗`)).join('')}</div><div class="news-dates"><span>원문 게시 · <time datetime="${escape(precise?item.published_at:item.published_date)}">${escape(date)}</time></span><span class="date-basis">${escape(item.date_basis)}</span>${item.event_date?`<span>발표·사건일 · ${escape(item.event_date)}${item.event_date_basis || item.event_date_note?` (${escape(item.event_date_basis || item.event_date_note)})`:''}</span>`:''}</div></div></article>`;
+  return `<article class="row news-row"><span class="index" aria-hidden="true">${String(index+1).padStart(2,'0')}</span><div class="entry"><div class="news-source"><span>${escape(item.source)}</span>${item.region?`<span class="source-region">${item.region==='domestic'?'국내 매체':'해외 매체'}</span>`:''}${item.news_type || item.source_type?`<span>${escape(item.news_type || (item.source_type==='primary'?'공식 발표':item.source_type==='reputable_report'?'보도':'출처 자료'))}</span>`:''}${context?'<span class="context-label">이전 소식 · 배경</span>':''}</div><div class="entrytop">${link(item.url,item.title)}</div><p>${escape(item.summary)}</p>${item.significance?`<p class="news-significance"><strong>핵심 포인트</strong> ${escape(item.significance)}</p>`:''}<div class="news-topics">${(item.topics || []).map(topic=>`<span class="category">${escape(topic)}</span>`).join('')}</div><div class="entrylinks">${link(item.url,'원문 읽기 ↗')}${(item.supporting_sources || []).filter(source=>source.url!==item.url).map(source=>link(source.url,`${source.source || source.label} ↗`)).join('')}</div><div class="news-dates"><span>원문 게시 · <time datetime="${escape(precise?item.published_at:item.published_date)}">${escape(date)}</time></span><span class="date-basis">${escape(item.date_basis)}</span>${item.event_date?`<span>발표·사건일 · ${escape(item.event_date)}${item.event_date_basis || item.event_date_note?` (${escape(item.event_date_basis || item.event_date_note)})`:''}</span>`:''}</div></div></article>`;
 }
 function rowHTML(item,index,isPaper) {
   const date=isPaper?item.date:item.created_at;
@@ -202,7 +210,7 @@ function rowHTML(item,index,isPaper) {
 function timelineHTML() {
   const milestones=state.data.timeline.filter(item=>time(item.date)<=Date.now());
   if(!milestones.length)return '<div class="empty">표시할 검증된 이정표가 없습니다.</div>';
-  return `<div class="rail" tabindex="0" aria-label="발전 타임라인, 가로 스크롤">${milestones.map(item=>`<article class="milestone"><span class="node" aria-hidden="true"></span><time datetime="${escape(item.date)}">${escape(String(item.date).slice(0,10))}</time><h3>${escape(item.title)}</h3><p>${escape(item.summary)}</p>${link(item.source_url,'원문 확인 ↗')}</article>`).join('')}</div>`;
+  return `<div class="rail" tabindex="0" role="region" aria-label="발전 타임라인, 가로 스크롤">${milestones.map(item=>`<article class="milestone"><span class="node" aria-hidden="true"></span><time datetime="${escape(item.date)}">${escape(String(item.date).slice(0,10))}</time><h3>${escape(item.title)}</h3><p>${escape(item.summary)}</p>${link(item.source_url,'원문 확인 ↗')}</article>`).join('')}</div>`;
 }
 function selectTab(tab,focus=false) {
   if(!TABS.includes(tab))return;
@@ -213,6 +221,7 @@ function selectTab(tab,focus=false) {
 }
 document.querySelectorAll('[data-tab]').forEach(button=>button.addEventListener('click',()=>selectTab(button.dataset.tab)));
 $('.tabs').addEventListener('keydown',event=>{
+  if(event.ctrlKey || event.metaKey || event.altKey)return;
   const tabs=TABS;let next=tabs.indexOf(state.tab);
   if(event.key==='ArrowRight')next=(next+1)%tabs.length;else if(event.key==='ArrowLeft')next=(next+tabs.length-1)%tabs.length;else if(event.key==='Home')next=0;else if(event.key==='End')next=tabs.length-1;else return;
   event.preventDefault();selectTab(tabs[next],true);

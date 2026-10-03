@@ -23,9 +23,9 @@ const now=Date.now(),date=offset=>new Date(now-offset*86400000).toISOString();
 const repos=[{id:'1',name:'acme/fresh-agent',url:'https://github.com/acme/fresh-agent',description_ko:'새 도구 에이전트',category:'도구',created_at:date(1),stars:37},{id:'2',name:'acme/history-agent',url:'https://github.com/acme/history-agent',created_at:'2026-02-21T23:37:33Z',stars:500},{id:'3',name:'acme/old-agent',url:'https://github.com/acme/old-agent',created_at:'2025-01-01T00:00:00Z',pushed_at:date(0),stars:99999}];
 const brief={id:'fixture',collected_at:date(0),window_start:date(7),window_end:date(0),headline:'검증된 브리핑',summary:'최근 7일 현황',snapshot_url:'data/snapshots/fixture.json',themes:[],sources:[]};
 const fixtures={'data/repos.json':{items:repos,collected_at:date(0)},'data/papers.json':[{id:'p',title:'Agent Memory Paper',description_ko:'장기 기억 연구',date:'2026-01-01',url:'https://arxiv.org/abs/2601.00001'}],'data/timeline.json':[],'data/briefs.json':[brief],'data/meta.json':{collected_at:date(0)},'data/snapshots/fixture.json':{id:'fixture',collected_at:date(0),repos:[{...repos[1],stars:12}]}};
-const story={id:'story-a',title:'권한 범위를 좁힌 Agent Tool',summary:'브라우저 에이전트 권한 검증',significance:'실행 범위를 명확히 합니다',url:'https://example.com/story-a',source:'공식 소식',published_at:'2026-10-04T03:00:00Z',published_date:'2026-10-04',published_precision:'timestamp',published_date_kst:'2026-10-04',date_basis:'원문 시각 확인',topics:['안전'],supporting_sources:[{source:'공식 프로젝트',url:'https://example.com/project'}]};
+const story={region:'international',id:'story-a',title:'권한 범위를 좁힌 Agent Tool',summary:'브라우저 에이전트 권한 검증',significance:'실행 범위를 명확히 합니다',url:'https://example.com/story-a',source:'공식 소식',published_at:'2026-10-04T03:00:00Z',published_date:'2026-10-04',published_precision:'timestamp',published_date_kst:'2026-10-04',date_basis:'원문 시각 확인',topics:['안전'],supporting_sources:[{source:'공식 프로젝트',url:'https://example.com/project'}]};
 const newsIssue={date:'2026-10-04',status:'partial',collected_at:'2026-10-04T07:00:00Z',headline:'오늘의 에이전트 흐름',summary:'도구를 확장하고 안전한 접근을 확인합니다',items:[story]};
-fixtures['data/news.json']={schema_version:1,timezone:'Asia/Seoul',started_on:'2026-10-03',collected_at:'2026-10-04T07:00:00Z',items:[{...newsIssue,date:'2026-10-03',status:'final',headline:'전날의 변화',items:[{...story,id:'story-b',url:'https://example.com/story-b',title:'지난 날짜의 메모리 소식',published_at:'2026-10-03T03:00:00Z',published_date:'2026-10-03',published_date_kst:'2026-10-03'}]},newsIssue]};
+fixtures['data/news.json']={schema_version:1,timezone:'Asia/Seoul',started_on:'2026-10-03',collected_at:'2026-10-04T07:00:00Z',items:[{...newsIssue,date:'2026-10-03',status:'final',headline:'전날의 변화',items:[{...story,region:'domestic',id:'story-b',url:'https://example.com/story-b',title:'지난 날짜의 메모리 소식',published_at:'2026-10-03T03:00:00Z',published_date:'2026-10-03',published_date_kst:'2026-10-03'}]},newsIssue]};
 let failing='';
 globalThis.fetch=async url=>{const path=new URL(url).pathname.replace('/project/','');if(path===failing)return {ok:false,status:503};return {ok:true,json:async()=>structuredClone(fixtures[path])};};
 await import('../assets/app.mjs');
@@ -107,4 +107,21 @@ test('Keyboard navigation and direct hashes include News and preserve other tabs
  await navigation.fire('keydown',undefined,{key:'ArrowLeft'});assert.equal(location.hash,'#news');
  location.hash='#paper';windowEvents.hashchange();assert.match(get('results').innerHTML,/Agent Memory Paper/);
  location.hash='#news';windowEvents.hashchange();assert.equal(get('count').textContent,2);
+});
+
+test('Domestic and international news filters compose with search, preserve daily synthesis and reset',async()=>{
+ await get('tab-news').fire('click');await get('clear').fire('click');
+ await get('news-region-domestic').fire('click');assert.equal(get('count').textContent,1);
+ assert.equal(get('news-region-domestic').attrs['aria-pressed'],'true');
+ assert.match(get('results').innerHTML,/지난 날짜의 메모리 소식/);assert.doesNotMatch(get('results').innerHTML,/권한 범위를 좁힌 Agent Tool/);
+ assert.match(get('results').innerHTML,/전체 뉴스 종합/);
+ await get('tab-main').fire('click');await get('tab-news').fire('click');assert.equal(get('count').textContent,1);
+ await get('search').fire('input','없는 검색어');assert.equal(get('count').textContent,0);
+ await get('clear').fire('click');assert.equal(get('count').textContent,2);assert.equal(get('news-region-all').attrs['aria-pressed'],'true');
+ await get('news-region-international').fire('click');assert.equal(get('count').textContent,1);assert.match(get('results').innerHTML,/해외 매체/);
+ await get('clear').fire('click');
+});
+test('Modified navigation keys retain browser shortcuts',async()=>{
+ await get('tab-main').fire('click');await navigation.fire('keydown',undefined,{key:'End',ctrlKey:true});assert.equal(location.hash,'#main');
+ await navigation.fire('keydown',undefined,{key:'ArrowRight',metaKey:true});assert.equal(location.hash,'#main');
 });
