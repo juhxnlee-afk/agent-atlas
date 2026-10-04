@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "collected_at": "2026-10-03T06:28:25Z",
+  "collected_at": "2026-10-03T21:22:30Z",
   "timezone": "Asia/Seoul",
   "history_start": "2026-01-01T00:00:00+09:00",
   "recent_window_days": 7,
-  "coverage_ko": "공개 GitHub 저장소 695개와 공식 논문 출처를 선별·검색한 아카이브입니다. 최소 Stars 문턱 없이 수집했으며, 넓은 검색의 일부는 첫 페이지 표본이므로 전수 목록이 아닙니다.",
-  "limitations_ko": "저장소 설명·주제와 일부 README를 근거로 관련성을 검토했습니다. 기능 실행·보안·품질을 인증한 목록이 아닙니다. 검색 키워드와 페이지 한도에 따른 누락이 있으며, GitHub 검색 인덱스가 달라질 수 있습니다.",
+  "coverage_ko": "공개 GitHub 저장소 1,130개와 선별 논문·뉴스를 정리한 아카이브입니다. 최소 Stars 문턱 없이 검색했고, 확인한 후보 중 관련성을 검토한 항목만 수록했습니다. 전체 생태계를 망라하지 않습니다.",
+  "limitations_ko": "선택한 검색의 페이지는 모두 확인했지만 모든 후보를 검토하거나 GitHub 전체를 수집한 것은 아닙니다. 기능·성능·보안을 실행 인증하지 않았습니다. 기존 저장소 693개는 메타데이터를 갱신했고, ID 변경 및 404가 확인된 2개는 이전 관측값을 보존했습니다.",
   "schedule": {
     "enabled": true,
     "target_time": "06:00",
@@ -356,5 +356,1159 @@
       "confirmed_at": "2026-10-03T07:03:56.279228Z"
     },
     "daily_policy_ko": "2026-10-03부터 시작. 매일 06:00 KST에 전날 기록을 보강·마감하고 당일은 수집 시점까지의 부분 기록으로 유지합니다. 기존 날짜를 삭제하거나 수집 전 기록을 소급 생성하지 않습니다."
+  },
+  "latest_repository_collection": {
+    "collected_at": "2026-10-03T21:22:30Z",
+    "timezone": "Asia/Seoul",
+    "archive_record_count_before": 695,
+    "archive_record_count_after": 1130,
+    "original_archive_records_retained": 695,
+    "original_created_at_preserved": true,
+    "existing_refresh": {
+      "attempted": 695,
+      "successful": 693,
+      "identity_mismatch": 1,
+      "inaccessible_404": 1,
+      "gaps": [
+        {
+          "id": "1392080450",
+          "name": "dragon43pp/grok-build-center",
+          "status": "identity_mismatch",
+          "last_successful_observed_at": "2026-10-03T06:17:35Z",
+          "checked_at": "2026-10-03T21:07:36.787Z",
+          "source_url": "https://api.github.com/repos/dragon43pp/grok-build-center",
+          "note_ko": "같은 경로가 다른 GitHub ID의 새 저장소로 바뀌어 이전 ID·생성일·별 수·관측 시각을 보존했습니다.",
+          "resolved_new_id": "1403192089",
+          "resolved_new_created_at": "2026-10-03T13:18:05Z"
+        },
+        {
+          "id": "1326164601",
+          "name": "coolwkx/wkaixuan677-arch",
+          "status": "inaccessible_404",
+          "last_successful_observed_at": "2026-10-03T06:18:12Z",
+          "checked_at": "2026-10-03T21:07:43.306Z",
+          "source_url": "https://api.github.com/repos/coolwkx/wkaixuan677-arch",
+          "note_ko": "이번 조회에서 GitHub API가 404를 반환해 이전 메타데이터와 관측 시각을 보존했습니다. 삭제 여부는 확정하지 않았습니다."
+        }
+      ],
+      "started_at": "2026-10-03T21:07:06.470Z",
+      "completed_at": "2026-10-03T21:08:00.956Z"
+    },
+    "minimum_stars_filter": null,
+    "public_only": true,
+    "exclude_github_marked_forks": true,
+    "raw_unique_candidates": 3498,
+    "raw_new_candidates": 3364,
+    "record_review_count": 519,
+    "reviewed_included_new_candidates": 435,
+    "reviewed_excluded_count": 84,
+    "unreviewed_new_candidate_count": 2845,
+    "zero_star_new_count": 298,
+    "query_count": 22,
+    "search_request_count": 49,
+    "search_errors": [],
+    "queries": [
+      {
+        "key": "day-ai-agent",
+        "query": "topic:ai-agent created:2026-10-03 fork:false",
+        "pages": [
+          1
+        ],
+        "reported_total_counts": [
+          92
+        ],
+        "returned_rows": 92,
+        "any_incomplete_results": false,
+        "source_urls": [
+          "https://api.github.com/search/repositories?q=topic%3Aai-agent+created%3A2026-10-03+fork%3Afalse&per_page=100&page=1"
+        ],
+        "pagination_status": "all_reported_pages_fetched",
+        "observed_start": "2026-10-03T21:08:14.011295Z",
+        "observed_end": "2026-10-03T21:08:14.011295Z"
+      },
+      {
+        "key": "day-ai-agents",
+        "query": "topic:ai-agents created:2026-10-03 fork:false",
+        "pages": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "reported_total_counts": [
+          355
+        ],
+        "returned_rows": 355,
+        "any_incomplete_results": false,
+        "source_urls": [
+          "https://api.github.com/search/repositories?q=topic%3Aai-agents+created%3A2026-10-03+fork%3Afalse&per_page=100&page=1",
+          "https://api.github.com/search/repositories?q=topic%3Aai-agents+created%3A2026-10-03+fork%3Afalse&per_page=100&page=2",
+          "https://api.github.com/search/repositories?q=topic%3Aai-agents+created%3A2026-10-03+fork%3Afalse&per_page=100&page=3",
+          "https://api.github.com/search/repositories?q=topic%3Aai-agents+created%3A2026-10-03+fork%3Afalse&per_page=100&page=4"
+        ],
+        "pagination_status": "all_reported_pages_fetched",
+        "observed_start": "2026-10-03T21:08:20.193834Z",
+        "observed_end": "2026-10-03T21:13:42.055528Z"
+      },
+      {
+        "key": "week-framework",
+        "query": "topic:agent-framework created:2026-09-27..2026-10-03 fork:false",
+        "pages": [
+          1
+        ],
+        "reported_total_counts": [
+          32
+        ],
+        "returned_rows": 32,
+        "any_incomplete_results": false,
+        "source_urls": [
+          "https://api.github.com/search/repositories?q=topic%3Aagent-framework+created%3A2026-09-27..2026-10-03+fork%3Afalse&per_page=100&page=1"
+        ],
+        "pagination_status": "all_reported_pages_fetched",
+        "observed_start": "2026-10-03T21:08:39.667315Z",
+        "observed_end": "2026-10-03T21:08:39.667315Z"
+      },
+      {
+        "key": "week-personal",
+        "query": "topic:personal-ai-assistant created:2026-09-27..2026-10-03 fork:false",
+        "pages": [
+          1
+        ],
+        "reported_total_counts": [
+          0
+        ],
+        "returned_rows": 0,
+        "any_incomplete_results": false,
+        "source_urls": [
+          "https://api.github.com/search/repositories?q=topic%3Apersonal-ai-assistant+created%3A2026-09-27..2026-10-03+fork%3Afalse&per_page=100&page=1"
+        ],
+        "pagination_status": "all_reported_pages_fetched",
+        "observed_start": "2026-10-03T21:08:45.553426Z",
+        "observed_end": "2026-10-03T21:08:45.553426Z"
+      },
+      {
+        "key": "week-coding",
+        "query": "topic:coding-agent created:2026-09-27..2026-10-03 fork:false",
+        "pages": [
+          1,
+          2,
+          3
+        ],
+        "reported_total_counts": [
+          218
+        ],
+        "returned_rows": 218,
+        "any_incomplete_results": false,
+        "source_urls": [
+          "https://api.github.com/search/repositories?q=topic%3Acoding-agent+created%3A2026-09-27..2026-10-03+fork%3Afalse&per_page=100&page=1",
+          "https://api.github.com/search/repositories?q=topic%3Acoding-agent+created%3A2026-09-27..2026-10-03+fork%3Afalse&per_page=100&page=2",
+          "https://api.github.com/search/repositories?q=topic%3Acoding-agent+created%3A2026-09-27..2026-10-03+fork%3Afalse&per_page=100&page=3"
+        ],
+        "pagination_status": "all_reported_pages_fetched",
+        "observed_start": "2026-10-03T21:08:55.746980Z",
+        "observed_end": "2026-10-03T21:09:07.586910Z"
+      },
+      {
+        "key": "week-browser",
+        "query": "topic:browser-agent created:2026-09-27..2026-10-03 fork:false",
+        "pages": [
+          1
+        ],
+        "reported_total_counts": [
+          17
+        ],
+        "returned_rows": 17,
+        "any_incomplete_results": false,
+        "source_urls": [
+          "https://api.github.com/search/repositories?q=topic%3Abrowser-agent+created%3A2026-09-27..2026-10-03+fork%3Afalse&per_page=100&page=1"
+        ],
+        "pagination_status": "all_reported_pages_fetched",
+        "observed_start": "2026-10-03T21:09:12.783703Z",
+        "observed_end": "2026-10-03T21:09:12.783703Z"
+      },
+      {
+        "key": "week-multiagent",
+        "query": "topic:multi-agent created:2026-09-27..2026-10-03 fork:false",
+        "pages": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "reported_total_counts": [
+          493
+        ],
+        "returned_rows": 493,
+        "any_incomplete_results": false,
+        "source_urls": [
+          "https://api.github.com/search/repositories?q=topic%3Amulti-agent+created%3A2026-09-27..2026-10-03+fork%3Afalse&per_page=100&page=1",
+          "https://api.github.com/search/repositories?q=topic%3Amulti-agent+created%3A2026-09-27..2026-10-03+fork%3Afalse&per_page=100&page=2",
+          "https://api.github.com/search/repositories?q=topic%3Amulti-agent+created%3A2026-09-27..2026-10-03+fork%3Afalse&per_page=100&page=3",
+          "https://api.github.com/search/repositories?q=topic%3Amulti-agent+created%3A2026-09-27..2026-10-03+fork%3Afalse&per_page=100&page=4",
+          "https://api.github.com/search/repositories?q=topic%3Amulti-agent+created%3A2026-09-27..2026-10-03+fork%3Afalse&per_page=100&page=5"
+        ],
+        "pagination_status": "all_reported_pages_fetched",
+        "observed_start": "2026-10-03T21:09:20.734333Z",
+        "observed_end": "2026-10-03T21:13:57.679136Z"
+      },
+      {
+        "key": "week-memory",
+        "query": "topic:agent-memory created:2026-09-27..2026-10-03 fork:false",
+        "pages": [
+          1,
+          2
+        ],
+        "reported_total_counts": [
+          153
+        ],
+        "returned_rows": 153,
+        "any_incomplete_results": false,
+        "source_urls": [
+          "https://api.github.com/search/repositories?q=topic%3Aagent-memory+created%3A2026-09-27..2026-10-03+fork%3Afalse&per_page=100&page=1",
+          "https://api.github.com/search/repositories?q=topic%3Aagent-memory+created%3A2026-09-27..2026-10-03+fork%3Afalse&per_page=100&page=2"
+        ],
+        "pagination_status": "all_reported_pages_fetched",
+        "observed_start": "2026-10-03T21:09:43.814913Z",
+        "observed_end": "2026-10-03T21:09:50.979501Z"
+      },
+      {
+        "key": "week-tools",
+        "query": "topic:tool-use created:2026-09-27..2026-10-03 fork:false",
+        "pages": [
+          1
+        ],
+        "reported_total_counts": [
+          53
+        ],
+        "returned_rows": 53,
+        "any_incomplete_results": false,
+        "source_urls": [
+          "https://api.github.com/search/repositories?q=topic%3Atool-use+created%3A2026-09-27..2026-10-03+fork%3Afalse&per_page=100&page=1"
+        ],
+        "pagination_status": "all_reported_pages_fetched",
+        "observed_start": "2026-10-03T21:09:56.260152Z",
+        "observed_end": "2026-10-03T21:09:56.260152Z"
+      },
+      {
+        "key": "day-enterprise",
+        "query": "enterprise agent in:description created:2026-10-03 fork:false",
+        "pages": [
+          1
+        ],
+        "reported_total_counts": [
+          38
+        ],
+        "returned_rows": 38,
+        "any_incomplete_results": false,
+        "source_urls": [
+          "https://api.github.com/search/repositories?q=enterprise+agent+in%3Adescription+created%3A2026-10-03+fork%3Afalse&per_page=100&page=1"
+        ],
+        "pagination_status": "all_reported_pages_fetched",
+        "observed_start": "2026-10-03T21:10:03.093182Z",
+        "observed_end": "2026-10-03T21:10:03.093182Z"
+      },
+      {
+        "key": "day-mcp",
+        "query": "MCP agent in:description created:2026-10-03 fork:false",
+        "pages": [
+          1,
+          2,
+          3
+        ],
+        "reported_total_counts": [
+          254
+        ],
+        "returned_rows": 254,
+        "any_incomplete_results": false,
+        "source_urls": [
+          "https://api.github.com/search/repositories?q=MCP+agent+in%3Adescription+created%3A2026-10-03+fork%3Afalse&per_page=100&page=1",
+          "https://api.github.com/search/repositories?q=MCP+agent+in%3Adescription+created%3A2026-10-03+fork%3Afalse&per_page=100&page=2",
+          "https://api.github.com/search/repositories?q=MCP+agent+in%3Adescription+created%3A2026-10-03+fork%3Afalse&per_page=100&page=3"
+        ],
+        "pagination_status": "all_reported_pages_fetched",
+        "observed_start": "2026-10-03T21:10:10.315552Z",
+        "observed_end": "2026-10-03T21:10:23.814009Z"
+      },
+      {
+        "key": "week-evaluation",
+        "query": "\"agent evaluation\" in:description created:2026-09-27..2026-10-03 fork:false",
+        "pages": [
+          1
+        ],
+        "reported_total_counts": [
+          55
+        ],
+        "returned_rows": 55,
+        "any_incomplete_results": false,
+        "source_urls": [
+          "https://api.github.com/search/repositories?q=%22agent+evaluation%22+in%3Adescription+created%3A2026-09-27..2026-10-03+fork%3Afalse&per_page=100&page=1"
+        ],
+        "pagination_status": "all_reported_pages_fetched",
+        "observed_start": "2026-10-03T21:10:32.014069Z",
+        "observed_end": "2026-10-03T21:10:32.014069Z"
+      },
+      {
+        "key": "backfill-framework",
+        "query": "topic:agent-framework created:2026-08-03..2026-08-09 fork:false",
+        "pages": [
+          1
+        ],
+        "reported_total_counts": [
+          90
+        ],
+        "returned_rows": 90,
+        "any_incomplete_results": false,
+        "source_urls": [
+          "https://api.github.com/search/repositories?q=topic%3Aagent-framework+created%3A2026-08-03..2026-08-09+fork%3Afalse&per_page=100&page=1"
+        ],
+        "pagination_status": "all_reported_pages_fetched",
+        "observed_start": "2026-10-03T21:10:38.921145Z",
+        "observed_end": "2026-10-03T21:10:38.921145Z"
+      },
+      {
+        "key": "backfill-personal",
+        "query": "topic:personal-ai-assistant created:2026-08-03..2026-08-09 fork:false",
+        "pages": [
+          1
+        ],
+        "reported_total_counts": [
+          6
+        ],
+        "returned_rows": 6,
+        "any_incomplete_results": false,
+        "source_urls": [
+          "https://api.github.com/search/repositories?q=topic%3Apersonal-ai-assistant+created%3A2026-08-03..2026-08-09+fork%3Afalse&per_page=100&page=1"
+        ],
+        "pagination_status": "all_reported_pages_fetched",
+        "observed_start": "2026-10-03T21:10:43.389897Z",
+        "observed_end": "2026-10-03T21:10:43.389897Z"
+      },
+      {
+        "key": "backfill-coding",
+        "query": "topic:coding-agent created:2026-08-03..2026-08-09 fork:false",
+        "pages": [
+          1,
+          2,
+          3
+        ],
+        "reported_total_counts": [
+          222
+        ],
+        "returned_rows": 222,
+        "any_incomplete_results": false,
+        "source_urls": [
+          "https://api.github.com/search/repositories?q=topic%3Acoding-agent+created%3A2026-08-03..2026-08-09+fork%3Afalse&per_page=100&page=1",
+          "https://api.github.com/search/repositories?q=topic%3Acoding-agent+created%3A2026-08-03..2026-08-09+fork%3Afalse&per_page=100&page=2",
+          "https://api.github.com/search/repositories?q=topic%3Acoding-agent+created%3A2026-08-03..2026-08-09+fork%3Afalse&per_page=100&page=3"
+        ],
+        "pagination_status": "all_reported_pages_fetched",
+        "observed_start": "2026-10-03T21:10:53.887998Z",
+        "observed_end": "2026-10-03T21:11:08.330391Z"
+      },
+      {
+        "key": "backfill-browser",
+        "query": "topic:browser-agent created:2026-08-03..2026-08-09 fork:false",
+        "pages": [
+          1
+        ],
+        "reported_total_counts": [
+          3
+        ],
+        "returned_rows": 3,
+        "any_incomplete_results": false,
+        "source_urls": [
+          "https://api.github.com/search/repositories?q=topic%3Abrowser-agent+created%3A2026-08-03..2026-08-09+fork%3Afalse&per_page=100&page=1"
+        ],
+        "pagination_status": "all_reported_pages_fetched",
+        "observed_start": "2026-10-03T21:11:16.469364Z",
+        "observed_end": "2026-10-03T21:11:16.469364Z"
+      },
+      {
+        "key": "backfill-multiagent",
+        "query": "topic:multi-agent created:2026-08-03..2026-08-09 fork:false",
+        "pages": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "reported_total_counts": [
+          484
+        ],
+        "returned_rows": 484,
+        "any_incomplete_results": false,
+        "source_urls": [
+          "https://api.github.com/search/repositories?q=topic%3Amulti-agent+created%3A2026-08-03..2026-08-09+fork%3Afalse&per_page=100&page=1",
+          "https://api.github.com/search/repositories?q=topic%3Amulti-agent+created%3A2026-08-03..2026-08-09+fork%3Afalse&per_page=100&page=2",
+          "https://api.github.com/search/repositories?q=topic%3Amulti-agent+created%3A2026-08-03..2026-08-09+fork%3Afalse&per_page=100&page=3",
+          "https://api.github.com/search/repositories?q=topic%3Amulti-agent+created%3A2026-08-03..2026-08-09+fork%3Afalse&per_page=100&page=4",
+          "https://api.github.com/search/repositories?q=topic%3Amulti-agent+created%3A2026-08-03..2026-08-09+fork%3Afalse&per_page=100&page=5"
+        ],
+        "pagination_status": "all_reported_pages_fetched",
+        "observed_start": "2026-10-03T21:11:25.194489Z",
+        "observed_end": "2026-10-03T21:14:12.083047Z"
+      },
+      {
+        "key": "backfill-memory",
+        "query": "topic:agent-memory created:2026-08-03..2026-08-09 fork:false",
+        "pages": [
+          1,
+          2
+        ],
+        "reported_total_counts": [
+          158
+        ],
+        "returned_rows": 158,
+        "any_incomplete_results": false,
+        "source_urls": [
+          "https://api.github.com/search/repositories?q=topic%3Aagent-memory+created%3A2026-08-03..2026-08-09+fork%3Afalse&per_page=100&page=1",
+          "https://api.github.com/search/repositories?q=topic%3Aagent-memory+created%3A2026-08-03..2026-08-09+fork%3Afalse&per_page=100&page=2"
+        ],
+        "pagination_status": "all_reported_pages_fetched",
+        "observed_start": "2026-10-03T21:11:52.577594Z",
+        "observed_end": "2026-10-03T21:11:59.607297Z"
+      },
+      {
+        "key": "backfill-tools",
+        "query": "topic:tool-use created:2026-08-03..2026-08-09 fork:false",
+        "pages": [
+          1
+        ],
+        "reported_total_counts": [
+          34
+        ],
+        "returned_rows": 34,
+        "any_incomplete_results": false,
+        "source_urls": [
+          "https://api.github.com/search/repositories?q=topic%3Atool-use+created%3A2026-08-03..2026-08-09+fork%3Afalse&per_page=100&page=1"
+        ],
+        "pagination_status": "all_reported_pages_fetched",
+        "observed_start": "2026-10-03T21:12:06.280375Z",
+        "observed_end": "2026-10-03T21:12:06.280375Z"
+      },
+      {
+        "key": "backfill-enterprise",
+        "query": "enterprise agent in:description created:2026-08-03..2026-08-09 fork:false",
+        "pages": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "reported_total_counts": [
+          391
+        ],
+        "returned_rows": 391,
+        "any_incomplete_results": false,
+        "source_urls": [
+          "https://api.github.com/search/repositories?q=enterprise+agent+in%3Adescription+created%3A2026-08-03..2026-08-09+fork%3Afalse&per_page=100&page=1",
+          "https://api.github.com/search/repositories?q=enterprise+agent+in%3Adescription+created%3A2026-08-03..2026-08-09+fork%3Afalse&per_page=100&page=2",
+          "https://api.github.com/search/repositories?q=enterprise+agent+in%3Adescription+created%3A2026-08-03..2026-08-09+fork%3Afalse&per_page=100&page=3",
+          "https://api.github.com/search/repositories?q=enterprise+agent+in%3Adescription+created%3A2026-08-03..2026-08-09+fork%3Afalse&per_page=100&page=4"
+        ],
+        "pagination_status": "all_reported_pages_fetched",
+        "observed_start": "2026-10-03T21:12:15.770712Z",
+        "observed_end": "2026-10-03T21:14:20.917438Z"
+      },
+      {
+        "key": "backfill-evaluation",
+        "query": "\"agent evaluation\" in:description created:2026-08-03..2026-08-09 fork:false",
+        "pages": [
+          1
+        ],
+        "reported_total_counts": [
+          46
+        ],
+        "returned_rows": 46,
+        "any_incomplete_results": false,
+        "source_urls": [
+          "https://api.github.com/search/repositories?q=%22agent+evaluation%22+in%3Adescription+created%3A2026-08-03..2026-08-09+fork%3Afalse&per_page=100&page=1"
+        ],
+        "pagination_status": "all_reported_pages_fetched",
+        "observed_start": "2026-10-03T21:12:40.226806Z",
+        "observed_end": "2026-10-03T21:12:40.226806Z"
+      },
+      {
+        "key": "week-boundary",
+        "query": "agent in:name,description created:2026-09-26T21:00:00Z..2026-09-26T23:59:59Z fork:false",
+        "pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "reported_total_counts": [
+          518
+        ],
+        "returned_rows": 518,
+        "any_incomplete_results": false,
+        "source_urls": [
+          "https://api.github.com/search/repositories?q=agent+in%3Aname%2Cdescription+created%3A2026-09-26T21%3A00%3A00Z..2026-09-26T23%3A59%3A59Z+fork%3Afalse&per_page=100&page=1",
+          "https://api.github.com/search/repositories?q=agent+in%3Aname%2Cdescription+created%3A2026-09-26T21%3A00%3A00Z..2026-09-26T23%3A59%3A59Z+fork%3Afalse&per_page=100&page=2",
+          "https://api.github.com/search/repositories?q=agent+in%3Aname%2Cdescription+created%3A2026-09-26T21%3A00%3A00Z..2026-09-26T23%3A59%3A59Z+fork%3Afalse&per_page=100&page=3",
+          "https://api.github.com/search/repositories?q=agent+in%3Aname%2Cdescription+created%3A2026-09-26T21%3A00%3A00Z..2026-09-26T23%3A59%3A59Z+fork%3Afalse&per_page=100&page=4",
+          "https://api.github.com/search/repositories?q=agent+in%3Aname%2Cdescription+created%3A2026-09-26T21%3A00%3A00Z..2026-09-26T23%3A59%3A59Z+fork%3Afalse&per_page=100&page=5",
+          "https://api.github.com/search/repositories?q=agent+in%3Aname%2Cdescription+created%3A2026-09-26T21%3A00%3A00Z..2026-09-26T23%3A59%3A59Z+fork%3Afalse&per_page=100&page=6"
+        ],
+        "pagination_status": "all_reported_pages_fetched",
+        "observed_start": "2026-10-03T21:20:47.341657Z",
+        "observed_end": "2026-10-03T21:21:25.227644Z"
+      }
+    ],
+    "date_windows": {
+      "day_utc": "2026-10-03",
+      "week_utc_inclusive_dates": "2026-09-27..2026-10-03",
+      "week_boundary_supplement_utc": "2026-09-26T21:00:00Z..2026-09-26T23:59:59Z",
+      "rotating_2026_backfill_utc_inclusive_dates": "2026-08-03..2026-08-09",
+      "next_backfill_recommendation_utc_inclusive_dates": "2026-08-10..2026-08-16"
+    },
+    "scope_ko": "최근 UTC 일자·최근 7일의 공개 저장소와 2026년 8월 3~9일 순환 보강 구간을 에이전트 프레임워크·개인/기업/코딩/브라우저·멀티에이전트·MCP/도구·메모리·평가 범주로 검색했습니다. Stars 문턱 없이 구체적인 에이전트 기능과 도구를 선별했습니다.",
+    "selection_method_ko": "당일 ai-agent/ai-agents 후보 중 384개를 항목별 검토했고, 다른 검색군의 분야별 후보 135개를 추가 검토해 130개를 선별했습니다. 원문 설명과 topics를 읽었으며 일부 README를 추가 확인했습니다. 키워드만 일치한 미검토 후보는 가져오지 않았습니다.",
+    "readme_checks": [
+      {
+        "name": "Tayyab-Bilal/agent-kit",
+        "source_url": "https://github.com/Tayyab-Bilal/agent-kit/blob/main/README.md"
+      },
+      {
+        "name": "cmoraes10/loci",
+        "source_url": "https://github.com/cmoraes10/loci/blob/master/README.md"
+      },
+      {
+        "name": "rf-camillo/agent-evals",
+        "source_url": "https://github.com/rf-camillo/agent-evals/blob/main/README.md"
+      },
+      {
+        "name": "jaqubowsky/fleet",
+        "source_url": "https://github.com/jaqubowsky/fleet/blob/main/README.md"
+      },
+      {
+        "name": "nuwanda94/ekap",
+        "source_url": "https://github.com/nuwanda94/ekap/blob/main/README.md"
+      },
+      {
+        "name": "subhajit81015/AgentSure",
+        "source_url": "https://github.com/subhajit81015/AgentSure/blob/master/README.md"
+      },
+      {
+        "name": "luizpaulo-antunes/llm-agent-evaluation-lab",
+        "source_url": "https://github.com/luizpaulo-antunes/llm-agent-evaluation-lab/blob/main/README.md"
+      },
+      {
+        "name": "mihir182001/agentguard",
+        "source_url": "https://github.com/mihir182001/agentguard/blob/main/README.md"
+      },
+      {
+        "name": "openconcerto/jOpenAgent",
+        "source_url": "https://github.com/openconcerto/jOpenAgent/blob/main/README.md"
+      },
+      {
+        "name": "rexblade58/agenteval",
+        "source_url": "https://github.com/rexblade58/agenteval/blob/main/README.md"
+      },
+      {
+        "name": "nonlinear-vibes/heimdall-eval",
+        "source_url": "https://github.com/nonlinear-vibes/heimdall-eval/blob/main/README.md"
+      },
+      {
+        "name": "UAJOP/sinama",
+        "source_url": "https://github.com/UAJOP/sinama/blob/main/README.md"
+      },
+      {
+        "name": "hellogenminer-code/bookly-agent",
+        "source_url": "https://github.com/hellogenminer-code/bookly-agent/blob/main/README.md",
+        "git_blob_sha": "415ede07d1d38930895dd1416318d4da74ca31c1"
+      },
+      {
+        "name": "seenly721/agentropolis-examples",
+        "source_url": "https://github.com/seenly721/agentropolis-examples/blob/main/README.md",
+        "git_blob_sha": "a4b0328c2d359ca08cac76be1eb772419c43be26"
+      },
+      {
+        "name": "rezmoss/sysmcp",
+        "source_url": "https://github.com/rezmoss/sysmcp/blob/main/README.md",
+        "git_blob_sha": "17641f8675e35a26ae66661232d4dc597f632602"
+      },
+      {
+        "name": "Rakesh-rkox/interview-prep",
+        "source_url": "https://github.com/Rakesh-rkox/interview-prep/blob/main/README.md",
+        "git_blob_sha": "33aba5b4d1701c7dbf572fe4dbf77f08479c9987"
+      },
+      {
+        "name": "ImNotMrReaper/starnet-lite",
+        "source_url": "https://github.com/ImNotMrReaper/starnet-lite/blob/main/README.md",
+        "git_blob_sha": "70dce4f405bc50a4afe198223c8cf9254092e43c"
+      },
+      {
+        "name": "stbattula-research/steward",
+        "source_url": "https://github.com/stbattula-research/steward/blob/main/README.md",
+        "git_blob_sha": "656afd91d7933ad51e2aaa139d5a93ebaa9567a2"
+      },
+      {
+        "name": "mlalejandre/metropolis",
+        "source_url": "https://github.com/mlalejandre/metropolis/blob/main/README.md",
+        "git_blob_sha": "738d8a104431386bb1254e70e861dd9d2b36bed2"
+      },
+      {
+        "name": "KaparthyReddy/mandate",
+        "source_url": "https://github.com/KaparthyReddy/mandate/blob/main/README.md",
+        "git_blob_sha": "973be431eca44af9268c501990bb12b237544799"
+      },
+      {
+        "name": "jayniebingyu-cyber/goaimoat-ai-visibility-cn-mcp",
+        "source_url": "https://github.com/jayniebingyu-cyber/goaimoat-ai-visibility-cn-mcp/blob/main/README.md",
+        "git_blob_sha": "88bdd0f068f175076b7c7ad5e0af478f3a9896e1"
+      },
+      {
+        "name": "roy-vinay/applied-ai-agents",
+        "source_url": "https://github.com/roy-vinay/applied-ai-agents/blob/main/README.md",
+        "git_blob_sha": "6875dace1e06cacea7a8bbf80ece3ff3b263aaea"
+      },
+      {
+        "name": "ahrimmedia-beep/local-coding-llm",
+        "source_url": "https://github.com/ahrimmedia-beep/local-coding-llm/blob/main/README.md",
+        "git_blob_sha": "b5c110cf43a2817af5b9aaf7f204d40677fe3fa5"
+      },
+      {
+        "name": "Zhou-Yujing114514/deepseek-harness-linux",
+        "source_url": "https://github.com/Zhou-Yujing114514/deepseek-harness-linux/blob/master/README.md",
+        "git_blob_sha": "3853b099c9a8a3d89cddb73e47f42dd17630abdf"
+      },
+      {
+        "name": "zhangjinxin-5454/ArtCode",
+        "source_url": "https://github.com/zhangjinxin-5454/ArtCode/blob/main/README.md",
+        "git_blob_sha": "36de1679e2abaee0a77ab806f004a2fd6786a9a1"
+      },
+      {
+        "name": "Cltrcash/collectors-backend",
+        "source_url": "https://github.com/Cltrcash/collectors-backend/blob/main/README.md",
+        "git_blob_sha": "b74b55b1f09dfcf11abe0d904477693bc76db2e5"
+      },
+      {
+        "name": "xhqing/NeuralCoreAgent",
+        "source_url": "https://github.com/xhqing/NeuralCoreAgent/blob/main/README.md",
+        "git_blob_sha": "16ee88572c746f30ce9a726b75937106d1e3cf15"
+      },
+      {
+        "name": "Xio-Shark/undercard",
+        "source_url": "https://github.com/Xio-Shark/undercard/blob/main/README.md",
+        "git_blob_sha": "27f8dadc73df546008699576dc48bce4c4f983ab"
+      },
+      {
+        "name": "hyj-STAR/voiceshell-muse-bridge",
+        "source_url": "https://github.com/hyj-STAR/voiceshell-muse-bridge/blob/main/README.md",
+        "git_blob_sha": "c78f54739d8bfd7346cada18c0166a1cf6ed4512"
+      },
+      {
+        "name": "ma-za-kpe/stood",
+        "source_url": "https://github.com/ma-za-kpe/stood/blob/develop/README.md",
+        "git_blob_sha": "8892dd8a01f6f045f129c637e996be2d484c40b7"
+      },
+      {
+        "name": "Koaaa-sysu/stop-before-code",
+        "source_url": "https://github.com/Koaaa-sysu/stop-before-code/blob/main/README.md",
+        "git_blob_sha": "ed204e6ec9f63898041958cb48c70cd63df9443e"
+      },
+      {
+        "name": "mixx993/dotkit",
+        "source_url": "https://github.com/mixx993/dotkit/blob/main/README.md",
+        "git_blob_sha": "c932aa53d30f2b9604531ea5ea263b7d8328be9d"
+      },
+      {
+        "name": "ibm777p2/python-rag-agent",
+        "source_url": "https://github.com/ibm777p2/python-rag-agent/blob/main/README.md",
+        "git_blob_sha": "1202d5fcd8215af9e3a1d2b21b86d6a84bb7db8a"
+      },
+      {
+        "name": "Sahil170595/intakegate",
+        "source_url": "https://github.com/Sahil170595/intakegate/blob/main/README.md",
+        "git_blob_sha": "b259784347d91e2e97c13916beabc5e3e565641a"
+      },
+      {
+        "name": "lisalucyliu/pmp-tiny-agent",
+        "source_url": "https://github.com/lisalucyliu/pmp-tiny-agent/blob/main/README.md",
+        "git_blob_sha": "359c9fb85609af27885b477fcaddfc8a04eca8f8"
+      },
+      {
+        "name": "LNLugo/sap-governed-agent-reference",
+        "source_url": "https://github.com/LNLugo/sap-governed-agent-reference/blob/main/README.md",
+        "git_blob_sha": "1ca71dbc1836ddcf009aa9c9024f2b1905a09cf2"
+      },
+      {
+        "name": "authecity/agent-identity-document",
+        "source_url": "https://github.com/authecity/agent-identity-document/blob/main/README.md",
+        "git_blob_sha": "db0a4690ccc1f733e8b90d27510b1efa577ca31e"
+      },
+      {
+        "name": "mdcspec/getting-started",
+        "source_url": "https://github.com/mdcspec/getting-started/blob/main/README.md",
+        "git_blob_sha": "2780a6fa815ac6d94e5b48455b25e4a85ead71bd"
+      }
+    ],
+    "coverage_limits": [
+      "All reported pages for the chosen queries were fetched, but this is not exhaustive across GitHub or all possible agent keywords.",
+      "All 695 existing archive identities were attempted; 693 current metadata refreshes succeeded. Two prior records retain their old stars and observed_at because of one identity mismatch and one HTTP 404.",
+      "GitHub search indexes can drift during pagination; absence from search is not evidence a repository was deleted.",
+      "The 2026 backfill is a rotating seven-day slice, not all 2026 creations. Earlier archive records are preserved.",
+      "Only explicitly reviewed candidates were added. Remaining raw candidates were not included, regardless of star count.",
+      "Original GitHub created_at is not a product launch or public-transition date; pushed_at and updated_at are not used as creation dates.",
+      "Descriptions summarize maintainers’ declared capabilities and selected READMEs; no general execution, security, performance, publisher identity or quality certification was performed.",
+      "Stars are cumulative values observed during this run, not stars gained over seven days."
+    ],
+    "category_counts": {
+      "MCP·도구 연동": 142,
+      "기업용 에이전트": 80,
+      "에이전트 스킬": 43,
+      "업무 자동화": 37,
+      "에이전트 프레임워크": 82,
+      "멀티에이전트": 98,
+      "개인 에이전트": 78,
+      "브라우저·컴퓨터 사용": 143,
+      "코딩 에이전트": 103,
+      "에이전트 보안": 90,
+      "에이전트 관측성": 25,
+      "자료·교육": 83,
+      "에이전트 메모리": 38,
+      "에이전트 평가": 62,
+      "에이전트 개발 도구": 5,
+      "에이전트 학습": 12,
+      "에이전트 신뢰성": 3,
+      "에이전트 하네스": 2,
+      "에이전트 컨텍스트": 1,
+      "브라우저 에이전트": 2,
+      "코드 실행 에이전트": 1
+    },
+    "new_category_counts": {
+      "에이전트 스킬": 42,
+      "코딩 에이전트": 46,
+      "MCP·도구 연동": 70,
+      "업무 자동화": 19,
+      "에이전트 프레임워크": 27,
+      "개인 에이전트": 30,
+      "멀티에이전트": 49,
+      "브라우저·컴퓨터 사용": 13,
+      "기업용 에이전트": 33,
+      "에이전트 메모리": 20,
+      "에이전트 보안": 19,
+      "에이전트 관측성": 13,
+      "에이전트 평가": 32,
+      "자료·교육": 15,
+      "에이전트 개발 도구": 4,
+      "에이전트 신뢰성": 2,
+      "에이전트 학습": 1
+    },
+    "preceding_7day_facts": {
+      "window_start": "2026-09-26T21:22:30Z",
+      "window_end": "2026-10-03T21:22:30Z",
+      "all_archived_created_in_window": 497,
+      "newly_added_created_in_window": 368,
+      "newly_added_earlier_records": 67,
+      "new_category_counts": {
+        "에이전트 스킬": 39,
+        "코딩 에이전트": 37,
+        "MCP·도구 연동": 68,
+        "업무 자동화": 19,
+        "에이전트 프레임워크": 18,
+        "개인 에이전트": 24,
+        "멀티에이전트": 39,
+        "브라우저·컴퓨터 사용": 12,
+        "기업용 에이전트": 27,
+        "에이전트 메모리": 16,
+        "에이전트 보안": 18,
+        "에이전트 관측성": 13,
+        "에이전트 평가": 23,
+        "자료·교육": 12,
+        "에이전트 개발 도구": 3
+      },
+      "top_recent_by_current_cumulative_stars": [
+        {
+          "name": "feder-cr/dots",
+          "created_at": "2026-09-29T23:06:00Z",
+          "stars": 2573,
+          "observed_at": "2026-10-03T21:07:35.432Z",
+          "url": "https://github.com/feder-cr/dots"
+        },
+        {
+          "name": "edenfunf/reelmimic",
+          "created_at": "2026-09-28T19:14:59Z",
+          "stars": 1059,
+          "observed_at": "2026-10-03T21:09:20.734333Z",
+          "url": "https://github.com/edenfunf/reelmimic"
+        },
+        {
+          "name": "Jakeschincariol/arena-skill",
+          "created_at": "2026-09-27T13:20:04Z",
+          "stars": 216,
+          "observed_at": "2026-10-03T21:09:20.734333Z",
+          "url": "https://github.com/Jakeschincariol/arena-skill"
+        },
+        {
+          "name": "blendi-remade/agentcraft",
+          "created_at": "2026-10-03T00:59:54Z",
+          "stars": 179,
+          "observed_at": "2026-10-03T21:07:33.389Z",
+          "url": "https://github.com/blendi-remade/agentcraft"
+        },
+        {
+          "name": "heaven999b/hello-agent-system",
+          "created_at": "2026-09-27T01:18:37Z",
+          "stars": 51,
+          "observed_at": "2026-10-03T21:09:20.734333Z",
+          "url": "https://github.com/heaven999b/hello-agent-system"
+        },
+        {
+          "name": "GanyuanRan/Autoloom",
+          "created_at": "2026-09-30T12:40:15Z",
+          "stars": 50,
+          "observed_at": "2026-10-03T21:07:34.795Z",
+          "url": "https://github.com/GanyuanRan/Autoloom"
+        },
+        {
+          "name": "AliSharjeell/OpenBUA",
+          "created_at": "2026-09-28T19:05:49Z",
+          "stars": 34,
+          "observed_at": "2026-10-03T21:07:36.439Z",
+          "url": "https://github.com/AliSharjeell/OpenBUA"
+        },
+        {
+          "name": "hyj-STAR/voiceshell-muse-bridge",
+          "created_at": "2026-10-03T11:21:38Z",
+          "stars": 29,
+          "observed_at": "2026-10-03T21:08:20.193834Z",
+          "url": "https://github.com/hyj-STAR/voiceshell-muse-bridge"
+        },
+        {
+          "name": "cmoraes10/loci",
+          "created_at": "2026-10-01T01:09:03Z",
+          "stars": 25,
+          "observed_at": "2026-10-03T21:09:43.814913Z",
+          "url": "https://github.com/cmoraes10/loci"
+        },
+        {
+          "name": "nuglifeleoji/Sentry",
+          "created_at": "2026-10-02T00:54:32Z",
+          "stars": 24,
+          "observed_at": "2026-10-03T21:07:34.463Z",
+          "url": "https://github.com/nuglifeleoji/Sentry"
+        }
+      ]
+    },
+    "additional_readme_checks": [
+      {
+        "name": "ahmd-mohsin/Horizontal-RL-Environments",
+        "ok": false,
+        "source_url": null,
+        "error": "GitHub API error 404: {\"message\":\"This repository is empty.\",\"documentation_url\":\"https://docs.github.com/v3/repos/contents/#get-contents\",\"status\":\"404\"}"
+      },
+      {
+        "name": "krokode/accounting",
+        "ok": true,
+        "source_url": "https://github.com/krokode/accounting/blob/main/README.md",
+        "error": null
+      },
+      {
+        "name": "krishamerja1903/enterprise-ai-operations-agent",
+        "ok": false,
+        "source_url": null,
+        "error": "GitHub API error 404: {\"message\":\"Not Found\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#get-repository-content\",\"status\":\"404\"}"
+      },
+      {
+        "name": "dprzek/ge-telemetry-agent",
+        "ok": false,
+        "source_url": null,
+        "error": "GitHub API error 404: {\"message\":\"This repository is empty.\",\"documentation_url\":\"https://docs.github.com/v3/repos/contents/#get-contents\",\"status\":\"404\"}"
+      },
+      {
+        "name": "monad-framework/monad-evals",
+        "ok": false,
+        "source_url": null,
+        "error": "GitHub API error 404: {\"message\":\"This repository is empty.\",\"documentation_url\":\"https://docs.github.com/v3/repos/contents/#get-contents\",\"status\":\"404\"}"
+      }
+    ],
+    "readme_check_count": 43,
+    "brief_source_examples": [
+      {
+        "name": "Tayyab-Bilal/agent-kit",
+        "created_at": "2026-10-03T16:34:49Z",
+        "description_ko": "YAML 에이전트 카드와 읽기 전용 SQL 핸들, 쓰기 승인 검사를 결합한 다단계 에이전트 런타임",
+        "source_url": "https://github.com/Tayyab-Bilal/agent-kit/blob/main/README.md"
+      },
+      {
+        "name": "jaqubowsky/fleet",
+        "created_at": "2026-09-30T20:11:34Z",
+        "description_ko": "이슈별 Docker 샌드박스에서 Claude Code·Pi를 병렬 실행하고 검토된 PR을 모으는 Mac 도구",
+        "source_url": "https://github.com/jaqubowsky/fleet/blob/main/README.md"
+      },
+      {
+        "name": "cmoraes10/loci",
+        "created_at": "2026-10-01T01:09:03Z",
+        "description_ko": "타입이 있는 장기 메모리 코어와 MCP 서버, Hermes 플러그인",
+        "source_url": "https://github.com/cmoraes10/loci/blob/master/README.md"
+      },
+      {
+        "name": "rf-camillo/agent-evals",
+        "created_at": "2026-09-29T16:25:17Z",
+        "description_ko": "시나리오·결정적 검사·보정한 LLM 심사기로 도구 사용 에이전트를 평가하는 도구",
+        "source_url": "https://github.com/rf-camillo/agent-evals/blob/main/README.md"
+      }
+    ],
+    "brief_note_ko": "최근 7일 생성 표본에는 병렬 코딩 실행, 지속 메모리, 실행 승인과 결과 검증을 다루는 도구가 함께 포함됐습니다. 이는 선별 표본의 구성에 관한 설명이며 전체 생태계의 점유율 변화나 제품 출시 추세를 뜻하지 않습니다."
+  },
+  "latest_research_collection": {
+    "checked_at": "2026-10-03T21:11:40Z",
+    "papers": {
+      "before_count": 19,
+      "added_count": 18,
+      "after_count": 37,
+      "previous_items_preserved": true,
+      "collection_time": "2026-10-03T21:09:06Z",
+      "date_rule": "arXiv Submission history의 최초 v1 UTC 날짜를 정렬에 사용. arXiv ID 월, 검색 엔진 게시일, 개정일을 대신 사용하지 않음",
+      "new_to_archive_ids": [
+        "2601.12560",
+        "2606.16576",
+        "2609.13731",
+        "2610.00349",
+        "2610.00372",
+        "2610.00648",
+        "2610.00651",
+        "2610.00710",
+        "2610.00797",
+        "2610.00872",
+        "2610.00917",
+        "2610.00980",
+        "2610.01160",
+        "2610.01349",
+        "2610.01415",
+        "2610.01756",
+        "2610.01833",
+        "2610.02070"
+      ],
+      "preceding_seven_day_first_submission_additions": 15,
+      "historical_backfill_ids": [
+        "2601.12560",
+        "2606.16576",
+        "2609.13731"
+      ],
+      "meaning_of_new": "이번 실행에서 새로 선별·수록한 논문이다. 이전 수집 시각 이후 최초 공개된 논문이라는 뜻이 아니다.",
+      "verified_sources": [
+        {
+          "id": "2601.12560",
+          "url": "https://arxiv.org/abs/2601.12560",
+          "first_submitted_at": "2026-01-18T19:51:16Z",
+          "title": "Agentic Artificial Intelligence (AI): Architectures, Taxonomies, and Evaluation of Large Language Model Agents",
+          "checked": "arXiv abstract and Submission history"
+        },
+        {
+          "id": "2606.16576",
+          "url": "https://arxiv.org/abs/2606.16576",
+          "first_submitted_at": "2026-06-15T11:23:13Z",
+          "title": "Can Agents Infer Environment from Interaction? Evidence from Agentic Automata Learning",
+          "checked": "arXiv abstract and Submission history",
+          "version_note": "제목·요약은 v2(2026-09-27) 기준이며 최초 제출일은 v1(2026-06-15)을 보존"
+        },
+        {
+          "id": "2609.13731",
+          "url": "https://arxiv.org/abs/2609.13731",
+          "first_submitted_at": "2026-09-12T05:51:27Z",
+          "title": "Trustworthy Agentic AI: A Comprehensive Cybersecurity and Systems Survey on Threat Landscapes, Defense Architectures, and Open Challenges",
+          "checked": "arXiv abstract and Submission history"
+        },
+        {
+          "id": "2610.00349",
+          "url": "https://arxiv.org/abs/2610.00349",
+          "first_submitted_at": "2026-09-29T21:54:32Z",
+          "title": "Fault-Tolerant Budget Conservation in Distributed Multi-Agent Delegation",
+          "checked": "arXiv abstract and Submission history"
+        },
+        {
+          "id": "2610.00372",
+          "url": "https://arxiv.org/abs/2610.00372",
+          "first_submitted_at": "2026-09-30T07:04:25Z",
+          "title": "When Harnesses Lose the Signal: Causal Evaluation of Recovery in LLM Agents",
+          "checked": "arXiv abstract and Submission history"
+        },
+        {
+          "id": "2610.00648",
+          "url": "https://arxiv.org/abs/2610.00648",
+          "first_submitted_at": "2026-09-30T19:50:42Z",
+          "title": "Incident-Arena: Getting agents to the last nine of reliability",
+          "checked": "arXiv abstract and Submission history"
+        },
+        {
+          "id": "2610.00651",
+          "url": "https://arxiv.org/abs/2610.00651",
+          "first_submitted_at": "2026-09-30T19:52:09Z",
+          "title": "Agent Evaluation Reliability: More Tasks Won't (Always) Fix An Agent Leaderboard",
+          "checked": "arXiv abstract and Submission history"
+        },
+        {
+          "id": "2610.00710",
+          "url": "https://arxiv.org/abs/2610.00710",
+          "first_submitted_at": "2026-09-30T20:59:33Z",
+          "title": "ReLiveGym: Evaluating Long-Lived Agents over Weeks of Replayed Reality",
+          "checked": "arXiv abstract and Submission history"
+        },
+        {
+          "id": "2610.00797",
+          "url": "https://arxiv.org/abs/2610.00797",
+          "first_submitted_at": "2026-09-30T22:40:00Z",
+          "title": "Sapien: A Stateful Policy Engine for Autonomous AI Agents",
+          "checked": "arXiv abstract and Submission history"
+        },
+        {
+          "id": "2610.00872",
+          "url": "https://arxiv.org/abs/2610.00872",
+          "first_submitted_at": "2026-10-01T00:44:33Z",
+          "title": "MemFit: Efficient Long-Term Agentic Memory",
+          "checked": "arXiv abstract and Submission history"
+        },
+        {
+          "id": "2610.00917",
+          "url": "https://arxiv.org/abs/2610.00917",
+          "first_submitted_at": "2026-10-01T01:49:59Z",
+          "title": "Finding the Right Fit: Model-Harness Interactions across Agent Tasks",
+          "checked": "arXiv abstract and Submission history"
+        },
+        {
+          "id": "2610.00980",
+          "url": "https://arxiv.org/abs/2610.00980",
+          "first_submitted_at": "2026-10-01T03:18:07Z",
+          "title": "Can AI Scientists Coordinate at Runtime?",
+          "checked": "arXiv abstract and Submission history"
+        },
+        {
+          "id": "2610.01160",
+          "url": "https://arxiv.org/abs/2610.01160",
+          "first_submitted_at": "2026-10-01T06:40:30Z",
+          "title": "Serving a Revisable World: Versioned Execution for Interruptible Agents",
+          "checked": "arXiv abstract and Submission history"
+        },
+        {
+          "id": "2610.01349",
+          "url": "https://arxiv.org/abs/2610.01349",
+          "first_submitted_at": "2026-10-01T09:18:05Z",
+          "title": "PACE: Provenance-Aware Capability Enforcement for Tool-Using LLM Agents",
+          "checked": "arXiv abstract and Submission history"
+        },
+        {
+          "id": "2610.01415",
+          "url": "https://arxiv.org/abs/2610.01415",
+          "first_submitted_at": "2026-10-01T10:21:46Z",
+          "title": "Beyond Memory: Harnessing Long-Horizon Agents with Explicit Belief States",
+          "checked": "arXiv abstract and Submission history"
+        },
+        {
+          "id": "2610.01756",
+          "url": "https://arxiv.org/abs/2610.01756",
+          "first_submitted_at": "2026-10-01T14:19:21Z",
+          "title": "SoK: Decentralized Agent Economic Infrastructure",
+          "checked": "arXiv abstract and Submission history"
+        },
+        {
+          "id": "2610.01833",
+          "url": "https://arxiv.org/abs/2610.01833",
+          "first_submitted_at": "2026-10-01T15:06:23Z",
+          "title": "Continuous Process-Level Evaluation for Evolving Enterprise AI Agent Skills",
+          "checked": "arXiv abstract and Submission history"
+        },
+        {
+          "id": "2610.02070",
+          "url": "https://arxiv.org/abs/2610.02070",
+          "first_submitted_at": "2026-10-01T17:11:25Z",
+          "title": "Causal Memory Policy: Making Memory Utility Identifiable by Intervening on Retrieval",
+          "checked": "arXiv abstract and Submission history"
+        }
+      ],
+      "limitations": [
+        "선별 조사이며 전체 arXiv 에이전트 논문을 망라하지 않는다.",
+        "이번 추가 항목의 초록과 제출 이력을 확인했다. 기존 19개 논문은 기존 검증 기록을 보존했으며 전체 본문·최신 개정 이력을 재검토한 것은 아니다.",
+        "2026-10 월별 cs.AI 목록은 380개 항목을 표시했지만 이번 조사에서는 관련 제목이 보이는 구간을 선별 검토했다. 전체 380편을 심사했다고 주장하지 않는다.",
+        "cs.MA 2026-10 목록 조회는 Cache miss로 실패했으며 빈 목록으로 처리하지 않았다.",
+        "초록 기반 핵심 요약이며, 논문의 성능 주장을 독립 재현하거나 동료심사 품질을 인증하지 않는다."
+      ]
+    },
+    "timeline": {
+      "before_count": 15,
+      "added_count": 3,
+      "after_count": 18,
+      "previous_items_preserved": true,
+      "new_within_preceding_seven_days": [
+        "2026-09-28 NVIDIA Open Agent Safety Platform",
+        "2026-09-29 OpenAI dots"
+      ],
+      "historical_backfill": [
+        "2026-09-08 Meta Muse"
+      ],
+      "date_caveats": [
+        "Meta Muse 최초 출시 9월 8일을 기사 수정일 9월 30일 또는 Small Business 확장 9월 29일과 구분한다.",
+        "NVIDIA 9월 28일은 플랫폼 발표일이다. 전체 Sentry 하드웨어 구성 일반 출시 완료로 해석하지 않으며 기존 3월 NemoClaw 발표와 구분한다.",
+        "OpenAI dots 9월 29일은 지원 요금제·지역의 순차 제공 시작일이다. Enterprise beta와 specialist dots 파일럿은 일반 출시로 바꾸지 않는다.",
+        "기존 OpenClaw·NanoClaw·Hermes·NemoClaw 항목의 사건 종류·날짜·근거는 변경하지 않았다."
+      ],
+      "excluded_candidates": [
+        {
+          "title": "OpenAI Agents API",
+          "reason": "최초 출시는 9월 10일. DevDay 9월 29일 재소개를 새 출시로 넣지 않음",
+          "url": "https://openai.com/index/introducing-the-agents-api/"
+        },
+        {
+          "title": "Microsoft Copilot Autopilot",
+          "reason": "9월 25일 발표는 앞선 Scout의 이름 변경·확장. 이번 주 신규 출시로 묶지 않음",
+          "url": "https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/"
+        },
+        {
+          "title": "Muse Small Business expansion",
+          "reason": "기존 프로젝트의 9월 29일 확장. 9월 8일 최초 개인 에이전트 출시만 타임라인에 보강"
+        }
+      ]
+    },
+    "discovery": {
+      "search_queries": [
+        "site:arxiv.org/abs/2609 \"agents\" \"Submitted\" \"Sep 2026\"",
+        "site:arxiv.org/abs/2610 \"agent\" \"Oct 2026\"",
+        "agentic AI September 28 2026 October 3 2026 OpenAI Anthropic NVIDIA release",
+        "site:arxiv.org/abs/2610 autonomous agents October 2 2026",
+        "site:arxiv.org/abs/2609 agent \"Sep 2026\" memory coordination",
+        "site:arxiv.org/abs/2610 \"agent\" \"2026\"",
+        "site:arxiv.org/abs/2609 \"agentic\" \"2026\"",
+        "site:arxiv.org/abs/2609 \"agents\" \"Submitted on 30 Sep\""
+      ],
+      "lists": [
+        {
+          "url": "https://arxiv.org/list/cs.AI/2026-10?show=2000",
+          "status": "retrieved; selected relevant title ranges inspected",
+          "reported_entries": 380
+        },
+        {
+          "url": "https://arxiv.org/list/cs.MA/2026-09?show=2000",
+          "status": "retrieved but not comprehensively reviewed"
+        },
+        {
+          "url": "https://arxiv.org/list/cs.MA/2026-10?show=2000",
+          "status": "failed: Cache miss"
+        }
+      ],
+      "source_policy": "Search snippets are discovery only; added papers use arXiv originals and timeline uses official company sources."
+    },
+    "limitations_ko": "추가 논문은 새로 선별·수록한 항목이며 모두 이전 수집 이후 최초 공개됐다는 뜻이 아닙니다. 검색 실패와 미검토 목록을 출처 범위에 기록했습니다."
+  },
+  "latest_news_collection": {
+    "collected_at": "2026-10-03T21:15:59Z",
+    "dates": [
+      {
+        "date": "2026-10-04",
+        "status": "partial",
+        "stories": 0
+      },
+      {
+        "date": "2026-10-03",
+        "status": "final",
+        "stories": 9
+      }
+    ],
+    "coverage_ko": "국내·해외 매체와 공식 출처를 확인한 선별 기록입니다. 10월 3일 기록을 보강했고 10월 4일은 중복을 제외한 새 소식을 확인하지 못한 부분 기록입니다. 날짜만 확인된 원문은 시간대를 추정하지 않았습니다."
   }
 }

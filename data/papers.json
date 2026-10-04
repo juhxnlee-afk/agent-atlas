@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "collected_at": "2026-10-03T05:56:00Z",
+  "collected_at": "2026-10-03T21:09:06Z",
   "timezone": "Asia/Seoul",
   "items": [
     {
@@ -20,6 +20,18 @@
       "date_type": "arxiv_first_submission",
       "description_ko": "32개 현실 시나리오와 138개 과제로 장시간 자율 작업을 평가한다. 사용자 시뮬레이션과 샌드박스 기반 채점을 결합해 모델뿐 아니라 실행 프레임워크의 영향도 살핀다.",
       "category": "평가·벤치마크"
+    },
+    {
+      "id": "2601.12560",
+      "title": "Agentic Artificial Intelligence (AI): Architectures, Taxonomies, and Evaluation of Large Language Model Agents",
+      "url": "https://arxiv.org/abs/2601.12560",
+      "date": "2026-01-18",
+      "date_type": "arxiv_first_submission",
+      "description_ko": "에이전트를 지각·추론·계획·행동·도구 사용·협업으로 나누는 분류 체계를 제안한다. 실행 환경과 평가 방식을 정리하고 행동 환각, 무한 루프, 프롬프트 인젝션 같은 미해결 과제를 비교하는 서베이다.",
+      "category": "아키텍처·서베이",
+      "source_url": "https://arxiv.org/abs/2601.12560",
+      "first_submitted_at": "2026-01-18T19:51:16Z",
+      "date_basis": "arXiv Submission history의 v1 UTC 시각; 수정일·arXiv 식별자 월과 구분"
     },
     {
       "id": "2602.11964",
@@ -85,6 +97,19 @@
       "category": "평가·벤치마크"
     },
     {
+      "id": "2606.16576",
+      "title": "Can Agents Infer Environment from Interaction? Evidence from Agentic Automata Learning",
+      "url": "https://arxiv.org/abs/2606.16576",
+      "date": "2026-06-15",
+      "date_type": "arxiv_first_submission",
+      "description_ko": "도구 호출을 통한 질의만으로 숨겨진 유한 오토마타를 찾아내는 평가 환경을 제시한다. 상태 추적을 강화해도 복잡한 환경에서는 질의 계획·증거 통합·계획 실행의 실패가 남는다. 9월 개정판을 확인했지만 정렬 날짜는 6월 최초 제출일이다.",
+      "category": "평가·벤치마크",
+      "source_url": "https://arxiv.org/abs/2606.16576",
+      "first_submitted_at": "2026-06-15T11:23:13Z",
+      "date_basis": "arXiv Submission history의 v1 UTC 시각; 수정일·arXiv 식별자 월과 구분",
+      "version_note": "제목·요약은 v2(2026-09-27) 기준이며 최초 제출일은 v1(2026-06-15)을 보존"
+    },
+    {
       "id": "2606.31174",
       "title": "ClawArena-Team: Benchmarking Subagent Orchestration and Dynamic Workflows in Language-Model Agents",
       "url": "https://arxiv.org/abs/2606.31174",
@@ -130,6 +155,18 @@
       "category": "안전·신뢰성"
     },
     {
+      "id": "2609.13731",
+      "title": "Trustworthy Agentic AI: A Comprehensive Cybersecurity and Systems Survey on Threat Landscapes, Defense Architectures, and Open Challenges",
+      "url": "https://arxiv.org/abs/2609.13731",
+      "date": "2026-09-12",
+      "date_type": "arxiv_first_submission",
+      "description_ko": "메모리·도구 실행·에이전트 간 통신의 공격 표면과 신뢰성 요구를 체계화한다. 권한 기반 통제, 격리 실행, 다층 방어와 평가·거버넌스의 연결을 정리한 서베이로, 특정 방어 체계의 실전 안전성을 입증한 결과는 아니다.",
+      "category": "안전·신뢰성",
+      "source_url": "https://arxiv.org/abs/2609.13731",
+      "first_submitted_at": "2026-09-12T05:51:27Z",
+      "date_basis": "arXiv Submission history의 v1 UTC 시각; 수정일·arXiv 식별자 월과 구분"
+    },
+    {
       "id": "2609.32091",
       "title": "Memory as Middleware for Self-Improving AI Agents",
       "url": "https://arxiv.org/abs/2609.32091",
@@ -166,6 +203,150 @@
       "category": "과학·연구"
     },
     {
+      "id": "2610.00349",
+      "title": "Fault-Tolerant Budget Conservation in Distributed Multi-Agent Delegation",
+      "url": "https://arxiv.org/abs/2610.00349",
+      "date": "2026-09-29",
+      "date_type": "arxiv_first_submission",
+      "description_ko": "실패·재시도·중복 메시지·지연 완료가 있는 분산 위임에서도 예산이 늘어나지 않도록 하는 권한·정산 규칙을 제안한다. 배타적 크레딧과 실행 예약을 사용하며, 명시된 시스템 가정 아래 형식 증명과 장애 주입 실험으로 검증한다.",
+      "category": "멀티에이전트",
+      "source_url": "https://arxiv.org/abs/2610.00349",
+      "first_submitted_at": "2026-09-29T21:54:32Z",
+      "date_basis": "arXiv Submission history의 v1 UTC 시각; 수정일·arXiv 식별자 월과 구분"
+    },
+    {
+      "id": "2610.00372",
+      "title": "When Harnesses Lose the Signal: Causal Evaluation of Recovery in LLM Agents",
+      "url": "https://arxiv.org/abs/2610.00372",
+      "date": "2026-09-30",
+      "date_type": "arxiv_first_submission",
+      "description_ko": "같은 실행 상태에서 복구를 할 때와 하지 않을 때를 비교해 복구의 이익과 피해를 분리한다. ALFWorld에서 개입 시점을 선택하는 CIR을 평가하며, 복구를 무조건 반복하는 대신 필요한 상황을 구별하는 접근을 보여준다.",
+      "category": "안전·신뢰성",
+      "source_url": "https://arxiv.org/abs/2610.00372",
+      "first_submitted_at": "2026-09-30T07:04:25Z",
+      "date_basis": "arXiv Submission history의 v1 UTC 시각; 수정일·arXiv 식별자 월과 구분"
+    },
+    {
+      "id": "2610.00648",
+      "title": "Incident-Arena: Getting agents to the last nine of reliability",
+      "url": "https://arxiv.org/abs/2610.00648",
+      "date": "2026-09-30",
+      "date_type": "arxiv_first_submission",
+      "description_ko": "실제 오픈소스 애플리케이션을 임시 Kubernetes 환경에 배포하고 장애와 부하를 주입하는 20개 과제로 운영 장애 대응을 평가한다. 정적인 정답 검사에 더해 복구의 기능적 효과와 시스템 지표, 안전한 수정 여부를 확인한다.",
+      "category": "코딩·운영",
+      "source_url": "https://arxiv.org/abs/2610.00648",
+      "first_submitted_at": "2026-09-30T19:50:42Z",
+      "date_basis": "arXiv Submission history의 v1 UTC 시각; 수정일·arXiv 식별자 월과 구분"
+    },
+    {
+      "id": "2610.00651",
+      "title": "Agent Evaluation Reliability: More Tasks Won't (Always) Fix An Agent Leaderboard",
+      "url": "https://arxiv.org/abs/2610.00651",
+      "date": "2026-09-30",
+      "date_type": "arxiv_first_submission",
+      "description_ko": "22개 에이전트 벤치마크에 베이지안 분산 분해를 적용해 모델과 실행 구성의 영향을 구분한다. 고정된 시스템의 순위가 안정적이어도 기반 모델의 순위는 달라질 수 있고, 구성 다양성이 부족하면 과제 수만 늘려서는 불확실성을 해소하기 어렵다고 분석한다.",
+      "category": "평가·벤치마크",
+      "source_url": "https://arxiv.org/abs/2610.00651",
+      "first_submitted_at": "2026-09-30T19:52:09Z",
+      "date_basis": "arXiv Submission history의 v1 UTC 시각; 수정일·arXiv 식별자 월과 구분"
+    },
+    {
+      "id": "2610.00710",
+      "title": "ReLiveGym: Evaluating Long-Lived Agents over Weeks of Replayed Reality",
+      "url": "https://arxiv.org/abs/2610.00710",
+      "date": "2026-09-30",
+      "date_type": "arxiv_first_submission",
+      "description_ko": "현실의 뉴스·시장·소셜미디어 흐름을 시간순으로 재생해 수 주 동안 감시와 반복 행동을 수행하는 에이전트를 평가한다. 정적 장기 과제와 달리 언제 행동할지, 환경 변화에 어떻게 적응할지, 피드백을 어떻게 활용할지를 분리해 살핀다.",
+      "category": "평가·벤치마크",
+      "source_url": "https://arxiv.org/abs/2610.00710",
+      "first_submitted_at": "2026-09-30T20:59:33Z",
+      "date_basis": "arXiv Submission history의 v1 UTC 시각; 수정일·arXiv 식별자 월과 구분"
+    },
+    {
+      "id": "2610.00797",
+      "title": "Sapien: A Stateful Policy Engine for Autonomous AI Agents",
+      "url": "https://arxiv.org/abs/2610.00797",
+      "date": "2026-09-30",
+      "date_type": "arxiv_first_submission",
+      "description_ko": "이전에 한 행동과 새로 얻은 정보에 따라 허용되는 도구 호출 순서를 바꾸는 상태 기반 정책 엔진을 제안한다. 단순 도구 허용 목록을 넘어 순서·상태 조건을 적용하며 AgentDojo와 Toolathlon에서 효용과 공격 차단 효과를 평가한다.",
+      "category": "안전·신뢰성",
+      "source_url": "https://arxiv.org/abs/2610.00797",
+      "first_submitted_at": "2026-09-30T22:40:00Z",
+      "date_basis": "arXiv Submission history의 v1 UTC 시각; 수정일·arXiv 식별자 월과 구분"
+    },
+    {
+      "id": "2610.00872",
+      "title": "MemFit: Efficient Long-Term Agentic Memory",
+      "url": "https://arxiv.org/abs/2610.00872",
+      "date": "2026-10-01",
+      "date_type": "arxiv_first_submission",
+      "description_ko": "대화 원문을 추가 전용 저장소에 보존하고 요약을 검색용 색인으로 활용하는 장기 메모리 시스템이다. 쓰기와 검색에서 LLM 호출 부담을 줄이고, 어휘·의미 검색과 재순위화를 결합해 세 가지 대화·멀티모달 메모리 벤치마크에서 비교한다.",
+      "category": "메모리",
+      "source_url": "https://arxiv.org/abs/2610.00872",
+      "first_submitted_at": "2026-10-01T00:44:33Z",
+      "date_basis": "arXiv Submission history의 v1 UTC 시각; 수정일·arXiv 식별자 월과 구분"
+    },
+    {
+      "id": "2610.00917",
+      "title": "Finding the Right Fit: Model-Harness Interactions across Agent Tasks",
+      "url": "https://arxiv.org/abs/2610.00917",
+      "date": "2026-10-01",
+      "date_type": "arxiv_first_submission",
+      "description_ko": "모델과 실행 프레임워크를 조합한 66개 구성을 세 가지 벤치마크에서 비교한다. 프레임워크에 따라 모델 순위가 뒤집히고 최적 조합도 과제별로 달라져, 모델·실행 구성·과제를 함께 평가해야 함을 보여준다.",
+      "category": "평가·벤치마크",
+      "source_url": "https://arxiv.org/abs/2610.00917",
+      "first_submitted_at": "2026-10-01T01:49:59Z",
+      "date_basis": "arXiv Submission history의 v1 UTC 시각; 수정일·arXiv 식별자 월과 구분"
+    },
+    {
+      "id": "2610.00980",
+      "title": "Can AI Scientists Coordinate at Runtime?",
+      "url": "https://arxiv.org/abs/2610.00980",
+      "date": "2026-10-01",
+      "date_type": "arxiv_first_submission",
+      "description_ko": "실행 중 필요한 연구 에이전트를 고르고 범위가 정해진 작업을 배분하는 RAC를 제안한다. 세 가지 과학 연구 시스템의 단일 시드 탐색 실험에서 동적 선택은 유리했지만 계약·검증을 추가하면 평균 점수가 낮아져 조율 비용과 적용 범위의 한계도 드러났다.",
+      "category": "멀티에이전트",
+      "source_url": "https://arxiv.org/abs/2610.00980",
+      "first_submitted_at": "2026-10-01T03:18:07Z",
+      "date_basis": "arXiv Submission history의 v1 UTC 시각; 수정일·arXiv 식별자 월과 구분"
+    },
+    {
+      "id": "2610.01160",
+      "title": "Serving a Revisable World: Versioned Execution for Interruptible Agents",
+      "url": "https://arxiv.org/abs/2610.01160",
+      "date": "2026-10-01",
+      "date_type": "arxiv_first_submission",
+      "description_ko": "사용자 지시가 바뀔 때 오래된 실행의 출력 권한을 먼저 거두고 유효한 KV 상태만 후속 실행에 넘기는 버전별 실행 체계를 제안한다. vLLM 구현과 코딩 에이전트 중단 기록 재생으로 오래된 출력 차단과 상태 재사용을 함께 검증한다.",
+      "category": "실행 인프라",
+      "source_url": "https://arxiv.org/abs/2610.01160",
+      "first_submitted_at": "2026-10-01T06:40:30Z",
+      "date_basis": "arXiv Submission history의 v1 UTC 시각; 수정일·arXiv 식별자 월과 구분"
+    },
+    {
+      "id": "2610.01349",
+      "title": "PACE: Provenance-Aware Capability Enforcement for Tool-Using LLM Agents",
+      "url": "https://arxiv.org/abs/2610.01349",
+      "date": "2026-10-01",
+      "date_type": "arxiv_first_submission",
+      "description_ko": "각 도구 호출 직전에 영향 경로와 실행 효과를 확인하고 인증된 요청에서 도출한 권한과 대조하는 PACE를 제안한다. 오염된 페이지·메모리·스킬의 사전 검토만으로 부족한 실행 경계를 다루며 여덟 보안 벤치마크에서 방어와 정상 작업 성능을 비교한다.",
+      "category": "안전·신뢰성",
+      "source_url": "https://arxiv.org/abs/2610.01349",
+      "first_submitted_at": "2026-10-01T09:18:05Z",
+      "date_basis": "arXiv Submission history의 v1 UTC 시각; 수정일·arXiv 식별자 월과 구분"
+    },
+    {
+      "id": "2610.01415",
+      "title": "Beyond Memory: Harnessing Long-Horizon Agents with Explicit Belief States",
+      "url": "https://arxiv.org/abs/2610.01415",
+      "date": "2026-10-01",
+      "date_type": "arxiv_first_submission",
+      "description_ko": "이력 보존·압축에 더해 현재 환경과 미해결 요구사항을 명시적 믿음 상태로 관리하는 PoS를 제안한다. 일관성 검사와 진행 상황 감시로 제자리 행동을 감지하고, 막힌 유형에 맞춰 복구하는 장기 실행 구성을 네 가지 벤치마크에서 평가한다.",
+      "category": "메모리",
+      "source_url": "https://arxiv.org/abs/2610.01415",
+      "first_submitted_at": "2026-10-01T10:21:46Z",
+      "date_basis": "arXiv Submission history의 v1 UTC 시각; 수정일·arXiv 식별자 월과 구분"
+    },
+    {
       "id": "2610.01618",
       "title": "Agents Are Systems, Not Models: Rethinking Agentic Evaluation",
       "url": "https://arxiv.org/abs/2610.01618",
@@ -173,6 +354,42 @@
       "date_type": "arxiv_first_submission",
       "description_ko": "과제 정보·추론·자가검증·시간 예산·기반 모델을 바꾸며 에이전트를 구성 가능한 시스템으로 평가한다. 네 가지 과학 과제에서 구성의 영향과 실행 간 변동성을 분석하고 18,000개 이상의 실행 궤적을 공개한다.",
       "category": "평가·벤치마크"
+    },
+    {
+      "id": "2610.01756",
+      "title": "SoK: Decentralized Agent Economic Infrastructure",
+      "url": "https://arxiv.org/abs/2610.01756",
+      "date": "2026-10-01",
+      "date_type": "arxiv_first_submission",
+      "description_ko": "에이전트 작업의 검증·승인·정산을 연결할 때 단계별 보장이 끝까지 유지되는지 분석한다. 12개 시스템·표준과 통제된 실행을 검토하며, 정산 승인 기록과 실제 작업 요구 충족의 증거를 구분해야 한다고 제안한다.",
+      "category": "안전·신뢰성",
+      "source_url": "https://arxiv.org/abs/2610.01756",
+      "first_submitted_at": "2026-10-01T14:19:21Z",
+      "date_basis": "arXiv Submission history의 v1 UTC 시각; 수정일·arXiv 식별자 월과 구분"
+    },
+    {
+      "id": "2610.01833",
+      "title": "Continuous Process-Level Evaluation for Evolving Enterprise AI Agent Skills",
+      "url": "https://arxiv.org/abs/2610.01833",
+      "date": "2026-10-01",
+      "date_type": "arxiv_first_submission",
+      "description_ko": "기업용 스킬의 최종 결과뿐 아니라 도구 선택·인자·실행 순서·데이터 무결성을 지속 평가하는 틀을 제안한다. 두 스킬의 240회 실험에서 최종 수치가 맞아도 과정 이탈이 자주 발견됐으며, 실제 API 변화에 대한 장기 검증은 후속 과제로 남겼다.",
+      "category": "평가·벤치마크",
+      "source_url": "https://arxiv.org/abs/2610.01833",
+      "first_submitted_at": "2026-10-01T15:06:23Z",
+      "date_basis": "arXiv Submission history의 v1 UTC 시각; 수정일·arXiv 식별자 월과 구분"
+    },
+    {
+      "id": "2610.02070",
+      "title": "Causal Memory Policy: Making Memory Utility Identifiable by Intervening on Retrieval",
+      "url": "https://arxiv.org/abs/2610.02070",
+      "date": "2026-10-01",
+      "date_type": "arxiv_first_submission",
+      "description_ko": "검색되지 않은 메모리는 보존·삭제 실험만으로 유용성을 식별할 수 없다는 문제를 다룬다. 알려진 확률로 메모리를 검색 문맥에 넣어 인과 효과를 추정하는 CMP를 제안하지만, 현재 질의의 유용성이 미래 질의의 보존 가치를 보장하지는 않는다고 보고한다.",
+      "category": "메모리",
+      "source_url": "https://arxiv.org/abs/2610.02070",
+      "first_submitted_at": "2026-10-01T17:11:25Z",
+      "date_basis": "arXiv Submission history의 v1 UTC 시각; 수정일·arXiv 식별자 월과 구분"
     }
   ]
 }

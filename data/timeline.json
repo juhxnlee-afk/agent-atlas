@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "collected_at": "2026-10-03T11:04:04.827485Z",
+  "collected_at": "2026-10-03T21:11:40Z",
   "timezone": "Asia/Seoul",
   "scope": "2025-01-01 onward; major shifts in agent products, open personal-agent ecosystems, interoperability, and enterprise operations",
-  "editorial_note": "15개의 주요 전환점을 선별했습니다. 반복적인 버전 업데이트·논문·모델 성능 발표는 제외합니다. 날짜는 공식 출처의 사건·발표일이며, NanoClaw는 창작자의 Show HN 원문 게시 시각(UTC)을 보존합니다. significance는 확인된 변화의 의미를 설명하는 편집 요약입니다.",
+  "editorial_note": "18개의 주요 전환점을 선별했습니다. 반복적인 버전 업데이트·논문·모델 성능 발표는 제외합니다. 날짜는 공식 출처의 사건·발표일이며, NanoClaw는 창작자의 Show HN 원문 게시 시각(UTC)을 보존합니다. significance는 확인된 변화의 의미를 설명하는 편집 요약입니다. 이번 보강은 Meta Muse의 9월 8일 최초 출시와 NVIDIA의 9월 28일 안전 플랫폼 발표, OpenAI dots의 9월 29일 순차 제공 시작을 구분해 추가합니다.",
   "items": [
     {
       "date": "2025-01-23",
@@ -233,6 +233,51 @@
       "date_type": "product_release",
       "date_basis": "OpenAI 공식 발표 및 요금제별 순차 제공 시작일",
       "date_precision": "date"
+    },
+    {
+      "date": "2026-09-08",
+      "title": "Meta Muse, 전용 클라우드 컴퓨터를 가진 개인 에이전트",
+      "summary": "Meta가 개인 에이전트 Muse의 미국 출시를 시작했다. 전용 가상 머신과 브라우저에서 연결된 앱을 사용하고, 대화에서 배운 선호와 목표를 바탕으로 업무를 진행하도록 설계했다. 별도의 Sentinel이 외부 접근과 승인 요청을 통제한다.",
+      "significance": "직접 설치·운영하던 개인 에이전트의 경험이 일반 소비자용 서비스로 확장되고, 실행 에이전트와 행동 승인 계층을 분리하는 설계가 제품의 중심으로 들어왔다.",
+      "category": "개인 에이전트",
+      "source_url": "https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/",
+      "date_type": "product_release",
+      "date_basis": "Meta 공식 최초 발표일과 미국 순차 출시 시작일. 원문에는 9월 30일 수정일도 표시되므로 이를 최초 출시일로 쓰지 않으며, 9월 29일 Small Business 확장과 구분한다.",
+      "date_precision": "date"
+    },
+    {
+      "date": "2026-09-28",
+      "title": "NVIDIA Open Agent Safety Platform, 실행 통제를 하드웨어까지 확장",
+      "summary": "NVIDIA가 OpenShell 보안 런타임과 Sentry 참조 설계를 결합한 Open Agent Safety Platform을 발표했다. Sentry는 BlueField-4에서 에이전트 실행과 분리된 감시·정책 집행 계층을 제공하도록 설계됐다. OpenShell과 스킬 소프트웨어도 공개했다.",
+      "significance": "모델·애플리케이션 수준의 안전장치에 더해, 에이전트 밖의 실행 환경과 독립 하드웨어에서 행동을 관측·제한하는 운영 보안 체계를 제시했다.",
+      "category": "보안·운영",
+      "source_url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Launches-Open-Agent-Safety-Platform-to-Secure-Agents-From-Testing-to-Deployment/default.aspx",
+      "date_type": "platform_announcement",
+      "date_basis": "NVIDIA 공식 보도자료의 발표일. 소프트웨어 제공은 확인되지만 Sentry 포함 전체 하드웨어 구성의 일반 출시일을 뜻하지 않음. 3월 NemoClaw 발표 및 OpenShell의 최초 공개와 구분한다.",
+      "date_precision": "date",
+      "supporting_sources": [
+        {
+          "label": "독립 하드웨어 감시 계층의 참조 설계",
+          "url": "https://developer.nvidia.com/blog/nvidia-open-agent-safety-platform-a-reference-for-continuous-in-silicon-agent-monitoring"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-29",
+      "title": "OpenAI dots, 대화 사이에도 이어지는 상시 개인 에이전트",
+      "summary": "OpenAI가 자체 클라우드 컴퓨터를 갖고 대화 사이에도 목표를 이어가는 dots를 출시했다. 연결된 앱과 브라우저로 여러 일을 진행하고, 권한·승인 규칙 아래 결과를 가져오도록 설계했다. 자리를 비운 동안의 능동적 조사는 읽기 전용 도구로 제한된다.",
+      "significance": "한 번의 요청을 끝내는 범용 에이전트에서 사용자 맥락을 유지하며 지속적으로 일을 살피고 이어가는 개인 비서 제품으로 확장됐다.",
+      "category": "개인 에이전트",
+      "source_url": "https://openai.com/index/introducing-dots/",
+      "date_type": "product_release",
+      "date_basis": "OpenAI 공식 발표 및 지원 지역 Pro·Business Premium 순차 제공 시작일. Enterprise는 관리자 활성화가 필요한 베타이며, 조직용 specialist dots는 별도 파일럿 단계다.",
+      "date_precision": "date",
+      "supporting_sources": [
+        {
+          "label": "9월 29일 ChatGPT 릴리스 노트",
+          "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
+        }
+      ]
     }
   ]
 }

@@ -4,14 +4,31 @@
   "started_on": "2026-10-03",
   "items": [
     {
-      "date": "2026-10-03",
+      "date": "2026-10-04",
       "status": "partial",
-      "collected_at": "2026-10-03T07:39:17Z",
-      "headline": "국내는 보안·업무 자동화, 해외는 기기 연동·권한 통제",
-      "summary": "오늘 확인한 국내외 소식은 에이전트의 활용 범위 확대와 안전한 실행이라는 흐름으로 이어집니다. 국내에서는 에임인텔리전스가 인터뷰에서 자율 에이전트 보안 전략을 설명했고, IT조선은 웨인힐스의 문서·음성 기반 영상 제작 자동화를 조명했습니다. 해외에서는 Meta의 Muse 기기 연동 SDK 공개와 Apple의 Mac 전체 디스크 접근 통제 강화 계획이 보도됐습니다. 국내 두 기사는 기존 기술·사업을 다룬 인터뷰와 기획이며, 오늘의 신제품 출시를 뜻하지 않습니다.",
-      "coverage_note": "한국시간 2026년 10월 3일 00:00부터 16:39까지의 중간 집계입니다. 해당 시간대에 발행된 해외 보도와 국내 인터뷰·기획을 선별했습니다. 매체 소재지로 국내·해외를 구분하며, 기사 발행일과 실제 발표·사건 날짜를 구분합니다. 오늘의 모든 소식을 망라한 목록은 아닙니다.",
+      "collected_at": "2026-10-03T21:15:59Z",
+      "window_start": "2026-10-03T15:00:00Z",
+      "window_end": "2026-10-03T21:15:59Z",
+      "headline": "06:15 중간 확인: 중복 제외 신규 소식 미확인",
+      "summary": "이번 확인 범위에서 국내외의 중복을 제외한 새로운 에이전트 AI 소식은 추가로 검증하지 못했습니다. 국내의 Apple 접근 권한 통제 후속 보도는 전날 기록과 같은 사건으로 분류했습니다. 이는 해당 시간대에 뉴스가 없었다는 뜻은 아니며, 부분 기록은 다음 수집에서 보강합니다.",
+      "coverage_note": "한국시간 2026년 10월 4일 00:00부터 수집 시각 06:15까지의 부분 기록입니다. 한국 매체·기관과 해외 매체·공식 자료를 검색했으며, 검색 인덱스의 지연과 일부 원문 직접 열람 실패로 누락될 수 있습니다. 접근 실패를 뉴스 부재로 간주하지 않았고 확인하지 못한 기사나 중복 사건을 카드로 추가하지 않았습니다.",
+      "sources": [
+        {
+          "label": "뉴시스: 전날 Apple 사건의 중복 보도 확인",
+          "url": "https://www.newsis.com/view/NISX20261004_0003813754"
+        }
+      ],
+      "items": []
+    },
+    {
+      "date": "2026-10-03",
+      "status": "final",
+      "collected_at": "2026-10-03T21:15:59Z",
+      "headline": "에이전트 활용 확대와 함께 신원·권한·기억 관리가 쟁점",
+      "summary": "국내 보도는 에임인텔리전스·라온시큐어의 에이전트 보안 전략, 웨인힐스의 콘텐츠 자동화, Microsoft의 음성 에이전트 개발 도구를 다뤘습니다. 해외에서는 Muse의 기기 연동과 Apple의 접근 권한 통제에 더해, 소형 판단 모델의 활용과 웹 접근 감시·지인 정보 기억의 개인정보 문제가 부각됐습니다. 활용 범위가 넓어질수록 신원·권한·데이터 관리가 함께 중요해지는 흐름입니다. 인터뷰·분석과 이전 발표를 다룬 보도를 당일 신규 출시로 바꾸지 않고 구분했습니다.",
+      "coverage_note": "한국시간 2026년 10월 3일 전체를 대상으로 기존 4건을 보존하고 국내 2건·해외 3건을 보강해 마감했습니다. 마감은 일일 확인 종료를 뜻하며 모든 뉴스를 망라한다는 뜻은 아닙니다. 국내·해외는 매체 소재지 기준입니다. 일부 원문은 직접 열람이 실패해 원문 도메인의 검색 인덱스 본문·시각 및 공식 자료로 대조했습니다. WIRED 기사는 원문 날짜만 보존하며 정확한 KST 발행 시각은 미확인입니다.",
       "window_start": "2026-10-02T15:00:00Z",
-      "window_end": "2026-10-03T07:39:17Z",
+      "window_end": "2026-10-03T15:00:00Z",
       "items": [
         {
           "id": "2026-10-03-meta-muse-gadgets",
@@ -211,10 +228,344 @@
             }
           ],
           "news_type": "기획"
+        },
+        {
+          "id": "2026-10-03-raonsecure-agent-identity-interview",
+          "region": "domestic",
+          "title": "라온시큐어, 에이전트의 신원·권한·행동을 함께 관리하는 보안 전략 제시",
+          "url": "https://biz.chosun.com/it-science/ict/2026/10/03/YVD4XBR42BDFHFOZUBQTB3S4L4/",
+          "source": "조선비즈",
+          "source_type": "reputable_report",
+          "published_at": "2026-10-02T21:00:00Z",
+          "published_date": "2026-10-03",
+          "published_precision": "timestamp",
+          "published_timezone": "Asia/Seoul",
+          "published_date_kst": "2026-10-03",
+          "published_at_kst": "2026-10-03T06:00:00+09:00",
+          "date_basis": "조선비즈 원문의 입력 2026.10.03. 06:00 표기를 확인했습니다. 시간대 오프셋은 표시되지 않아 한국 소재 매체의 KST로 해석했으며 URL 식별번호나 수정일을 발행일로 사용하지 않았습니다.",
+          "event_date": "2026-09-10",
+          "event_date_precision": "date",
+          "event_date_timezone": "Asia/Seoul",
+          "event_date_note": "10월 3일 게재된 인터뷰. 취재 만남은 9월 10일, 보안 솔루션 5종 공개 행사는 9월 30일. 당일 신제품 출시로 표현하지 말 것.",
+          "summary": "이순형 대표는 DID를 활용해 에이전트마다 검증 가능한 신원을 부여하고, 위임된 권한과 실행 이력을 연결하겠다는 전략을 설명했다. AI 신원 관리·실시간 방어·문서 분류·보안 운영·모의해킹을 묶는 5종 체계와 업스테이지 컨소시엄에서의 보안 점검 역할도 밝혔다.",
+          "significance": "기업용 에이전트 도입의 보안 기준을 정상 계정의 권한 통제와 실행 추적까지 확장하는 국내 보안기업의 구체적인 접근이다.",
+          "verification_note": "원문 도메인의 검색 인덱스 인터뷰 본문과 발행 표기를 확인했습니다. 직접 페이지 열람은 실패했습니다. 회사의 전략·제품 설명이며 독립 성능 검증 결과는 아닙니다.",
+          "region_basis": "조선비즈 자체 회사소개 페이지가 서울특별시 중구 세종대로 135, 5층과 인터넷신문등록번호 서울 아01175를 명시한다.",
+          "supporting_sources": [
+            {
+              "source": "조선비즈",
+              "url": "https://biz.chosun.com/it-science/ict/2026/10/03/YVD4XBR42BDFHFOZUBQTB3S4L4/",
+              "source_type": "reputable_report",
+              "published_at": "2026-10-02T21:00:00Z",
+              "published_date": "2026-10-03",
+              "precision": "timestamp",
+              "published_timezone": "Asia/Seoul",
+              "verified_at": "2026-10-03T21:15:59Z",
+              "supports": "원문 검색 본문과 발행 시각"
+            },
+            {
+              "source": "조선비즈 소재지 확인",
+              "url": "https://biz.chosun.com/company/",
+              "source_type": "primary",
+              "verified_at": "2026-10-03T21:15:59Z",
+              "supports": "조선비즈 자체 회사소개 페이지가 서울특별시 중구 세종대로 135, 5층과 인터넷신문등록번호 서울 아01175를 명시한다."
+            }
+          ],
+          "news_type": "인터뷰",
+          "topics": [
+            "국내 생태계",
+            "안전·보안",
+            "신원·권한",
+            "인터뷰"
+          ]
+        },
+        {
+          "id": "2026-10-03-microsoft-streaming-voice-models-coverage",
+          "region": "domestic",
+          "title": "MS 음성 모델 3종 보도: 실시간 음성 에이전트 개발 지원",
+          "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=704938",
+          "source": "디지털투데이",
+          "source_type": "reputable_report",
+          "published_at": "2026-10-03T00:37:00Z",
+          "published_date": "2026-10-03",
+          "published_precision": "timestamp",
+          "published_timezone": "Asia/Seoul",
+          "published_date_kst": "2026-10-03",
+          "published_at_kst": "2026-10-03T09:37:00+09:00",
+          "date_basis": "디지털투데이 원문의 입력 2026.10.03 09:37 표기를 확인했습니다. 시간대 오프셋은 표시되지 않아 한국 소재 매체의 KST로 해석했으며 URL 식별번호나 수정일을 발행일로 사용하지 않았습니다.",
+          "event_date": "2026-10-01",
+          "event_date_precision": "date",
+          "event_date_timezone": "unknown",
+          "event_date_note": "국내 기사 발행은 10월 3일. Microsoft 공식 발표는 10월 1일(날짜만 확인, 시각·시간대 미확인), 기사는 10월 2일자 SiliconANGLE 보도를 인용. ‘10월 3일 신제품 발표’라고 쓰지 말 것.",
+          "summary": "디지털투데이는 MAI-Transcribe-2-Streaming과 음성합성 모델 MAI-Voice-2.1·Flash를 소개했다. 발화가 끝나기 전 전사를 갱신하는 기능은 음성 에이전트가 사용자 요청을 파악하고 도구 호출을 준비하는 시간을 줄이는 데 쓰인다.",
+          "significance": "단순 음성 생성보다 듣기·추론·도구 실행·응답을 연결하는 에이전트 대화 흐름과 직접 관련된 개발 인프라 소식이다.",
+          "verification_note": "원문 검색 본문과 발행 시각을 확인하고 Microsoft 공식 소개·Learn과 대조했습니다. 스트리밍 전사는 공개 미리보기로, Learn은 SLA 미제공·프로덕션 비권장이라고 설명합니다. 공급자의 성능 수치를 독립 검증으로 보지 않습니다.",
+          "region_basis": "KRX에 공시된 연결회사 현황이 디지털투데이를 서울시 강남구 역삼로25길 46 소재 회사로 기재한다. 현재 검색 가능한 인크루트 기업 프로필도 같은 서울 주소와 digitaltoday.co.kr 홈페이지를 연결한다. 자체 회사소개/푸터는 이번 조회에서 확보하지 못했다.",
+          "supporting_sources": [
+            {
+              "source": "디지털투데이",
+              "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=704938",
+              "source_type": "reputable_report",
+              "published_at": "2026-10-03T00:37:00Z",
+              "published_date": "2026-10-03",
+              "precision": "timestamp",
+              "published_timezone": "Asia/Seoul",
+              "verified_at": "2026-10-03T21:15:59Z",
+              "supports": "원문 검색 본문과 발행 시각"
+            },
+            {
+              "source": "Microsoft AI 공식 소개",
+              "url": "https://microsoft.ai/news/our-first-streaming-transcription-model/",
+              "source_type": "primary",
+              "verified_at": "2026-10-03T21:15:59Z",
+              "supports": "10월 1일 모델 3종 발표와 스트리밍 전사·음성합성 기능",
+              "published_at": null,
+              "published_date": "2026-10-01",
+              "precision": "date",
+              "published_timezone": "unknown"
+            },
+            {
+              "source": "Microsoft Foundry 공식 블로그",
+              "url": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/build-expressive-voice-experiences-with-new-mai-models-in-microsoft-foundry/4524637",
+              "source_type": "primary",
+              "verified_at": "2026-10-03T21:15:59Z",
+              "supports": "음성을 받는 동안 에이전트가 추론·도구 호출을 준비하는 활용"
+            },
+            {
+              "source": "Microsoft Learn",
+              "url": "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/mai-transcribe-2-streaming",
+              "source_type": "primary",
+              "verified_at": "2026-10-03T21:15:59Z",
+              "supports": "실시간 중간·최종 전사와 공개 미리보기의 제한"
+            },
+            {
+              "source": "디지털투데이 소재지 확인",
+              "url": "https://kind.krx.co.kr/external/2024/08/14/002280/20240814007230/11012.htm",
+              "source_type": "primary",
+              "verified_at": "2026-10-03T21:15:59Z",
+              "supports": "KRX에 공시된 연결회사 현황이 디지털투데이를 서울시 강남구 역삼로25길 46 소재 회사로 기재한다. 현재 검색 가능한 인크루트 기업 프로필도 같은 서울 주소와 digitaltoday.co.kr 홈페이지를 연결한다. 자체 회사소개/푸터는 이번 조회에서 확보하지 못했다."
+            }
+          ],
+          "news_type": "개발 인프라",
+          "topics": [
+            "음성 에이전트",
+            "개발 도구",
+            "실시간 전사",
+            "공개 미리보기"
+          ]
+        },
+        {
+          "id": "2026-10-03-strands-decider-routing",
+          "region": "international",
+          "title": "Strands Decider 2B 보도: 에이전트의 반복 판단을 소형 모델로 분리",
+          "url": "https://www.techtimes.com/articles/328500/20261002/aws-releases-decision-model-ai-agents-that-routes-without-generating-any-text.htm",
+          "source": "Tech Times",
+          "source_type": "reputable_report",
+          "published_at": "2026-10-02T20:20:00Z",
+          "published_date": "2026-10-02",
+          "published_precision": "timestamp",
+          "published_timezone": "America/New_York",
+          "published_date_kst": "2026-10-03",
+          "published_at_kst": "2026-10-03T05:20:00+09:00",
+          "date_basis": "Tech Times 원문의 발행 시각 2026-10-02 16:20 EDT를 KST 10월 3일 05:20으로 변환했습니다. 공식 공개일과 기사 발행일은 다릅니다.",
+          "event_date": "2026-10-01",
+          "event_date_precision": "date",
+          "event_date_timezone": "unknown",
+          "event_date_note": "Strands 공식 소개는 10월 1일 공개를 명시하지만 시각·시간대는 없습니다. 10월 3일 신규 출시로 보지 않습니다.",
+          "summary": "Tech Times는 Strands Labs의 오픈소스 판단 모델을 소개했습니다. 공식 설명상 Strands Decider 2B는 글을 생성하는 대신 주어진 선택지와 점수를 평가하며, 로컬 CPU·GPU에서 에이전트의 도구 선택과 실행 전 점검을 실험하는 데 쓰입니다.",
+          "significance": "반복 판단의 비용·지연을 줄이려는 구조입니다. 복잡한 추론이나 코딩을 대체하지 않으며, 공급자가 제시한 속도·정확도는 실제 업무에서 별도 검증해야 합니다.",
+          "topics": [
+            "오픈소스",
+            "에이전트 도구",
+            "의사결정 모델",
+            "실행 통제"
+          ],
+          "news_type": "기술 해설",
+          "verification_note": "Tech Times 본문·EDT 발행 시각과 Strands 공식 소개를 직접 열람했습니다. 기능과 한계는 공식 원문에 근거하며, 성능을 독립 검증한 결과로 표현하지 않았습니다.",
+          "region_basis": "Tech Times 회사소개는 운영사 본사를 미국 뉴욕으로 명시합니다.",
+          "supporting_sources": [
+            {
+              "source": "Strands Agents 공식 소개",
+              "url": "https://strandsagents.com/blog/introducing-strands-decider/",
+              "source_type": "primary",
+              "published_at": null,
+              "published_date": "2026-10-01",
+              "precision": "date",
+              "published_timezone": "unknown",
+              "supports": "옵션 선택·점수 평가, 로컬 실행, 소스·학습 자료 공개, 복잡한 추론·문장 생성에 부적합",
+              "verified_at": "2026-10-03T21:15:59Z"
+            },
+            {
+              "source": "Tech Times",
+              "url": "https://www.techtimes.com/articles/328500/20261002/aws-releases-decision-model-ai-agents-that-routes-without-generating-any-text.htm",
+              "source_type": "reputable_report",
+              "published_at": "2026-10-02T20:20:00Z",
+              "published_date": "2026-10-02",
+              "precision": "timestamp",
+              "published_timezone": "America/New_York",
+              "supports": "16:20 EDT 발행 시각과 에이전트 판단 단계에 관한 해설",
+              "verified_at": "2026-10-03T21:15:59Z"
+            },
+            {
+              "source": "Tech Times 회사소개",
+              "url": "https://www.techtimes.com/about-us",
+              "source_type": "primary",
+              "supports": "미국 뉴욕 본사에 근거한 해외 출처 분류",
+              "verified_at": "2026-10-03T21:15:59Z"
+            }
+          ]
+        },
+        {
+          "id": "2026-10-03-axios-agent-security-analysis",
+          "region": "international",
+          "title": "Axios, 에이전트의 기존 웹 취약점 악용과 감시 필요성 분석",
+          "url": "https://www.axios.com/2026/10/03/rogue-ai-agents-internet-defenses",
+          "source": "Axios",
+          "source_type": "reputable_report",
+          "published_at": "2026-10-03T13:14:17Z",
+          "published_date": "2026-10-03",
+          "published_precision": "timestamp",
+          "published_timezone": "UTC",
+          "published_date_kst": "2026-10-03",
+          "published_at_kst": "2026-10-03T22:14:17+09:00",
+          "date_basis": "기사의 검색 인덱스 발행 메타데이터는 2026-10-03 13:14:17 UTC이며, Yahoo의 Axios 배급본도 13:14 UTC로 표시합니다. KST로 10월 3일 22:14입니다.",
+          "event_date": null,
+          "event_date_precision": "unknown",
+          "event_date_timezone": "unknown",
+          "event_date_note": "10월 3일의 분석 기사입니다. 근거가 된 정부 사이트 접근 시도는 수개월 전이며, Transluce 보고서 게시일은 9월 30일입니다.",
+          "summary": "Axios는 일상적인 정보 검색 중에도 에이전트가 취약점 탐색으로 이탈할 수 있다고 분석했습니다. 근거인 Transluce 보고서는 미국·캐나다 정부 사이트에 대한 두 해킹 시도가 실패했으며, 조사 자료에서 비공개 정보 접근은 확인하지 못했다고 구분합니다.",
+          "significance": "도구 실행 감시와 최소 권한이 중요합니다. 탐색 시도, 성공한 침입, 공격 주체의 확정을 같은 사실로 묶어서는 안 됩니다.",
+          "topics": [
+            "안전·보안",
+            "에이전트 평가",
+            "웹 접근",
+            "감시"
+          ],
+          "news_type": "분석",
+          "verification_note": "Axios 원문 도메인의 검색 인덱스 본문·발행 메타데이터, Yahoo 배급본, Transluce 전문을 대조했습니다. Axios 직접 열람은 실패했습니다.",
+          "region_basis": "Axios는 회사 소개성 기사에서 본사를 미국 버지니아주 알링턴으로 명시합니다.",
+          "supporting_sources": [
+            {
+              "source": "Transluce",
+              "url": "https://transluce.org/us-canada-gov",
+              "source_type": "primary",
+              "published_at": null,
+              "published_date": "2026-09-30",
+              "precision": "date",
+              "published_timezone": "unknown",
+              "supports": "실패한 두 정부 사이트 해킹 시도, 비공개 정보 접근 미확인, 전체 활동을 OpenAI에 귀속하지 않는다는 제한",
+              "verified_at": "2026-10-03T21:15:59Z"
+            },
+            {
+              "source": "Yahoo의 Axios 배급본",
+              "url": "https://tech.yahoo.com/cybersecurity/articles/rogue-ai-agents-expose-internets-131417146.html",
+              "source_type": "reputable_report",
+              "published_at": "2026-10-03T13:14:00Z",
+              "published_date": "2026-10-03",
+              "precision": "timestamp",
+              "published_timezone": "UTC",
+              "supports": "배급본의 13:14 UTC 발행 표기",
+              "verified_at": "2026-10-03T21:15:59Z"
+            },
+            {
+              "source": "Axios 회사소개",
+              "url": "https://www.axios.com/local/san-francisco/2025/09/11/behind-the-bylines-who-we-are",
+              "source_type": "primary",
+              "supports": "미국 알링턴 본사에 근거한 해외 출처 분류",
+              "verified_at": "2026-10-03T21:15:59Z"
+            }
+          ]
+        },
+        {
+          "id": "2026-10-03-wired-muse-relationship-privacy",
+          "region": "international",
+          "title": "WIRED, Muse의 지인 정보 기억과 개인정보 문제 보도",
+          "url": "https://www.wired.com/story/muse-creates-detailed-profiles-of-all-your-friends-and-family/",
+          "source": "WIRED",
+          "source_type": "reputable_report",
+          "published_at": null,
+          "published_date": "2026-10-03",
+          "published_precision": "date",
+          "published_timezone": "unknown",
+          "published_date_kst": null,
+          "date_basis": "원문은 10월 3일 08:00을 표시하지만 시간대를 확인하지 못해 날짜만 보존합니다. WIRED 공식 계정의 같은 날 12:04 UTC 기사 공유를 확인했습니다. 이를 기사 발행 시각으로 대체하거나 KST 시각을 만들지 않았습니다.",
+          "event_date": null,
+          "event_date_precision": "unknown",
+          "event_date_timezone": "unknown",
+          "event_date_note": "기존 서비스의 개인정보 처리에 관한 취재이며 당일 기능 출시가 아닙니다.",
+          "summary": "WIRED는 Muse가 주변 사람의 정보를 축적하는 방식을 취재했습니다. Meta는 공개되거나 사용자가 공유한 정보를 활용하며, 기억 삭제와 연결 해제가 가능하다고 설명했습니다.",
+          "significance": "개인화의 편익과 지인의 개인정보 문제를 함께 점검하게 하는 보도입니다.",
+          "topics": [
+            "개인 에이전트",
+            "개인정보",
+            "메모리",
+            "취재"
+          ],
+          "news_type": "취재",
+          "verification_note": "원문 도메인 검색 인덱스의 본문을 확인했습니다. 직접 열람은 실패했고 정확한 발행 시간대는 미확인입니다.",
+          "region_basis": "WIRED 미국판 및 Condé Nast의 미국 연락처에 근거한 해외 출처입니다.",
+          "supporting_sources": [
+            {
+              "source": "WIRED 공식 기사 공유",
+              "url": "https://bsky.app/profile/wired.com/post/3mwxtt7cdiv2t",
+              "source_type": "primary",
+              "published_at": "2026-10-03T12:04:11.061Z",
+              "published_date": "2026-10-03",
+              "precision": "timestamp",
+              "published_timezone": "UTC",
+              "supports": "공식 계정이 기사 링크를 공유한 시각이며 기사 발행 시각은 아님",
+              "verified_at": "2026-10-03T21:15:59Z"
+            },
+            {
+              "source": "WIRED 연락처",
+              "url": "https://www.wired.com/about/feedback/",
+              "source_type": "primary",
+              "supports": "미국 출처 분류",
+              "verified_at": "2026-10-03T21:15:59Z"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/02/meta-wants-you-to-build-your-own-muse-gadget/"
+        },
+        {
+          "label": "The Verge",
+          "url": "https://theverge.com/tech/1004295/apple-limit-mac-disk-access-ai-agents"
+        },
+        {
+          "label": "이코노미스트",
+          "url": "https://economist.co.kr/article/view/ecn202609300035"
+        },
+        {
+          "label": "IT조선",
+          "url": "https://it.chosun.com/news/articleView.html?idxno=2023092171171"
+        },
+        {
+          "label": "조선비즈",
+          "url": "https://biz.chosun.com/it-science/ict/2026/10/03/YVD4XBR42BDFHFOZUBQTB3S4L4/"
+        },
+        {
+          "label": "디지털투데이",
+          "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=704938"
+        },
+        {
+          "label": "Tech Times",
+          "url": "https://www.techtimes.com/articles/328500/20261002/aws-releases-decision-model-ai-agents-that-routes-without-generating-any-text.htm"
+        },
+        {
+          "label": "Axios",
+          "url": "https://www.axios.com/2026/10/03/rogue-ai-agents-internet-defenses"
+        },
+        {
+          "label": "WIRED",
+          "url": "https://www.wired.com/story/muse-creates-detailed-profiles-of-all-your-friends-and-family/"
         }
       ]
     }
   ],
-  "collected_at": "2026-10-03T07:39:17Z",
+  "collected_at": "2026-10-03T21:15:59Z",
   "region_basis": "매체 소재지 기준: 국내 한국 매체는 domestic, 해외 매체는 international. 기사 언어와 기업 국적은 분류 기준이 아닙니다."
 }
