@@ -58,7 +58,7 @@ export function timelineDateLabel(item) {
   return String(item.date).slice(0,10).replaceAll('-','.');
 }
 export function timelineDateTypeLabel(item) {
-  const labels={product_release:'제품 출시',product_announcement:'공식 발표',public_beta_release:'공개 베타',research_preview:'리서치 프리뷰',protocol_release:'프로토콜 공개',official_announcement:'공식 발표',official_research_post:'공식 연구 발표',official_engineering_post:'공식 기술 발표',arxiv_first_submission:'논문 최초 제출',repository_creation:'저장소 생성',repository_first_commit:'최초 공개 코드',project_origin:'프로젝트 시작',project_launch:'프로젝트 공개',project_announcement:'프로젝트 발표',project_rename:'이름 변경 발표',open_source_release:'오픈소스 공개',foundation_announcement:'재단 출범'};
+  const labels={product_release:'제품 출시',product_announcement:'공식 발표',public_beta_release:'공개 베타',public_preview_release:'공개 프리뷰',research_preview:'리서치 프리뷰',protocol_release:'프로토콜 공개',official_announcement:'공식 발표',official_research_post:'공식 연구 발표',official_engineering_post:'공식 기술 발표',arxiv_first_submission:'논문 최초 제출',repository_creation:'저장소 생성',repository_first_commit:'최초 공개 코드',project_origin:'프로젝트 시작',project_launch:'프로젝트 공개',project_announcement:'프로젝트 발표',project_rename:'이름 변경 발표',open_source_release:'오픈소스 공개',foundation_announcement:'재단 출범'};
   return labels[item.date_type] || '원문 기준';
 }
 export function matching(item, query) {

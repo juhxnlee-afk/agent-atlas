@@ -24,6 +24,7 @@ test('Timeline preserves real date precision and rejects invalid or fabricated d
 test('Timeline requires a usable title, summary and primary source; distinct event types stay visible',()=>{
  assert.equal(normalizeTimeline([row('2025-01-23'),row('2025-01-23',{summary:''}),row('2025-01-23',{title:' '}),row('2025-01-23',{source_url:'javascript:alert(1)'})]).rejected,3);
  assert.equal(timelineDateTypeLabel(row('2025-01-23')),'제품 출시');
+ assert.equal(timelineDateTypeLabel(row('2026-09-29',{date_type:'public_preview_release'})),'공개 프리뷰');
  assert.equal(timelineDateTypeLabel(row('2025-01-23',{date_type:'repository_creation'})),'저장소 생성');
  assert.equal(timelineDateTypeLabel(row('2025-01-23',{date_type:'project_rename'})),'이름 변경 발표');
 });

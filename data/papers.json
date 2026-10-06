@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "collected_at": "2026-10-03T21:09:06Z",
+  "collected_at": "2026-10-05T21:10:45Z",
   "timezone": "Asia/Seoul",
   "items": [
     {
@@ -128,6 +128,19 @@
       "category": "평가·벤치마크"
     },
     {
+      "id": "2610.00015",
+      "title": "From Proposal to Verified Effect: Praxa, an Evidence-Bound Harness for Governed AI Agent Execution",
+      "url": "https://arxiv.org/abs/2610.00015",
+      "date": "2026-07-27",
+      "date_type": "arxiv_first_submission",
+      "description_ko": "행동 제안·권한 부여·실행 요청·외부 결과 확인을 서로 다른 상태로 기록하는 에이전트 실행 구조를 제안한다. 저자 자체 시험과 소규모 비교에서는 일부 구현 근거를 보였지만, 작업 성공률 우위나 실제 서비스의 보안·안전성은 입증하지 않았다.",
+      "category": "안전·신뢰성",
+      "source_url": "https://arxiv.org/abs/2610.00015",
+      "first_submitted_at": "2026-07-27T05:57:10Z",
+      "date_basis": "원문 /abs/2610.00015와 명시적 v1 페이지 /abs/2610.00015v1 모두 Submission history에 [v1] Mon, 27 Jul 2026 05:57:10 UTC로 표시한다. PDF 첫 장의 arXiv v1 표시도 27 Jul 2026이다. 식별자 2610 및 10월 목록 노출과 구분하여 7월 27일 최초 제출로 보존한다.",
+      "version_note": "이번 수집의 과거 자료 보강이다. 최근 7일의 신규 최초 제출로 집계하지 않는다."
+    },
+    {
       "id": "2608.02650",
       "title": "HyperAgent: Planning and Acting over Tool-Schema Hypergraphs for Tool-Use LLM Agents",
       "url": "https://arxiv.org/abs/2608.02650",
@@ -215,6 +228,30 @@
       "date_basis": "arXiv Submission history의 v1 UTC 시각; 수정일·arXiv 식별자 월과 구분"
     },
     {
+      "id": "2610.00366",
+      "title": "What Should an Agent Remember? Disentangling Retention from Retrieval in Bounded-Memory Evaluation",
+      "url": "https://arxiv.org/abs/2610.00366",
+      "date": "2026-09-30",
+      "date_type": "arxiv_first_submission",
+      "description_ko": "에이전트가 정보를 얼마나 보존하는지와 보존된 정보 중 무엇을 검색하는지를 분리해 평가한다. 같은 기록에 접근하도록 조건을 맞춘 실험에서, 기억 삭제 때문에 생긴 실패를 검색 알고리즘의 한계로 오해할 수 있음을 보이며 보존·선택 지표의 별도 보고를 제안한다.",
+      "category": "메모리",
+      "source_url": "https://arxiv.org/abs/2610.00366",
+      "first_submitted_at": "2026-09-30T06:38:14Z",
+      "date_basis": "arXiv 원문 초록 페이지 Submission history의 v1 UTC 시각을 확인했다. 검색 결과의 게시일·수집일, 개정일, arXiv 식별자 월을 최초 제출일로 사용하지 않는다."
+    },
+    {
+      "id": "2610.00371",
+      "title": "Deny Without Disabling: Authorization-Paired Evaluation and Control for Multi-Agent Systems",
+      "url": "https://arxiv.org/abs/2610.00371",
+      "date": "2026-09-30",
+      "date_type": "arxiv_first_submission",
+      "description_ko": "여러 에이전트가 합친 정보의 금지된 사용을 막으면서 허용된 협업도 완수하는지 함께 평가한다. 객체 식별·권한 판단·실행 통제를 연결하는 FlowReview를 제시하며, 통제된 합성 실험의 결과를 일반 환경의 안전성 보증과 구분한다.",
+      "category": "안전·신뢰성",
+      "source_url": "https://arxiv.org/abs/2610.00371",
+      "first_submitted_at": "2026-09-30T06:55:18Z",
+      "date_basis": "arXiv 원문 초록 페이지 Submission history의 v1 UTC 시각을 확인했다. 검색 결과의 게시일·수집일, 개정일, arXiv 식별자 월을 최초 제출일로 사용하지 않는다."
+    },
+    {
       "id": "2610.00372",
       "title": "When Harnesses Lose the Signal: Causal Evaluation of Recovery in LLM Agents",
       "url": "https://arxiv.org/abs/2610.00372",
@@ -225,6 +262,30 @@
       "source_url": "https://arxiv.org/abs/2610.00372",
       "first_submitted_at": "2026-09-30T07:04:25Z",
       "date_basis": "arXiv Submission history의 v1 UTC 시각; 수정일·arXiv 식별자 월과 구분"
+    },
+    {
+      "id": "2610.00437",
+      "title": "JevSpawn: Adaptive Agentic Inference through Compositional Action Spaces",
+      "url": "https://arxiv.org/abs/2610.00437",
+      "date": "2026-09-30",
+      "date_type": "arxiv_first_submission",
+      "description_ko": "자연어 과제를 유한한 행동 후보로 구성하고 병렬 탐색과 피드백 기반 선택을 결합한다. 실패한 분기에서 보존한 대안으로 복구하고 공통 구조·접두사를 재사용해 반복 생성을 줄이는 방식을 여덟 벤치마크에서 비교한다.",
+      "category": "계획·추론",
+      "source_url": "https://arxiv.org/abs/2610.00437",
+      "first_submitted_at": "2026-09-30T17:23:01Z",
+      "date_basis": "arXiv 원문 초록 페이지 Submission history의 v1 UTC 시각을 확인했다. 검색 결과의 게시일·수집일, 개정일, arXiv 식별자 월을 최초 제출일로 사용하지 않는다."
+    },
+    {
+      "id": "2610.00583",
+      "title": "Worse Together: How Performance Breaks Down in Multi-User Multi-Agent Teams",
+      "url": "https://arxiv.org/abs/2610.00583",
+      "date": "2026-09-30",
+      "date_type": "arxiv_first_submission",
+      "description_ko": "서로 다른 사용자를 대리하는 에이전트들이 예산·일정·예약·배포 순서를 공유하는 77개 시나리오를 분석한다. 실험에서는 여러 에이전트 팀이 단일 조정자보다 낮은 집단 성과를 보였고, 리더 지정·명시적 절차·실행 전 동료 메시지 확인의 효과는 환경마다 달랐다.",
+      "category": "멀티에이전트",
+      "source_url": "https://arxiv.org/abs/2610.00583",
+      "first_submitted_at": "2026-09-30T18:49:25Z",
+      "date_basis": "arXiv 원문 초록 페이지 Submission history의 v1 UTC 시각을 확인했다. 검색 결과의 게시일·수집일, 개정일, arXiv 식별자 월을 최초 제출일로 사용하지 않는다."
     },
     {
       "id": "2610.00648",
@@ -275,6 +336,15 @@
       "date_basis": "arXiv Submission history의 v1 UTC 시각; 수정일·arXiv 식별자 월과 구분"
     },
     {
+      "id": "2610.01618",
+      "title": "Agents Are Systems, Not Models: Rethinking Agentic Evaluation",
+      "url": "https://arxiv.org/abs/2610.01618",
+      "date": "2026-10-01",
+      "date_type": "arxiv_first_submission",
+      "description_ko": "과제 정보·추론·자가검증·시간 예산·기반 모델을 바꾸며 에이전트를 구성 가능한 시스템으로 평가한다. 네 가지 과학 과제에서 구성의 영향과 실행 간 변동성을 분석하고 18,000개 이상의 실행 궤적을 공개한다.",
+      "category": "평가·벤치마크"
+    },
+    {
       "id": "2610.00872",
       "title": "MemFit: Efficient Long-Term Agentic Memory",
       "url": "https://arxiv.org/abs/2610.00872",
@@ -285,6 +355,18 @@
       "source_url": "https://arxiv.org/abs/2610.00872",
       "first_submitted_at": "2026-10-01T00:44:33Z",
       "date_basis": "arXiv Submission history의 v1 UTC 시각; 수정일·arXiv 식별자 월과 구분"
+    },
+    {
+      "id": "2610.00906",
+      "title": "ActiveSaddler: Automated Curriculum Learning for Agent Harness Optimization",
+      "url": "https://arxiv.org/abs/2610.00906",
+      "date": "2026-10-01",
+      "date_type": "arxiv_first_submission",
+      "description_ko": "프롬프트·도구 인터페이스·제어 로직을 개선할 때 학습에 사용할 실패 사례의 순서도 함께 최적화한다. 반복 실패를 유형별로 묶고 이미 발견한 약점의 개선과 새로운 실패 탐색을 조절하며 GAIA2와 Terminal-Bench 2.0에서 고정 순서 방식과 비교한다.",
+      "category": "에이전트 최적화",
+      "source_url": "https://arxiv.org/abs/2610.00906",
+      "first_submitted_at": "2026-10-01T01:36:03Z",
+      "date_basis": "arXiv 원문 초록 페이지 Submission history의 v1 UTC 시각을 확인했다. 검색 결과의 게시일·수집일, 개정일, arXiv 식별자 월을 최초 제출일로 사용하지 않는다."
     },
     {
       "id": "2610.00917",
@@ -299,6 +381,18 @@
       "date_basis": "arXiv Submission history의 v1 UTC 시각; 수정일·arXiv 식별자 월과 구분"
     },
     {
+      "id": "2610.00972",
+      "title": "VeriHarness: Scaling Agentic Verification for Long-Horizon Tasks",
+      "url": "https://arxiv.org/abs/2610.00972",
+      "date": "2026-10-01",
+      "date_type": "arxiv_first_submission",
+      "description_ko": "긴 작업의 여러 실행 결과를 환경 증거·도구·검증 스킬로 비교하고 수정하는 검증 구조다. 서로 다른 답뿐 아니라 모두가 동의한 답도 재검토해 공통 오류와 빠진 요구사항을 찾으며, 다섯 작업 공간 벤치마크에서 결과 선택과 수정 효과를 평가한다.",
+      "category": "평가·벤치마크",
+      "source_url": "https://arxiv.org/abs/2610.00972",
+      "first_submitted_at": "2026-10-01T03:02:17Z",
+      "date_basis": "arXiv 원문 초록 페이지 Submission history의 v1 UTC 시각을 확인했다. 검색 결과의 게시일·수집일, 개정일, arXiv 식별자 월을 최초 제출일로 사용하지 않는다."
+    },
+    {
       "id": "2610.00980",
       "title": "Can AI Scientists Coordinate at Runtime?",
       "url": "https://arxiv.org/abs/2610.00980",
@@ -309,6 +403,18 @@
       "source_url": "https://arxiv.org/abs/2610.00980",
       "first_submitted_at": "2026-10-01T03:18:07Z",
       "date_basis": "arXiv Submission history의 v1 UTC 시각; 수정일·arXiv 식별자 월과 구분"
+    },
+    {
+      "id": "2610.01045",
+      "title": "Empty Commitments: When Agents Promise What Their Runtime Cannot Deliver",
+      "url": "https://arxiv.org/abs/2610.01045",
+      "date": "2026-10-01",
+      "date_type": "arxiv_first_submission",
+      "description_ko": "현재 도구와 실행 환경으로는 이행할 수 없는 다음 턴 이후의 약속을 빈 약속으로 정의한다. 지속 실행 기능을 하나씩 추가하는 다섯 환경을 비교하는 측정 절차와 실패 유형을 제안하며, 실제 장기 실행 결과를 검증한 대규모 성능 연구와는 구분된다.",
+      "category": "안전·신뢰성",
+      "source_url": "https://arxiv.org/abs/2610.01045",
+      "first_submitted_at": "2026-10-01T04:37:37Z",
+      "date_basis": "arXiv 원문 초록 페이지 Submission history의 v1 UTC 시각을 확인했다. 검색 결과의 게시일·수집일, 개정일, arXiv 식별자 월을 최초 제출일로 사용하지 않는다."
     },
     {
       "id": "2610.01160",
@@ -347,15 +453,6 @@
       "date_basis": "arXiv Submission history의 v1 UTC 시각; 수정일·arXiv 식별자 월과 구분"
     },
     {
-      "id": "2610.01618",
-      "title": "Agents Are Systems, Not Models: Rethinking Agentic Evaluation",
-      "url": "https://arxiv.org/abs/2610.01618",
-      "date": "2026-10-01",
-      "date_type": "arxiv_first_submission",
-      "description_ko": "과제 정보·추론·자가검증·시간 예산·기반 모델을 바꾸며 에이전트를 구성 가능한 시스템으로 평가한다. 네 가지 과학 과제에서 구성의 영향과 실행 간 변동성을 분석하고 18,000개 이상의 실행 궤적을 공개한다.",
-      "category": "평가·벤치마크"
-    },
-    {
       "id": "2610.01756",
       "title": "SoK: Decentralized Agent Economic Infrastructure",
       "url": "https://arxiv.org/abs/2610.01756",
@@ -380,6 +477,18 @@
       "date_basis": "arXiv Submission history의 v1 UTC 시각; 수정일·arXiv 식별자 월과 구분"
     },
     {
+      "id": "2610.02001",
+      "title": "Mingbird: A Local-First Agent Harness Enabling Small Open Models to Complete Real Tasks",
+      "url": "https://arxiv.org/abs/2610.02001",
+      "date": "2026-10-01",
+      "date_type": "arxiv_first_submission",
+      "description_ko": "작은 공개 모델의 작업 실패를 줄이기 위해 컨텍스트 예산·완료 전 재확인·반복 탐지를 묶은 Windows·Ollama용 실행 구조를 제시한다. 하네스의 영향을 비교하지만 자체 벤치마크, 단일 기기, 단일 시행 등 실험 한계와 반복 측정의 변동성을 함께 밝힌다.",
+      "category": "코딩·운영",
+      "source_url": "https://arxiv.org/abs/2610.02001",
+      "first_submitted_at": "2026-10-01T16:32:07Z",
+      "date_basis": "arXiv 원문 초록 페이지 Submission history의 v1 UTC 시각을 확인했다. 검색 결과의 게시일·수집일, 개정일, arXiv 식별자 월을 최초 제출일로 사용하지 않는다."
+    },
+    {
       "id": "2610.02070",
       "title": "Causal Memory Policy: Making Memory Utility Identifiable by Intervening on Retrieval",
       "url": "https://arxiv.org/abs/2610.02070",
@@ -390,6 +499,150 @@
       "source_url": "https://arxiv.org/abs/2610.02070",
       "first_submitted_at": "2026-10-01T17:11:25Z",
       "date_basis": "arXiv Submission history의 v1 UTC 시각; 수정일·arXiv 식별자 월과 구분"
+    },
+    {
+      "id": "2610.02122",
+      "title": "Argo-Bench: Evaluating Data Agents on Enterprise-Scale Workflows",
+      "url": "https://arxiv.org/abs/2610.02122",
+      "date": "2026-10-01",
+      "date_type": "arxiv_first_submission",
+      "description_ko": "235개 테이블·75억 행의 모의 기업 데이터 환경에서 210개 분석·행동 과제를 평가한다. SQL 정답을 넘어 에이전트의 예산 배분·계정 조치 등이 시뮬레이터에 미친 결과를 채점하며, 실제 기업 고객 데이터가 아닌 합성 환경임을 명시한다.",
+      "category": "평가·벤치마크",
+      "source_url": "https://arxiv.org/abs/2610.02122",
+      "first_submitted_at": "2026-10-01T17:35:44Z",
+      "date_basis": "arXiv Submission history의 v1 UTC 시각; 수정일·검색 노출일·수집일과 구분"
+    },
+    {
+      "id": "2610.02351",
+      "title": "DeReAct: Decomposed Reasoning and Acting for Reliable AI Agents",
+      "url": "https://arxiv.org/abs/2610.02351",
+      "date": "2026-10-01",
+      "date_type": "arxiv_first_submission",
+      "description_ko": "행동 전 검증과 작업 완료 판단을 주 추론 모델에서 분리하는 DeReAct 구조를 제안한다. GAIA와 SWE-bench Verified에서 모델 능력에 따라 개선 폭이 달랐으며, 별도 완료 검증이 근거와 제약 충족에 미치는 영향을 살핀다.",
+      "category": "아키텍처·서베이",
+      "source_url": "https://arxiv.org/abs/2610.02351",
+      "first_submitted_at": "2026-10-01T18:25:07Z",
+      "date_basis": "arXiv Submission history의 v1 UTC 시각; 수정일·검색 노출일·수집일과 구분"
+    },
+    {
+      "id": "2610.02405",
+      "title": "When Terminal-Agent Training Stalls: Demystifying Data Generation and Verification Challenge",
+      "url": "https://arxiv.org/abs/2610.02405",
+      "date": "2026-10-01",
+      "date_type": "arxiv_first_submission",
+      "description_ko": "터미널 에이전트 학습용 과제·검증기를 생성할 때 벤치마크 오류, 하네스 취약성, 보상 불일치를 구분해 분석한다. 실행 가능한 테스트만으로 학습 데이터의 타당성이 보장되지 않으며, 모델별 과제 난도 조정과 검증기 감사가 필요하다고 제안한다.",
+      "category": "강화학습",
+      "source_url": "https://arxiv.org/abs/2610.02405",
+      "first_submitted_at": "2026-10-01T19:32:44Z",
+      "date_basis": "arXiv Submission history의 v1 UTC 시각; 수정일·검색 노출일·수집일과 구분"
+    },
+    {
+      "id": "2610.02616",
+      "title": "VERSE: Verified Self-Evolving Optimizer for Agent Harnesses",
+      "url": "https://arxiv.org/abs/2610.02616",
+      "date": "2026-10-02",
+      "date_type": "arxiv_first_submission",
+      "description_ko": "에이전트 하네스뿐 아니라 이를 개선하는 최적화기의 도구·절차도 함께 진화시키는 VERSE를 제안한다. 실패 재실행과 수정안의 실행 검증을 통해 회귀를 추적하며, 모델 가중치는 고정한 채 분리된 학습·검증·평가 과제로 효과를 비교한다.",
+      "category": "실행·최적화",
+      "source_url": "https://arxiv.org/abs/2610.02616",
+      "first_submitted_at": "2026-10-02T00:16:30Z",
+      "date_basis": "arXiv Submission history의 v1 UTC 시각; 수정일·검색 노출일·수집일과 구분"
+    },
+    {
+      "id": "2610.02627",
+      "title": "Lost in the Request: How Communication Variation Disrupts Retrieval and Action in Email Agents",
+      "url": "https://arxiv.org/abs/2610.02627",
+      "date": "2026-10-02",
+      "date_type": "arxiv_first_submission",
+      "description_ko": "요청 내용과 근거를 고정한 채 말투·간접성·영어 변종을 바꾸어 이메일 에이전트의 견고성을 시험한다. 검색 실패와 필요한 행동의 누락을 구분하고, 답변의 품질만으로 요청한 업무의 완료를 평가할 수 없음을 보여준다.",
+      "category": "평가·벤치마크",
+      "source_url": "https://arxiv.org/abs/2610.02627",
+      "first_submitted_at": "2026-10-02T00:35:05Z",
+      "date_basis": "arXiv Submission history의 v1 UTC 시각; 수정일·검색 노출일·수집일과 구분"
+    },
+    {
+      "id": "2610.02664",
+      "title": "A GHOST in Long-Horizon Agents: Governance Hazard from Overlooked Safety Constraints across Turns",
+      "url": "https://arxiv.org/abs/2610.02664",
+      "date": "2026-10-02",
+      "date_type": "arxiv_first_submission",
+      "description_ko": "긴 대화에서 이전에 주어진 안전 제약을 놓치는 GHOST 현상을 분석한다. 과거 제약을 복원하고 실행 직전 별도 검사를 거치는 STAR-Guard를 제안하며, 효과는 저자의 제한된 실험 설정에서 보고됐다.",
+      "category": "안전·신뢰성",
+      "source_url": "https://arxiv.org/abs/2610.02664",
+      "first_submitted_at": "2026-10-02T01:33:04Z",
+      "date_basis": "arXiv Submission history의 v1 UTC 시각; 수정일·검색 노출일·수집일과 구분"
+    },
+    {
+      "id": "2610.02932",
+      "title": "When to Compile a Computer-Use Agent? Measuring Payback and Making Compilation Decisions for Token Efficiency",
+      "url": "https://arxiv.org/abs/2610.02932",
+      "date": "2026-10-02",
+      "date_type": "arxiv_first_submission",
+      "description_ko": "반복 GUI 작업을 프로그램으로 바꿀 때 실패한 컴파일·수리 비용과 향후 재사용 불확실성까지 계산하는 PACE를 제안한다. 누적 예산 제약 아래 예상 절감액과 변환 비용을 비교하며, 절감 결과는 기록된 작업 도착 순서를 이용한 시뮬레이션에서 평가했다.",
+      "category": "컴퓨터 사용",
+      "source_url": "https://arxiv.org/abs/2610.02932",
+      "first_submitted_at": "2026-10-02T07:22:46Z",
+      "date_basis": "arXiv Submission history의 v1 UTC 시각; 수정일·검색 노출일·수집일과 구분"
+    },
+    {
+      "id": "2610.03020",
+      "title": "DyadMem: A Long-Term Memory Benchmark of How Agents Work with Users",
+      "url": "https://arxiv.org/abs/2610.03020",
+      "date": "2026-10-02",
+      "date_type": "arxiv_first_submission",
+      "description_ko": "사용자 사실뿐 아니라 특정 사용자와 어떻게 일해야 하는지에 관한 관계별 기억을 평가한다. 3,065개 에피소드에서 기억 수집·갱신·검색을 나눠 측정해, 정답 기억을 제공했을 때의 QA 성능과 전체 기억 파이프라인 성능의 차이를 살핀다.",
+      "category": "메모리",
+      "source_url": "https://arxiv.org/abs/2610.03020",
+      "first_submitted_at": "2026-10-02T08:57:43Z",
+      "date_basis": "arXiv Submission history의 v1 UTC 시각; 수정일·검색 노출일·수집일과 구분"
+    },
+    {
+      "id": "2610.03036",
+      "title": "WebFovea: When the Model Is Right but the Click Is Wrong -- Reliable Round Trips for Vision-Based Web Agents on Live Websites",
+      "url": "https://arxiv.org/abs/2610.03036",
+      "date": "2026-10-02",
+      "date_type": "arxiv_first_submission",
+      "description_ko": "실제 웹사이트에서 시각 에이전트의 응답 해석·행동 실행·결과 전달·관측을 연결하는 하네스를 분석한다. 좌표 불일치와 조용한 입력 실패를 고친 동일 모델 제출에서 점수가 개선됐지만, 실시간 사이트의 실행 간 변동성도 한계로 남긴다.",
+      "category": "컴퓨터 사용",
+      "source_url": "https://arxiv.org/abs/2610.03036",
+      "first_submitted_at": "2026-10-02T09:18:28Z",
+      "date_basis": "arXiv Submission history의 v1 UTC 시각; 수정일·검색 노출일·수집일과 구분"
+    },
+    {
+      "id": "2610.03153",
+      "title": "EvoRiskBench: An Evolving Benchmark for Runtime Security Risks in Workspace Agents",
+      "url": "https://arxiv.org/abs/2610.03153",
+      "date": "2026-10-02",
+      "date_type": "arxiv_first_submission",
+      "description_ko": "여섯 업무 시나리오의 450개 공격 과제로 작업 공간 에이전트의 실행 보안을 평가한다. 모델과 하네스의 아홉 조합에서 실행 기록·환경 상태로 결과를 검증하며, 데이터와 평가 플랫폼은 안전성·재현성 확인 후 공개할 예정이라고 명시한다.",
+      "category": "안전·신뢰성",
+      "source_url": "https://arxiv.org/abs/2610.03153",
+      "first_submitted_at": "2026-10-02T11:22:36Z",
+      "date_basis": "arXiv Submission history의 v1 UTC 시각; 수정일·검색 노출일·수집일과 구분"
+    },
+    {
+      "id": "2610.03574",
+      "title": "HyperBrowseComp: A Multilingual and Multimodal Stress Test for Web-Browsing Agents",
+      "url": "https://arxiv.org/abs/2610.03574",
+      "date": "2026-10-02",
+      "date_type": "arxiv_first_submission",
+      "description_ko": "13개 언어의 사람이 작성·검증한 423개 질문으로 웹 탐색 에이전트를 평가한다. 희소한 근거, 여러 단계의 단서, 영상·스캔 문서·이미지·지도 연결이 필요한 문제를 제공하고 검색 도구 구성과 사람 평가를 함께 비교한다.",
+      "category": "평가·벤치마크",
+      "source_url": "https://arxiv.org/abs/2610.03574",
+      "first_submitted_at": "2026-10-02T16:48:49Z",
+      "date_basis": "arXiv Submission history의 v1 UTC 시각; 수정일·검색 노출일·수집일과 구분"
+    },
+    {
+      "id": "2610.03634",
+      "title": "Credit Where It Matters: Dependency-Aware Policy Optimization for Terminal Agents",
+      "url": "https://arxiv.org/abs/2610.03634",
+      "date": "2026-10-02",
+      "date_type": "arxiv_first_submission",
+      "description_ko": "터미널 명령의 읽기·쓰기 의존성을 추적해 강화학습 보상을 배분하는 DepGPO를 제안한다. 실행 기록에서 의존 그래프를 만들고 검증기가 확인한 자원에서 역추적해, 최종 결과와 관련 있는 명령에 학습 신호를 집중한다.",
+      "category": "강화학습",
+      "source_url": "https://arxiv.org/abs/2610.03634",
+      "first_submitted_at": "2026-10-02T17:24:48Z",
+      "date_basis": "arXiv Submission history의 v1 UTC 시각; 수정일·검색 노출일·수집일과 구분"
     }
   ]
 }

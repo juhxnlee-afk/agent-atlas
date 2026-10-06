@@ -4,21 +4,832 @@
   "started_on": "2026-10-03",
   "items": [
     {
-      "date": "2026-10-04",
+      "date": "2026-10-06",
       "status": "partial",
-      "collected_at": "2026-10-03T21:15:59Z",
-      "window_start": "2026-10-03T15:00:00Z",
-      "window_end": "2026-10-03T21:15:59Z",
-      "headline": "06:15 중간 확인: 중복 제외 신규 소식 미확인",
-      "summary": "이번 확인 범위에서 국내외의 중복을 제외한 새로운 에이전트 AI 소식은 추가로 검증하지 못했습니다. 국내의 Apple 접근 권한 통제 후속 보도는 전날 기록과 같은 사건으로 분류했습니다. 이는 해당 시간대에 뉴스가 없었다는 뜻은 아니며, 부분 기록은 다음 수집에서 보강합니다.",
-      "coverage_note": "한국시간 2026년 10월 4일 00:00부터 수집 시각 06:15까지의 부분 기록입니다. 한국 매체·기관과 해외 매체·공식 자료를 검색했으며, 검색 인덱스의 지연과 일부 원문 직접 열람 실패로 누락될 수 있습니다. 접근 실패를 뉴스 부재로 간주하지 않았고 확인하지 못한 기사나 중복 사건을 카드로 추가하지 않았습니다.",
-      "sources": [
+      "collected_at": "2026-10-05T21:14:04Z",
+      "window_start": "2026-10-05T15:00:00Z",
+      "window_end": "2026-10-05T21:14:04Z",
+      "items": [
         {
-          "label": "뉴시스: 전날 Apple 사건의 중복 보도 확인",
-          "url": "https://www.newsis.com/view/NISX20261004_0003813754"
+          "id": "2026-10-06-instinct-group-chat-early-access",
+          "title": "Instinct, 공동 계획을 돕는 단체채팅 에이전트 조기 공개",
+          "url": "https://techcrunch.com/2026/10/05/instinct-brings-its-ai-agent-to-group-chats-even-for-friends-without-an-account/",
+          "source": "TechCrunch",
+          "source_type": "reputable_report",
+          "source_country": "US",
+          "news_type": "조기 접근 기능 발표 보도",
+          "published_at": "2026-10-05T18:54:30Z",
+          "published_date": "2026-10-05",
+          "published_precision": "timestamp",
+          "published_timezone": "America/Los_Angeles",
+          "published_date_kst": "2026-10-06",
+          "published_at_kst": "2026-10-06T03:54:30+09:00",
+          "date_basis": "원문 datePublished: 2026-10-05T18:54:30+00:00(PDT 11:54:30). KST 10월 6일 03:54:30이며, 19:25:15Z 수정과 구분했다.",
+          "event_date": "2026-10-05",
+          "event_date_precision": "date",
+          "event_date_timezone": "unknown",
+          "event_date_note": "창업자의 공식 게시물은 10월 5일자로 조기 이용자 대상 공개를 알렸다. 해당 게시물의 정확한 시각·시간대는 별도 추정하지 않았다.",
+          "summary": "창업자 Noah Shinn은 조기 이용자가 단체채팅에 공동으로 일하는 Instinct를 추가할 수 있다고 공지했다. TechCrunch에 따르면 Instinct 계정이 없는 친구도 참여할 수 있다.",
+          "significance": "개인 비서형 에이전트가 여러 사람의 공동 계획으로 범위를 넓히는 사례다. 모든 이용자에게 제공된 기능으로 일반화하지 않았다.",
+          "topics": [
+            "개인 에이전트",
+            "단체채팅",
+            "협업",
+            "조기 접근"
+          ],
+          "verification_note": "공식 X 게시물의 공개 oEmbed 응답을 직접 확인했다. 여기서 확인할 수 있는 본문 범위를 넘어 개인 정보 공유 통제의 세부 동작을 독립 검증했다고 주장하지 않았다.",
+          "region_basis": "TechCrunch 공식 개인정보처리방침의 미국 샌프란시스코 운영사 주소를 기준으로 분류했다.",
+          "supporting_sources": [
+            {
+              "source": "Noah Shinn 공식 발표",
+              "url": "https://x.com/noahrshinn/status/2107161132192690558",
+              "source_type": "primary",
+              "supports": "공식 X oEmbed로 조기 이용자 대상 단체채팅 공개 문구 확인",
+              "verified_at": "2026-10-05T21:14:04Z",
+              "published_at": null,
+              "published_date": "2026-10-05",
+              "precision": "date",
+              "published_timezone": "unknown"
+            },
+            {
+              "source": "TechCrunch 개인정보처리방침",
+              "url": "https://techcrunch.com/privacy-policy/",
+              "source_type": "primary",
+              "supports": "미국 매체 소재지 확인",
+              "verified_at": "2026-10-05T21:14:04Z"
+            }
+          ],
+          "region": "international",
+          "verified_at": "2026-10-05T21:14:04Z"
         }
       ],
-      "items": []
+      "sources": [
+        {
+          "label": "TechCrunch · Instinct, 공동 계획을 돕는 단체채팅 에이전트 조기 공개",
+          "url": "https://techcrunch.com/2026/10/05/instinct-brings-its-ai-agent-to-group-chats-even-for-friends-without-an-account/"
+        }
+      ],
+      "headline": "06:14 중간 확인: 공동 계획용 단체채팅 에이전트 조기 공개",
+      "summary": "한국시간 10월 6일 새벽 부분 확인에서는 Instinct가 조기 이용자에게 단체채팅 에이전트를 제공한다는 해외 보도를 검증했다. 개인 비서가 여러 사람의 공동 계획을 돕는 방향의 사례이며, 전면 일반 제공이나 세부 개인정보 통제의 검증을 뜻하지 않는다. 국내 추가 독립 카드는 이번 확인 범위에서 검증하지 못했다. North 2와 Promevo의 뒤늦은 보도·배포는 전날과 같은 사건이어서 새 카드로 중복 계산하지 않았다.",
+      "coverage_note": "10월 6일 00:00부터 06:14 KST까지의 부분 기록이다. 국내 검색은 06:12, 해외 검색은 06:14까지 확인했다. 해외 1건의 원문 최초 게시 시각은 UTC 10월 5일 18:54:30, KST 10월 6일 03:54:30이다. 국내 추가 검증 0건은 뉴스 부재를 단정하지 않는다. 날짜 검색의 인덱스 지연·매체별 접근 제한·수집 이후 게시물은 다음 확인에서 보강할 수 있다."
+    },
+    {
+      "date": "2026-10-05",
+      "status": "final",
+      "collected_at": "2026-10-05T21:14:04Z",
+      "window_start": "2026-10-04T15:00:00Z",
+      "window_end": "2026-10-05T15:00:00Z",
+      "headline": "현장 업무로 넓어지는 에이전트, 비용·권한·실행 통제가 함께 부각",
+      "summary": "서초구 공공서비스 예약 지원과 물류 업무용 에이전트 등 실제 업무에 연결하는 소식이 이어졌다. Cohere North 2, Collibra의 trail ML 인수, Promevo Insights 발표는 업무 능력과 함께 비용·접근 권한·증빙·실행 통제를 다뤘다. 국내에서는 한컴의 향후 베타 계획, 거래 에이전트의 신원·승인 설계, 은행 보안 시험의 에이전트 활용 현황도 보도됐다. 발표·사업 계획·인터뷰·시험 집계를 실제 효과 입증이나 당일 최초 출시와 구분했다. Amap 활동 추적은 운영 주체·모델·조정 여부를 확정하지 못한 예비 연구이며, Cresta의 반복 평가 사례는 원문 날짜만 확인돼 정확한 KST 게시일이 확정되지 않았다.",
+      "coverage_note": "국내 4건·해외 6건을 선별 수록했다. 이 중 9건은 원문 최초 발행 시각을 확인해 KST 10월 5일에 배치했고, Cresta 1건은 시각·시간대 없는 원문 날짜 기준으로 함께 표시한다. 국내는 10월 6일 06:12 KST, 해외는 06:14까지 확인했다. 국내외 매체와 공식 발표를 함께 조사하고 재배포·수정·회고 기사를 같은 사건의 새 카드로 중복 계산하지 않았다. 원문 열람 실패와 미검토 범위는 기사 부재를 의미하지 않는다.",
+      "sources": [
+        {
+          "label": "TechCrunch · Amap 조회 에이전트의 병렬 활동 관측…운영 주체·모델은 미확정",
+          "url": "https://techcrunch.com/2026/10/05/researchers-are-tracking-a-chinese-ai-agent-fleet/"
+        },
+        {
+          "label": "Cohere · Cohere, North 2 공개…메모리·재사용 스킬과 조직별 비용 통제 강화",
+          "url": "https://cohere.com/blog/introducing-north-2"
+        },
+        {
+          "label": "SiliconANGLE · Promevo, Gemini 에이전트의 권한·사용량·비용을 모아 보는 Insights 발표",
+          "url": "https://siliconangle.com/2026/10/05/promevo-launches-insights-to-track-gemini-enterprise-adoption-and-ai-agents/"
+        },
+        {
+          "label": "Collibra · PR Newswire · Collibra, trail ML 인수 발표…에이전트 실행 단계까지 거버넌스 확대",
+          "url": "https://www.prnewswire.com/news-releases/collibra-acquires-trail-ml-to-automate-ai-governance-from-policy-to-production-302897376.html"
+        },
+        {
+          "label": "Reply · Logistics Reply, 창고 업무용 에이전트 5종과 단계별 권한 체계 발표",
+          "url": "https://www.reply.com/en/newsroom/news/logistics-reply-introduces-the-lea-ai-agent-authority-model"
+        },
+        {
+          "label": "한국경제 · 한컴, 노마디안 미국 진출 설명회 추진…오픈베타는 12월 예정",
+          "url": "https://www.hankyung.com/article/2026100537111"
+        },
+        {
+          "label": "파이낸셜뉴스 · 은행 모의해킹의 에이전트 활용 현황 공개…78건 중 9건으로 보도",
+          "url": "https://www.fnnews.com/news/202610051118493094"
+        },
+        {
+          "label": "전자신문 · 서초 AI전트, 행사·강좌까지 약 900개 공공서비스 예약 지원",
+          "url": "https://www.etnews.com/20261005000073"
+        },
+        {
+          "label": "Anthropic · Claude Blog · Anthropic, Cresta의 에이전트 제작·평가 도구 Conductor 사례 공개",
+          "url": "https://claude.com/blog/how-cresta-turned-cx-expertise-into-an-agent-builder-on-the-claude-agent-sdk"
+        },
+        {
+          "label": "전자신문 · OKX 인터뷰: 거래 에이전트용 인터페이스와 승인·위험 한도 필요",
+          "url": "https://www.etnews.com/20261005000013"
+        }
+      ],
+      "items": [
+        {
+          "id": "2026-10-05-amap-agent-fleet-preliminary-research",
+          "title": "Amap 조회 에이전트의 병렬 활동 관측…운영 주체·모델은 미확정",
+          "url": "https://techcrunch.com/2026/10/05/researchers-are-tracking-a-chinese-ai-agent-fleet/",
+          "source": "TechCrunch",
+          "source_type": "reputable_report",
+          "source_country": "US",
+          "news_type": "예비 연구 보도",
+          "published_at": "2026-10-05T14:35:09Z",
+          "published_date": "2026-10-05",
+          "published_precision": "timestamp",
+          "published_timezone": "America/Los_Angeles",
+          "published_date_kst": "2026-10-05",
+          "published_at_kst": "2026-10-05T23:35:09+09:00",
+          "date_basis": "원문 datePublished: 2026-10-05T14:35:09+00:00(PDT 07:35:09). KST 23:35:09이며, 16:46:56Z 수정과 구분했다.",
+          "event_date": "2026-09-28",
+          "event_date_precision": "date",
+          "event_date_timezone": "UTC",
+          "event_date_note": "예비 보고서는 관련 urlquery 활동을 9월 28일부터 관측했다고 적었다. 보고서 본문 표제 날짜는 10월 4일이고 10월 5일에 내용이 보강됐다. 이 카드 날짜는 TechCrunch 보도 게시일이다.",
+          "summary": "독립 연구진 Swarmchasers는 Amap 장소의 입구별 이용 정보를 찾는 병렬 에이전트 활동을 공개했다. 공개 로그에서 Tencent Cloud 경유 흔적을 찾았지만, 보고서는 클라우드의 개방성, 자기신고식 표식, 작은 모델 비교 표본을 한계로 적었다. 에이전트 간 통신·조정의 증거는 찾지 못했다고 밝혔다.",
+          "significance": "외부 서비스를 거쳐 이루어지는 에이전트 활동을 추적한 초기 사례다. 클라우드 흔적만으로 Tencent의 직접 운영, 특정 모델, 조직적 공격이나 실제 침해 성공을 확정할 수 없다.",
+          "topics": [
+            "에이전트 보안",
+            "외부 웹 접근",
+            "예비 연구",
+            "행동 관측"
+          ],
+          "verification_note": "연구진 원문을 직접 새로 읽고 10월 5일 10:45 UTC 보강본의 한계를 반영했다. 검색 인덱스와 원문에서 병렬 수·로그 수가 달라 불안정한 수치는 카드에서 제외했다.",
+          "region_basis": "TechCrunch 공식 개인정보처리방침은 운영사 연락 주소를 미국 샌프란시스코로 명시한다.",
+          "supporting_sources": [
+            {
+              "source": "Swarmchasers 예비 보고서",
+              "url": "https://swarmcha.se/posts/chinese-agent-fleet",
+              "source_type": "primary",
+              "supports": "공개 로그 관측, 조정 증거 미발견, 운영 주체·모델 귀속의 한계",
+              "verified_at": "2026-10-05T21:14:04Z",
+              "published_at": null,
+              "published_date": "2026-10-04",
+              "precision": "date",
+              "published_timezone": "unknown",
+              "date_note": "표제 날짜만 보존. 10월 5일 10:45 UTC 보강 표기는 최초 발행 시각이 아님"
+            },
+            {
+              "source": "TechCrunch 개인정보처리방침",
+              "url": "https://techcrunch.com/privacy-policy/",
+              "source_type": "primary",
+              "supports": "미국 매체 소재지 확인",
+              "verified_at": "2026-10-05T21:14:04Z"
+            }
+          ],
+          "region": "international",
+          "verified_at": "2026-10-05T21:14:04Z"
+        },
+        {
+          "id": "2026-10-05-cohere-north2-enterprise-controls",
+          "title": "Cohere, North 2 공개…메모리·재사용 스킬과 조직별 비용 통제 강화",
+          "url": "https://cohere.com/blog/introducing-north-2",
+          "source": "Cohere",
+          "source_type": "primary",
+          "source_country": "CA",
+          "news_type": "공식 제품 발표",
+          "published_at": "2026-10-05T13:04:00Z",
+          "published_date": "2026-10-05",
+          "published_precision": "timestamp",
+          "published_timezone": "UTC",
+          "published_date_kst": "2026-10-05",
+          "published_at_kst": "2026-10-05T22:04:00+09:00",
+          "date_basis": "공식 원문 BlogPosting의 datePublished는 2026-10-05T13:04:00.000Z이며 본문은 Oct 05, 2026으로 표시한다. KST 10월 5일 22:04로 변환했다. 별도 보도와 같은 North 2 발표를 한 건으로 묶었다.",
+          "event_date": "2026-10-05",
+          "event_date_precision": "date",
+          "event_date_timezone": "unknown",
+          "event_date_note": "North 2 업그레이드의 공식 발표일이다. 기존 North 전체의 최초 출시일로 보지 않는다.",
+          "summary": "Cohere는 North 2에 다단계 업무 실행, 세션 간 메모리, 공유 스킬·자료실, 자동화 제작 기능을 결합했다고 발표했다. 관리자는 사용자·그룹별 사용량과 조직 전체 한도를 설정하고 에이전트의 권한을 관리할 수 있다. 클라우드·온프레미스·망분리 배포와 다른 회사 모델의 사용도 지원한다고 설명했다.",
+          "significance": "업무 능력과 함께 비용·권한·데이터 위치를 운영 조건으로 묶는 방향이다. 안전성과 비용 절감 효과는 공급자의 설명이며 독립 실험 결과가 아니다.",
+          "topics": [
+            "기업 에이전트",
+            "메모리",
+            "비용 통제",
+            "접근 권한"
+          ],
+          "verification_note": "공식 본문과 원본 HTML의 게시 메타데이터를 새로 읽었다. 금융 데이터 공급자 일부 연결은 계획 단계로 구분했고 현재 제공 기능으로 적지 않았다.",
+          "region_basis": "Cohere 공식 개인정보처리방침은 토론토의 캐나다 주소를 명시한다. 기사 속 한국 고객의 국적과 무관하게 해외 기관 출처다.",
+          "supporting_sources": [
+            {
+              "source": "Cohere 개인정보처리방침",
+              "url": "https://cohere.com/privacy",
+              "source_type": "primary",
+              "supports": "캐나다 토론토 소재 확인",
+              "verified_at": "2026-10-05T21:14:04Z"
+            },
+            {
+              "source": "SiliconANGLE",
+              "url": "https://siliconangle.com/2026/10/05/cohere-unveils-north-2-ai-agent-platform-with-rebuilt-orchestration-and-token-spending-caps/",
+              "source_type": "reputable_report",
+              "published_at": "2026-10-05T13:00:15Z",
+              "published_date": "2026-10-05",
+              "precision": "timestamp",
+              "published_timezone": "UTC",
+              "supports": "같은 North 2 발표의 독립 보도. 최초 게시와 14:53:04Z 수정을 구분",
+              "verified_at": "2026-10-05T21:14:04Z"
+            }
+          ],
+          "region": "international",
+          "verified_at": "2026-10-05T21:14:04Z"
+        },
+        {
+          "id": "2026-10-05-promevo-insights-agent-observability",
+          "title": "Promevo, Gemini 에이전트의 권한·사용량·비용을 모아 보는 Insights 발표",
+          "url": "https://siliconangle.com/2026/10/05/promevo-launches-insights-to-track-gemini-enterprise-adoption-and-ai-agents/",
+          "source": "SiliconANGLE",
+          "source_type": "reputable_report",
+          "source_country": "US",
+          "news_type": "제품 발표 보도",
+          "published_at": "2026-10-05T13:00:11Z",
+          "published_date": "2026-10-05",
+          "published_precision": "timestamp",
+          "published_timezone": "America/New_York",
+          "published_date_kst": "2026-10-05",
+          "published_at_kst": "2026-10-05T22:00:11+09:00",
+          "date_basis": "기사 원본 article:published_time과 Article datePublished는 2026-10-05T13:00:11+00:00이다. 화면은 09:00 EDT를 표시한다. KST 10월 5일 22:00:11을 사용하며, 뒤이어 나온 회사 보도자료의 15:04Z로 날짜를 옮기지 않았다.",
+          "event_date": "2026-10-05",
+          "event_date_precision": "date",
+          "event_date_timezone": "unknown",
+          "event_date_note": "Promevo의 제품 발표와 조기 접근 일정이다. 공식 제품 페이지는 요청형 early preview를 안내하므로 전면 일반 제공으로 단정하지 않는다.",
+          "summary": "Promevo는 Gemini Enterprise의 라이선스 활용도, 사내 에이전트 목록·접근 권한, Google Cloud 비용을 한 화면에서 파악하는 Insights를 발표했다. 공식 제품 설명은 프롬프트·응답 내용을 읽거나 저장하지 않는 읽기 전용 관측 계층이라고 명시한다. 현재 접근 방식은 요청형 조기 미리보기로 안내돼 있다.",
+          "significance": "에이전트 수가 늘수록 실행 능력뿐 아니라 누가 무엇에 접근하고 비용을 쓰는지 파악하는 일이 중요해진다. 관측 기능 자체가 권한을 자동으로 회수한다는 뜻은 아니다.",
+          "topics": [
+            "에이전트 관측",
+            "Google 생태계",
+            "비용 관리",
+            "최소 권한"
+          ],
+          "verification_note": "기사 원본 HTML, 회사 배포 보도자료와 실제 제품 FAQ를 모두 새로 읽었다. 보도자료는 available today로 쓰지만 제품 페이지의 early preview 조건을 함께 반영했다.",
+          "region_basis": "원문 하단의 SiliconANGLE Media 소개는 미국 실리콘밸리와 뉴욕증권거래소의 주요 거점을 명시한다.",
+          "supporting_sources": [
+            {
+              "source": "Promevo 공식 제품 페이지",
+              "url": "https://promevo.com/insights",
+              "source_type": "primary",
+              "supports": "요청형 early preview, 읽기 전용 API, 프롬프트·응답 내용 미수집, gPanel과 묶음 제공",
+              "verified_at": "2026-10-05T21:14:04Z"
+            },
+            {
+              "source": "Promevo 공식 보도자료",
+              "url": "https://www.prnewswire.com/news-releases/promevo-launches-insights-by-promevo-for-a-total-view-of-ai-agents-gemini-enterprise-adoption-and-google-cloud-spend-302898038.html",
+              "source_type": "primary",
+              "supports": "발표 범위와 향후 플랫폼 확대 계획",
+              "verified_at": "2026-10-05T21:14:04Z",
+              "published_at": "2026-10-05T15:04:00Z",
+              "published_date": "2026-10-05",
+              "precision": "timestamp",
+              "published_timezone": "America/New_York"
+            }
+          ],
+          "region": "international",
+          "verified_at": "2026-10-05T21:14:04Z"
+        },
+        {
+          "id": "2026-10-05-collibra-trailml-governance-acquisition",
+          "title": "Collibra, trail ML 인수 발표…에이전트 실행 단계까지 거버넌스 확대",
+          "url": "https://www.prnewswire.com/news-releases/collibra-acquires-trail-ml-to-automate-ai-governance-from-policy-to-production-302897376.html",
+          "source": "Collibra · PR Newswire",
+          "source_type": "primary",
+          "source_country": "BE",
+          "news_type": "공식 인수 발표",
+          "published_at": "2026-10-05T13:00:00Z",
+          "published_date": "2026-10-05",
+          "published_precision": "timestamp",
+          "published_timezone": "America/New_York",
+          "published_date_kst": "2026-10-05",
+          "published_at_kst": "2026-10-05T22:00:00+09:00",
+          "date_basis": "배포 원문 NewsArticle datePublished와 date 메타태그는 2026-10-05T09:00:00-04:00이다. 본문 09:00 ET와 일치하며 KST 22:00이다. 09:00:17-04:00 수정 시각은 사용하지 않았다.",
+          "event_date": "2026-10-05",
+          "event_date_precision": "date",
+          "event_date_timezone": "unknown",
+          "event_date_note": "회사가 trail ML 인수를 발표한 날짜다. 통합 제품 전체의 당일 일반 제공을 뜻하지 않는다.",
+          "summary": "Collibra는 독일의 AI 거버넌스 업체 trail ML 인수를 발표했다. 양사는 정책과 증빙 검토를 에이전트로 자동화하고, 증거가 바뀌면 평가를 다시 수행하며, 실행 중 정책을 위반하는 행동을 차단하는 기능을 결합하겠다고 설명했다.",
+          "significance": "문서 기반 심사를 실제 실행 통제와 연결하려는 움직임이다. 규정 준수의 법적 보장이나 통합 완료를 뜻하는 발표로 해석하지 않았다.",
+          "topics": [
+            "AI 거버넌스",
+            "실행 통제",
+            "기업 인수",
+            "감사"
+          ],
+          "verification_note": "Collibra가 배포한 원문 전체와 게시 메타데이터를 직접 읽었다. 기능·효과는 회사 설명으로 한정했다.",
+          "region_basis": "Collibra 공식 연락처는 글로벌 본사를 벨기에 브뤼셀, 북미 본사를 미국 뉴욕으로 명시한다. 해외 기관의 뉴욕발 보도자료다.",
+          "supporting_sources": [
+            {
+              "source": "Collibra 공식 연락처",
+              "url": "https://www.collibra.com/us/en/company/contact-us",
+              "source_type": "primary",
+              "supports": "벨기에 글로벌 본사와 뉴욕 북미 본사 확인",
+              "verified_at": "2026-10-05T21:14:04Z"
+            }
+          ],
+          "region": "international",
+          "verified_at": "2026-10-05T21:14:04Z"
+        },
+        {
+          "id": "2026-10-05-logistics-reply-warehouse-agent-authority",
+          "title": "Logistics Reply, 창고 업무용 에이전트 5종과 단계별 권한 체계 발표",
+          "url": "https://www.reply.com/en/newsroom/news/logistics-reply-introduces-the-lea-ai-agent-authority-model",
+          "source": "Reply",
+          "source_type": "primary",
+          "source_country": "IT",
+          "news_type": "공식 산업용 제품 발표",
+          "published_at": "2026-10-05T10:45:00Z",
+          "published_date": "2026-10-05",
+          "published_precision": "timestamp",
+          "published_timezone": "UTC",
+          "published_date_kst": "2026-10-05",
+          "published_at_kst": "2026-10-05T19:45:00+09:00",
+          "date_basis": "Reply 공식 원문의 WebPage·TechArticle datePublished는 모두 2026-10-05T10:45:00.000Z다. 본문 5 October 2026과 일치하며 KST 19:45다. 더 이른 dateModified 08:01:13Z를 발행 시각으로 대체하지 않았다.",
+          "event_date": "2026-10-05",
+          "event_date_precision": "date",
+          "event_date_timezone": "unknown",
+          "event_date_note": "공식 자료는 미리 구성된 에이전트 5종이 10월 5일부터 제공된다고 명시한다. 정확한 서비스 개시 시간·시간대는 제시하지 않았다.",
+          "summary": "Logistics Reply는 조직의 AI 성숙도와 업무별 권한을 함께 판단하는 LEA AI Agent Authority Model을 발표했다. 재고 부족, 작업량 배분, 품목 분류, 도크 예약, 지연 원인 탐색용 에이전트 5종을 제시했다. 품목 분류 결과를 창고관리시스템에 반영하는 작업은 승인 후 실행하도록 설명했다.",
+          "significance": "물류 현장의 자동화 범위를 과제별 위험과 사람의 승인에 맞추는 사례다. 모든 작업을 무인으로 실행하는 제품이라고 일반화하지 않았다.",
+          "topics": [
+            "물류 에이전트",
+            "산업 적용",
+            "권한 관리",
+            "사람의 승인"
+          ],
+          "verification_note": "공식 원문 전체와 구조화 게시 메타데이터를 새로 읽었다. 영문·독문 및 Business Wire 배급본은 동일 발표로 중복 제거했다.",
+          "region_basis": "Reply 공식 Company Information 문서는 이탈리아 토리노의 Reply S.p.A. 주소를 명시한다.",
+          "supporting_sources": [
+            {
+              "source": "Reply 회사정보",
+              "url": "https://www.reply.com/contents/Reply_Company_Information_en.pdf",
+              "source_type": "primary",
+              "supports": "이탈리아 토리노 소재 확인",
+              "verified_at": "2026-10-05T21:14:04Z"
+            }
+          ],
+          "region": "international",
+          "verified_at": "2026-10-05T21:14:04Z"
+        },
+        {
+          "id": "2026-10-05-hancom-nomadian-us-roadshow-plan",
+          "region": "domestic",
+          "source_country": "KR",
+          "title": "한컴, 노마디안 미국 진출 설명회 추진…오픈베타는 12월 예정",
+          "url": "https://www.hankyung.com/article/2026100537111",
+          "source": "한국경제",
+          "source_type": "reputable_report",
+          "published_at": "2026-10-05T08:56:42Z",
+          "published_date": "2026-10-05",
+          "published_precision": "timestamp",
+          "published_timezone": "Asia/Seoul",
+          "published_date_kst": "2026-10-05",
+          "published_at_kst": "2026-10-05T17:56:42+09:00",
+          "date_basis": "한국경제 원문 HTML의 article:published_time과 NewsArticle datePublished는 2026-10-05T17:56:42+09:00이다. dateModified는 2026-10-06T00:06:00+09:00이며 이를 발행일로 대체하지 않았다.",
+          "summary": "한국경제는 한컴 경영진이 10월 12일부터 뉴욕·시카고에서 투자설명회를 열 계획이라고 보도했다. 중심 제품은 1인 창업자·소규모 사업자를 위한 직무별 AI 팀 서비스 노마디안이다. 한컴 공식 페이지는 미국 우선 오픈베타를 12월 15일로 예고하고 있다.",
+          "significance": "도입 대상이 큰 기업을 넘어 소규모 사업자의 업무 팀 구성으로 넓어진다. 공식 설명은 메일 발송·전자서명·결제 전 승인과 사용 한도 도달 시 일시 정지를 명시하지만, 아직 예정된 베타의 제품 설명이므로 실사용 성능 검증이나 당일 출시로 보지 않는다.",
+          "topics": [
+            "소규모 사업자",
+            "업무 팀",
+            "인간 승인",
+            "출시 계획"
+          ],
+          "verified_at": "2026-10-05T21:12:02Z",
+          "news_type": "사업 계획 보도",
+          "event_date": "2026-10-12",
+          "event_date_precision": "date",
+          "event_date_timezone": "unknown",
+          "event_date_note": "투자설명회 시작 예정일이며 개최 시각·시간대는 기사에 없다. 별도 공식 제품 페이지는 미국 우선 오픈베타를 2026-12-15로 예고하지만 시각·시간대를 명시하지 않는다. 10월 5일 제품 출시가 아니다.",
+          "region_basis": "한국경제 원문 하단은 한국경제신문사·한경닷컴의 서울시 중구 청파로 463 주소와 인터넷신문 등록번호 서울 아01035를 명시한다.",
+          "verification_note": "원문 HTML의 기사 본문·최초 게시·수정 시각과 한컴의 공식 노마디안 소개 페이지를 이번 수집에서 직접 읽었다. 투자설명회 일정·투자자 관심은 한국경제 취재 보도로 귀속하며 제품 기능과 예정 베타 날짜는 한컴 공식 설명에 근거한다. 매출 전망·시장 규모·주가 수치는 요약에서 제외했다.",
+          "supporting_sources": [
+            {
+              "source": "한컴 · 노마디안 공식 소개",
+              "url": "https://ai.hancom.com/ko/nomadian",
+              "source_type": "primary",
+              "supports": "미국 우선 2026년 12월 15일 오픈베타 계획, 직무별 AI 팀, 외부 도구 연결, 중요 작업 전 승인, 사용 한도 시 일시 정지. 페이지 게시일은 미표시",
+              "verified_at": "2026-10-05T21:12:02Z"
+            }
+          ]
+        },
+        {
+          "id": "2026-10-05-bank-agent-red-team-survey",
+          "region": "domestic",
+          "source_country": "KR",
+          "title": "은행 모의해킹의 에이전트 활용 현황 공개…78건 중 9건으로 보도",
+          "url": "https://www.fnnews.com/news/202610051118493094",
+          "source": "파이낸셜뉴스",
+          "source_type": "reputable_report",
+          "published_at": "2026-10-05T08:00:32Z",
+          "published_date": "2026-10-05",
+          "published_precision": "timestamp",
+          "published_timezone": "Asia/Seoul",
+          "published_date_kst": "2026-10-05",
+          "published_at_kst": "2026-10-05T17:00:32+09:00",
+          "date_basis": "파이낸셜뉴스 원문 article:published_time, dd:published_time, NewsArticle datePublished가 모두 2026-10-05T17:00:32+09:00이다. 본문 입력 17:00과 일치한다. 같은 취재의 19:08 재구성 기사와 포털 배급 시각은 별도 뉴스나 최초 발행 시각으로 사용하지 않았다.",
+          "summary": "파이낸셜뉴스는 박상혁 의원실이 금융감독원에서 받은 자료를 인용해, 올해 8월까지 20개 은행이 실시한 모의해킹 78건 중 9건(11.5%)에 AI 에이전트가 사용됐다고 보도했다. 기사에 실린 집계는 실제 사고 건수가 아니라 은행의 보안 시험에 에이전트를 활용한 횟수다.",
+          "significance": "에이전트의 공격 가능성과 함께 방어 측 평가·훈련 준비를 살펴보는 자료다. 이 비중만으로 시험의 품질이나 은행별 안전성을 판단할 수 없으며, 최근 침해사고의 AI 관여가 입증됐다는 뜻도 아니다.",
+          "topics": [
+            "에이전트 평가",
+            "모의해킹",
+            "방어 훈련",
+            "운영 보안"
+          ],
+          "verified_at": "2026-10-05T21:12:02Z",
+          "news_type": "에이전트 보안 시험 현황 취재",
+          "event_date": null,
+          "event_date_precision": "unknown",
+          "event_date_timezone": "unknown",
+          "event_date_note": "2026년 1~8월의 시험 실적을 10월 5일 보도한 자료다. 조사대상 기간과 기사 발행일을 구분한다.",
+          "region_basis": "파이낸셜뉴스 원문 하단의 본사 주소는 서울 서초구 강남대로 315이며 인터넷신문 등록번호는 서울 아04510이다.",
+          "verification_note": "원문 기사와 집계표를 공개 HTML로 직접 읽었다. 숫자는 기사에 명시된 박상혁 의원실·금융감독원 자료의 인용이며, 기초 제출 원문은 공개 검색에서 찾지 못했다. 독립 측정치나 사고 원인 확정으로 확대하지 않았다. 매체의 단정적 헤드라인 대신 실제로 보도된 에이전트 시험 현황만 요약했다.",
+          "supporting_sources": []
+        },
+        {
+          "id": "2026-10-05-seocho-agent-public-service-expansion",
+          "region": "domestic",
+          "source_country": "KR",
+          "title": "서초 AI전트, 행사·강좌까지 약 900개 공공서비스 예약 지원",
+          "url": "https://www.etnews.com/20261005000073",
+          "source": "전자신문",
+          "source_type": "reputable_report",
+          "published_at": "2026-10-05T01:50:39Z",
+          "published_date": "2026-10-05",
+          "published_precision": "timestamp",
+          "published_timezone": "Asia/Seoul",
+          "published_date_kst": "2026-10-05",
+          "published_at_kst": "2026-10-05T10:50:39+09:00",
+          "date_basis": "전자신문 원문 HTML의 article:published_time은 2026-10-05T10:50:39+09:00이며 본문 발행일 2026-10-05 10:50과 일치한다. 지면 2026-10-06 표기는 온라인 최초 발행일로 사용하지 않았다.",
+          "summary": "서초구는 행정정보 안내 에이전트의 고도화를 마쳤다고 밝혔다. 보도에 따르면 기존 법률상담·민원방문 등 예약에 행사·강좌를 더해 약 900개 공공서비스의 예약 절차를 대화로 지원하며, 행정정보 출처 확인과 온디바이스 음성입력도 강화했다.",
+          "significance": "공공 에이전트가 정보 안내에서 실제 예약 절차 지원으로 범위를 넓힌 사례다. 구청 공식 안내에서도 예약 수행 기능을 확인했으며, 이번 확대 범위는 구의 설명을 인용한 보도에 근거한다.",
+          "topics": [
+            "공공서비스",
+            "업무 실행",
+            "예약",
+            "출처 확인"
+          ],
+          "verified_at": "2026-10-05T21:12:02Z",
+          "news_type": "서비스 고도화",
+          "event_date": "2026-10-05",
+          "event_date_precision": "date",
+          "event_date_timezone": "Asia/Seoul",
+          "event_date_note": "구가 고도화 완료를 밝혔다고 기사에 적힌 날짜다. 서비스 최초 운영은 2025년 12월이며 정확한 기능 배포 시각은 확인되지 않았다.",
+          "region_basis": "전자신문 원문 하단의 회사 주소가 서울시 서초구 양재대로2길 22-16이며 인터넷신문 등록번호는 서울 아04494다. 인터뷰 대상 기업의 소재지와 관계없이 국내 매체로 분류했다.",
+          "verification_note": "원문 기사 본문과 +09:00 최초 발행 메타데이터를 공개 HTML로 직접 확인했다. 서초구 공식 AI 사업 안내는 기존 예약 실행 기능을 뒷받침한다. 공식 보도자료 목록은 열람 당시 10월 2일이 최신이어서 이번 약 900개 확대의 별도 구청 원문은 찾지 못했으며, 수치와 고도화 내용은 구의 설명을 인용한 전자신문 보도로 귀속한다. 정확도 수치는 시험 조건을 확인하지 못해 넣지 않았다.",
+          "supporting_sources": [
+            {
+              "source": "서초구청 · 서초 AI 사업",
+              "url": "https://www.seocho.go.kr/site/seocho/04/10425110000002026021004.jsp",
+              "source_type": "primary",
+              "supports": "서초 AI전트의 행정정보 탐색 및 법률상담·디지털부스·민원방문 예약 수행 기능. 날짜 없는 상시 안내로 이번 배포 날짜의 근거는 아님",
+              "verified_at": "2026-10-05T21:12:02Z"
+            }
+          ]
+        },
+        {
+          "id": "2026-10-05-anthropic-cresta-agent-builder-case-study",
+          "title": "Anthropic, Cresta의 에이전트 제작·평가 도구 Conductor 사례 공개",
+          "url": "https://claude.com/blog/how-cresta-turned-cx-expertise-into-an-agent-builder-on-the-claude-agent-sdk",
+          "source": "Anthropic · Claude Blog",
+          "source_type": "primary",
+          "source_country": "US",
+          "news_type": "공식 고객 기술 사례",
+          "published_at": null,
+          "published_date": "2026-10-05",
+          "published_precision": "date",
+          "published_timezone": "unknown",
+          "published_date_kst": null,
+          "date_basis": "공식 본문은 October 5, 2026, BlogPosting datePublished는 Oct 05, 2026이다. 시각·시간대를 제공하지 않아 KST 날짜를 확정하지 않았으며 원문 날짜 기준으로 10월 5일 묶음에 배치했다.",
+          "event_date": null,
+          "event_date_precision": "unknown",
+          "event_date_timezone": "unknown",
+          "event_date_note": "기존 Cresta Conductor의 개발·운영 사례를 설명한 게시물이다. Conductor 또는 Claude Agent SDK의 당일 최초 출시로 보지 않는다.",
+          "summary": "Anthropic는 Cresta가 Claude Agent SDK에 고객 상담 데이터와 업무 규칙을 연결해 Conductor를 만든 과정을 소개했다. Conductor는 다른 에이전트를 제작·수정하고 테스트와 원인 분석을 수행한다. Cresta는 결과물뿐 아니라 도구 사용 경로, 품질, 시간·모델 사용량을 평가하며 모델 변경 때 같은 과제를 다시 검증한다고 설명했다.",
+          "significance": "에이전트를 만드는 에이전트에서도 도메인 지식, 확정적 업무 규칙, 반복 평가가 필요하다는 사례다. 도입 시간 단축 등 성과는 고객사의 자체 보고이며 독립 검증 수치로 사용하지 않았다.",
+          "topics": [
+            "메타 에이전트",
+            "Claude Agent SDK",
+            "고객 경험",
+            "평가"
+          ],
+          "verification_note": "공식 사례 본문과 원본 JSON-LD를 직접 읽었다. 실제 KST 게시 경계가 불명확한 날짜 전용 기록이다.",
+          "region_basis": "Anthropic 공식 개인정보처리방침은 Anthropic PBC의 등록 주소를 미국 샌프란시스코로 명시한다.",
+          "supporting_sources": [
+            {
+              "source": "Anthropic 개인정보처리방침",
+              "url": "https://www.anthropic.com/legal/privacy",
+              "source_type": "primary",
+              "supports": "미국 법인 등록 주소 확인",
+              "verified_at": "2026-10-05T21:14:04Z"
+            }
+          ],
+          "region": "international",
+          "verified_at": "2026-10-05T21:14:04Z"
+        },
+        {
+          "id": "2026-10-05-okx-agent-identity-risk-interview",
+          "region": "domestic",
+          "source_country": "KR",
+          "title": "OKX 인터뷰: 거래 에이전트용 인터페이스와 승인·위험 한도 필요",
+          "url": "https://www.etnews.com/20261005000013",
+          "source": "전자신문",
+          "source_type": "reputable_report",
+          "published_at": "2026-10-04T23:55:58Z",
+          "published_date": "2026-10-05",
+          "published_precision": "timestamp",
+          "published_timezone": "Asia/Seoul",
+          "published_date_kst": "2026-10-05",
+          "published_at_kst": "2026-10-05T08:55:58+09:00",
+          "date_basis": "전자신문 원문 HTML의 article:published_time은 2026-10-05T08:55:58+09:00이며 본문 발행일 2026-10-05 08:55와 일치한다. UTC로는 10월 4일 23:55:58이지만 기사 원문과 KST의 게시일은 모두 10월 5일이다. 지면 10월 6일은 발행일로 쓰지 않았다.",
+          "summary": "OKX의 레닉스 라이는 전자신문 인터뷰에서 에이전트가 시세를 읽고 주문·결과 확인을 수행하려면 사람 중심 화면과 별도의 인터페이스가 필요하다고 설명했다. 에이전트의 소유자와 최종 고객을 식별하고, 거래 실행에는 사용자 승인과 위험 한도를 두어야 한다는 견해도 밝혔다.",
+          "significance": "에이전트의 연결 기능뿐 아니라 실행 주체의 신원과 자산 통제권을 함께 설계해야 한다는 논의다. 인터뷰에 담긴 기술 방향과 경영진 견해를 정리했으며 새 거래 서비스 출시나 투자 성과로 표현하지 않았다.",
+          "topics": [
+            "에이전트 신원",
+            "금융 인터페이스",
+            "인간 승인",
+            "위험 한도"
+          ],
+          "verified_at": "2026-10-05T21:12:02Z",
+          "news_type": "취재·인터뷰",
+          "event_date": null,
+          "event_date_precision": "unknown",
+          "event_date_timezone": "unknown",
+          "event_date_note": "인터뷰 보도 날짜만 확인했으며 인터뷰 실시일과 별도 신제품 출시일은 명시되지 않았다.",
+          "region_basis": "전자신문 원문 하단의 회사 주소가 서울시 서초구 양재대로2길 22-16이며 인터넷신문 등록번호는 서울 아04494다. 인터뷰 대상 기업의 소재지와 관계없이 국내 매체로 분류했다.",
+          "verification_note": "전자신문의 원문 취재 본문과 최초 게시 시각을 공개 HTML로 직접 확인했다. 실제 보안 보증이나 법적 판단을 독립 검증한 것처럼 쓰지 않고 발언자의 설계 원칙·전망으로 귀속했다. 키 격리 구조에 대한 회사 주장과 금융자산 가격 전망은 요약에서 제외했다.",
+          "supporting_sources": []
+        }
+      ]
+    },
+    {
+      "date": "2026-10-04",
+      "status": "final",
+      "collected_at": "2026-10-04T21:04:23Z",
+      "window_start": "2026-10-03T15:00:00Z",
+      "window_end": "2026-10-04T15:00:00Z",
+      "headline": "산업 현장에 연결되는 에이전트, 데이터 맥락·권한·비용 통제가 함께 중요",
+      "summary": "국내에서는 KISTI의 신재생에너지 운영 에이전트 실증과 데이콘인피니티의 기업 데이터·업무 맥락 연결 사례를 확인했다. 해외에서는 연결형 에이전트의 최소 권한을 다룬 전문가 취재와 강제 지출 한도를 기본값으로 삼자는 개발자 제언이 나왔다. 산업 적용을 넓히는 데 필요한 데이터 기반과 운영 통제가 함께 부각됐다. 기획·논평과 향후 상용화 계획을 당일 신제품 출시로 표현하지 않았다.",
+      "coverage_note": "10월 4일 KST 하루를 대상으로 전일 부분 기록을 보강해 국내 2건·해외 2건을 마감했다. 네 소식의 최초 게시 시각과 시간대를 원문 HTML 또는 공식 Atom 피드로 확인했다. 국내·해외는 주 출처의 확인된 소재지 기준이다. 마감은 이번 확인 종료를 뜻하며 전수 수집을 뜻하지 않는다. Apple 권한 통제의 중복 보도, KISTI 동일 사건 축약본, 이전 발표를 재정리한 집계 기사 등은 별도 카드에서 제외했다. 일부 원문 직접 열람 제한과 검색 인덱스 지연에 따른 누락 가능성이 있다.",
+      "sources": [
+        {
+          "label": "파이낸셜뉴스 · 산업 적용 보도",
+          "url": "https://www.fnnews.com/news/202610021742060722"
+        },
+        {
+          "label": "IT조선 · 기획",
+          "url": "https://it.chosun.com/news/articleView.html?idxno=2023092171172"
+        },
+        {
+          "label": "Simon Willison’s Weblog · 개발자 논평",
+          "url": "https://simonwillison.net/2026/Oct/3/default-hard-budget-caps/"
+        },
+        {
+          "label": "The National · 전문가 취재·분석",
+          "url": "https://www.thenationalnews.com/future/technology/2026/10/04/ai-less-safe-for-keeping-secrets-than-most-people-assume/"
+        }
+      ],
+      "items": [
+        {
+          "id": "2026-10-04-kisti-renewable-energy-agent-pilot",
+          "region": "domestic",
+          "source_country": "KR",
+          "title": "KISTI, 신재생에너지 운영 에이전트 실증…이르면 12월 상용화 추진",
+          "url": "https://www.fnnews.com/news/202610021742060722",
+          "source": "파이낸셜뉴스",
+          "source_type": "reputable_report",
+          "news_type": "산업 적용 보도",
+          "published_at": "2026-10-04T04:24:50Z",
+          "published_date": "2026-10-04",
+          "published_precision": "timestamp",
+          "published_timezone": "Asia/Seoul",
+          "published_date_kst": "2026-10-04",
+          "published_at_kst": "2026-10-04T13:24:50+09:00",
+          "date_basis": "파이낸셜뉴스 원문의 article:published_time과 NewsArticle datePublished가 모두 2026-10-04T13:24:50+09:00이다. 본문 입력 표기도 10월 4일 13:24이며, URL의 20261002는 발행일로 사용하지 않았다.",
+          "event_date": "2026-10-01",
+          "event_date_precision": "date",
+          "event_date_timezone": "Asia/Seoul",
+          "event_date_note": "기사에 따르면 관련 데이터 전처리·학습 파이프라인 제안요청서는 10월 1일 공고됐다. 개발 완료일은 미상이며, 12월 상용화는 계획이다. 당일 출시로 해석하지 않는다.",
+          "summary": "파이낸셜뉴스는 KISTI가 신재생에너지 발전소의 단기 발전량, SMP·REC 가격, 설비 이상을 다루는 모델을 LLM 에이전트에 연결하고 5개 기업에서 실증 중이라고 보도했다. UI·디자인 등을 마무리해 이르면 12월 서비스를 제공할 계획이며, 발전소 데이터를 바탕으로 운영자의 의사결정을 지원하는 방식이다.",
+          "significance": "산업별 예측 모델과 현장 데이터를 대화형 에이전트에 묶는 국내 적용 사례다. 상용화 일정과 성능 효과는 아직 검증 완료된 결과가 아니다.",
+          "topics": [
+            "국내 생태계",
+            "산업 적용",
+            "에너지",
+            "의사결정 지원"
+          ],
+          "region_basis": "주 출처 파이낸셜뉴스의 공식 찾아오시는 길에 본사 주소가 서울 서초구 강남대로 315로 명시돼 있다.",
+          "verification_note": "원문 HTML·본문·게시 메타데이터를 확인했다. 기술 현황·실증 규모·일정은 기사에 인용된 KISTI 관계자 설명이다. 독립 성능 평가나 나라장터 공고 원문까지 검증한 것은 아니다. 같은 기자의 18:37 축약 보도는 동일 사건으로 중복 제외했다.",
+          "supporting_sources": [
+            {
+              "source": "파이낸셜뉴스",
+              "url": "https://www.fnnews.com/news/202610021742060722",
+              "supports": "발행 시각, 모델 3종의 기능, 5개 기업 실증 및 이르면 12월 상용화 계획",
+              "verified_at": "2026-10-04T21:04:23Z",
+              "source_type": "reputable_report",
+              "published_at": "2026-10-04T04:24:50Z",
+              "published_date": "2026-10-04",
+              "precision": "timestamp",
+              "published_timezone": "Asia/Seoul"
+            },
+            {
+              "source": "파이낸셜뉴스 회사소개",
+              "url": "https://www.fnnews.com/userinfo/map",
+              "supports": "주 출처의 한국 소재 확인",
+              "verified_at": "2026-10-04T21:04:23Z",
+              "source_type": "primary"
+            },
+            {
+              "source": "파이낸셜뉴스 동일 사건 후속 보도",
+              "url": "https://www.fnnews.com/news/202610041837112774",
+              "supports": "동일 기자·동일 사건 축약본으로 별도 카드에서 제외",
+              "verified_at": "2026-10-04T21:04:23Z",
+              "source_type": "reputable_report",
+              "published_date": "2026-10-04",
+              "precision": "date",
+              "published_timezone": "Asia/Seoul"
+            }
+          ]
+        },
+        {
+          "id": "2026-10-04-dacon-enterprise-context-profile",
+          "region": "domestic",
+          "source_country": "KR",
+          "title": "데이콘인피니티, 데이터의 업무 맥락을 기업 AI 에이전트에 연결",
+          "url": "https://it.chosun.com/news/articleView.html?idxno=2023092171172",
+          "source": "IT조선",
+          "source_type": "reputable_report",
+          "news_type": "기획",
+          "published_at": "2026-10-03T22:00:00Z",
+          "published_date": "2026-10-04",
+          "published_precision": "timestamp",
+          "published_timezone": "Asia/Seoul",
+          "published_date_kst": "2026-10-04",
+          "published_at_kst": "2026-10-04T07:00:00+09:00",
+          "date_basis": "IT조선 원문의 article:published_time·NewsArticle datePublished가 모두 2026-10-04T07:00:00+09:00이며 본문 입력 표기와 일치한다.",
+          "event_date": null,
+          "event_date_precision": "unknown",
+          "event_date_timezone": "unknown",
+          "event_date_note": "10월 4일 발행된 IT조선·NIA 공동기획의 기업 소개다. 기존 데이터 관리 제품과 향후 에이전트 연계 방향을 다루며 당일 신제품 출시·도입 계약을 뜻하지 않는다.",
+          "summary": "IT조선은 데이콘인피니티의 플렉스OS를 통해 데이터 통합, 업무 용어·관계 관리, 품질 관리, AI 운영을 연결하는 접근을 소개했다. 회사는 기존 공공기관 데이터 관리 경험을 토대로 업무별 에이전트와 보안·시스템 연계를 확대할 계획이라고 설명했다.",
+          "significance": "기업 에이전트의 실용성을 높이려면 내부 데이터의 의미와 업무 규칙을 정리해야 한다는 사례다. 소개된 도입 실적을 완전 자율 업무 수행의 검증으로 읽어서는 안 된다.",
+          "topics": [
+            "국내 생태계",
+            "기업용 AI",
+            "데이터 기반",
+            "온톨로지"
+          ],
+          "region_basis": "IT조선 공식 매체소개 하단은 서울특별시 중구 세종대로 135와 인터넷신문 등록번호 서울 아00936을 명시한다.",
+          "verification_note": "원문 본문과 HTML 게시 메타데이터를 확인했다. 공식 Mflex 설명에서도 메타데이터 통합 관리와 LLM 기반 자연어 검색 기능을 확인했다. 구체적인 기관 적용 실적과 기능 확장 계획은 기사에 인용된 회사 설명이다.",
+          "supporting_sources": [
+            {
+              "source": "데이콘인피니티 Mflex",
+              "url": "https://www.dacon.kr/sub/sub06_01.php",
+              "supports": "메타데이터 통합 관리와 LLM 기반 검색 기능의 공식 설명",
+              "verified_at": "2026-10-04T21:04:23Z",
+              "source_type": "primary",
+              "published_at": null,
+              "published_date": null,
+              "precision": "unknown",
+              "published_timezone": "unknown"
+            },
+            {
+              "source": "IT조선 매체소개",
+              "url": "https://it.chosun.com/com/com-1.html",
+              "supports": "주 출처의 한국 소재 확인",
+              "verified_at": "2026-10-04T21:04:23Z",
+              "source_type": "primary"
+            }
+          ]
+        },
+        {
+          "id": "2026-10-04-willison-agent-budget-caps",
+          "region": "international",
+          "source_country": "US",
+          "title": "Simon Willison, 코딩·개인 에이전트에 강제 지출 한도 필요성 제기",
+          "url": "https://simonwillison.net/2026/Oct/3/default-hard-budget-caps/",
+          "source": "Simon Willison’s Weblog",
+          "source_type": "primary",
+          "news_type": "개발자 논평",
+          "published_at": "2026-10-03T23:34:02Z",
+          "published_date": "2026-10-03",
+          "published_precision": "timestamp",
+          "published_timezone": "UTC",
+          "published_date_kst": "2026-10-04",
+          "published_at_kst": "2026-10-04T08:34:02+09:00",
+          "date_basis": "저자가 운영하는 공식 Atom entries 피드의 해당 entry published 값 2026-10-03T23:34:02+00:00을 확인했다. 본문의 10월 3일 23:34 표기와 일치하며 KST로 10월 4일 08:34:02다.",
+          "event_date": null,
+          "event_date_precision": "unknown",
+          "event_date_timezone": "unknown",
+          "event_date_note": "개발자가 새로 게시한 논평이다. 예시로 든 AWS 기능 발표는 9월 16일, Google Cloud 발표는 7월 28일로 과거 배경이며 이날 새로 출시된 기능으로 집계하지 않는다.",
+          "summary": "Simon Willison은 코딩·개인 에이전트가 유료 API와 클라우드 자원을 쉽게 만들어 쓰게 되면서, 이메일 경고에 그치지 않고 사용을 멈추는 지출 한도가 기본값이어야 한다고 주장했다. AWS와 Google Cloud의 기존 비용 통제 기능을 사례로 들며 에이전트도 한도가 있는 서비스를 우선 안내할 필요가 있다고 제안했다.",
+          "significance": "에이전트 운영의 안전 범위를 데이터 권한뿐 아니라 지출 통제까지 확장하는 논점이다. 비용 상한의 적용 범위·지연·예외를 실제 서비스 문서로 확인해야 한다.",
+          "topics": [
+            "운영",
+            "비용 통제",
+            "코딩 에이전트",
+            "개인 에이전트"
+          ],
+          "region_basis": "저자 본인의 공개 GitHub 프로필이 Half Moon Bay, California와 동일 블로그 링크를 명시한다. 미국 기반 개인 매체로 분류했으며 영어라는 이유로 분류하지 않았다.",
+          "verification_note": "저자 원문과 공식 Atom 발행 시각을 확인했다. AWS 문서는 일부 고객 대상 제공이라고 명시하며, Google Cloud의 7월 발표는 Public Preview와 적용 범위·고정 약정 요금 예외를 설명한다. 모든 계정에 절대적인 비용 상한이 적용된다고 단정하지 않았다.",
+          "supporting_sources": [
+            {
+              "source": "Simon Willison 공식 Atom 피드",
+              "url": "https://simonwillison.net/atom/entries/",
+              "supports": "해당 글의 UTC published timestamp",
+              "verified_at": "2026-10-04T21:04:23Z",
+              "source_type": "primary",
+              "published_at": "2026-10-03T23:34:02Z",
+              "published_date": "2026-10-03",
+              "precision": "timestamp",
+              "published_timezone": "UTC"
+            },
+            {
+              "source": "AWS 공식 발표",
+              "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/New-AWS-Builder-Experience/",
+              "supports": "9월 16일 발표된 프로젝트 월간 지출 한도와 한도 도달 시 일시정지 기능; 과거 배경",
+              "verified_at": "2026-10-04T21:04:23Z",
+              "source_type": "primary",
+              "published_at": null,
+              "published_date": "2026-09-16",
+              "precision": "date",
+              "published_timezone": "unknown"
+            },
+            {
+              "source": "AWS Account Management 문서",
+              "url": "https://docs.aws.amazon.com/accounts/latest/reference/create-spend-limit.html",
+              "supports": "일부 고객 대상 제공 경고와 실제 기능의 조건",
+              "verified_at": "2026-10-04T21:04:23Z",
+              "source_type": "primary",
+              "published_at": null,
+              "published_date": null,
+              "precision": "unknown",
+              "published_timezone": "unknown"
+            },
+            {
+              "source": "Google Cloud 공식 발표",
+              "url": "https://cloud.google.com/blog/topics/cost-management/new-early-anomalies-and-spend-caps-on-google-cloud-budgets",
+              "supports": "7월 28일 Spend Caps 발표, Public Preview 및 고정 약정 요금 예외; 과거 배경",
+              "verified_at": "2026-10-04T21:04:23Z",
+              "source_type": "primary",
+              "published_at": null,
+              "published_date": "2026-07-28",
+              "precision": "date",
+              "published_timezone": "unknown"
+            },
+            {
+              "source": "Simon Willison 공개 프로필",
+              "url": "https://github.com/simonw",
+              "supports": "저자와 블로그의 연결 및 미국 소재 확인",
+              "verified_at": "2026-10-04T21:04:23Z",
+              "source_type": "primary"
+            }
+          ]
+        },
+        {
+          "id": "2026-10-04-national-agent-permission-privacy",
+          "region": "international",
+          "source_country": "AE",
+          "title": "The National, 연결형 AI 에이전트의 정보·실행 권한 위험 조명",
+          "url": "https://www.thenationalnews.com/future/technology/2026/10/04/ai-less-safe-for-keeping-secrets-than-most-people-assume/",
+          "source": "The National",
+          "source_type": "reputable_report",
+          "news_type": "전문가 취재·분석",
+          "published_at": "2026-10-04T07:16:11.632Z",
+          "published_date": "2026-10-04",
+          "published_precision": "timestamp",
+          "published_timezone": "UTC",
+          "published_date_kst": "2026-10-04",
+          "published_at_kst": "2026-10-04T16:16:11.632+09:00",
+          "date_basis": "원문 NewsArticle datePublished와 first_publish_date가 모두 2026-10-04T07:16:11.632Z다. KST 10월 4일 16:16:11로 변환했다. 수정·재게시 메타데이터의 17:31 UTC는 최초 발행 시각으로 사용하지 않았다.",
+          "event_date": null,
+          "event_date_precision": "unknown",
+          "event_date_timezone": "unknown",
+          "event_date_note": "10월 4일 발행된 전문가 취재 기사다. 배경으로 언급된 최근 수개월의 보안 사고와 7월 설문을 당일 발생·발표한 사건으로 바꾸지 않았다.",
+          "summary": "The National은 메일·캘린더·금융 서비스에 연결된 에이전트가 데이터를 보관하는 데서 실제 행동까지 맡으면서 위험도 달라진다는 전문가 의견을 취재했다. 취재원들은 작업에 필요한 권한만 주고, 공급사는 독립 점검·사고 공개·책임 체계를 강화해야 한다고 강조했다.",
+          "significance": "편의성 확대와 함께 최소 권한·행동 추적·공급사 책임을 살펴야 한다는 해외 현장 의견이다. 보안 사고의 새 발생 건수를 제시하는 보고서가 아니다.",
+          "topics": [
+            "안전·보안",
+            "권한",
+            "개인정보",
+            "개인 에이전트"
+          ],
+          "region_basis": "The National 공식 About Us는 아랍에미리트 아부다비 본사를 명시한다. 기사에 등장한 기업의 소재지나 영어 사용 여부와 무관하게 해외 매체로 분류했다.",
+          "verification_note": "원문 전체와 HTML 게시 메타데이터를 확인했다. 전문가의 실제 인터뷰·제언을 요약했으며, 배경 사고의 원인이나 피해 수치를 별도로 검증한 결론으로 재사용하지 않았다. 최초 발행일과 KST 다음날에 해당하는 재게시 메타데이터를 구분했다.",
+          "supporting_sources": [
+            {
+              "source": "The National 원문",
+              "url": "https://www.thenationalnews.com/future/technology/2026/10/04/ai-less-safe-for-keeping-secrets-than-most-people-assume/",
+              "supports": "전문가 인터뷰·최소 권한 제언 및 원문 최초 발행 timestamp",
+              "verified_at": "2026-10-04T21:04:23Z",
+              "source_type": "reputable_report",
+              "published_at": "2026-10-04T07:16:11.632Z",
+              "published_date": "2026-10-04",
+              "precision": "timestamp",
+              "published_timezone": "UTC"
+            },
+            {
+              "source": "The National About Us",
+              "url": "https://www.thenationalnews.com/about-us/",
+              "supports": "주 출처의 아랍에미리트 아부다비 소재 확인",
+              "verified_at": "2026-10-04T21:04:23Z",
+              "source_type": "primary"
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-10-03",
@@ -566,6 +1377,6 @@
       ]
     }
   ],
-  "collected_at": "2026-10-03T21:15:59Z",
+  "collected_at": "2026-10-05T21:14:04Z",
   "region_basis": "매체 소재지 기준: 국내 한국 매체는 domestic, 해외 매체는 international. 기사 언어와 기업 국적은 분류 기준이 아닙니다."
 }

@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "collected_at": "2026-10-03T21:11:40Z",
+  "collected_at": "2026-10-05T21:10:45Z",
   "timezone": "Asia/Seoul",
   "scope": "2025-01-01 onward; major shifts in agent products, open personal-agent ecosystems, interoperability, and enterprise operations",
-  "editorial_note": "18개의 주요 전환점을 선별했습니다. 반복적인 버전 업데이트·논문·모델 성능 발표는 제외합니다. 날짜는 공식 출처의 사건·발표일이며, NanoClaw는 창작자의 Show HN 원문 게시 시각(UTC)을 보존합니다. significance는 확인된 변화의 의미를 설명하는 편집 요약입니다. 이번 보강은 Meta Muse의 9월 8일 최초 출시와 NVIDIA의 9월 28일 안전 플랫폼 발표, OpenAI dots의 9월 29일 순차 제공 시작을 구분해 추가합니다.",
+  "editorial_note": "20개의 주요 전환점을 선별했습니다. 반복적인 버전 업데이트·논문·모델 성능 발표는 제외합니다. 날짜는 공식 출처의 사건·발표일이며, NanoClaw는 창작자의 Show HN 원문 게시 시각(UTC)을 보존합니다. significance는 확인된 변화의 의미를 설명하는 편집 요약입니다. 이번 보강은 과거의 Gemini Spark 5월 19일 발표·신뢰 테스터 제공과 Bedrock Managed Agents 9월 29일 공개 프리뷰를 추가하며, 오늘 새로 출시된 사건을 뜻하지 않습니다.",
   "items": [
     {
       "date": "2025-01-23",
@@ -224,6 +224,23 @@
       "date_precision": "date"
     },
     {
+      "date": "2026-05-19",
+      "title": "Gemini Spark, 클라우드에서 이어가는 상시 개인 에이전트",
+      "summary": "Google이 I/O에서 Gemini Spark를 발표하고 신뢰 테스터 대상 제공을 시작했다. Gemini 3.5와 Antigravity 실행 구조로 Workspace 도구를 사용하며, 사용자의 기기가 꺼져 있어도 클라우드에서 작업을 이어가도록 설계했다.",
+      "significance": "상시 개인 에이전트가 주요 소비자 서비스에 들어오며, 일회성 답변에서 앱을 넘나드는 지속적인 업무 위임으로 확장되는 흐름을 보여줬다.",
+      "category": "개인 에이전트",
+      "source_url": "https://blog.google/innovation-and-ai/products/gemini-app/next-evolution-gemini-app/",
+      "date_type": "product_announcement",
+      "date_precision": "date",
+      "date_basis": "Google I/O 공식 발표일. 같은 날 모델 발표는 신뢰 테스터 제공 시작을 명시하며, 미국 Google AI Ultra 베타는 다음 주 예정이었다. 이날을 전체 사용자 일반 출시일로 쓰지 않는다.",
+      "supporting_sources": [
+        {
+          "label": "신뢰 테스터 제공 시작 및 베타 예정 구분",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/"
+        }
+      ]
+    },
+    {
       "date": "2026-07-09",
       "title": "ChatGPT Work, 여러 앱과 파일을 넘나드는 업무 실행",
       "summary": "OpenAI가 ChatGPT Work를 출시했다. 앱·파일의 정보를 모아 문서·시트·슬라이드·웹앱을 만들고, 복잡한 프로젝트를 나눠 수 시간 동안 수행하는 일반 업무용 에이전트를 제시했다.",
@@ -278,6 +295,17 @@
           "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
         }
       ]
+    },
+    {
+      "date": "2026-09-29",
+      "title": "Bedrock Managed Agents, OpenAI 실행 체계를 AWS 안으로",
+      "summary": "AWS와 OpenAI가 공동 개발한 Bedrock Managed Agents의 공개 프리뷰를 시작했다. AWS 네이티브로 조정한 Agents API가 상태·도구·코드 실행과 지속 세션을 관리하고, 에이전트별 IAM 역할과 중요한 행동 전 사람 승인, CloudTrail 기록을 지원한다.",
+      "significance": "모델 접근을 넘어 에이전트 실행 체계가 기업의 기존 클라우드 신원·권한·감사 체계 안으로 통합되는 방향을 보여줬다.",
+      "category": "실행 인프라",
+      "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/bedrock-managed-agents-preview/",
+      "date_type": "public_preview_release",
+      "date_precision": "date",
+      "date_basis": "AWS What’s New 원문의 2026년 9월 29일 프리뷰 제공 시작. 미국 3개 리전 대상이며 GA가 아니다. OpenAI Agents API 자체의 최초 베타와 10월 5일 주간 재소개 날짜를 구분한다."
     }
   ]
 }
