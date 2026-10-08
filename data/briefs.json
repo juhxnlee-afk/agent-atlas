@@ -1,8 +1,69 @@
 {
   "schema_version": 1,
-  "collected_at": "2026-10-05T21:19:22Z",
+  "collected_at": "2026-10-07T00:18:44Z",
   "timezone": "Asia/Seoul",
   "items": [
+    {
+      "id": "2026-10-07",
+      "collected_at": "2026-10-07T00:18:44Z",
+      "window_start": "2026-09-30T00:00:00.000Z",
+      "window_end": "2026-10-07T00:00:00Z",
+      "headline": "업무 연결을 넓히는 에이전트, 권한·실행 근거·복구를 함께 설계",
+      "summary": "9월 30일 09:00부터 10월 7일 09:00 KST까지의 선별 공개 자료에서는 업무 연결 확대와 실행 통제·검증이 함께 나타났습니다. North 2와 AIR Studio v3는 에이전트·업무 데이터 연결에 조직별 권한과 비용 관리를 결합했고, Meta·Sierra의 Personal Agent Protocol 발표는 개인 에이전트와 기업 사이의 읽기·쓰기 승인 구조를 제시했습니다. 규약 명세 공개는 월말 계획입니다. 10월 6일 UTC에 생성된 bops와 effect-boundary 공개 저장소는 각각 업무 봇의 컴퓨터·기억·승인, 외부 시스템에 남기는 변경의 기록·검증·복구를 표방합니다. 같은 기간 최초 제출된 AgentSpy·UndoBench·MemPilot은 실제 행동 관측, 장애 복구, 필요할 때의 기억 정리를 다룹니다. 발표·저장소 생성·논문 최초 제출을 구분한 편집 해석이며, 기능·보안·성능을 독립 실행 검증했거나 산업 전체의 추세를 측정한 결과는 아닙니다.",
+      "themes": [
+        "기업 업무·권한·비용",
+        "개인 에이전트 연결",
+        "외부 변경의 검증·복구",
+        "장기 실행 관측",
+        "필요에 맞춘 기억"
+      ],
+      "sources": [
+        {
+          "label": "North 2 · 공식 발표",
+          "url": "https://cohere.com/blog/introducing-north-2"
+        },
+        {
+          "label": "AIR Studio v3 · 전자신문",
+          "url": "https://www.etnews.com/20261006000177"
+        },
+        {
+          "label": "Personal Agent Protocol · Sierra",
+          "url": "https://sierra.ai/blog/introducing-personal-agent-protocol"
+        },
+        {
+          "label": "bops · 공개 저장소",
+          "url": "https://github.com/nickvasilescu/bops"
+        },
+        {
+          "label": "effect-boundary · 공개 저장소",
+          "url": "https://github.com/AkashPriyadarshii/effect-boundary"
+        },
+        {
+          "label": "AgentSpy · arXiv v1",
+          "url": "https://arxiv.org/abs/2610.06001"
+        },
+        {
+          "label": "UndoBench · arXiv v1",
+          "url": "https://arxiv.org/abs/2610.05622"
+        },
+        {
+          "label": "MemPilot · arXiv v1",
+          "url": "https://arxiv.org/abs/2610.06830"
+        }
+      ],
+      "method": "source_grounded_editorial",
+      "snapshot_url": "data/snapshots/2026-10-07.json",
+      "counts": {
+        "recent_repositories": 854,
+        "archive_repositories": 1714,
+        "all_repositories": 1722,
+        "papers": 82,
+        "timeline": 23,
+        "news_days": 5,
+        "news_stories": 34
+      },
+      "sha256": "8fcc55c3cece75b4fd4cdf3ac208ac5a129865daf999ed8fdd477969a584be2e"
+    },
     {
       "id": "2026-10-06",
       "collected_at": "2026-10-05T21:19:22Z",

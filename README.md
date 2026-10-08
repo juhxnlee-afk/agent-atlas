@@ -54,13 +54,15 @@ node --check scripts/create-snapshot.mjs
 
 `data/meta.json`: 수집 시각, 검색어·페이지·분류 및 제외 규칙, 출처, 누락 가능성, 스케줄 상태를 기록합니다. URL은 공개 근거만 사용하며 비공개 정보·토큰·비밀키를 저장하지 않습니다.
 
-`data/briefs.json`: 일일 브리핑 인덱스. 각 항목에는 `collected_at`, `window_start`, `window_end`, `headline`, `summary`, `themes`, `sources`, `snapshot_url`, `sha256`이 있습니다. 일일 요약은 **그날 수집 시점 직전 7일**을 요약합니다. 현재 화면의 Main 범위와 별도로 요약 범위를 표시합니다.
+`data/briefs.json`: 일일 브리핑 인덱스. 각 항목에는 `collected_at`, `window_start`, `window_end`, `headline`, `summary`, `themes`, `sources`, `snapshot_url`, `sha256`이 있습니다. 일일 요약은 **명시된 편집 기준 시각 직전 7일**을 요약합니다. `collected_at`은 실제 수집 완료 시각이며 `window_end`와 구분합니다. 기본값은 수집 시각이고, 정기 실행은 `--window-end`로 09:00 KST 기준을 지정합니다. 현재 화면의 Main 범위와 별도로 요약 범위를 표시합니다.
 
 `data/snapshots/<id>.json`: 그 수집 시점의 전체 저장소, 논문, 타임라인, 브리핑, provenance를 포함하는 불변 원본입니다. 생성 후 내용을 덮어쓰거나 과거 Stars/요약을 현재 값으로 바꾸지 않습니다. 수집을 시작하기 전 날짜의 일일 기록을 소급 생성하지 않습니다.
 
-## 매일 06:00 KST 업데이트 계약
+## 매일 09:00 KST 업데이트 계약
 
-브라우저나 GitHub Pages 자체는 수집 작업을 실행하지 않습니다. 별도 승인된 스케줄 실행기가 **Asia/Seoul 매일 06:00**에 데이터를 갱신하고 게시해야 합니다. 예약이 실제 활성화된 후에만 `meta.schedule.enabled`를 `true`로 바꿉니다. 저장소·서비스의 인증정보는 실행기의 비밀 저장소에만 보관하고 이 디렉터리에 쓰지 않습니다.
+브라우저나 GitHub Pages 자체는 수집 작업을 실행하지 않습니다. 별도 승인된 스케줄 실행기가 **Asia/Seoul 매일 09:00**에 데이터를 갱신하고 게시해야 합니다. 예약이 실제 활성화된 후에만 `meta.schedule.enabled`를 `true`로 바꿉니다. 저장소·서비스의 인증정보는 실행기의 비밀 저장소에만 보관하고 이 디렉터리에 쓰지 않습니다.
+
+09:00은 편집 기준 시각입니다. 이후에 수집·검증·배포가 끝날 수 있으며 실제 완료 시각을 09:00으로 소급하지 않습니다. 기준 이후 처음 공개된 항목은 다음 실행에서 다룹니다. Stars는 조회 당시의 현재 누적값이며 편집 기준 시각의 과거 값을 재구성한 것이 아닙니다.
 
 한 번의 실행 순서:
 
@@ -72,7 +74,7 @@ node --check scripts/create-snapshot.mjs
 
 ```sh
 node scripts/create-snapshot.mjs --brief=/absolute/path/verified-brief.json
-# 선택: --collected-at=2026-10-04T21:00:00Z --id=2026-10-05
+# 선택: --collected-at=<실제 수집 완료 ISO 시각> --window-end=2026-10-07T00:00:00Z --id=2026-10-07
 ```
 
 6. 테스트, 데이터·해시 검증, JavaScript 구문 검사를 실행합니다. 승인된 게시 경로로 변경 파일과 새 스냅샷을 커밋·푸시합니다. 실제 Pages 응답에서 새 `collected_at`을 확인한 뒤 완료로 처리합니다. 실패하면 이전 정상 데이터를 유지하고 실패를 보고합니다.
@@ -83,7 +85,7 @@ node scripts/create-snapshot.mjs --brief=/absolute/path/verified-brief.json
 
 텍스트는 HTML escape하고 링크는 HTTP(S)만 허용합니다. 스냅샷 경로는 `data/snapshots/` 내부 JSON만 허용합니다. 일부 파일 로딩 실패, 검증 실패, 빈 검색 결과, 수집 지연, 스냅샷 실패를 별도로 표시합니다. 키보드 탭 전환, 명시적 input label, focus ring, 화면 낭독용 검색 결과 안내, 모바일 레이아웃을 제공합니다.
 
-시계는 방문자 기기 시각에 의존합니다. 36시간 이상 수집이 지연되면 경고합니다. 공개 GitHub API의 검색 인덱스, 별 수 문턱, 언어·키워드, 결과 한도에 따른 누락이 가능합니다. 출처가 없거나 원본 생성일이 잘못된 항목은 표시하지 않습니다.
+시계는 방문자 기기 시각에 의존합니다. 36시간 이상 수집이 지연되면 경고합니다. 현재 수집에는 최소 Stars 문턱을 두지 않습니다. 공개 GitHub API의 검색 인덱스, 언어·키워드, 기간 구간, 결과 한도와 검토 범위에 따른 누락이 가능합니다. 초기 표본의 과거 검색 조건은 해당 시점의 provenance로 보존합니다. 출처가 없거나 원본 생성일이 잘못된 항목은 표시하지 않습니다.
 
 ## News · 일일 에이전트 AI 뉴스
 
@@ -102,9 +104,9 @@ node scripts/create-snapshot.mjs --brief=/absolute/path/verified-brief.json
 - 권장: `significance` (한국어 핵심 포인트), `topics`, `source_type` (`primary` / `reputable_report`), `supporting_sources:[{source,url,...근거}]`, `event_date`, `event_date_note`, `verification_note`
 - 게시일, 발표·시행일, 수집 시각은 서로 대체하지 않습니다. 날짜별 뉴스의 기준은 확인된 보도 게시 시각입니다. 과거 소식을 배경으로 넣으면 이전 소식임을 명시합니다. 날짜만 있는 출처는 정확한 KST 게시일을 확정하지 않았다고 표시합니다.
 
-### 매일 06:00 KST 실행
+### 매일 09:00 KST 실행
 
-기존 수집·게시 작업에서 국내·해외 매체와 공식 원문을 모두 확인하고 전날의 일일 기록을 보강·마감(`final`)한 뒤, 당일은 06:00까지의 부분 기록(`partial`)으로 추가합니다. 2026-10-03 이전 기록은 만들지 않습니다. `final`은 해당 KST 날짜가 끝난 후에만 허용합니다. 확인된 기사가 없는 경우 가짜 뉴스 카드나 무의미한 문구로 채우지 말고 확인 범위와 결과만 정확히 기록합니다. 실패한 검색을 '뉴스 없음'으로 처리하지 않습니다.
+기존 수집·게시 작업에서 국내·해외 매체와 공식 원문을 모두 확인하고 전날의 일일 기록을 보강·마감(`final`)한 뒤, 당일은 09:00까지의 부분 기록(`partial`)으로 추가합니다. 2026-10-03 이전 기록은 만들지 않습니다. `final`은 해당 KST 날짜가 끝난 후에만 허용합니다. 확인된 기사가 없는 경우 가짜 뉴스 카드나 무의미한 문구로 채우지 말고 확인 범위와 결과만 정확히 기록합니다. 실패한 검색을 '뉴스 없음'으로 처리하지 않습니다.
 
 ```sh
 # 검증한 전날+당일 이슈 envelope. 기존 날짜·소식은 보존하며 원자적으로 병합합니다.

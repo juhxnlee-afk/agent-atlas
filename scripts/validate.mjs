@@ -33,9 +33,11 @@ for(const brief of briefs){
  check(Boolean(snapshotPath(brief.snapshot_url)),`Invalid snapshot path ${brief.id}`);
  if(!snapshotPath(brief.snapshot_url))continue;
  check(time(brief.window_end)-time(brief.window_start)===7*86400000,`Brief ${brief.id} is not a7day window`);
+ check(time(brief.window_end)<=time(brief.collected_at),`Brief ${brief.id} editorial cutoff is after collection`);
  const bytes=await readFile(resolve(root,brief.snapshot_url));const snap=JSON.parse(bytes);
  check(snap.id===brief.id,`Snapshot ID ${brief.id}`);
  check(snap.collected_at===brief.collected_at,`Snapshot collection time ${brief.id}`);
+ check(snap.window_start===brief.window_start && snap.window_end===brief.window_end,`Snapshot editorial window ${brief.id}`);
  check(createHash('sha256').update(bytes).digest('hex')===brief.sha256,`Immutable snapshot checksum ${brief.id}`);
  check(Array.isArray(snap.repos)&&Array.isArray(snap.papers)&&Array.isArray(snap.timeline),`Incomplete snapshot ${brief.id}`);
  if(snap.schema_version>=2) {

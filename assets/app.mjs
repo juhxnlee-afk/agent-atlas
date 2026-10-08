@@ -1,5 +1,5 @@
-import { DAY, time, safeURL, itemsOf, normalizeRepos, normalizePapers, normalizeTimeline, filterRepos, filterPapers, filterTimeline, timelineDateLabel, timelineDateTypeLabel, kstDate, kstStamp, latestCollected, snapshotPath } from './logic.mjs?v=20261003-milestones';
-import { NEWS_START, normalizeNews, filterNews } from './news.mjs?v=20261003-design';
+import { DAY, time, safeURL, itemsOf, normalizeRepos, normalizePapers, normalizeTimeline, filterRepos, filterPapers, filterTimeline, timelineDateLabel, timelineDateTypeLabel, kstDate, kstStamp, latestCollected, snapshotPath } from './logic.mjs?v=20261007-cutoff';
+import { NEWS_START, normalizeNews, filterNews } from './news.mjs?v=20261007-cutoff';
 const TABS = ['main','history','paper','news'];
 const $ = (selector, root = document) => root.querySelector(selector);
 const escape = value => String(value ?? '').replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
@@ -66,6 +66,7 @@ async function load() {
 function currentBrief() { return state.data?.briefs.find(b => b.id === state.chosen) || state.data?.briefs[0]; }
 function currentRepos() { return state.chosen && state.snapshot ? state.snapshot.repos : state.data.repos; }
 function currentAsOf() { return state.chosen && state.snapshot ? time(state.snapshot.collected_at) : Date.now(); }
+function scheduleTime() { const target=state.data?.meta.schedule?.target_time; return /^(?:[01]\d|2[0-3]):[0-5]\d$/.test(target || '') ? target : '09:00'; }
 function sourcesHTML(sources=[]) {return sources.filter(s=>safeURL(s.url)).map(s=>link(s.url,s.label || '출처 확인')).join('');}
 function briefHTML(brief, archive=false) {
   if (!brief) return '<h2>아직 저장된 브리핑이 없습니다</h2><p>브리핑은 실제 수집이 끝난 시점부터 보관됩니다. 과거 날짜의 기록을 소급해 만들지 않습니다.</p>';
@@ -108,11 +109,11 @@ function render() {
   $('#snapshot-select')?.addEventListener('change',event=>chooseSnapshot(event.target.value));
   renderFeed();
   const schedule=data.meta.schedule;
-  $('#schedule').textContent=schedule?.enabled ? '매일 06:00 KST 수집 예약' : '업데이트 목표 · 매일 06:00 KST (예약 설정 대기)';
+  $('#schedule').textContent=schedule?.enabled ? `매일 ${scheduleTime()} KST 수집 예약` : `업데이트 목표 · 매일 ${scheduleTime()} KST (예약 설정 대기)`;
 }
 function coverageHTML() {
   const data=state.data;
-  if(state.tab==='news') return `<div class="coverage news-coverage">${NEWS_START}부터 쌓는 일일 기록 · 매일 06:00 KST 수집<details><summary>뉴스 날짜와 업데이트 기준</summary><p>일일 요약은 해당 날짜의 선별 뉴스 전체를 종합합니다. 진행 중인 날짜는 부분 수집이며, 다음 날 수집에서 전날을 보강·마감합니다. 매일 06:00 수집은 그날 전체 소식을 포함하지 않습니다.</p><p>기사 게시 시각과 수집 시각을 구분합니다. 시각이 확인된 원문은 KST로 변환하고, 날짜만 제공하는 원문은 원문 날짜·시간대 한계를 그대로 표시합니다. 보도·공식 발표·예정 사항은 원문 근거에 따라 구분하며, 과거 소식은 별도 배경 표시 없이 오늘 발표로 바꾸지 않습니다.</p><p>선별 목록이므로 모든 소식을 망라하지 않습니다. ${escape(data.news_meta.coverage_note || '')}</p><p>${link(new URL('data/news.json',document.baseURI).href,'일일 뉴스 원본 JSON')} · ${link(new URL('README.md',document.baseURI).href,'수집·보존 기준')}</p></details></div>`;
+  if(state.tab==='news') return `<div class="coverage news-coverage">${NEWS_START}부터 쌓는 일일 기록 · 매일 ${scheduleTime()} KST 편집 기준<details><summary>뉴스 날짜와 업데이트 기준</summary><p>일일 요약은 해당 날짜의 선별 뉴스 전체를 종합합니다. 진행 중인 날짜는 부분 수집이며, 다음 날 수집에서 전날을 보강·마감합니다. 매일 ${scheduleTime()} 편집 기준은 그날 전체 소식을 포함하지 않습니다. 기준 시각 뒤에 완료된 수집 시각은 별도로 표시합니다.</p><p>기사 게시 시각과 수집 시각을 구분합니다. 시각이 확인된 원문은 KST로 변환하고, 날짜만 제공하는 원문은 원문 날짜·시간대 한계를 그대로 표시합니다. 보도·공식 발표·예정 사항은 원문 근거에 따라 구분하며, 과거 소식은 별도 배경 표시 없이 오늘 발표로 바꾸지 않습니다.</p><p>선별 목록이므로 모든 소식을 망라하지 않습니다. ${escape(data.news_meta.coverage_note || '')}</p><p>${link(new URL('data/news.json',document.baseURI).href,'일일 뉴스 원본 JSON')} · ${link(new URL('README.md',document.baseURI).href,'수집·보존 기준')}</p></details></div>`;
   const coverage=data.meta.coverage_ko || '공개 저장소와 공식 논문 출처를 선별·검색한 자료이며 전수 목록이 아닙니다.';
   return `<div class="coverage">${escape(coverage)}<details><summary>수집 기준과 데이터의 한계</summary><p>Main은 현재 시각으로부터 정확히 7일 전까지의 GitHub 원본 created_at만 사용합니다. push·업데이트·릴리스 시각은 신규 저장소 판정에 사용하지 않습니다. History는 KST 2026.01.01 이후 생성된 저장소이며, 이전 저장소는 별도 참고 목록입니다.</p><p>논문 날짜는 arXiv 최초 제출일(UTC)입니다. 논문 요약과 타임라인은 선별 자료이며, arXiv 등록은 동료 심사를 의미하지 않습니다. Stars는 수집 시점의 누적값으로 성장량이 아닙니다. ${escape(data.meta.limitations_ko || '')}</p><p>${link(new URL('data/meta.json',document.baseURI).href,'수집 방법·검색 범위 JSON')} · ${link(new URL('data/repos.json',document.baseURI).href,'저장소 데이터 JSON')}</p></details></div>`;
 }
@@ -131,7 +132,7 @@ function archiveBodyHTML() {
   if(state.snapshotLoading) return '<div class="loading" role="status">수집 원본을 불러오는 중…</div>';
   if(state.snapshotError) return `<div class="banner" role="alert">${escape(state.snapshotError)}<button type="button" id="snapshot-retry">이 기록 다시 불러오기</button></div>`;
   const brief=currentBrief();
-  return `${briefHTML(brief,true)}<p><small>${state.chosen?'아래 목록과 Stars는 선택한 수집 원본의 값입니다.':'아래 목록은 가장 최근에 수집한 전체 데이터입니다.'} 브리핑은 해당 수집 시점의 최근 7일을 요약합니다.</small><small>저장된 스냅샷은 덮어쓰지 않습니다. 수집 이전 날짜의 브리핑은 소급 생성하지 않습니다.</small>${brief?snapshotPath(brief.snapshot_url)?`<a class="note" href="${escape(brief.snapshot_url)}" target="_blank" rel="noopener noreferrer">${escape(kstDate(brief.collected_at))} 전체 수집 원본 JSON ↗</a>`:'':''}</p>`;
+  return `${briefHTML(brief,true)}<p><small>${state.chosen?'아래 목록과 Stars는 선택한 수집 원본의 값입니다.':'아래 목록은 가장 최근에 수집한 전체 데이터입니다.'} 브리핑은 표시된 편집 기준 시각 직전 7일을 요약합니다. 실제 수집 완료 시각은 별도로 표시합니다.</small><small>저장된 스냅샷은 덮어쓰지 않습니다. 수집 이전 날짜의 브리핑은 소급 생성하지 않습니다.</small>${brief?snapshotPath(brief.snapshot_url)?`<a class="note" href="${escape(brief.snapshot_url)}" target="_blank" rel="noopener noreferrer">${escape(kstDate(brief.collected_at))} 전체 수집 원본 JSON ↗</a>`:'':''}</p>`;
 }
 async function chooseSnapshot(id, redraw=true) {
   const generation=++snapshotGeneration;
@@ -194,7 +195,7 @@ function renderNewsFeed() {
 }
 function newsIssueHTML(issue,index) {
   const status=issue.status==='final'?'일일 수집 마감':'부분 수집', sourceDateOnly=issue.items.filter(item=>item.published_precision==='date').length;
-  return `<article class="news-issue ${index===0?'lead-issue':''}" aria-labelledby="news-${escape(issue.date)}"><div class="news-dayline"><time datetime="${escape(issue.date)}">${escape(issue.date)} <span>KST 일일 기록</span></time><span class="news-status ${issue.status==='final'?'is-final':''}">${status}</span><span class="news-count">${issue.items.length}${issue.items.length!==issue.total_items?` / ${issue.total_items}`:''}개 소식</span></div><section class="news-summary"><div class="sectiontag">DAILY SYNTHESIS / 전체 뉴스 종합 · 하루 핵심 요약</div><h3 id="news-${escape(issue.date)}">${escape(issue.headline)}</h3><p>${escape(issue.summary)}</p><div class="news-collected">수집 · <time datetime="${escape(issue.collected_at)}">${escape(kstStamp(issue.collected_at))}</time>${issue.status==='partial'?'<span>해당 날짜 전체가 아닌 수집 시점까지의 선별 소식</span>':'<span>마감 후 확인된 누락·정정은 후속 수집에서 보강</span>'}</div>${issue.coverage_note?`<p class="news-coverage-note">${escape(issue.coverage_note)}</p>`:''}${issue.correction_note?`<p class="news-coverage-note">정정 · ${escape(issue.correction_note)}</p>`:''}${issue.sources?.length?`<div class="sources">${sourcesHTML(issue.sources)}</div>`:''}</section><div class="news-stories">${issue.items.map((item,i)=>newsRowHTML(item,i,issue)).join('') || '<p class="note">이 수집에서 선별한 개별 뉴스가 없습니다. 수집 범위와 확인 결과는 위 요약을 참고하세요.</p>'}</div>${sourceDateOnly?'<p class="note news-date-caveat">일부 원문은 게시 시각을 제공하지 않아 원문 날짜를 표시합니다. 해당 뉴스의 정확한 KST 게시일은 확정하지 않습니다.</p>':''}</article>`;
+  return `<article class="news-issue ${index===0?'lead-issue':''}" aria-labelledby="news-${escape(issue.date)}"><div class="news-dayline"><time datetime="${escape(issue.date)}">${escape(issue.date)} <span>KST 일일 기록</span></time><span class="news-status ${issue.status==='final'?'is-final':''}">${status}</span><span class="news-count">${issue.items.length}${issue.items.length!==issue.total_items?` / ${issue.total_items}`:''}개 소식</span></div><section class="news-summary"><div class="sectiontag">DAILY SYNTHESIS / 전체 뉴스 종합 · 하루 핵심 요약</div><h3 id="news-${escape(issue.date)}">${escape(issue.headline)}</h3><p>${escape(issue.summary)}</p><div class="news-collected">수집 · <time datetime="${escape(issue.collected_at)}">${escape(kstStamp(issue.collected_at))}</time>${issue.window_end?`<span>편집 기준 · ${escape(kstStamp(issue.window_end))}</span>`:''}${issue.status==='partial'?'<span>해당 날짜 전체가 아닌 명시된 편집 기준까지의 선별 소식</span>':'<span>마감 후 확인된 누락·정정은 후속 수집에서 보강</span>'}</div>${issue.coverage_note?`<p class="news-coverage-note">${escape(issue.coverage_note)}</p>`:''}${issue.correction_note?`<p class="news-coverage-note">정정 · ${escape(issue.correction_note)}</p>`:''}${issue.sources?.length?`<div class="sources">${sourcesHTML(issue.sources)}</div>`:''}</section><div class="news-stories">${issue.items.map((item,i)=>newsRowHTML(item,i,issue)).join('') || '<p class="note">이 수집에서 선별한 개별 뉴스가 없습니다. 수집 범위와 확인 결과는 위 요약을 참고하세요.</p>'}</div>${sourceDateOnly?'<p class="note news-date-caveat">일부 원문은 게시 시각을 제공하지 않아 원문 날짜를 표시합니다. 해당 뉴스의 정확한 KST 게시일은 확정하지 않습니다.</p>':''}</article>`;
 }
 function newsRowHTML(item,index,issue) {
   const precise=item.published_precision==='timestamp';

@@ -20,17 +20,19 @@ async function main() {
   const collected=options['collected-at'] || latestCollected([repoPayload,paperPayload,timelinePayload,meta,newsPayload],repos.items);
   if(!Number.isFinite(time(collected)))throw new Error('A verified collected_at timestamp is required.');
   if(time(collected)>Date.now()+60_000)throw new Error('collected_at is in the future.');
+  const windowEnd=options['window-end'] || collected;
+  if(!/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d+)?(?:Z|[+-]\d{2}:\d{2})$/.test(windowEnd) || !Number.isFinite(time(windowEnd)) || time(windowEnd)>time(collected))throw new Error('Editorial window_end must be a verified timestamp at or before collection.');
   if(news?.items.some(issue=>time(issue.collected_at)>time(collected)))throw new Error('A news issue was collected after the requested snapshot time.');
   const id=options.id || kstDate(collected);
   if(!/^[\w.-]+$/.test(id))throw new Error('Snapshot ID must contain only letters, digits, dots, underscores, or hyphens.');
-  const recent=filterRepos(repos.items,{now:time(collected),sort:'date-desc'});
-  const archive=filterRepos(repos.items,{tab:'history',now:time(collected),sort:'date-desc'});
+  const recent=filterRepos(repos.items,{now:time(windowEnd),sort:'date-desc'});
+  const archive=filterRepos(repos.items,{tab:'history',now:time(windowEnd),sort:'date-desc'});
   const counts={};for(const repo of recent)counts[repo.category || 'Agent AI']=(counts[repo.category || 'Agent AI'] || 0)+1;
   const themes=Object.entries(counts).sort((a,b)=>b[1]-a[1] || a[0].localeCompare(b[0])).map(([name])=>name);
   const custom=options.brief?JSON.parse(await readFile(resolve(options.brief),'utf8')):{};
   if(custom.sources && !custom.sources.every(source=>safeURL(source.url)&&typeof source.label==='string'))throw new Error('Brief sources must have verified HTTP(S) URLs and labels.');
   const brief={
-    id,collected_at:collected,window_start:new Date(time(collected)-7*DAY).toISOString(),window_end:collected,
+    id,collected_at:collected,window_start:new Date(time(windowEnd)-7*DAY).toISOString(),window_end:windowEnd,
     headline:custom.headline || `최근 7일, ${recent.length}개의 에이전트 저장소를 관측했습니다`,
     summary:custom.summary || `이번 수집에서 원본 생성일이 최근 7일에 해당하는 공개 저장소 ${recent.length}개를 확인했습니다.${themes.length?` 수집 표본에는 ${themes.slice(0,4).join(' · ')} 분야가 포함됩니다.`:''} 2026년 이후 생성된 저장소 아카이브는 ${archive.length}개, 논문 기록은 ${papers.items.length}개입니다. 이는 선별 검색 결과의 현황이며 전체 생태계의 성장이나 성능 향상을 뜻하지 않습니다.`,
     themes:custom.themes || themes.slice(0,5),sources:custom.sources || recent.slice(0,6).map(repo=>({label:repo.name,url:repo.url})),
@@ -38,7 +40,7 @@ async function main() {
     counts:{recent_repositories:recent.length,archive_repositories:archive.length,all_repositories:repos.items.length,papers:papers.items.length,timeline:timeline.items.length,...(news?{news_days:news.items.length,news_stories:news.items.reduce((sum,issue)=>sum+issue.items.length,0)}:{})}
   };
   if(typeof brief.headline!=='string'||typeof brief.summary!=='string'||!Array.isArray(brief.themes))throw new Error('Brief headline, summary, or themes has an invalid type.');
-  const snapshot={schema_version:news?2:1,id,collected_at:collected,timezone:'Asia/Seoul',window_start:brief.window_start,window_end:collected,brief,repos:repos.items,papers:papers.items,timeline:timeline.items,provenance:meta};
+  const snapshot={schema_version:news?2:1,id,collected_at:collected,timezone:'Asia/Seoul',window_start:brief.window_start,window_end:windowEnd,brief,repos:repos.items,papers:papers.items,timeline:timeline.items,provenance:meta};
   if(news) {
     snapshot.news={...newsPayload,items:news.items};
     snapshot.dataset_collected_at={repos:latestCollected([repoPayload],repos.items),papers:latestCollected([paperPayload],papers.items),timeline:latestCollected([timelinePayload],timeline.items),news:latestCollected([newsPayload],news.items)};

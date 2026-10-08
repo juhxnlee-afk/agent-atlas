@@ -4,11 +4,246 @@
   "started_on": "2026-10-03",
   "items": [
     {
-      "date": "2026-10-06",
+      "date": "2026-10-07",
       "status": "partial",
-      "collected_at": "2026-10-05T21:14:04Z",
+      "collected_at": "2026-10-07T00:13:58Z",
+      "window_start": "2026-10-06T15:00:00Z",
+      "window_end": "2026-10-07T00:00:00Z",
+      "headline": "09:00 기준: 개인 에이전트 연결 규약과 검증된 보안 접근 확대",
+      "summary": "새벽 해외 발표에서는 개인 에이전트가 기업과 연결되는 방식과 이용 권한이 핵심이었다. Sierra·Meta는 이용자 승인과 기업 통제를 함께 다루는 규약 개발을, Hark는 클라우드 컴퓨터·기억·선제 제안을 결합한 제품을, Anthropic은 보안 작업의 목적에 따라 검증과 통제를 나누는 접근 체계를 발표했다. 국내 업스테이지 프로필은 문서 처리·모델·사람의 검토를 이어 붙이는 실제 업무 구성을 짚었다. 규약의 향후 명세, 회사의 기능 설명, 기존 제품을 소개한 기사와 실제 신규 출시를 구분했다.",
+      "coverage_note": "10월 7일 00:00~09:00 KST에 해당하는 부분 기록이다. 국내 1건·해외 3건의 원문 최초 발행 시각과 시간대를 확인했다. 편집 마감은 00:00 UTC이며 실제 원문 검증·수집은 그 이후 수행해 collected_at에 별도로 기록했다. 국내외 매체와 공식 발표를 확인한 선별 표본으로, 원문 접근 실패·검색 인덱스 지연·확인하지 못한 소식이 있을 수 있다. 원문 날짜가 10월 6일이어도 실제 KST 최초 발행이 7일인 해외 소식은 이 날짜에 배치했다.",
+      "items": [
+        {
+          "id": "2026-10-07-upstage-document-agent-profile",
+          "region": "domestic",
+          "title": "업스테이지 프로필: 문서 처리·솔라·사람의 검토를 연결한 업무 에이전트",
+          "url": "https://it.chosun.com/news/articleView.html?idxno=2023092171433",
+          "source": "IT조선",
+          "source_type": "reputable_report",
+          "published_at": "2026-10-06T22:11:01Z",
+          "published_date": "2026-10-07",
+          "published_precision": "timestamp",
+          "published_timezone": "Asia/Seoul",
+          "published_date_kst": "2026-10-07",
+          "published_at_kst": "2026-10-07T07:11:01+09:00",
+          "date_basis": "IT조선 원문 입력 2026.10.07 07:11과 JSON-LD datePublished=2026-10-07T07:11:01+09:00을 함께 확인했다. dateModified도 같은 값이다. 기사 최초 발행은 이번 09:00 KST 편집 마감 이전이다.",
+          "event_date": null,
+          "event_date_precision": "unknown",
+          "event_date_timezone": "unknown",
+          "event_date_note": "10월 7일 산업 프로필이다. 스튜디오의 4월 출시와 솔라 프로 4의 8월 공개를 당일 신제품 발표로 바꾸지 않는다.",
+          "summary": "IT조선은 업스테이지가 문서 파싱·분류·정보 추출을 솔라 모델과 연결해 업무 흐름을 구성하는 방식을 소개했다. 스튜디오는 처리 단계별 에이전트를 배치하고 결과 검토·승인과 작업 이력 확인을 결합한다. 솔라 자체는 완성된 업무 에이전트가 아니라 판단을 담당하는 기반 모델이다.",
+          "significance": "모델 성능뿐 아니라 문서 구조화, 외부 시스템 연결, 사람의 검토가 기업 에이전트 도입의 구성요소라는 점을 보여준다. 기존 제품과 사업 전략을 다룬 프로필로 읽어야 한다.",
+          "verification_note": "원문 발행 시각·본문·매체 서울 주소를 직접 확인했다. Upstage 공식 Studio 페이지는 사람의 검토·감사 로그·역할 기반 접근과 외부 시스템 연계를 설명하며, 공식 Solar Pro 4 소개는 공개일을 8월 11일로 명시한다. 고객 수·매출 성장·투자액 등 회사 자체 수치는 요약에서 제외했다. 추가로 원본 HTML에서 초·+09:00 오프셋이 포함된 최초 발행 메타데이터를 직접 확인했다.",
+          "region_basis": "IT조선 원문 푸터가 서울특별시 중구 세종대로 135, 912호와 서울 아00936 등록번호를 명시한다.",
+          "news_type": "기업 프로필",
+          "topics": [
+            "문서 에이전트",
+            "국내 생태계",
+            "사람의 검토",
+            "업무 자동화"
+          ],
+          "supporting_sources": [
+            {
+              "source": "IT조선",
+              "url": "https://it.chosun.com/news/articleView.html?idxno=2023092171433",
+              "source_type": "reputable_report",
+              "published_at": "2026-10-06T22:11:01Z",
+              "published_date": "2026-10-07",
+              "precision": "timestamp",
+              "published_timezone": "Asia/Seoul",
+              "verified_at": "2026-10-07T00:13:58Z",
+              "supports": "07:11 원문 발행, 단계별 문서 에이전트 구성, 검토·승인·작업 이력, 4월·8월 기존 제품 연혁. 푸터로 매체 서울 소재 확인"
+            },
+            {
+              "source": "Upstage Studio 공식 제품 설명",
+              "url": "https://www.upstage.ai/products/studio",
+              "source_type": "primary",
+              "verified_at": "2026-10-07T00:08:57Z",
+              "supports": "사람의 검토, 작업별 감사 로그, 역할 기반 접근, 기존 시스템 연동을 확인. 날짜 없는 현재 제품 설명이며 당일 출시 근거가 아님"
+            },
+            {
+              "source": "Upstage Solar Pro 4 공식 소개",
+              "url": "https://www.upstage.ai/blog/en/solar-pro-4",
+              "source_type": "primary",
+              "published_at": null,
+              "published_date": "2026-08-11",
+              "precision": "date",
+              "published_timezone": "unknown",
+              "verified_at": "2026-10-07T00:08:30Z",
+              "supports": "모델의 8월 11일 공개일과 다단계 업무·도구 호출 용도, Studio에서 사용된다는 설명"
+            }
+          ],
+          "verified_at": "2026-10-07T00:13:58Z",
+          "source_country": "KR"
+        },
+        {
+          "id": "2026-10-07-anthropic-cyber-verification-tiers",
+          "title": "Anthropic, 사이버 보안 접근을 3단계로 나누고 Glasswing 통합",
+          "url": "https://www.anthropic.com/news/cyber-verification-program",
+          "source": "Anthropic",
+          "source_type": "primary",
+          "source_country": "US",
+          "region": "international",
+          "published_at": "2026-10-06T19:00:00Z",
+          "published_date": "2026-10-06",
+          "published_precision": "timestamp",
+          "published_timezone": "UTC",
+          "published_date_kst": "2026-10-07",
+          "published_at_kst": "2026-10-07T04:00:00+09:00",
+          "date_basis": "Anthropic 공식 원문 JSON-LD datePublished는 2026-10-06T19:00:00.000Z, dateModified는 19:39:32Z다. 모두 이번 편집 마감 이전이며 최초 게시를 KST 10월 7일 04:00으로 변환했다.",
+          "summary": "Anthropic은 검증된 보안 이용자를 위한 CVP를 Defense·Red Team·Specialized Access로 확대했다. 방어 업무, 허가된 모의 침투, 고위험 핵심 시스템 시험의 자격·통제를 달리 적용하며 기존 Glasswing 참여사는 최상위 단계로 전환한다. 접근 확대에는 이용자 검증과 악용 감시를 위한 데이터 보관 조건 등이 따른다.",
+          "significance": "다단계 보안 작업을 수행하는 에이전트의 능력 공개와 이용 권한을 분리하려는 접근이다. 허가 범위 밖 공격을 허용하는 발표가 아니며 자체 시험 결과가 모든 환경의 안전을 증명하지 않는다.",
+          "topics": [
+            "보안 에이전트",
+            "모델 접근 통제",
+            "이용자 검증",
+            "Glasswing"
+          ],
+          "event_date": "2026-10-06",
+          "event_date_precision": "date",
+          "event_date_timezone": "unknown",
+          "event_date_note": "기존 프로그램의 통합·확대 발표일이다. Glasswing 최초 출범일이나 모든 이용자에 대한 무제한 모델 공개가 아니다.",
+          "region_basis": "Anthropic 공식 개인정보처리방침은 미국 샌프란시스코 소재 Anthropic PBC 주소를 명시한다.",
+          "supporting_sources": [
+            {
+              "source": "Anthropic 개인정보처리방침",
+              "url": "https://www.anthropic.com/legal/privacy",
+              "source_type": "primary",
+              "supports": "미국 소재지",
+              "verified_at": "2026-10-07T00:11:55Z"
+            }
+          ],
+          "verification_note": "공식 원문과 JSON-LD를 직접 확인했다. 00:00Z 이후 수정된 SiliconANGLE 보도는 카드 내용의 근거로 사용하지 않았다. EFS는 향후 제공 계획이며 현재 모든 가입자에게 무보관 정책이 가능한 것으로 쓰지 않았다.",
+          "verified_at": "2026-10-07T00:11:55Z"
+        },
+        {
+          "id": "2026-10-07-hark-pro-personal-agent-release",
+          "title": "Hark Pro 공개…클라우드 컴퓨터·기억·선제 제안을 결합",
+          "url": "https://techcrunch.com/2026/10/06/hark-releases-an-ai-personal-assistant-with-a-focus-on-privacy/",
+          "source": "TechCrunch",
+          "source_type": "reputable_report",
+          "source_country": "US",
+          "region": "international",
+          "published_at": "2026-10-06T18:22:45Z",
+          "published_date": "2026-10-06",
+          "published_precision": "timestamp",
+          "published_timezone": "America/Los_Angeles",
+          "published_date_kst": "2026-10-07",
+          "published_at_kst": "2026-10-07T03:22:45+09:00",
+          "date_basis": "TechCrunch 원문 datePublished 2026-10-06T18:22:45+00:00(PDT 11:22:45)을 확인했다. KST 10월 7일 03:22:45이며 18:57:34Z 수정 시각과 구분했다. 공식 발표는 10월 6일 날짜만 있어 보도 게시 시각을 이 카드의 기준으로 삼았다.",
+          "summary": "Hark 공식 발표는 웹·iOS·Android의 Hark Pro를 공개하고, 자체 클라우드 컴퓨터 Handoff와 지속 기억을 통해 예약·조사·문서 작업을 수행한다고 설명했다. 버튼으로 제안된 작업을 실행하거나 맞춤형 소형 앱을 만들 수 있다. 무료 사용량을 제공하고 더 많은 사용량은 유료 구독으로 구분한다.",
+          "significance": "개인 에이전트의 경쟁이 작업 실행뿐 아니라 기억·선제 제안·인터페이스로 넓어지는 사례다. 암호화·개인정보 보호와 작업 완수율은 회사 설명이며 독립 감사를 수행한 것은 아니다.",
+          "topics": [
+            "개인 에이전트",
+            "컴퓨터 사용",
+            "지속 기억",
+            "선제 제안"
+          ],
+          "event_date": "2026-10-06",
+          "event_date_precision": "date",
+          "event_date_timezone": "unknown",
+          "event_date_note": "Hark 공식 글의 발표 날짜는 10월 6일이며 정확한 시각·시간대는 확인하지 못했다. 이 카드의 KST 날짜는 TechCrunch 보도 기준이다.",
+          "region_basis": "TechCrunch 공식 개인정보처리방침의 미국 샌프란시스코 운영사 주소를 기준으로 분류했다.",
+          "supporting_sources": [
+            {
+              "source": "Hark 공식 발표",
+              "url": "https://hark.com/articles/introducing-hark-pro",
+              "source_type": "primary",
+              "supports": "제품 제공 방식·메모리·Handoff·Action Buttons·유료 사용량 설명",
+              "verified_at": "2026-10-07T00:11:55Z",
+              "published_at": null,
+              "published_date": "2026-10-06",
+              "precision": "date",
+              "published_timezone": "unknown"
+            },
+            {
+              "source": "TechCrunch 개인정보처리방침",
+              "url": "https://techcrunch.com/privacy-policy/",
+              "source_type": "primary",
+              "supports": "미국 소재지",
+              "verified_at": "2026-10-07T00:11:55Z"
+            }
+          ],
+          "verification_note": "제품 내용은 Hark의 공식 발표를 읽고 요약했다. 제3자 요약의 동시 브라우저 수와 공식 본문이 달라 해당 수치는 제외했다. 회사의 보안·개인정보 홍보를 검증 완료 사실로 옮기지 않았다.",
+          "verified_at": "2026-10-07T00:11:55Z"
+        },
+        {
+          "id": "2026-10-07-sierra-personal-agent-protocol",
+          "title": "Meta·Sierra, 개인 에이전트와 기업을 잇는 공개 규약 추진",
+          "url": "https://sierra.ai/blog/introducing-personal-agent-protocol",
+          "source": "Sierra",
+          "source_type": "primary",
+          "source_country": "US",
+          "region": "international",
+          "published_at": "2026-10-06T17:32:00Z",
+          "published_date": "2026-10-06",
+          "published_precision": "timestamp",
+          "published_timezone": "UTC",
+          "published_date_kst": "2026-10-07",
+          "published_at_kst": "2026-10-07T02:32:00+09:00",
+          "date_basis": "Sierra 공식 원문 Article datePublished 및 article:published_time은 2026-10-06T17:32:00.000Z이다. article:modified_time은 17:58:03Z로 별도 확인했다. KST 최초 발행은 10월 7일 02:32이다.",
+          "summary": "Sierra는 Meta 및 업계 파트너와 Personal Agent Protocol을 개발한다고 발표했다. 이용자가 에이전트의 읽기·쓰기 접근을 정하고 기업은 웹사이트·API·자사 에이전트에서 허용할 기능을 정하는 구조다. OAuth 기반 세션과 MCP·OpenAPI 연결을 설명했으며 v0.1 명세는 이달 말 공개 예정이라고 밝혔다.",
+          "significance": "개인 에이전트가 기존 웹에서 막히는 문제를 인증과 사업자 통제의 공통 규약으로 풀려는 시도다. 완성된 표준이나 모든 사이트와의 즉시 호환을 발표한 것은 아니다.",
+          "topics": [
+            "상호운용성",
+            "개인 에이전트",
+            "OAuth",
+            "표준화 계획"
+          ],
+          "event_date": "2026-10-06",
+          "event_date_precision": "date",
+          "event_date_timezone": "unknown",
+          "event_date_note": "공동 규약 개발 방향 발표일이다. v0.1 명세·참조 구현은 계획이며 이미 배포된 완성 규약으로 적지 않았다.",
+          "region_basis": "Sierra 공식 Modern Slavery Statement는 미국 델라웨어 법인·샌프란시스코 본사를 명시한다. 지역별 언어 경로와 무관한 해외 기관 출처다.",
+          "supporting_sources": [
+            {
+              "source": "Sierra 기업 정보",
+              "url": "https://sierra.ai/modern-slavery-statement",
+              "source_type": "primary",
+              "supports": "미국 본사 소재지",
+              "verified_at": "2026-10-07T00:11:55Z"
+            },
+            {
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/10/06/the-next-hurdle-for-ai-agents-getting-websites-to-let-them-in/",
+              "source_type": "reputable_report",
+              "supports": "에이전트의 웹사이트 접근 실패를 보도. 의도적 차단과 봇 방어 오작동을 구분",
+              "published_at": "2026-10-06T19:56:50Z",
+              "published_date": "2026-10-06",
+              "precision": "timestamp",
+              "published_timezone": "America/Los_Angeles",
+              "verified_at": "2026-10-07T00:11:55Z"
+            }
+          ],
+          "verification_note": "Sierra 공식 본문은 검색 열람으로 확인하고 같은 URL의 원본 HTML 메타데이터를 직접 확인했다. 해외 접근 문제 보도를 별도 카드로 중복 계산하지 않았다.",
+          "verified_at": "2026-10-07T00:11:55Z"
+        }
+      ],
+      "sources": [
+        {
+          "label": "IT조선 · 업스테이지 프로필: 문서 처리·솔라·사람의 검토를 연결한 업무 에이전트",
+          "url": "https://it.chosun.com/news/articleView.html?idxno=2023092171433"
+        },
+        {
+          "label": "Anthropic · Anthropic, 사이버 보안 접근을 3단계로 나누고 Glasswing 통합",
+          "url": "https://www.anthropic.com/news/cyber-verification-program"
+        },
+        {
+          "label": "TechCrunch · Hark Pro 공개…클라우드 컴퓨터·기억·선제 제안을 결합",
+          "url": "https://techcrunch.com/2026/10/06/hark-releases-an-ai-personal-assistant-with-a-focus-on-privacy/"
+        },
+        {
+          "label": "Sierra · Meta·Sierra, 개인 에이전트와 기업을 잇는 공개 규약 추진",
+          "url": "https://sierra.ai/blog/introducing-personal-agent-protocol"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "status": "final",
+      "collected_at": "2026-10-07T00:13:58Z",
       "window_start": "2026-10-05T15:00:00Z",
-      "window_end": "2026-10-05T21:14:04Z",
+      "window_end": "2026-10-06T15:00:00Z",
       "items": [
         {
           "id": "2026-10-06-instinct-group-chat-early-access",
@@ -61,17 +296,359 @@
           ],
           "region": "international",
           "verified_at": "2026-10-05T21:14:04Z"
+        },
+        {
+          "id": "2026-10-06-dell-enterprise-agent-context-roadmap",
+          "title": "Dell, 기업 지식 그래프·업무 맥락 에이전트 계획 공개",
+          "url": "https://siliconangle.com/2026/10/06/dells-ai-data-platform-gets-a-knowledge-graph-for-agents-and-faster-nvidia-processing/",
+          "source": "SiliconANGLE",
+          "source_type": "reputable_report",
+          "source_country": "US",
+          "region": "international",
+          "published_at": "2026-10-06T13:00:11Z",
+          "published_date": "2026-10-06",
+          "published_precision": "timestamp",
+          "published_timezone": "America/New_York",
+          "published_date_kst": "2026-10-06",
+          "published_at_kst": "2026-10-06T22:00:11+09:00",
+          "date_basis": "기사 원본 datePublished와 article:published_time은 2026-10-06T13:00:11+00:00이다. KST 22:00:11에 해당한다. 화면의 UPDATED 09:00 EDT 및 dateModified 14:36:52Z와 최초 게시를 구분했다.",
+          "summary": "Dell은 여러 시스템의 업무 용어와 데이터를 연결하는 Unified Semantic Layer, Enterprise Knowledge Graph와 지식 에이전트 계획을 공개했다. 공식 설명은 근거 제시와 기업 접근 정책을 강조한다. SiliconANGLE 보도상 이 세 기능은 2027년 상반기 예정으로, 이날 즉시 제공된 제품으로 볼 수 없다.",
+          "significance": "에이전트의 답변·행동 품질은 모델뿐 아니라 최신 업무 맥락과 데이터 권한에 좌우된다는 방향이다. 성능 향상 주장은 회사 내부 시험과 실제 서비스 효과를 구분해야 한다.",
+          "topics": [
+            "기업 데이터",
+            "지식 그래프",
+            "접근 통제",
+            "출시 계획"
+          ],
+          "event_date": "2026-10-06",
+          "event_date_precision": "date",
+          "event_date_timezone": "unknown",
+          "event_date_note": "데이터 플랫폼 확장 계획 발표일이다. 지식 그래프·의미 계층·지식 에이전트 제공 예정은 2027년 상반기다.",
+          "region_basis": "기사 하단 SiliconANGLE Media 소개는 미국 실리콘밸리와 뉴욕증권거래소의 주요 거점을 명시한다.",
+          "supporting_sources": [
+            {
+              "source": "Dell 공식 블로그",
+              "url": "https://www.dell.com/en-us/blog/getting-enterprise-ai-into-production-starts-with-context",
+              "source_type": "primary",
+              "supports": "업무 맥락·근거·거버넌스 기능 설명",
+              "verified_at": "2026-10-07T00:11:55Z",
+              "published_at": null,
+              "published_date": "2026-10-06",
+              "precision": "date",
+              "published_timezone": "unknown"
+            }
+          ],
+          "verification_note": "기사 원문 HTML과 Dell 공식 본문을 읽었다. 출시 예정 시점은 본문 보도에 귀속했고 공식 블로그 날짜만으로 게시 시각을 추정하지 않았다.",
+          "verified_at": "2026-10-07T00:11:55Z"
+        },
+        {
+          "id": "2026-10-06-mistral-large4-api-preview",
+          "title": "Mistral Large 4 API 미리보기 공개…가중치는 월말 배포 예정",
+          "url": "https://mistral.ai/news/mistral-large-4/",
+          "source": "Mistral AI",
+          "source_type": "primary",
+          "source_country": "FR",
+          "region": "international",
+          "published_at": "2026-10-06T12:00:27Z",
+          "published_date": "2026-10-06",
+          "published_precision": "timestamp",
+          "published_timezone": "UTC",
+          "published_date_kst": "2026-10-06",
+          "published_at_kst": "2026-10-06T21:00:27+09:00",
+          "date_basis": "공식 BlogPosting datePublished 2026-10-06T12:00:27.000Z, dateModified 2026-10-06T15:24:14.171Z를 확인했다. 최초 발행은 KST 10월 6일 21:00:27이며 수정으로 날짜를 바꾸지 않았다.",
+          "summary": "Mistral은 코딩·도구 사용·복합 업무를 겨냥한 Large 4의 API 공개 미리보기를 시작했다. 전체 1조·활성 490억 매개변수의 멀티모달 모델이라고 설명했고, 업무 에이전트·문서·시각 정보 처리 평가를 제시했다. 모델 가중치는 이날 공개된 것이 아니라 10월 말까지 배포할 계획이다.",
+          "significance": "자체 배포 가능한 에이전트 모델의 선택지가 늘어날 가능성을 보여준다. 공개 미리보기와 실제 가중치 공개를 구분하고, 성능 비교는 공급자 발표 범위로 읽어야 한다.",
+          "topics": [
+            "모델 공개 미리보기",
+            "에이전트 모델",
+            "컴퓨터 사용",
+            "공개 가중치 계획"
+          ],
+          "event_date": "2026-10-06",
+          "event_date_precision": "date",
+          "event_date_timezone": "unknown",
+          "event_date_note": "API public preview 발표일이다. 가중치 공개 계획인 월말을 이날의 실제 배포로 간주하지 않았다.",
+          "region_basis": "Mistral 공식 이용약관은 프랑스 파리 등록 법인과 소재지를 명시한다.",
+          "supporting_sources": [
+            {
+              "source": "Mistral 공식 상업 이용약관",
+              "url": "https://legal.mistral.ai/terms/commercial-terms-of-service/",
+              "source_type": "primary",
+              "supports": "프랑스 파리 소재지",
+              "verified_at": "2026-10-07T00:11:55Z"
+            },
+            {
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/10/06/mistrals-new-1t-model-aims-to-leapfrog-closed-and-open-rivals/",
+              "source_type": "reputable_report",
+              "supports": "같은 모델 발표의 해외 보도",
+              "published_at": "2026-10-06T14:33:16Z",
+              "published_date": "2026-10-06",
+              "precision": "timestamp",
+              "published_timezone": "America/Los_Angeles",
+              "verified_at": "2026-10-07T00:11:55Z"
+            }
+          ],
+          "verification_note": "공식 본문과 원본 HTML을 확인했다. 성능 수치를 독립 재현하지 않았고 공급자 비교를 별도 순위의 확정 사실로 쓰지 않았다.",
+          "verified_at": "2026-10-07T00:11:55Z"
+        },
+        {
+          "id": "2026-10-06-sailpoint-agent-identity-runtime-controls",
+          "title": "SailPoint, 에이전트 신원·실행 권한을 통제하는 기능 확대 발표",
+          "url": "https://www.globenewswire.com/news-release/2026/10/06/3375450/0/en/from-chaos-to-control-sailpoint-unlocks-a-secure-agentic-era-with-autonomous-identity-security.html",
+          "source": "SailPoint · GlobeNewswire",
+          "source_type": "primary",
+          "source_country": "US",
+          "region": "international",
+          "published_at": "2026-10-06T12:00:00Z",
+          "published_date": "2026-10-06",
+          "published_precision": "timestamp",
+          "published_timezone": "UTC",
+          "published_date_kst": "2026-10-06",
+          "published_at_kst": "2026-10-06T21:00:00+09:00",
+          "date_basis": "회사 배포 GlobeNewswire 원문 datePublished와 og:article:published_time은 2026-10-06T12:00:00Z이며 dateModified도 같다. KST 10월 6일 21:00이다. 회사 IR 원문은 같은 배포문의 날짜 Oct 6를 확인한다.",
+          "summary": "SailPoint는 에이전트를 찾고 실행 권한을 조절하며 필요하면 중지하는 Agentic Fabric 확장과 Autonomous Agents를 발표했다. 상시 권한 대신 필요할 때 권한을 부여하는 접근도 포함한다. 기능은 Navigate 2026부터 순차 제공되며 A-ISPM과 Harbor Pilot Policy Agent 등은 회사 회계연도 FY27 4분기 예정으로 구분했다.",
+          "significance": "에이전트를 운영하는 보안 제품도 단순 목록 관리에서 실행 중 정책 집행으로 넓어지고 있다. 공급자 발표이며 모든 기능의 즉시 일반 제공이나 방어 효과가 검증됐다는 뜻은 아니다.",
+          "topics": [
+            "에이전트 신원",
+            "실행 통제",
+            "최소 권한",
+            "기업 보안"
+          ],
+          "event_date": "2026-10-06",
+          "event_date_precision": "date",
+          "event_date_timezone": "unknown",
+          "event_date_note": "Navigate 2026 기능 발표일이다. 일부 기능은 순차 제공·향후 일정이다. FY27 분기를 달력 2027년 4분기로 바꾸지 않았다.",
+          "region_basis": "미국 텍사스 오스틴 소재 SailPoint가 배포한 공식 보도자료이며 영문 여부가 아닌 발행 기관의 소재지로 분류했다.",
+          "supporting_sources": [
+            {
+              "source": "SailPoint 공식 IR",
+              "url": "https://investor.sailpoint.com/news-releases/news-release-details/chaos-control-sailpoint-unlocks-secure-agentic-era-autonomous",
+              "source_type": "primary",
+              "supports": "동일 공식 발표 본문과 Availability 항목",
+              "verified_at": "2026-10-07T00:11:55Z"
+            }
+          ],
+          "verification_note": "배포문 HTML 시간 메타데이터와 회사 IR 본문을 함께 확인했다. 같은 날의 IdentityIQ·시장조사 보도자료는 별도 사건 수를 늘리는 카드로 중복하지 않았다.",
+          "verified_at": "2026-10-07T00:11:55Z"
+        },
+        {
+          "id": "2026-10-06-openai-ironclad-computer-use-research",
+          "title": "OpenAI·Ironclad, 계약 업무 11종으로 컴퓨터 사용 에이전트 연구 평가",
+          "url": "https://openai.com/index/advancing-computer-use-with-ironclad/",
+          "source": "OpenAI",
+          "source_type": "primary",
+          "source_country": "US",
+          "region": "international",
+          "published_at": "2026-10-06T10:00:00Z",
+          "published_date": "2026-10-06",
+          "published_precision": "timestamp",
+          "published_timezone": "UTC",
+          "published_date_kst": "2026-10-06",
+          "published_at_kst": "2026-10-06T19:00:00+09:00",
+          "date_basis": "공식 OpenAI News RSS의 해당 원문 항목 pubDate는 Tue, 06 Oct 2026 10:00:00 GMT이다. 본문 날짜 Oct 6와 함께 확인했고 KST 10월 6일 19:00으로 변환했다. 다른 글의 dateTime 또는 사이트 내부 생성 시각은 사용하지 않았다.",
+          "summary": "OpenAI는 Ironclad와 계약·승인·재사용 조항을 설정하는 11개 업무를 에이전트의 학습·평가 과제로 만들었다고 밝혔다. 자체 평가에서 Astra의 평균 기준 충족 점수는 55.0%, 비교 모델은 41.6%였다. 과제당 추정 시간은 19.2분과 37.0분이지만 실제 고객의 작업 시간을 측정한 결과는 아니다.",
+          "significance": "개별 클릭 성공보다 업무 규칙과 예외를 끝까지 지키는지를 평가한다. 제한된 자체 연구이며 상용 계약 업무의 완전 자동화 성과로 일반화할 수 없다.",
+          "topics": [
+            "컴퓨터 사용",
+            "업무 평가",
+            "계약 소프트웨어",
+            "연구 협력"
+          ],
+          "event_date": "2026-10-06",
+          "event_date_precision": "date",
+          "event_date_timezone": "unknown",
+          "event_date_note": "연구 협력 및 평가 결과를 공개한 날이다. 모델 최초 출시일이나 Ironclad 신규 제품 출시일이 아니다.",
+          "region_basis": "OpenAI 개인정보처리방침의 미국 샌프란시스코 소재 법인 주소에 근거한다.",
+          "supporting_sources": [
+            {
+              "source": "OpenAI 공식 RSS",
+              "url": "https://openai.com/news/rss.xml",
+              "source_type": "primary",
+              "supports": "해당 원문의 2026-10-06 10:00 GMT 발행 시각",
+              "verified_at": "2026-10-07T00:11:55Z"
+            },
+            {
+              "source": "OpenAI 개인정보처리방침",
+              "url": "https://openai.com/policies/privacy-policy/",
+              "source_type": "primary",
+              "supports": "미국 소재지",
+              "verified_at": "2026-10-07T00:11:55Z"
+            }
+          ],
+          "verification_note": "공식 본문·각주와 RSS를 확인했다. 추정 시간은 모델 처리·생성 속도 가정에 따른 시뮬레이션이며 고객 시간 절감 실측이 아니다. 공개 SEC EDGAR 계약으로 만든 합성 과제라는 설명도 확인했다.",
+          "verified_at": "2026-10-07T00:11:55Z"
+        },
+        {
+          "id": "2026-10-06-crinity-sirteam-agent-demo",
+          "region": "domestic",
+          "title": "크리니티, 메일·일정·할 일을 연결하는 써팀 에이전트 시연",
+          "url": "https://www.etnews.com/20261006000384",
+          "source": "전자신문",
+          "source_type": "reputable_report",
+          "published_at": "2026-10-06T07:15:37Z",
+          "published_date": "2026-10-06",
+          "published_precision": "timestamp",
+          "published_timezone": "Asia/Seoul",
+          "published_date_kst": "2026-10-06",
+          "published_at_kst": "2026-10-06T16:15:37+09:00",
+          "date_basis": "전자신문 원문 화면의 2026-10-06 16:15와 HTML article:published_time=2026-10-06T16:15:37+09:00을 함께 확인했다. 초·KST 오프셋은 원문 메타데이터 값으로 추정하지 않았다.",
+          "event_date": "2026-10-06",
+          "event_date_precision": "date",
+          "event_date_timezone": "Asia/Seoul",
+          "event_date_note": "10월 6~8일 AI Festa에서의 제품 시연. SirTEAM은 2023년 출시됐고 브리핑·수신 메일 업무 등록은 7~8월 업데이트에서 이미 제공된 기능이다.",
+          "summary": "크리니티는 AI Festa에서 써팀의 AI 업무 브리핑, 수신 메일 기반 할 일 자동등록, InSSa AI를 시연했다. 메일·메신저·일정·문서를 연결해 정보를 찾고 업무를 이어가는 구조다. 외부 에이전트가 써팀 데이터와 기능을 쓰도록 하는 MCP 연동 확대는 향후 계획으로 제시했다.",
+          "significance": "에이전트가 업무를 이해하려면 분산된 대화·문서·일정의 맥락을 연결해야 한다는 제품 사례다. 메일 자동등록은 사용자가 정한 분류 규칙에 따른 자동화이며 임의의 자율 행동으로 설명하면 안 된다.",
+          "verification_note": "전자신문 원문과 발행 시각을 직접 확인했다. 공식 제품 소개와 업데이트 목록에서 기존 기능·제품 연혁을 대조했다. 이번 행사를 신제품 출시로, 향후 MCP 연동을 현재 제공 기능으로 쓰지 않는다. 비용·생산성 개선 효과를 독립 검증한 것은 아니다. 추가로 원본 HTML에서 초·+09:00 오프셋이 포함된 최초 발행 메타데이터를 직접 확인했다.",
+          "region_basis": "전자신문 사이트 자체 푸터의 서울시 서초구 본사 주소를 확인했다.",
+          "news_type": "제품 시연",
+          "topics": [
+            "업무 에이전트",
+            "메일 자동화",
+            "업무 맥락",
+            "MCP 계획"
+          ],
+          "supporting_sources": [
+            {
+              "source": "전자신문",
+              "url": "https://www.etnews.com/20261006000384",
+              "source_type": "reputable_report",
+              "published_at": "2026-10-06T07:15:37Z",
+              "published_date": "2026-10-06",
+              "precision": "timestamp",
+              "published_timezone": "Asia/Seoul",
+              "verified_at": "2026-10-07T00:13:58Z",
+              "supports": "16:15 발행, 브리핑·자동등록·InSSa AI 시연, 사용자 규칙 기반 자동등록, MCP 향후 계획"
+            },
+            {
+              "source": "써팀 공식 제품 소개",
+              "url": "https://sirteam.net/about",
+              "source_type": "primary",
+              "verified_at": "2026-10-07T00:07:18Z",
+              "supports": "메일·일정·협업 기록 연결 및 2023년 최초 출시 연혁"
+            },
+            {
+              "source": "써팀 공식 업데이트 목록",
+              "url": "https://sirteam.net/blog",
+              "source_type": "primary",
+              "verified_at": "2026-10-07T00:08:57Z",
+              "supports": "7월 기능에 수신 메일 조건 기반 업무 등록, 8월 기능에 AI 업무 브리핑 개편이 이미 기록됨. 전시일과 기능 출시일을 구분"
+            },
+            {
+              "source": "전자신문 소재지",
+              "url": "https://www.etnews.com/",
+              "source_type": "primary",
+              "verified_at": "2026-10-07T00:06:31Z",
+              "supports": "사이트 푸터의 서울 본사 주소"
+            }
+          ],
+          "verified_at": "2026-10-07T00:13:58Z",
+          "source_country": "KR"
+        },
+        {
+          "id": "2026-10-06-megazone-air-studio-v3-governance",
+          "region": "domestic",
+          "title": "메가존클라우드, AIR Studio v3 출시…에이전트·MCP 운영과 비용 통제 통합",
+          "url": "https://www.etnews.com/20261006000177",
+          "source": "전자신문",
+          "source_type": "reputable_report",
+          "published_at": "2026-10-06T02:51:47Z",
+          "published_date": "2026-10-06",
+          "published_precision": "timestamp",
+          "published_timezone": "Asia/Seoul",
+          "published_date_kst": "2026-10-06",
+          "published_at_kst": "2026-10-06T11:51:47+09:00",
+          "date_basis": "전자신문 원문 화면의 2026-10-06 11:51과 HTML article:published_time=2026-10-06T11:51:47+09:00을 함께 확인했다. 초·KST 오프셋은 원문 메타데이터 값으로, 추정하거나 URL 날짜를 사용하지 않았다.",
+          "event_date": "2026-10-06",
+          "event_date_precision": "date",
+          "event_date_timezone": "Asia/Seoul",
+          "event_date_note": "기사는 회사가 6일 v3 출시를 발표했다고 명시한다. 2025년 8월 최초 AIR Studio 출시와 구분되는 버전 업데이트다.",
+          "summary": "메가존클라우드가 기업용 AI 플랫폼을 데이터·에이전트·운영·거버넌스 네 모듈로 나눈 AIR Studio v3를 출시했다. 외부에서 만든 에이전트의 성능·권한과 MCP 서버 연동을 함께 관리하며, 70여 업무 앱 커넥터와 보안·비용 관리 기능을 제공한다고 밝혔다.",
+          "significance": "기업의 관심이 에이전트 제작에서 여러 에이전트의 배포·권한·도구 호출·비용을 통제하는 운영 체계로 넓어지는 사례다. 산업별 마켓플레이스 제공은 향후 계획이다.",
+          "verification_note": "전자신문 발행 시각과 본문을 직접 확인했고, 회사 공식 LinkedIn 발표가 v3 출시·네 모듈·70여 커넥터·FinOps를 확인한다. 공식 제품 설명도 권한·감사·토큰 비용 관리 방향을 뒷받침한다. 공급자 주장으로, 연동 시간·비용 절감 효과는 독립 검증하지 않았다. 공식 게시물 시각은 상대 표기라 기사의 날짜 근거로 사용하지 않았다. 추가로 원본 HTML에서 초·+09:00 오프셋이 포함된 최초 발행 메타데이터를 직접 확인했다.",
+          "region_basis": "전자신문 자체 사이트 푸터가 서울시 서초구 양재대로2길 22-16 호반파크1관을 명시한다.",
+          "news_type": "제품 업데이트",
+          "topics": [
+            "기업 에이전트",
+            "MCP",
+            "권한·보안",
+            "비용 관리"
+          ],
+          "supporting_sources": [
+            {
+              "source": "전자신문",
+              "url": "https://www.etnews.com/20261006000177",
+              "source_type": "reputable_report",
+              "published_at": "2026-10-06T02:51:47Z",
+              "published_date": "2026-10-06",
+              "precision": "timestamp",
+              "published_timezone": "Asia/Seoul",
+              "verified_at": "2026-10-07T00:13:58Z",
+              "supports": "원문 발행일 11:51, v3 출시, 네 모듈, 외부 에이전트 권한 통합, MCP 검증·연동, 70여 커넥터"
+            },
+            {
+              "source": "메가존클라우드 공식 LinkedIn",
+              "url": "https://kr.linkedin.com/posts/megazonecloud_%EB%A9%94%EA%B0%80%EC%A1%B4%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%97%94%ED%84%B0%ED%94%84%EB%9D%BC%EC%9D%B4%EC%A6%88-ai-os-air-studio-v3-%EC%B6%9C%EC%8B%9C-activity-7513142807692247040-jU1D",
+              "source_type": "primary",
+              "published_at": null,
+              "published_date": null,
+              "precision": "unknown",
+              "published_timezone": "unknown",
+              "verified_at": "2026-10-07T00:08:57Z",
+              "supports": "회사 자체 발표가 v3 출시, 네 모듈, 70여 내장 커넥터와 FinOps 비용 통제를 확인. 정확한 발행 시각은 미확인"
+            },
+            {
+              "source": "메가존클라우드 공식 제품 설명",
+              "url": "https://megazone.com/service/data-ai",
+              "source_type": "primary",
+              "verified_at": "2026-10-07T00:08:09Z",
+              "supports": "AIR Studio의 전사 보안·비용·권한·정책·감사 관리 기능. 날짜 없는 제품 페이지이므로 v3 발행일 근거로 쓰지 않음"
+            },
+            {
+              "source": "전자신문 소재지",
+              "url": "https://www.etnews.com/",
+              "source_type": "primary",
+              "verified_at": "2026-10-07T00:06:31Z",
+              "supports": "사이트 푸터의 서울 본사 주소"
+            }
+          ],
+          "verified_at": "2026-10-07T00:13:58Z",
+          "source_country": "KR"
         }
       ],
       "sources": [
+        {
+          "label": "SiliconANGLE · Dell, 기업 지식 그래프·업무 맥락 에이전트 계획 공개",
+          "url": "https://siliconangle.com/2026/10/06/dells-ai-data-platform-gets-a-knowledge-graph-for-agents-and-faster-nvidia-processing/"
+        },
+        {
+          "label": "Mistral AI · Mistral Large 4 API 미리보기 공개…가중치는 월말 배포 예정",
+          "url": "https://mistral.ai/news/mistral-large-4/"
+        },
+        {
+          "label": "SailPoint · GlobeNewswire · SailPoint, 에이전트 신원·실행 권한을 통제하는 기능 확대 발표",
+          "url": "https://www.globenewswire.com/news-release/2026/10/06/3375450/0/en/from-chaos-to-control-sailpoint-unlocks-a-secure-agentic-era-with-autonomous-identity-security.html"
+        },
+        {
+          "label": "OpenAI · OpenAI·Ironclad, 계약 업무 11종으로 컴퓨터 사용 에이전트 연구 평가",
+          "url": "https://openai.com/index/advancing-computer-use-with-ironclad/"
+        },
+        {
+          "label": "전자신문 · 크리니티, 메일·일정·할 일을 연결하는 써팀 에이전트 시연",
+          "url": "https://www.etnews.com/20261006000384"
+        },
+        {
+          "label": "전자신문 · 메가존클라우드, AIR Studio v3 출시…에이전트·MCP 운영과 비용 통제 통합",
+          "url": "https://www.etnews.com/20261006000177"
+        },
         {
           "label": "TechCrunch · Instinct, 공동 계획을 돕는 단체채팅 에이전트 조기 공개",
           "url": "https://techcrunch.com/2026/10/05/instinct-brings-its-ai-agent-to-group-chats-even-for-friends-without-an-account/"
         }
       ],
-      "headline": "06:14 중간 확인: 공동 계획용 단체채팅 에이전트 조기 공개",
-      "summary": "한국시간 10월 6일 새벽 부분 확인에서는 Instinct가 조기 이용자에게 단체채팅 에이전트를 제공한다는 해외 보도를 검증했다. 개인 비서가 여러 사람의 공동 계획을 돕는 방향의 사례이며, 전면 일반 제공이나 세부 개인정보 통제의 검증을 뜻하지 않는다. 국내 추가 독립 카드는 이번 확인 범위에서 검증하지 못했다. North 2와 Promevo의 뒤늦은 보도·배포는 전날과 같은 사건이어서 새 카드로 중복 계산하지 않았다.",
-      "coverage_note": "10월 6일 00:00부터 06:14 KST까지의 부분 기록이다. 국내 검색은 06:12, 해외 검색은 06:14까지 확인했다. 해외 1건의 원문 최초 게시 시각은 UTC 10월 5일 18:54:30, KST 10월 6일 03:54:30이다. 국내 추가 검증 0건은 뉴스 부재를 단정하지 않는다. 날짜 검색의 인덱스 지연·매체별 접근 제한·수집 이후 게시물은 다음 확인에서 보강할 수 있다."
+      "headline": "기업 에이전트, 실행 능력과 함께 데이터 맥락·권한·평가를 강화",
+      "summary": "메가존의 AIR Studio v3 출시와 써팀의 업무 자동화 시연은 기업 에이전트를 여러 앱의 데이터·권한·운영 체계에 연결하는 흐름을 보여준다. 해외에서는 Dell의 업무 맥락·지식 그래프 계획, SailPoint의 에이전트 신원 통제, OpenAI·Ironclad의 복합 업무 평가가 같은 과제를 서로 다른 층위에서 다뤘다. Mistral Large 4는 API 미리보기를 시작했지만 가중치는 월말 계획이다. 앞서 수록한 Instinct 단체채팅 소식도 보존했다. 공급자 평가와 계획을 실제 고객 성과나 당일 전면 출시로 확대하지 않았다.",
+      "coverage_note": "10월 6일 하루를 마감하고 이전 06:14 KST 부분 기록을 보강했다. 기존 해외 1건을 그대로 보존하고 국내 2건·해외 4건을 추가해 총 7건이다. 모든 카드의 원문 최초 발행 시각과 시간대를 확인했다. final은 해당 날짜가 지났다는 뜻이며 모든 뉴스를 망라했다는 뜻은 아니다. 이전 수집 시각 2026-10-05T21:14:04Z 이후 소식을 조사했고, 재배포·후속 요약은 같은 사건의 별도 카드로 세지 않았다. 날짜 없는 공식 제품 페이지는 내용 보강용이며 게시 시각 근거로 쓰지 않았다."
     },
     {
       "date": "2026-10-05",
@@ -1377,6 +1954,7 @@
       ]
     }
   ],
-  "collected_at": "2026-10-05T21:14:04Z",
-  "region_basis": "매체 소재지 기준: 국내 한국 매체는 domestic, 해외 매체는 international. 기사 언어와 기업 국적은 분류 기준이 아닙니다."
+  "collected_at": "2026-10-07T00:13:58Z",
+  "region_basis": "매체 소재지 기준: 국내 한국 매체는 domestic, 해외 매체는 international. 기사 언어와 기업 국적은 분류 기준이 아닙니다.",
+  "editorial_cutoff": "2026-10-07T00:00:00Z"
 }

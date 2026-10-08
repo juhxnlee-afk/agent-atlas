@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "collected_at": "2026-10-05T21:10:45Z",
+  "collected_at": "2026-10-07T00:09:33Z",
   "timezone": "Asia/Seoul",
   "scope": "2025-01-01 onward; major shifts in agent products, open personal-agent ecosystems, interoperability, and enterprise operations",
-  "editorial_note": "20개의 주요 전환점을 선별했습니다. 반복적인 버전 업데이트·논문·모델 성능 발표는 제외합니다. 날짜는 공식 출처의 사건·발표일이며, NanoClaw는 창작자의 Show HN 원문 게시 시각(UTC)을 보존합니다. significance는 확인된 변화의 의미를 설명하는 편집 요약입니다. 이번 보강은 과거의 Gemini Spark 5월 19일 발표·신뢰 테스터 제공과 Bedrock Managed Agents 9월 29일 공개 프리뷰를 추가하며, 오늘 새로 출시된 사건을 뜻하지 않습니다.",
+  "editorial_note": "23개의 주요 전환점을 선별했습니다. 반복적인 버전 업데이트·논문·모델 성능 발표는 제외합니다. 날짜는 공식 출처의 사건·발표일이며, NanoClaw는 창작자의 Show HN 원문 게시 시각(UTC)을 보존합니다. significance는 확인된 변화의 의미를 설명하는 편집 요약입니다. 이번 보강은 과거의 AAIF 2025년 12월 9일 출범, Microsoft Scout 2026년 6월 2일 제한 프리뷰, OpenClaw Enterprise 9월 29일 공개 개발 단계 발표의 신규 수록입니다. 9월 30일 09:00–10월 7일 09:00 KST의 새 출시 사건을 뜻하지 않습니다.",
   "items": [
     {
       "date": "2025-01-23",
@@ -110,6 +110,23 @@
       "date_type": "product_announcement",
       "date_basis": "Ignite 공식 발표일; 당시 Frontier 얼리액세스이며 일반 출시일과 구분",
       "date_precision": "date"
+    },
+    {
+      "date": "2025-12-09",
+      "title": "AAIF 출범, 에이전트 표준을 공동 기반으로",
+      "summary": "Anthropic·Block·OpenAI가 Linux Foundation 산하 Agentic AI Foundation을 공동 설립했다. MCP, goose, AGENTS.md를 초기 프로젝트로 모아 에이전트 연결과 개발 관례를 중립적인 공동 관리 기반으로 옮겼다.",
+      "significance": "상호운용성이 개별 기업의 기능 지원을 넘어 공동 표준과 생태계 운영의 문제로 확장됐다.",
+      "category": "연결 표준",
+      "date_type": "foundation_announcement",
+      "date_precision": "date",
+      "date_basis": "Anthropic과 OpenAI 공식 발표가 모두 2025년 12월 9일로 일치한다. MCP·goose·AGENTS.md의 최초 공개일이 아니라 재단 출범·프로젝트 기여 발표일이다.",
+      "source_url": "https://www.anthropic.com/news/donating-the-model-context-protocol-and-establishing-of-the-agentic-ai-foundation",
+      "supporting_sources": [
+        {
+          "label": "OpenAI의 공동 설립 및 AGENTS.md 기여 발표",
+          "url": "https://openai.com/index/agentic-ai-foundation/"
+        }
+      ]
     },
     {
       "date": "2026-01-12",
@@ -241,6 +258,25 @@
       ]
     },
     {
+      "date": "2026-06-02",
+      "title": "Microsoft Scout, 기업 신원을 가진 상시 개인 에이전트",
+      "summary": "Microsoft가 OpenClaw 기반의 상시 개인 에이전트 Scout를 발표하고 제한된 고객 프리뷰와 Frontier 실험적 제공을 시작했다. Teams·Outlook·OneDrive·SharePoint에 연결되며, 자체 Entra 신원과 조직의 권한·데이터 보호 정책 아래 후속 업무를 수행하도록 설계했다.",
+      "significance": "개방형 개인 에이전트 기술이 기존 기업의 계정·권한·업무 도구 안으로 들어가는 흐름을 보여줬다.",
+      "category": "개인 에이전트",
+      "date_type": "private_preview_release",
+      "date_precision": "date",
+      "date_basis": "Microsoft 공식 최초 발표일. 당시 일부 고객 private preview 및 Frontier 실험적 제공이며 GA가 아니다. 9월 25일 Autopilot 명칭·Copilot 통합 발표 및 월말 private preview 확대 예정과 구분한다.",
+      "source_url": "https://www.microsoft.com/en-us/copilot/blog/2026/06/02/introducing-microsoft-scout-your-always-on-personal-agent/",
+      "supporting_sources": [
+        {
+          "label": "Autopilot 명칭과 Copilot 통합 발표",
+          "url": "https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/",
+          "date": "2026-09-25",
+          "date_type": "naming_announcement"
+        }
+      ]
+    },
+    {
       "date": "2026-07-09",
       "title": "ChatGPT Work, 여러 앱과 파일을 넘나드는 업무 실행",
       "summary": "OpenAI가 ChatGPT Work를 출시했다. 앱·파일의 정보를 모아 문서·시트·슬라이드·웹앱을 만들고, 복잡한 프로젝트를 나눠 수 시간 동안 수행하는 일반 업무용 에이전트를 제시했다.",
@@ -306,6 +342,17 @@
       "date_type": "public_preview_release",
       "date_precision": "date",
       "date_basis": "AWS What’s New 원문의 2026년 9월 29일 프리뷰 제공 시작. 미국 3개 리전 대상이며 GA가 아니다. OpenAI Agents API 자체의 최초 베타와 10월 5일 주간 재소개 날짜를 구분한다."
+    },
+    {
+      "date": "2026-09-29",
+      "title": "OpenClaw Enterprise, 상시 에이전트를 조직의 통제 아래로",
+      "summary": "OpenClaw Foundation이 기업 환경의 상시 에이전트를 관리하는 오픈소스·벤더 중립 플랫폼 OpenClaw Enterprise를 발표했다. 다중 테넌트, 강한 실행 경계, 세분화된 권한과 감사를 중심에 두며, 모델·실행 구조·샌드박스를 교체할 수 있게 설계했다.",
+      "significance": "개인 비서를 직접 운영하는 프로젝트가 조직별 보안·감사·배포 요구를 처리하는 개방형 관리 플랫폼으로 확장됐다.",
+      "category": "보안·운영",
+      "date_type": "platform_announcement",
+      "date_precision": "date",
+      "date_basis": "공식 블로그의 2026년 9월 29일 발표일. 당시 자체 호스팅과 내부 파일럿에 사용할 수 있는 공개 개발 단계이며, 1.0 및 일반 출시 완료와 구분한다.",
+      "source_url": "https://openclaw.ai/blog/openclaw-enterprise"
     }
   ]
 }

@@ -16,6 +16,7 @@ export function newsItemValid(item, issue) {
   if (item.region !== undefined && !['domestic','international'].includes(item.region)) return false;
   if (item.published_precision === 'timestamp') {
     if (!stamp(item.published_at) || time(item.published_at) > time(issue.collected_at)) return false;
+    if (issue.window_end && time(item.published_at) > time(issue.window_end)) return false;
     if (item.published_date_kst && item.published_date_kst !== kstDate(item.published_at)) return false;
   } else {
     // A source date without a time must never be silently converted to midnight UTC/KST.
@@ -32,6 +33,8 @@ export function normalizeNews(payload) {
   if (!calendarDate(started) || started < NEWS_START) throw new Error('뉴스 기록 시작일이 올바르지 않습니다');
   const valid = rows.filter(issue => {
     if (!issue || !calendarDate(issue.date) || issue.date < started || !stamp(issue.collected_at) || !['partial','final'].includes(issue.status) || !text(issue.headline) || !text(issue.summary) || !Array.isArray(issue.items) || !sourcesValid(issue.sources)) return false;
+    if (issue.window_end !== undefined && (!stamp(issue.window_end) || time(issue.window_end) > time(issue.collected_at))) return false;
+    if (issue.window_start !== undefined && (!stamp(issue.window_start) || time(issue.window_start) > time(issue.window_end || issue.collected_at))) return false;
     if (issue.date > kstDate(issue.collected_at)) return false;
     if (issue.status === 'final' && time(issue.collected_at) < time(`${issue.date}T00:00:00+09:00`) + DAY) return false;
     if (!issue.items.every(item => newsItemValid(item, issue))) return false;

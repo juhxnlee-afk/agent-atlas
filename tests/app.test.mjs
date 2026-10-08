@@ -25,8 +25,8 @@ const brief={id:'fixture',collected_at:date(0),window_start:date(7),window_end:d
 const fixtures={'data/repos.json':{items:repos,collected_at:date(0)},'data/papers.json':[{id:'p',title:'Agent Memory Paper',description_ko:'장기 기억 연구',date:'2026-01-01',url:'https://arxiv.org/abs/2601.00001'}],'data/timeline.json':[],'data/briefs.json':[brief],'data/meta.json':{collected_at:date(0)},'data/snapshots/fixture.json':{id:'fixture',collected_at:date(0),repos:[{...repos[1],stars:12}]}};
 const milestone={title:'컴퓨터를 사용하는 에이전트',summary:'주요 에이전트 제품이 등장했다.',source_url:'https://example.com/official',date_type:'product_release',date_precision:'date',date_basis:'공식 발표 원문 날짜'};
 fixtures['data/timeline.json']={collected_at:'2026-10-05T08:00:00Z',items:[{...milestone,date:'2024-12-31',title:'이전 연도 제외'},{...milestone,date:'2025-01-23'},{...milestone,date:'2025-11',date_precision:'month',date_type:'project_origin',title:'프로젝트의 시작'},{...milestone,date:'2026-03-16',title:'기업용 <agent> 확장',category:'기업용 에이전트',significance:'에이전트 운영이 기업 환경으로 확대됐다.',supporting_sources:[{label:'추가 공식 원문',url:'https://example.com/supporting'}]},{...milestone,date:'2027-01-01',title:'미래 이정표 제외'}]};
-const story={region:'international',id:'story-a',title:'권한 범위를 좁힌 Agent Tool',summary:'브라우저 에이전트 권한 검증',significance:'실행 범위를 명확히 합니다',url:'https://example.com/story-a',source:'공식 소식',published_at:'2026-10-04T03:00:00Z',published_date:'2026-10-04',published_precision:'timestamp',published_date_kst:'2026-10-04',date_basis:'원문 시각 확인',topics:['안전'],supporting_sources:[{source:'공식 프로젝트',url:'https://example.com/project'}]};
-const newsIssue={date:'2026-10-04',status:'partial',collected_at:'2026-10-04T07:00:00Z',headline:'오늘의 에이전트 흐름',summary:'도구를 확장하고 안전한 접근을 확인합니다',items:[story]};
+const story={region:'international',id:'story-a',title:'권한 범위를 좁힌 Agent Tool',summary:'브라우저 에이전트 권한 검증',significance:'실행 범위를 명확히 합니다',url:'https://example.com/story-a',source:'공식 소식',published_at:'2026-10-03T23:00:00Z',published_date:'2026-10-03',published_precision:'timestamp',published_date_kst:'2026-10-04',date_basis:'원문 시각 확인',topics:['안전'],supporting_sources:[{source:'공식 프로젝트',url:'https://example.com/project'}]};
+const newsIssue={date:'2026-10-04',status:'partial',collected_at:'2026-10-04T07:00:00Z',window_end:'2026-10-04T00:00:00Z',headline:'오늘의 에이전트 흐름',summary:'도구를 확장하고 안전한 접근을 확인합니다',items:[story]};
 fixtures['data/news.json']={schema_version:1,timezone:'Asia/Seoul',started_on:'2026-10-03',collected_at:'2026-10-04T07:00:00Z',items:[{...newsIssue,date:'2026-10-03',status:'final',headline:'전날의 변화',items:[{...story,region:'domestic',id:'story-b',url:'https://example.com/story-b',title:'지난 날짜의 메모리 소식',published_at:'2026-10-03T03:00:00Z',published_date:'2026-10-03',published_date_kst:'2026-10-03'}]},newsIssue]};
 let failing='';
 globalThis.fetch=async url=>{const path=new URL(url).pathname.replace('/project/','');if(path===failing)return {ok:false,status:503};return {ok:true,json:async()=>structuredClone(fixtures[path])};};
@@ -34,6 +34,20 @@ await import('../assets/app.mjs');
 async function flush(){for(let i=0;i<8;i++)await nextTurn();}
 await flush();
 const get=id=>nodes.get(id);
+test('Schedule labels follow verified metadata instead of a hardcoded collection hour',async()=>{
+ fixtures['data/meta.json'].schedule={enabled:true,target_time:'09:00',timezone:'Asia/Seoul'};
+ await get('refresh').fire('click');await flush();
+ assert.equal(get('schedule').textContent,'매일 09:00 KST 수집 예약');
+ await get('tab-news').fire('click');
+ assert.match(get('app').innerHTML,/매일 09:00 KST 편집 기준/);
+ assert.doesNotMatch(get('app').innerHTML,/06:00/);
+ fixtures['data/meta.json'].schedule={enabled:false,target_time:'10:30'};
+ await get('refresh').fire('click');await flush();
+ assert.match(get('schedule').textContent,/10:30.*예약 설정 대기/);
+ fixtures['data/meta.json'].schedule={enabled:true,target_time:'09:00'};
+ await get('refresh').fire('click');await flush();
+ await get('tab-main').fire('click');
+});
 test('App loads with a project subpath, all assets relative and recent count correct',()=>{
  assert.match(get('results').innerHTML,/fresh-agent/);
  assert.doesNotMatch(get('results').innerHTML,/old-agent|history-agent/);
@@ -81,6 +95,7 @@ test('News groups newest days first and shows Korean synthesis, source dates and
  assert.match(html,/하루 핵심 요약/);assert.match(html,/오늘의 에이전트 흐름/);
  assert.match(html,/부분 수집/);assert.match(html,/일일 수집 마감/);
  assert.match(html,/원문 게시/);assert.match(html,/수집 ·/);
+ assert.match(html,/편집 기준 · 2026-10-04 09:00 KST/);
  assert.match(html,/https:\/\/example.com\/project/);
  assert.equal(get('min-stars'),undefined);
  assert.match(get('app').innerHTML,/2026-10-04 16:00 KST/);

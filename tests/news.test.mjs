@@ -10,6 +10,15 @@ const story={id:'one',title:'Agent 도구 발표',summary:'브라우저 권한 �
 const issue={date:'2026-10-03',status:'partial',collected_at:stamp,headline:'에이전트 안전성의 변화',summary:'도구와 접근 제어의 핵심 흐름',items:[story]};
 const envelope=items=>({schema_version:1,timezone:'Asia/Seoul',collected_at:stamp,started_on:'2026-10-03',items});
 const now=Date.parse('2026-10-05T07:00:00Z');
+test('Optional editorial cutoffs reject later stories and malformed windows without changing legacy issues',()=>{
+ const current={...issue,window_start:'2026-10-02T15:00:00Z',window_end:'2026-10-03T00:00:00Z'};
+ assert.equal(normalizeNews(envelope([current])).rejected,0);
+ assert.equal(normalizeNews(envelope([issue])).rejected,0);
+ const later={...story,published_at:'2026-10-03T01:00:00Z',published_date:'2026-10-03'};
+ assert.equal(normalizeNews(envelope([{...current,items:[later]}])).rejected,1);
+ for(const window_end of ['unknown','2026-10-03','2026-10-03T08:00:00Z'])assert.equal(normalizeNews(envelope([{...current,window_end}])).rejected,1);
+ assert.equal(normalizeNews(envelope([{...current,window_start:'2026-10-03T00:01:00Z'}])).rejected,1);
+});
 test('News calendar dates reject rollover dates and before-start archives',()=>{
  assert.equal(calendarDate('2026-02-30'),false);assert.equal(calendarDate('2026-10-03'),true);
  assert.equal(normalizeNews(envelope([{...issue,date:'2026-10-02'}])).rejected,1);

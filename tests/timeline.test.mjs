@@ -25,6 +25,8 @@ test('Timeline requires a usable title, summary and primary source; distinct eve
  assert.equal(normalizeTimeline([row('2025-01-23'),row('2025-01-23',{summary:''}),row('2025-01-23',{title:' '}),row('2025-01-23',{source_url:'javascript:alert(1)'})]).rejected,3);
  assert.equal(timelineDateTypeLabel(row('2025-01-23')),'제품 출시');
  assert.equal(timelineDateTypeLabel(row('2026-09-29',{date_type:'public_preview_release'})),'공개 프리뷰');
+ assert.equal(timelineDateTypeLabel(row('2026-06-02',{date_type:'private_preview_release'})),'제한 프리뷰');
+ assert.equal(timelineDateTypeLabel(row('2026-09-29',{date_type:'platform_announcement'})),'플랫폼 발표');
  assert.equal(timelineDateTypeLabel(row('2025-01-23',{date_type:'repository_creation'})),'저장소 생성');
  assert.equal(timelineDateTypeLabel(row('2025-01-23',{date_type:'project_rename'})),'이름 변경 발표');
 });
