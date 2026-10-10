@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "collected_at": "2026-10-07T00:09:33Z",
+  "collected_at": "2026-10-10T00:09:49Z",
   "timezone": "Asia/Seoul",
   "scope": "2025-01-01 onward; major shifts in agent products, open personal-agent ecosystems, interoperability, and enterprise operations",
-  "editorial_note": "23개의 주요 전환점을 선별했습니다. 반복적인 버전 업데이트·논문·모델 성능 발표는 제외합니다. 날짜는 공식 출처의 사건·발표일이며, NanoClaw는 창작자의 Show HN 원문 게시 시각(UTC)을 보존합니다. significance는 확인된 변화의 의미를 설명하는 편집 요약입니다. 이번 보강은 과거의 AAIF 2025년 12월 9일 출범, Microsoft Scout 2026년 6월 2일 제한 프리뷰, OpenClaw Enterprise 9월 29일 공개 개발 단계 발표의 신규 수록입니다. 9월 30일 09:00–10월 7일 09:00 KST의 새 출시 사건을 뜻하지 않습니다.",
+  "editorial_note": "25개의 주요 전환점을 선별했습니다. 반복적인 버전 업데이트·개별 논문·모델 성능 발표는 제외합니다. 날짜는 공식 출처의 사건·발표일이며, NanoClaw는 창작자의 Show HN 원문 게시 시각(UTC)을 보존합니다. significance는 확인된 변화의 의미를 설명하는 편집 요약입니다. 2026년 10월 10일 확인에서는 10월 7일 Microsoft Execution Containers 정식 제공을 보강했습니다. 6월 초기 프리뷰와 구분하고 당시 예정·실험 단계인 연계 기능을 정식 출시로 확대 해석하지 않았습니다.",
   "items": [
     {
       "date": "2025-01-23",
@@ -353,6 +353,51 @@
       "date_precision": "date",
       "date_basis": "공식 블로그의 2026년 9월 29일 발표일. 당시 자체 호스팅과 내부 파일럿에 사용할 수 있는 공개 개발 단계이며, 1.0 및 일반 출시 완료와 구분한다.",
       "source_url": "https://openclaw.ai/blog/openclaw-enterprise"
+    },
+    {
+      "date": "2026-10-07",
+      "title": "Microsoft Execution Containers, 에이전트 실행 경계를 운영체제에 통합",
+      "summary": "Microsoft가 에이전트의 파일·네트워크·화면 접근 범위를 외부 정책으로 제한하는 Microsoft Execution Containers를 정식 제공하기 시작했다. 통합 설정과 SDK로 로컬 기기와 클라우드의 격리 환경을 선택하며, 에이전트가 스스로 권한을 확대할 수 없도록 실행 경계를 분리한다.",
+      "significance": "에이전트 안전을 모델의 판단에만 맡기지 않고 운영체제의 실행 통제로 옮기는 흐름이 주요 PC 플랫폼의 정식 기능으로 들어왔다.",
+      "category": "보안·운영",
+      "source_url": "https://blogs.windows.com/windowsdeveloper/2026/10/07/microsoft-execution-containers-policy-driven-containment-for-ai-agents/",
+      "date_type": "general_availability_release",
+      "date_precision": "date",
+      "date_basis": "Microsoft 공식 개발자 글의 2026년 10월 7일 정식 제공 발표일. 6월 2일 Build의 초기 프리뷰 발표와 구분한다. 당시 MicroVM은 실험 단계이며 Entra 기반 활동 구분과 Intune 정책 확장은 추후 제공으로 명시돼, 모든 연계 기능이 정식 출시됐다고 해석하지 않는다.",
+      "supporting_sources": [
+        {
+          "label": "Windows의 MXC 정식 제공과 하이브리드 실행 방향",
+          "url": "https://blogs.windows.com/windowsexperience/2026/10/07/building-windows-for-hybrid-intelligence/",
+          "date": "2026-10-07"
+        },
+        {
+          "label": "Build 2026의 MXC 초기 프리뷰 발표",
+          "url": "https://blogs.windows.com/windowsdeveloper/2026/06/02/build-2026-furthering-windows-as-the-trusted-platform-for-development/",
+          "date": "2026-06-02",
+          "date_type": "early_preview_release"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-08",
+      "title": "Gemini agent, 상시 실행과 조직의 업무 공간을 하나로",
+      "summary": "Google Cloud가 지식 업무·콘텐츠 제작·코딩을 하나의 인터페이스와 API에서 수행하는 Gemini agent를 발표했다. 클라우드에서 지속 실행하고 Workspace 등 여러 채널에서 기억을 공유하며, 고유 신원을 가진 동료 에이전트와 권한·감사 통제를 함께 제시했다.",
+      "significance": "개별 앱의 보조 기능에서 지속적인 기억·실행·팀 역할을 갖춘 기업용 범용 에이전트로 확장하는 전환점이다.",
+      "category": "엔터프라이즈·상시 실행",
+      "source_url": "https://cloud.google.com/blog/products/ai-machine-learning/welcome-to-gemini-at-work-2026",
+      "date_type": "product_announcement",
+      "date_basis": "Google Cloud의 Gemini at Work 2026 공식 키노트 글과 Google 공식 요약이 2026-10-08로 명시한 발표일. 전체 기능의 일반 출시일로 간주하지 않으며, 원문은 금융·법률 특화 기능을 프리뷰로 구분한다. TechCrunch의 같은 날 11:18 PDT(18:18 UTC) 보도로 편집 기준 시각 이전 공개도 확인했다.",
+      "date_precision": "date",
+      "supporting_sources": [
+        {
+          "label": "Google 공식 발표 요약",
+          "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-at-work/"
+        },
+        {
+          "label": "기준 시각 이전 보도 확인: 10월 8일 11:18 PDT (18:18 UTC)",
+          "url": "https://techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses/"
+        }
+      ]
     }
   ]
 }

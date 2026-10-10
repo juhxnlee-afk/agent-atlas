@@ -4,14 +4,660 @@
   "started_on": "2026-10-03",
   "items": [
     {
-      "date": "2026-10-07",
+      "date": "2026-10-10",
       "status": "partial",
-      "collected_at": "2026-10-07T00:13:58Z",
+      "collected_at": "2026-10-10T00:11:58Z",
+      "window_start": "2026-10-09T15:00:00Z",
+      "window_end": "2026-10-10T00:00:00Z",
+      "items": [
+        {
+          "id": "2026-10-10-hsbc-ant-agent-micropayment-test",
+          "region": "domestic",
+          "title": "HSBC·Ant Digital, 예금 토큰 기반 에이전트 소액결제 기술 시험",
+          "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=706205",
+          "source": "디지털투데이",
+          "source_type": "reputable_report",
+          "published_date": "2026-10-10",
+          "published_at": "2026-10-10T07:39:00+09:00",
+          "published_precision": "timestamp",
+          "published_time_precision": "second",
+          "published_timezone": "Asia/Seoul",
+          "published_date_kst": "2026-10-10",
+          "published_at_kst": "2026-10-10T07:39:00+09:00",
+          "date_basis": "디지털투데이 원본 HTML article:published_time=2026-10-10T07:39:00+09:00과 본문 입력 2026.10.10 07:39을 확인했다. 10월 9일 회사 보도자료와 10일 국내 보도 시각을 구분했다.",
+          "event_date": "2026-10-09",
+          "event_date_note": "Ant Digital Technologies가 배포한 공식 보도자료 날짜다. 기술 시험을 마쳤다고 발표한 날이며 시험 자체의 정확한 수행일이나 상용화일로 해석하지 않는다.",
+          "summary": "디지털투데이는 HSBC와 Ant Digital이 AI 에이전트의 서비스 탐색·이용·소액결제를 연결하는 기술 시험을 완료했다고 보도했다. 회사 발표에 따르면 HSBC의 토큰화 예금 서비스와 위험 점검, Ant의 Anvita Flow, Jovay 테스트넷을 연결해 실시간 정산을 시연했다. 상업적 출시나 실제 고객 대상 서비스는 아니며 결제 규모와 운영 성과를 일반화할 수 없다.",
+          "significance": "에이전트의 서비스 실행을 은행 정산·위험 통제와 묶는 실험이다. 실제 고객 자금의 무제한 자율 결제나 상용 결제망의 도입이 확인됐다는 의미는 아니다.",
+          "topics": [
+            "결제 에이전트",
+            "서비스 탐색",
+            "토큰화 예금",
+            "기술 검증"
+          ],
+          "region_basis": "주 출처 디지털투데이 원문 하단의 서울특별시 강남구 테헤란로 223, 3층 주소를 확인했다. 사건 관련 기업의 소재지 대신 매체 소재지를 적용했다.",
+          "supporting_sources": [
+            {
+              "source": "Ant Digital Technologies 공식 배포 보도자료 · PR Newswire",
+              "url": "https://www.prnewswire.com/apac/news-releases/ant-digital-technologies-and-hsbc-announce-successful-ai-agent-micropayment-technical-verification-test-302903333.html",
+              "source_type": "primary",
+              "published_date": "2026-10-09",
+              "published_at": null,
+              "published_precision": "date",
+              "published_timezone": "unknown",
+              "date_basis": "News provided by Ant Digital Technologies 및 09 Oct, 2026, 14:30 CST 표시를 확인했다. CST의 명시적 UTC 오프셋은 직접 확인하지 못해 보조 출처의 단일 instant를 만들지 않았다. 카드 날짜는 국내 기사 +09:00 메타데이터 기준이다.",
+              "supports": "TDS·Anvita Flow·Jovay Testnet 구성, 서비스 호출·소액결제·실시간 정산, MCP 인터페이스를 통한 위험 점검, 비상용 기술 검증이라는 한계",
+              "verified_at": "2026-10-10T00:11:58Z"
+            }
+          ],
+          "verification_note": "국내 기사 원본 HTML 시각·본문을 직접 확인했다. Ant Digital의 공식 배포 보도자료는 검색 도구가 반환한 해당 원문의 상세 본문으로 대조했으며 직접 접근은 403이었다. 기사에 함께 나온 다른 은행의 과거 사례와 전망은 카드에 포함하지 않았다. '통상 2달러 미만'이라는 소액결제 정의를 이번 시험의 실제 거래액으로 오인하지 않았다."
+        },
+        {
+          "id": "2026-10-10-github-agent-scale-storage-coverage",
+          "region": "domestic",
+          "title": "GitHub 저장소 재설계 국내 보도…에이전트의 동시 읽기·쓰기에 대응",
+          "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=706194",
+          "source": "디지털투데이",
+          "source_type": "reputable_report",
+          "published_date": "2026-10-10",
+          "published_at": "2026-10-10T06:57:11+09:00",
+          "published_precision": "timestamp",
+          "published_time_precision": "second",
+          "published_timezone": "Asia/Seoul",
+          "published_date_kst": "2026-10-10",
+          "published_at_kst": "2026-10-10T06:57:11+09:00",
+          "date_basis": "디지털투데이 원본 HTML의 article:published_time=2026-10-10T06:57:11+09:00과 본문 입력 2026.10.10 06:57을 확인했다. 10월 6일 공식 기술 설명의 후속 국내 보도이며 새로운 10월 10일 발표로 해석하지 않는다.",
+          "event_date": "2026-10-06",
+          "event_date_note": "GitHub 공식 블로그 최초 표시 날짜는 October 6, 2026이며 수정일 October 7, 2026과 구분했다. 공식 페이지의 시각·시간대는 이번 검증에서 확인하지 않았다. 전체 전환 완료나 배포 일정 발표가 아니다.",
+          "summary": "디지털투데이는 코딩 에이전트의 트래픽 증가에 대응하는 GitHub 저장소 재설계를 보도했다. GitHub의 10월 6일 공식 설명은 저장과 계산을 분리하고 Azure Blob Storage를 원본 저장 계층으로 쓰며, 읽기 작업자와 압축·정리 작업을 별도로 확장하는 방향을 제시한다. 내부 시험에서 최대 35배 쓰기 처리량을 기록했다는 회사 설명이지만 전면 적용 완료를 뜻하지 않는다.",
+          "significance": "에이전트가 반복 커밋·검토·테스트를 수행하면서 모델 성능뿐 아니라 협업 저장소의 동시성과 쓰기 지연도 실행 속도의 제약이 되고 있음을 보여준다. 내부 벤치마크를 모든 저장소의 체감 성능 향상으로 일반화하면 안 된다.",
+          "topics": [
+            "코딩 에이전트",
+            "개발 인프라",
+            "동시 실행",
+            "GitHub"
+          ],
+          "region_basis": "주 출처 디지털투데이의 원문 하단에 서울특별시 강남구 테헤란로 223, 3층이 명시돼 있다. 해외 기업 사건을 다룬 국내 매체 보도이므로 domestic이다.",
+          "supporting_sources": [
+            {
+              "source": "GitHub 공식 저장소 아키텍처 설명",
+              "url": "https://github.blog/engineering/architecture-optimization/building-git-infrastructure-for-agent-scale-development/",
+              "source_type": "primary",
+              "published_date": "2026-10-06",
+              "published_at": null,
+              "published_precision": "date",
+              "published_timezone": "unknown",
+              "supports": "10월 6일 최초 발행·7일 수정, 저장/계산 분리, Azure Blob Storage, 내부 벤치마크 최대 35배 쓰기 처리량 및 재설계 진행 상태",
+              "verified_at": "2026-10-10T00:11:58Z"
+            }
+          ],
+          "verification_note": "국내 기사 원본 HTML 발행 시각·본문과 GitHub 공식 글 전체를 직접 확인했다. 국내 기사가 인용한 The Register 기사는 별도로 대조하지 않았으며 기술적 설명과 수치는 GitHub의 1차 자료를 기준으로 제한했다. 기존 10월 3~9일 뉴스 데이터에 같은 저장소 재설계 사건이 없음을 대조했다."
+        },
+        {
+          "id": "2026-10-10-deno-cloudflare-agent-runtime-transition",
+          "region": "international",
+          "title": "Deno 팀, Cloudflare 합류…에이전트 실행 기반과 서비스 이전 일정 변화",
+          "url": "https://deno.com/blog/cloudflare",
+          "source": "Deno",
+          "source_type": "primary",
+          "published_date": "2026-10-09",
+          "published_at": "2026-10-09T15:00:00.000Z",
+          "published_precision": "timestamp",
+          "published_timezone": "UTC",
+          "published_date_kst": "2026-10-10",
+          "published_at_kst": "2026-10-10T00:00:00+09:00",
+          "date_basis": "Deno 공식 원문은 October 9, 2026을 표시하며 HTML의 time datetime=2026-10-09T15:00:00.000Z를 직접 확인했다. KST로 정확히 10월 10일 00:00이다. 화면의 원문 일자와 실제 KST 일자를 각각 보존했다.",
+          "summary": "Deno는 전체 팀이 Cloudflare에 합류해 Workers·Durable Objects의 자체 호스팅 기반 개발에 집중한다고 발표했다. Deno 런타임은 앞으로 1년간 월별 버그·보안 수정을 제공한 뒤 팀의 개발을 끝내며, 오픈소스는 유지된다. Deno Deploy는 6개월 더 운영한 뒤 종료하고 유료 고객의 Workers 이전을 지원한다. 공식 글은 지속 상태·서버리스 실행·WebSocket을 결합한 Durable Objects가 에이전트 실행 구조에 유용하다고 설명했다.",
+          "significance": "에이전트 개발자는 모델 선택뿐 아니라 실행 서비스의 운영 지속성과 이전 계획도 확인해야 한다. Cloudflare 측의 자체 호스팅 통합은 추진 방향이며 완료된 공급으로 표현하지 않는다. Deno Sandbox의 별도 종료 일정은 이번 발표에서 확인되지 않았다.",
+          "topics": [
+            "에이전트 인프라",
+            "런타임",
+            "지속 상태",
+            "서비스 이전",
+            "오픈소스"
+          ],
+          "event_date": "2026-10-09",
+          "event_date_note": "Deno·Cloudflare 공동 발표의 원문 날짜다. ‘1년’과 ‘6개월’은 발표에서 제시한 상대 기간이며 명시되지 않은 정확한 종료 날짜를 만들지 않았다.",
+          "verification_note": "Deno 공식 본문과 HTML time 값을 직접 확인하고 Cloudflare 공동 발표와 대조했다. 팀 합류를 거래금액이 확인된 인수로 확대해 쓰지 않았으며 Deno 런타임 오픈소스 자체가 종료되는 것으로 표현하지 않았다.",
+          "region_basis": "Deno의 공식 개인정보 처리방침이 Deno Land Inc.의 우편 주소를 미국 캘리포니아 San Diego로 명시한다.",
+          "supporting_sources": [
+            {
+              "source": "Cloudflare 공동 발표",
+              "url": "https://blog.cloudflare.com/deno-joins-cloudflare/",
+              "source_type": "primary",
+              "published_date": "2026-10-09",
+              "published_at": null,
+              "precision": "date",
+              "published_timezone": "unknown",
+              "supports": "celld·workerd 통합과 Workers·Durable Objects 자체 호스팅 개발 방향",
+              "verified_at": "2026-10-10T00:11:58Z"
+            },
+            {
+              "source": "Deno 공식 개인정보 처리방침",
+              "url": "https://docs.deno.com/deploy/privacy_policy/",
+              "source_type": "primary",
+              "supports": "Deno Land Inc.의 미국 San Diego 소재지",
+              "verified_at": "2026-10-10T00:11:58Z"
+            }
+          ]
+        }
+      ],
+      "headline": "09:00 기준: 에이전트 실행 인프라 전환과 소액결제 개념검증",
+      "summary": "10월 10일 오전 9시까지 확인한 소식은 에이전트가 의존하는 실행·저장·결제 기반에 집중됐다. Deno 팀은 Cloudflare 합류와 런타임·Deploy의 전환 일정을 발표했고, 국내 보도는 에이전트 활동 증가에 대응하는 GitHub 저장소 구조 개편과 HSBC·Ant Digital의 토큰화 예금 기반 소액결제 개념검증을 다뤘다. 관련 서비스의 운영 지속성, 대량 자동 작업의 안정성, 통제된 결제 범위를 함께 살펴볼 시점이다. GitHub의 과거 발표를 당일 신규 출시로, 결제 개념검증을 상용 서비스로 표현하지 않았다.",
+      "coverage_note": "10월 10일 00:00~09:00 KST 부분 기록이다. 국내 2건·해외 1건이며 주 출처 소재지를 기준으로 분류했다. Deno 원문의 UTC 시각은 KST 10월 10일 00:00으로 변환했고, 국내 기사 2건은 HTML의 KST 발행 시각을 확인했다. GitHub 국내 보도는 10월 6일 발표·7일 갱신한 원문의 후속 보도다. 09:00 이후 처음 발행한 소식은 포함하지 않으며 실제 수집 완료 시각을 별도로 기록했다. 선별 검색·검증 범위 밖의 소식이나 검색 인덱스 지연에 따른 누락이 가능하다.",
+      "sources": [
+        {
+          "label": "Deno · Deno 팀, Cloudflare 합류…에이전트 실행 기반과 서비스 이전 일정 변화",
+          "url": "https://deno.com/blog/cloudflare"
+        },
+        {
+          "label": "디지털투데이 · GitHub 저장소 재설계 국내 보도…에이전트의 동시 읽기·쓰기에 대응",
+          "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=706194"
+        },
+        {
+          "label": "디지털투데이 · HSBC·Ant Digital, 예금 토큰 기반 에이전트 소액결제 기술 시험",
+          "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=706205"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-09",
+      "status": "final",
+      "collected_at": "2026-10-10T00:11:58Z",
+      "window_start": "2026-10-08T15:00:00Z",
+      "window_end": "2026-10-09T15:00:00Z",
+      "headline": "업무 실행 확장과 자동 보안 점검, 운영 단계·권한 경계를 함께 확인",
+      "summary": "10월 9일의 국내외 소식은 에이전트의 업무 연결과 보안 운영 자동화를 함께 다뤘다. Google의 Gemini 업무 에이전트와 Automation Anywhere의 Boost.ai 인수 계약은 앱·대화·실행의 통합 방향을 보여준다. Anthropic은 오픈소스 유지보수자가 사람 검토 전 취약점 보고를 선택 수신하는 OSS Scanner를 공개했고, 국내에서는 Elastic의 AlertZero AI SOC 발표를 보도했다. 자동화 확대와 함께 보고 검증 능력, 작업별 권한, 실제 제공 단계가 핵심 점검 항목이다. 인수 계약·미리보기 예정·공급자의 기능 설명을 완료된 통합이나 검증된 운영 성과로 바꾸지 않았다.",
+      "coverage_note": "10월 9일 00:00~24:00 KST를 대상으로 기존 부분 기록을 보강한 마감 기록이다. 국내 2건·해외 2건이며 매체·기관 소재지 기준이다. 기존 Google·Automation Anywhere 카드를 보존하고 Anthropic·Elastic을 추가했다. Anthropic 카드의 KST 일자는 Axios 보도 시각과 배급본을 대조했고, Elastic은 국내 기사 HTML의 발행 시각을 확인했다. 공식 발표일과 보도일을 구분하며 같은 사건의 추가 보도를 중복 집계하지 않았다. 검색·원문 검증을 거친 선별 표본이며 전체 뉴스의 망라를 뜻하지 않는다.",
+      "items": [
+        {
+          "id": "2026-10-09-google-unified-work-agent",
+          "region": "international",
+          "title": "Google, Gemini 업무 에이전트 발표…Workspace·코딩·동료 에이전트 연결",
+          "url": "https://www.streetinsider.com/Reuters/Google%2BCloud%2Bintroduces%2BGemini%2Bagent%2Bfor%2Bwork%2Bas%2BAI%2Brace%2Bheats%2Bup/27165598.html",
+          "source": "Reuters · StreetInsider",
+          "source_type": "reputable_report",
+          "published_date": "2026-10-08",
+          "published_at": "2026-10-08T11:08-04:00",
+          "published_precision": "timestamp",
+          "published_time_precision": "minute",
+          "published_timezone": "America/New_York",
+          "published_date_kst": "2026-10-09",
+          "published_at_kst": "2026-10-09T00:08+09:00",
+          "date_basis": "Reuters 기사를 배포한 StreetInsider 원문과 HTML timestamp는 October 8, 2026 11:08 AM EDT를 표시한다. EDT=UTC−04:00을 적용해 KST 10월 9일 00:08로 변환했다. 원문 정밀도가 분 단위여서 임의의 초를 만들지 않았다. 동일 발표의 후속 TechCrunch 보도도 최초 datePublished=2026-10-08T18:18:00+00:00으로 기준 이전이다.",
+          "summary": "Google은 질문 응답·문서 작성·코딩·업무 실행을 하나의 Gemini 에이전트로 연결한다고 발표했다. 공식 설명은 기기와 앱을 넘어 이어지는 기억, 장시간 클라우드 실행, 작업별 서브에이전트와 독립 신원을 가진 동료 에이전트를 포함한다. Workspace 외에 Microsoft 365·Slack에서도 접근하며 Gemini·Claude 중 작업에 맞는 모델을 선택한다. 금융·법률 특화 버전은 미리보기다.",
+          "significance": "기업용 에이전트 경쟁이 개별 챗봇을 넘어 지속 실행·업무 맥락·모델 선택·조직 통제를 함께 묶는 방향으로 넓어지고 있다. 공급자의 기능 설명과 현장 성과를 구분해 읽어야 한다.",
+          "topics": [
+            "기업용 에이전트",
+            "지속 실행",
+            "멀티에이전트",
+            "업무 통합",
+            "권한 통제"
+          ],
+          "event_date": "2026-10-08",
+          "event_date_note": "Google 공식 Gemini at Work 2026 발표의 원문 날짜이며 공식 페이지 자체의 정확한 게시 시각·시간대는 확인하지 못했다. 이 카드의 KST 날짜는 Reuters 배포 기사 게시 시각 기준이다.",
+          "supporting_sources": [
+            {
+              "source": "Google Cloud 공식 Gemini at Work 2026 발표",
+              "url": "https://cloud.google.com/blog/products/ai-machine-learning/welcome-to-gemini-at-work-2026",
+              "published_date": "2026-10-08",
+              "published_at": null,
+              "published_precision": "date",
+              "published_timezone": "unknown",
+              "date_basis": "공식 원문은 October 8, 2026만 표시한다."
+            },
+            {
+              "source": "TechCrunch 후속 보도·게시 시각",
+              "url": "https://techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses/",
+              "published_at": "2026-10-08T18:18:00+00:00",
+              "date_basis": "본문 11:18 AM PDT와 HTML datePublished를 확인했다."
+            },
+            {
+              "source": "StreetInsider 소재지",
+              "url": "https://www.streetinsider.com/contact.php"
+            }
+          ],
+          "verification_note": "Reuters 배포 원문의 본문·EDT 게시 시각, Google 공식 발표의 검색 수집 본문, TechCrunch 원본 HTML의 최초 발행 및 수정 시각을 대조했다. Google 원문 직접 열기는 실패했으나 검색 도구가 반환한 해당 공식 URL의 상세 본문으로 교차 확인했다. 동료 에이전트는 제공된 맥락에만 접근한다는 제약과 금융·법률 분야의 preview 상태를 보존했다. 해외 통신사 및 미국 Michigan 소재 배포 매체 기준 international이다."
+        },
+        {
+          "id": "2026-10-09-automation-anywhere-boost-acquisition-agreement",
+          "region": "domestic",
+          "title": "Automation Anywhere의 Boost.ai 인수 계약 보도…음성 대화와 업무 실행 연결 추진",
+          "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=706145",
+          "source": "디지털투데이",
+          "source_type": "reputable_report",
+          "published_date": "2026-10-09",
+          "published_at": "2026-10-09T06:57:55+09:00",
+          "published_precision": "timestamp",
+          "published_timezone": "Asia/Seoul",
+          "published_date_kst": "2026-10-09",
+          "published_at_kst": "2026-10-09T06:57:55+09:00",
+          "date_basis": "디지털투데이 원본 HTML article:published_time=2026-10-09T06:57:55+09:00을 확인했다. 원래 회사 발표일 10월 7일, 해외 보도일, 국내 보도 게시일을 구분하며 이 카드는 국내 보도 시각에 배치했다.",
+          "summary": "디지털투데이는 Automation Anywhere가 음성·대화형 AI 기업 Boost.ai를 인수하기로 합의했다고 보도했다. 10월 7일자로 공개된 공식 발표는 고객·직원의 대화 요청을 기업의 중간·후방 업무 실행에 연결하려는 계획을 설명한다. 거래는 규제 승인과 통상적인 종결 조건을 거쳐 2026년 4분기에 마무리할 예정이며 아직 완료된 인수는 아니다.",
+          "significance": "대화형 접점과 여러 기업 시스템에서의 실행을 묶으려는 움직임이다. 자동화율·고객 성과에 대한 회사 수치를 검증된 결과로 일반화하지 않았다.",
+          "topics": [
+            "음성 에이전트",
+            "기업 업무 자동화",
+            "인수 계약"
+          ],
+          "event_date": "2026-10-07",
+          "event_date_note": "Automation Anywhere 공식 보도자료 목록의 Oct 07, 2026 표기. 정확한 원문 시각·시간대는 확인하지 못했으며 국내 기사 발행일로 바꾸지 않았다.",
+          "supporting_sources": [
+            {
+              "source": "Automation Anywhere 공식 인수 계약 발표",
+              "url": "https://www.automationanywhere.com/company/press-room/conversational-ai-finally-connected-work-automation-anywhere-acquire-boostai",
+              "published_date": "2026-10-07",
+              "published_at": null,
+              "published_precision": "date",
+              "published_timezone": "unknown"
+            },
+            {
+              "source": "Automation Anywhere 공식 보도자료 목록·원문 날짜",
+              "url": "https://www.automationanywhere.com/company/press-room"
+            }
+          ],
+          "verification_note": "국내 기사 원본 HTML 본문·OG 시각과 공식 인수 계약 발표를 직접 확인했다. 본문 인수 합의와 공식 종결 예정 조건을 보존했다. 기사에서 인용한 SiliconANGLE 기사는 이 검증에서 별도 조회하지 않았다. 주 출처 디지털투데이의 서울 강남구 주소를 원문에서 확인해 사건이 해외여도 domestic으로 분류했다."
+        },
+        {
+          "id": "2026-10-09-elastic-alertzero-preview-plan",
+          "region": "domestic",
+          "title": "Elastic AlertZero 공개 보도…보안 업무별 에이전트와 자율성 통제 설계",
+          "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=706176",
+          "source": "디지털투데이",
+          "source_type": "reputable_report",
+          "published_date": "2026-10-09",
+          "published_at": "2026-10-09T18:23:32+09:00",
+          "published_precision": "timestamp",
+          "published_time_precision": "second",
+          "published_timezone": "Asia/Seoul",
+          "published_date_kst": "2026-10-09",
+          "published_at_kst": "2026-10-09T18:23:32+09:00",
+          "date_basis": "디지털투데이 원본 HTML의 article:published_time=2026-10-09T18:23:32+09:00과 본문 입력 2026.10.09 18:23을 확인했다. 회사의 10월 8일 발표와 국내 보도일을 구분했다.",
+          "event_date": "2026-10-08",
+          "event_date_note": "Elastic 공식 블로그와 보도자료의 발표 날짜다. 정확한 공식 게시 시각·시간대는 확인하지 못했다. 공식 블로그는 upcoming technical preview 및 available soon으로 설명하므로 이미 정식 제공된 제품으로 보지 않는다.",
+          "summary": "디지털투데이는 Elastic이 보안 경보 분류·위협 탐색·탐지 규칙·포렌식을 맡는 AlertZero 에이전트 체계를 공개했다고 보도했다. 공식 설명은 네 가지 Watch와 작업별 Worker의 자율성을 조절하는 구조다. 감독형 엔드포인트 분석에서는 격리·프로세스 종료 등이 건별 추가 승인 없이 가능하지만 탐지 규칙 변경에는 승인이 필요하다. 기술 미리보기 제공을 예고한 단계다.",
+          "significance": "보안 에이전트를 하나의 무제한 자동화로 취급하지 않고 작업 위험에 따라 위임 범위를 나누는 사례다. 회사가 설명한 설계이며 실제 탐지 성능·인력 절감 효과를 독립 검증한 결과는 아니다.",
+          "topics": [
+            "보안 에이전트",
+            "멀티에이전트",
+            "권한 통제",
+            "기술 미리보기"
+          ],
+          "region_basis": "국내/해외는 사건 기업이 아닌 주 출처 소재지 기준이다. 디지털투데이 원문 하단은 서울특별시 강남구 테헤란로 223, 3층을 명시한다.",
+          "supporting_sources": [
+            {
+              "source": "Elastic 공식 AlertZero 기술 설명",
+              "url": "https://www.elastic.co/security-labs/blog/ai-soc-automation-alertzero",
+              "source_type": "primary",
+              "published_date": "2026-10-08",
+              "published_at": null,
+              "published_precision": "date",
+              "published_timezone": "unknown",
+              "supports": "네 가지 Watch, 작업별 자율성, 감독형 엔드포인트 대응과 규칙 변경 승인, upcoming technical preview 상태",
+              "verified_at": "2026-10-10T00:11:58Z"
+            },
+            {
+              "source": "Elastic 공식 발표",
+              "url": "https://ir.elastic.co/News--Events/news/news-details/2026/Elastic-Announces-AlertZero-a-Team-of-Specialized-AI-Agents-for-the-Security-Operations-Lifecycle/default.aspx",
+              "source_type": "primary",
+              "published_date": "2026-10-08",
+              "published_at": null,
+              "published_precision": "date",
+              "published_timezone": "unknown",
+              "supports": "Elastic Security의 에이전트 계층 및 기술 미리보기 제공 계획",
+              "verified_at": "2026-10-10T00:11:58Z"
+            }
+          ],
+          "verification_note": "국내 기사 원본 HTML과 Elastic 기술 블로그 전체 본문을 직접 확인했다. 공식 보도자료는 검색 도구가 반환한 해당 원문의 상세 본문으로 교차 확인했으며 직접 열기는 실패했다. 검색 요약에 있는 '모든 중대한 행동은 승인 필요'라는 포괄적 표현 대신 공식 블로그의 상세 자율성 설명을 반영했다. 정식 출시·보안 보장·독립 성능검증으로 표현하지 않았다."
+        },
+        {
+          "id": "2026-10-09-anthropic-cyber-mission-oss-scanner",
+          "region": "international",
+          "title": "Anthropic, OSS Scanner 공개…사람 검토 전 취약점 보고를 선택 수신",
+          "url": "https://www.axios.com/2026/10/08/anthropic-critical-infrastructure-cybersecurity",
+          "source": "Axios",
+          "source_type": "reputable_report",
+          "published_date": "2026-10-08",
+          "published_at": "2026-10-08T19:00:18Z",
+          "published_precision": "timestamp",
+          "published_timezone": "UTC",
+          "published_date_kst": "2026-10-09",
+          "published_at_kst": "2026-10-09T04:00:18+09:00",
+          "date_basis": "Axios 원문 검색 인덱스의 발행 메타데이터는 2026-10-08 19:00:18 UTC다. Yahoo의 Axios 배급본도 October 8, 2026 at 7:00 PM UTC를 표시한다. KST로 10월 9일 04:00:18이다. Anthropic 공식 발표의 날짜만으로 KST 날짜를 만든 것이 아니다.",
+          "summary": "Anthropic은 Cyber Mission의 하나로 핵심 오픈소스 프로젝트를 무료로 정기 점검하는 OSS Scanner를 공개했다. 공식 설명상 격리된 오프라인 에이전트가 점검하고 재현 자료·설명·가능한 수정안을 보낸다. 참여 프로젝트는 사람 검토 전 모델 보고서를 받는 방식을 선택하며, 기존 사람 검증 공개 절차도 계속된다. 전력·수도 등 운영기술 방어 기업에는 모델·엔지니어·위협 연구를 제공하는 별도 지원 프로그램을 시작했다.",
+          "significance": "취약점 발견 속도와 보고서 검증·우선순위 결정 능력의 균형이 중요해졌다. 자동 보고에는 중복·과장된 심각도·오류가 있을 수 있으며, 도입이나 실제 운영기술 패치를 무인으로 맡긴다는 발표는 아니다.",
+          "topics": [
+            "보안 에이전트",
+            "오픈소스",
+            "취약점 검증",
+            "핵심 인프라"
+          ],
+          "event_date": "2026-10-08",
+          "event_date_precision": "date",
+          "event_date_timezone": "unknown",
+          "event_date_note": "Anthropic 공식 발표의 원문 날짜다. 공식 페이지에서는 발행 시간대·정확한 시각을 확인하지 못했으며, 이 카드의 KST 일자는 Axios 보도 시각을 기준으로 한다.",
+          "verification_note": "Axios 직접 열람은 실패해 원문 검색 인덱스와 Yahoo 배급본의 게시 시각을 대조했다. 제품 기능·한계는 Anthropic 공식 발표, 연구팀 소개, 공식 OSS Scanner FAQ로 확인했다. 공급자의 성능 기대치나 초기 표본을 독립적인 일반 성능 검증으로 표현하지 않았다.",
+          "region_basis": "Axios의 자체 소개가 미국 버지니아주 Arlington 소재 전국 매체라고 명시한다.",
+          "supporting_sources": [
+            {
+              "source": "Anthropic 공식 Cyber Mission 발표",
+              "url": "https://www.anthropic.com/news/anthropic-cyber-mission",
+              "source_type": "primary",
+              "published_date": "2026-10-08",
+              "published_at": null,
+              "precision": "date",
+              "published_timezone": "unknown",
+              "supports": "CIDP와 OSS Scanner의 공개, 자동 보고의 한계와 사람 검증 절차 유지",
+              "verified_at": "2026-10-10T00:11:58Z"
+            },
+            {
+              "source": "Anthropic 연구팀 OSS Scanner 소개",
+              "url": "https://www.anthropic.com/research/launching-opt-in-vuln-finding-service-for-open-source",
+              "source_type": "primary",
+              "published_date": "2026-10-08",
+              "published_at": null,
+              "precision": "date",
+              "published_timezone": "unknown",
+              "supports": "모델 생성 보고의 선택 수신, 재현 자료·가능한 수정안, 중복·심각도·위협모델 한계",
+              "verified_at": "2026-10-10T00:11:58Z"
+            },
+            {
+              "source": "Anthropic OSS Scanner 공식 FAQ",
+              "url": "https://red.anthropic.com/oss-scanner/",
+              "source_type": "primary",
+              "supports": "인터넷을 끈 격리 환경의 스캐닝 에이전트와 참여·중지 방식",
+              "verified_at": "2026-10-10T00:11:58Z"
+            },
+            {
+              "source": "Yahoo의 Axios 배급본",
+              "url": "https://tech.yahoo.com/ai/claude/articles/exclusive-anthropics-plan-protect-critical-190018741.html",
+              "source_type": "reputable_report",
+              "published_at": "2026-10-08T19:00Z",
+              "published_date": "2026-10-08",
+              "precision": "timestamp",
+              "published_timezone": "UTC",
+              "supports": "원문과 같은 보도의 UTC 19:00 발행 표기",
+              "verified_at": "2026-10-10T00:11:58Z"
+            },
+            {
+              "source": "Axios 자체 소재지 소개",
+              "url": "https://www.axios.com/local/san-francisco/2025/09/11/behind-the-bylines-who-we-are",
+              "source_type": "primary",
+              "supports": "미국 Arlington 소재 매체 분류",
+              "verified_at": "2026-10-10T00:11:58Z"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Reuters · StreetInsider · Google, Gemini 업무 에이전트 발표…Workspace·코딩·동료 에이전트 연결",
+          "url": "https://www.streetinsider.com/Reuters/Google%2BCloud%2Bintroduces%2BGemini%2Bagent%2Bfor%2Bwork%2Bas%2BAI%2Brace%2Bheats%2Bup/27165598.html"
+        },
+        {
+          "label": "디지털투데이 · Automation Anywhere의 Boost.ai 인수 계약 보도…음성 대화와 업무 실행 연결 추진",
+          "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=706145"
+        },
+        {
+          "label": "Axios · Anthropic, OSS Scanner 공개…사람 검토 전 취약점 보고를 선택 수신",
+          "url": "https://www.axios.com/2026/10/08/anthropic-critical-infrastructure-cybersecurity"
+        },
+        {
+          "label": "디지털투데이 · Elastic AlertZero 공개 보도…보안 업무별 에이전트와 자율성 통제 설계",
+          "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=706176"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-08",
+      "status": "final",
+      "collected_at": "2026-10-10T00:11:58Z",
+      "window_start": "2026-10-07T15:00:00Z",
+      "window_end": "2026-10-08T15:00:00Z",
+      "headline": "기업 에이전트의 실행 환경·조직 기억·서브에이전트 비용을 함께 개선",
+      "summary": "10월 8일 확인한 소식에서는 에이전트를 실제 업무에 오래 연결하기 위한 기반이 두드러졌다. Microsoft는 실행 권한을 강제하는 MXC의 정식 제공을, Anthropic은 반복 작업과 서브에이전트용 Haiku 5.5 및 비용 변경을 발표했다. Nous는 기업용 Hermes 개발 계획을 제시했고, 국내 더존비즈온과 티로 사례는 기업 데이터·조직 기억을 업무 제안과 실행에 연결했다. 공급자 발표의 기능·계획과 현장 시연·인터뷰를 구분했으며, 이를 전체 시장의 채택률이나 검증된 성과로 해석하지 않는다.",
+      "coverage_note": "10월 8일 KST 하루의 마감 기록이다. 기존 국내 2건·해외 3건을 보존하고, 10월 10일 보강 수집에서 MXC 카드에 GitHub Copilot 로컬 샌드박스 정식 제공의 공식 근거를 추가했다. 같은 기반 기술의 관련 출시는 별도 카드로 중복 집계하지 않았다. 티로 기사는 OG와 JSON-LD의 시간대가 충돌해 정확한 발행 시각을 비우고 원문 날짜만 보존했으며, 양쪽 후보가 모두 KST 10월 8일임을 확인했다. 선별 표본으로 확인 범위 밖 소식·검색 지연·접근 실패가 남을 수 있다.",
+      "items": [
+        {
+          "id": "2026-10-08-nous-hermes-business-plan",
+          "region": "international",
+          "title": "Nous, 9천만 달러 투자 유치…기업용 Hermes 개발 계획 제시",
+          "url": "https://thenextweb.com/news/nous-research-90m-1-5bn-hermes-agent-wsj",
+          "source": "The Next Web",
+          "source_type": "reputable_report",
+          "published_date": "2026-10-07",
+          "published_at": "2026-10-07T15:18:48+00:00",
+          "published_precision": "timestamp",
+          "published_timezone": "UTC",
+          "published_date_kst": "2026-10-08",
+          "published_at_kst": "2026-10-08T00:18:48+09:00",
+          "date_basis": "The Next Web 본문은 Published October 7, 2026 - 3:18 pm UTC로 표시하며, 원본 HTML의 JSON-LD datePublished와 article:published_time은 2026-10-07T15:18:48+00:00이다. dateModified도 같으며 이를 KST 10월 8일 00:18:48로 변환했다.",
+          "summary": "Nous Research는 9천만 달러 투자 유치를 확인하고 기업용 Hermes for Businesses를 개발·제공하겠다는 계획을 밝혔다. 공식 설명은 기업이 업무에 맞는 모델과 가격을 선택하고 조직의 지식과 AI 사용 환경을 통제하는 방향에 초점을 맞춘다. 기존 오픈소스 Hermes는 프로젝트 기억과 재사용 스킬을 이어 가는 에이전트다.",
+          "significance": "오픈소스 개인 에이전트의 기업용 확장 계획이다. 공식 원문이 미래형으로 설명하므로 기업용 제품의 정식 출시나 가용성을 확정하지 않는다.",
+          "topics": [
+            "오픈소스 에이전트",
+            "기업용 에이전트",
+            "모델 선택",
+            "투자"
+          ],
+          "event_date": "2026-10-07",
+          "event_date_note": "투자 보도 날짜이며 Hermes Agent 자체는 공식 원문상 2026년 2월 공개됐다. 기업용 제품의 제공일은 이 발표에 명시되지 않았다.",
+          "supporting_sources": [
+            {
+              "source": "Nous Research 공식 투자 발표",
+              "url": "https://nousresearch.com/a-note-on-our-fundraise",
+              "published_date": "2026-10",
+              "published_precision": "month",
+              "published_timezone": "unknown",
+              "date_basis": "공식 페이지는 October 2026만 표시한다. 기사 게시 시각이나 정확한 발표일로 대체하지 않는다."
+            }
+          ],
+          "verification_note": "보도 본문·JSON-LD·OG 발행 시각과 공식 회사 발표를 확인했다. 기업가치·다운로드·전 세계 토큰 사용 비율 등 별도 보도나 회사 추정 수치는 제외했다. The Next Web 원문 하단의 Amsterdam 표기를 확인해 해외 매체로 분류했다."
+        },
+        {
+          "id": "2026-10-08-microsoft-mxc-general-availability",
+          "region": "international",
+          "title": "Microsoft MXC 정식 제공…에이전트의 파일·네트워크 접근 경계 강제",
+          "url": "https://blogs.windows.com/windowsdeveloper/2026/10/07/microsoft-execution-containers-policy-driven-containment-for-ai-agents/",
+          "source": "Microsoft · Windows Developer Blog",
+          "source_type": "primary",
+          "published_date": "2026-10-07",
+          "published_at": "2026-10-07T18:00:28+00:00",
+          "published_precision": "timestamp",
+          "published_timezone": "UTC",
+          "published_date_kst": "2026-10-08",
+          "published_at_kst": "2026-10-08T03:00:28+09:00",
+          "date_basis": "공식 본문은 October 7, 2026을 표시한다. 공식 Windows Developer Blog RSS의 동일 canonical URL 항목에서 pubDate=Wed, 07 Oct 2026 18:00:28 +0000을 확인해 KST 10월 8일 03:00:28로 변환했다.",
+          "summary": "Microsoft는 에이전트의 실행 범위를 정책으로 제한하는 Microsoft Execution Containers의 정식 제공을 발표했다. 개발자와 관리자가 지정한 파일·네트워크 권한을 에이전트 외부의 실행 경계에서 강제하며, 프로세스·세션 등 작업에 맞는 격리 방식을 선택한다. 일부 에이전트는 이미 지원하지만 Entra 기반 활동 구분과 Intune 관리 정책 확대는 향후 기능으로 설명했다. GitHub도 MXC 기반 로컬 샌드박스를 Copilot CLI·앱·Agent Host 기반 VS Code에 정식 제공하며, 조직이 사용자가 완화할 수 없는 실행 정책을 적용할 수 있다고 발표했다.",
+          "significance": "작업을 판단하는 모델과 권한을 강제하는 실행 환경을 분리하는 접근이다. 격리 방식별 보안 특성과 실험 단계 기능을 구분해야 하며 모든 에이전트 위험을 없앤다는 뜻은 아니다.",
+          "topics": [
+            "실행 격리",
+            "권한 통제",
+            "코딩 에이전트",
+            "Windows"
+          ],
+          "event_date": "2026-10-07",
+          "event_date_note": "공식 원문 일자 기준 정식 제공 발표다. 6월의 초기 미리보기와 구분한다.",
+          "supporting_sources": [
+            {
+              "source": "Microsoft 공식 RSS 발행 시각",
+              "url": "https://blogs.windows.com/windowsdeveloper/feed/",
+              "published_at": "2026-10-07T18:00:28+00:00",
+              "date_basis": "RSS item의 link가 본문 URL과 일치한다."
+            },
+            {
+              "source": "Microsoft Windows 전체 발표",
+              "url": "https://blogs.windows.com/windowsexperience/2026/10/07/building-windows-for-hybrid-intelligence/"
+            },
+            {
+              "source": "Microsoft 본사 소재지",
+              "url": "https://www.microsoft.com/en-us/about/office-locations"
+            },
+            {
+              "source": "GitHub Copilot 로컬 샌드박스 정식 제공",
+              "url": "https://github.blog/changelog/2026-10-07-local-sandboxing-for-github-copilot-now-generally-available/",
+              "source_type": "primary",
+              "published_date": "2026-10-07",
+              "published_at": "2026-10-07T08:46:17-07:00",
+              "precision": "timestamp",
+              "published_timezone": "America/Los_Angeles",
+              "supports": "공식 HTML JSON-LD datePublished와 동일한 UTC 값 2026-10-07T15:46:17+00:00을 확인. KST 10월 8일 00:46:17. Copilot CLI·앱·Agent Host의 정식 제공과 조직 관리 정책을 확인했다.",
+              "verified_at": "2026-10-10T00:11:58Z"
+            }
+          ],
+          "verification_note": "공식 본문과 RSS를 직접 확인했다. MicroVM은 experimental, Entra·일부 관리 정책 및 일부 제품의 MXC 지원은 coming soon으로 구분했다. 미국 Redmond 본사를 둔 Microsoft의 공식 발표이므로 해외로 분류했다. 10월 10일 보강 수집에서 GitHub 공식 Changelog 본문과 JSON-LD를 확인해 Copilot의 구체적 정식 제공 범위를 추가했다. 기존 Microsoft 원문의 발행 시각과 주 출처는 유지했다."
+        },
+        {
+          "id": "2026-10-08-haiku55-cost-sensitive-subagents",
+          "region": "international",
+          "title": "Haiku 5.5 공개…반복 작업·서브에이전트 비용 낮추고 추론 강도 조절",
+          "url": "https://9to5mac.com/2026/10/07/anthropic-upgrades-claude-with-new-haiku-5-5-model-details-here/",
+          "source": "9to5Mac",
+          "source_type": "reputable_report",
+          "published_date": "2026-10-07",
+          "published_at": "2026-10-07T18:14:13+00:00",
+          "published_precision": "timestamp",
+          "published_timezone": "America/Los_Angeles",
+          "published_date_kst": "2026-10-08",
+          "published_at_kst": "2026-10-08T03:14:13+09:00",
+          "date_basis": "9to5Mac 본문 Oct 7 2026 - 11:14 am PT와 원본 HTML JSON-LD datePublished 및 OG published_time=2026-10-07T18:14:13+00:00을 확인했다. 수정 시각 18:45:16 UTC와 구분해 최초 발행을 KST 10월 8일 03:14:13으로 변환했다.",
+          "summary": "Anthropic은 요약·분류·짧은 코딩 작업과 서브에이전트에 맞춘 Haiku 5.5를 공개했다. 공식 발표에 따르면 Haiku 계열 최초로 추론 강도를 조절하며, 프롬프트 10만 토큰 이하의 API 요금은 입력·출력 100만 토큰당 각각 0.10·0.50달러다. 10만 토큰 초과에는 0.50·2.50달러가 적용되고, Sonnet 5.5의 캐시 읽기 가격도 절반으로 낮췄다.",
+          "significance": "작업을 작은 단위로 나눠 모델을 배정하는 에이전트 구성의 비용 선택지를 넓힌다. 단가와 실제 작업 비용은 다르며 긴 프롬프트의 요금 구간과 토크나이저 변화를 함께 고려해야 한다.",
+          "topics": [
+            "서브에이전트",
+            "소형 모델",
+            "추론 비용",
+            "컴퓨터 사용"
+          ],
+          "event_date": "2026-10-07",
+          "event_date_note": "Anthropic 공식 출시 페이지의 원문 날짜다. 공식 페이지는 시각·시간대를 공개하지 않아 기사 발행 시각으로 대체하지 않았다.",
+          "supporting_sources": [
+            {
+              "source": "Anthropic 공식 Haiku 5.5 발표",
+              "url": "https://www.anthropic.com/claude-haiku-5-5",
+              "published_date": "2026-10-07",
+              "published_at": null,
+              "published_precision": "date",
+              "published_timezone": "unknown",
+              "date_basis": "공식 HTML time dateTime=2026-10-07이며 시각·시간대는 없다."
+            },
+            {
+              "source": "9to5Mac 발행사 소개",
+              "url": "https://9to5mac.com/about/"
+            }
+          ],
+          "verification_note": "보도 최초 발행 시각과 Anthropic 공식 발표의 실제 가격 구간·제공 상태를 확인했다. 공급자 벤치마크와 평균 절감률을 독립 평가로 표현하지 않았다. 발행사 925 LLC의 미국 New York 소재를 회사 소개 및 기업 등록 정보와 대조해 해외로 분류했다."
+        },
+        {
+          "id": "tiro-organizational-memory-clone-agents-20261008",
+          "title": "티로, 회의 지식을 에이전트 실행으로 연결하는 운영 사례 공개",
+          "url": "https://www3.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02194326645610952",
+          "source": "이데일리",
+          "source_type": "reputable_report",
+          "region": "domestic",
+          "summary": "이데일리의 더플레이토 임은성 대표 인터뷰는 티로 위키에 축적한 사람·프로젝트·의사결정 맥락을 AI 에이전트의 업무 기반으로 쓰는 방식을 다뤘다. 회사는 내부 클론 에이전트가 질문 응답, 보안 검토, 문서·해외 팀 리포트 작성, 고객 오류 대응에 활용되고 있다고 설명했다.",
+          "significance": "회의록을 단순 저장하는 데서 벗어나 조직 기억을 실행 도구와 연결하는 국내 사례다. 기사에 나온 자동화 성과와 인력 효율은 회사 설명이며, 10월 8일 신규 기능 출시로 해석해서는 안 된다.",
+          "published_date": "2026-10-08",
+          "published_at": null,
+          "published_precision": "date",
+          "published_timezone": "unknown",
+          "published_date_kst": null,
+          "date_basis": "원문 화면에는 등록 2026-10-08 오전 6:32:02. OG는 2026-10-08T06:32:02+09:00, JSON-LD는 같은 시계시각에 +08:00을 사용해 한 시간 차이가 있다. 양쪽 후보 모두 KST 10월 8일이고 수집기간 내이므로 날짜만 확정, 단일 발행 instant는 null로 보존.",
+          "supporting_sources": [
+            {
+              "url": "https://ax.tiro.ooo/en",
+              "note": "회의→위키→에이전트 실행 구조와 MCP 연결을 설명한다. 새 발행 뉴스가 아닌 제품 기능의 보조 검증에만 사용.",
+              "source": "Tiro AX 공식 제품 설명"
+            },
+            {
+              "url": "https://tiro.ooo/ko/blog/172644",
+              "note": "회사 공식 블로그의 기존 자료. 회의 맥락을 API·MCP·CLI·Skill로 에이전트 워크플로에 전달하는 기술 배경을 확인.",
+              "source": "티로가 비즈니스 맥락을 기억하는 법 - MCP, API, CLI, Skill"
+            }
+          ],
+          "verification_note": "10월 2일 실시한 인터뷰를 10월 8일 처음 게재한 기사. 이벤트일·기능 출시일과 기사 발행일을 구분했다. +09/+08 메타데이터 충돌은 미해결로 공개; 한국어·국내매체라는 이유만으로 timezone을 보정하지 않았다. 원문 하단의 국내 소재지·서울 신문 등록 정보를 확인해 국내 매체/기관 기준으로 분류했다.",
+          "raw_timestamp_candidates": {
+            "article:published_time": "2026-10-08T06:32:02+09:00",
+            "datePublished": "2026-10-08T06:32:02+08:00"
+          },
+          "topics": [
+            "조직 기억",
+            "업무 에이전트",
+            "MCP"
+          ]
+        },
+        {
+          "id": "douzone-proactive-one-ai-festa-20261008",
+          "title": "더존비즈온, 업무 맥락 기반 능동형 AI와 세법·노무 멀티에이전트 시연",
+          "url": "https://www.newswire.co.kr/newsRead.php?no=1044263",
+          "source": "더존비즈온·뉴스와이어",
+          "source_type": "primary",
+          "region": "domestic",
+          "summary": "더존비즈온은 AI Festa 26에서 ERP·그룹웨어의 업무 흐름을 읽고 다음 행동을 제안하는 AI Edition과 내부망용 ONE AI PE를 선보였다. 세법·노무 업무에서는 여러 에이전트가 목표를 나눠 실행·모니터링·보완하는 과정을 시연했으며, ERP 데이터의 의미 관계와 정책·권한·감사 기록을 판단 근거로 제시했다.",
+          "significance": "국내 업무용 에이전트가 단순 질의응답에서 선제적 제안과 전문 업무 실행으로 확장되는 사례다. 기업 데이터 연결과 통제 가능한 실행을 함께 다뤘지만, 공개 내용은 회사 발표와 현장 시연으로 실제 도입 성과나 전면 출시를 입증하지는 않는다.",
+          "published_date": "2026-10-08",
+          "published_at": "2026-10-08T13:54:01+09:00",
+          "published_precision": "timestamp",
+          "published_timezone": "Asia/Seoul",
+          "published_date_kst": "2026-10-08",
+          "date_basis": "원문 HTML article:published_time과 NewsArticle.datePublished가 모두 2026-10-08T13:54:01+09:00. 본문 배포시각은 2026-10-08 13:54. 수정시각을 발행시각으로 쓰지 않음.",
+          "supporting_sources": [
+            {
+              "url": "https://www.techsuda.com/douzone-bizon-unveils-proactive-ai-at-ai-festa-26/",
+              "published_at": "2026-10-08T06:42:00Z",
+              "note": "기업 발표를 설명하는 국내 보도. OG·JSON-LD 발행시각 일치. 회사 보도자료와 같은 사건이므로 별도 기사로 중복 집계하지 않음.",
+              "source": "테크수다: 더존비즈온, 지시 없이 먼저 제안하는 능동형 AI 공개"
+            },
+            {
+              "url": "https://www.bikorea.net/news/articleView.html?idxno=47446",
+              "note": "본문 승인 시각 2026.10.08 14:26:56. 동일 발표의 재보도이므로 보조 근거로만 사용.",
+              "source": "BI KOREA: 더존비즈온, AI 페스타 26 참가"
+            }
+          ],
+          "verification_note": "더존비즈온이 작성한 뉴스와이어 배포 원문이며 author도 더존비즈온으로 명시된다. 공개·시연과 실제 일반 공급 여부를 구분했다. 원문 HTML 전체를 읽고 구조화 날짜를 확인했다. 원문 하단의 국내 소재지·서울 신문 등록 정보를 확인해 국내 매체/기관 기준으로 분류했다.",
+          "published_time_precision": "second",
+          "published_at_kst": "2026-10-08T13:54:01+09:00",
+          "topics": [
+            "업무 에이전트",
+            "멀티에이전트",
+            "ERP",
+            "실행 통제"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "The Next Web · Nous, 9천만 달러 투자 유치…기업용 Hermes 개발 계획 제시",
+          "url": "https://thenextweb.com/news/nous-research-90m-1-5bn-hermes-agent-wsj"
+        },
+        {
+          "label": "Microsoft · Windows Developer Blog · Microsoft MXC 정식 제공…에이전트의 파일·네트워크 접근 경계 강제",
+          "url": "https://blogs.windows.com/windowsdeveloper/2026/10/07/microsoft-execution-containers-policy-driven-containment-for-ai-agents/"
+        },
+        {
+          "label": "9to5Mac · Haiku 5.5 공개…반복 작업·서브에이전트 비용 낮추고 추론 강도 조절",
+          "url": "https://9to5mac.com/2026/10/07/anthropic-upgrades-claude-with-new-haiku-5-5-model-details-here/"
+        },
+        {
+          "label": "이데일리 · 티로, 회의 지식을 에이전트 실행으로 연결하는 운영 사례 공개",
+          "url": "https://www3.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02194326645610952"
+        },
+        {
+          "label": "더존비즈온·뉴스와이어 · 더존비즈온, 업무 맥락 기반 능동형 AI와 세법·노무 멀티에이전트 시연",
+          "url": "https://www.newswire.co.kr/newsRead.php?no=1044263"
+        }
+      ],
+      "correction_note": "보강 기록: GitHub Copilot의 MXC 기반 로컬 샌드박스 정식 제공과 강제 관리 정책을 기존 MXC 카드의 보조 원문으로 추가했다. 기존 사건 날짜·주 출처·과거 불변 스냅샷은 변경하지 않았다."
+    },
+    {
+      "date": "2026-10-07",
+      "status": "final",
+      "collected_at": "2026-10-09T00:16:39Z",
       "window_start": "2026-10-06T15:00:00Z",
-      "window_end": "2026-10-07T00:00:00Z",
-      "headline": "09:00 기준: 개인 에이전트 연결 규약과 검증된 보안 접근 확대",
-      "summary": "새벽 해외 발표에서는 개인 에이전트가 기업과 연결되는 방식과 이용 권한이 핵심이었다. Sierra·Meta는 이용자 승인과 기업 통제를 함께 다루는 규약 개발을, Hark는 클라우드 컴퓨터·기억·선제 제안을 결합한 제품을, Anthropic은 보안 작업의 목적에 따라 검증과 통제를 나누는 접근 체계를 발표했다. 국내 업스테이지 프로필은 문서 처리·모델·사람의 검토를 이어 붙이는 실제 업무 구성을 짚었다. 규약의 향후 명세, 회사의 기능 설명, 기존 제품을 소개한 기사와 실제 신규 출시를 구분했다.",
-      "coverage_note": "10월 7일 00:00~09:00 KST에 해당하는 부분 기록이다. 국내 1건·해외 3건의 원문 최초 발행 시각과 시간대를 확인했다. 편집 마감은 00:00 UTC이며 실제 원문 검증·수집은 그 이후 수행해 collected_at에 별도로 기록했다. 국내외 매체와 공식 발표를 확인한 선별 표본으로, 원문 접근 실패·검색 인덱스 지연·확인하지 못한 소식이 있을 수 있다. 원문 날짜가 10월 6일이어도 실제 KST 최초 발행이 7일인 해외 소식은 이 날짜에 배치했다.",
+      "window_end": "2026-10-07T15:00:00Z",
+      "headline": "개인 에이전트 연결과 기업 업무 실행, 권한·검토 체계가 함께 확장",
+      "summary": "10월 7일 확인한 소식은 에이전트의 연결 범위와 통제 방식을 함께 다뤘다. 개인 에이전트 규약 추진과 Hark의 지속형 비서, Anthropic의 보안 접근 체계에 이어 국내에서는 워크데이가 인사·재무 데이터와 승인·감사 체계를 결합하는 전략을 설명했다. 코덱스 Auto-review 보도는 별도 안전 검토의 무료화를 짚었고, 업스테이지 프로필은 문서 처리·모델·사람의 검토를 연결했다. 정식 출시, 향후 규약·사업 계획, 기존 기능의 비용 변경을 구분했다.",
+      "coverage_note": "10월 7일 KST 하루를 마감한 선별 기록이다. 기존 09:00 부분 기록 4건을 그대로 보존하고 이후 발행 국내 보도 2건을 보강해 국내 3건·해외 3건을 담았다. 국내외 매체와 공식 원문을 검색·대조했으며 중복 행사 보도와 과거 발표의 반복 배포는 제외했다. final은 날짜별 편집 마감을 뜻하며 모든 뉴스를 망라한다는 의미는 아니다. 실제 수집은 10월 9일 09:00 KST 이후 수행했고 collected_at에 별도로 기록했다.",
       "items": [
         {
           "id": "2026-10-07-upstage-document-agent-profile",
@@ -217,24 +863,115 @@
           ],
           "verification_note": "Sierra 공식 본문은 검색 열람으로 확인하고 같은 URL의 원본 HTML 메타데이터를 직접 확인했다. 해외 접근 문제 보도를 별도 카드로 중복 계산하지 않았다.",
           "verified_at": "2026-10-07T00:11:55Z"
+        },
+        {
+          "id": "workday-korea-agentic-hr-strategy-20261007",
+          "title": "워크데이코리아, 인사·재무 에이전트와 파트너 생태계 확대 전략 제시",
+          "url": "https://www.koit.co.kr/news/articleView.html?idxno=209383",
+          "source": "정보통신신문",
+          "source_type": "reputable_report",
+          "region": "domestic",
+          "summary": "워크데이코리아는 7일 간담회에서 인사·재무 데이터와 기존 승인·권한·감사 체계를 활용하는 업무 실행형 AI 전략을 설명했다. 면접 일정 조율처럼 효과를 측정할 수 있는 업무부터 재설계하고, 국내 파트너를 확대해 대기업과 해외 진출 기업의 도입을 지원한다는 계획이다.",
+          "significance": "국내 기업의 에이전트 도입 논의가 모델 성능보다 실제 업무 프로세스, 거버넌스, 사용량 기반 비용과 연결되는 흐름을 보여준다. 같은 간담회를 다룬 여러 매체 보도는 하나의 사건으로 묶었다.",
+          "published_date": "2026-10-07",
+          "published_at": "2026-10-07T11:41:45+09:00",
+          "published_precision": "timestamp",
+          "published_timezone": "Asia/Seoul",
+          "published_date_kst": "2026-10-07",
+          "date_basis": "원문 HTML article:published_time·NewsArticle.datePublished 모두 2026-10-07T11:41:45+09:00. 원문 입력 11:41 및 수정 12:01 표시; dateModified=2026-10-07T12:01:10+09:00을 처음 발행시각으로 오인하지 않음.",
+          "supporting_sources": [
+            {
+              "url": "https://www.etnews.com/20261007000364",
+              "published_at": "2026-10-07T15:15:35+09:00",
+              "note": "기자 현장 사진과 간담회 직접 취재. HTML OG 발행시각 확인.",
+              "source": "전자신문: 재정비 마친 워크데이, AI·파트너 전략 내세워 한국 공략 박차"
+            },
+            {
+              "url": "https://byline.network/2026/10/7-506/",
+              "note": "직접 취재 본문을 읽음. 표시된 발행시각 2026년 10월 7일 15:42. timezone 메타데이터는 검증하지 않았으므로 정규화하지 않음.",
+              "source": "바이라인네트워크: 워크데이의 AI 전략, 인사 맥락과 데이터 기반 AI 에이전트"
+            }
+          ],
+          "verification_note": "정보통신신문 원문 전체를 읽고 기자 현장 사진·발언을 확인했다. 신규 모델 출시가 아닌 국내 사업·실행 전략 보도다. 본사의 기존 제품과 당일 소개된 내용의 범위를 혼동하지 않았다. 원문 하단의 국내 소재지·서울 신문 등록 정보를 확인해 국내 매체/기관 기준으로 분류했다.",
+          "published_time_precision": "second",
+          "published_at_kst": "2026-10-07T11:41:45+09:00",
+          "topics": [
+            "인사·재무",
+            "기업용 에이전트",
+            "업무 통제"
+          ]
+        },
+        {
+          "id": "codex-auto-review-free-chatgpt-20261007",
+          "title": "코덱스 Auto-review 안전 검토, ChatGPT 로그인 사용자에게 무료화",
+          "url": "https://www.aitimes.com/news/articleView.html?idxno=216032",
+          "source": "AI타임스",
+          "source_type": "reputable_report",
+          "region": "domestic",
+          "summary": "AI타임스는 오픈AI가 코덱스의 별도 검토 에이전트인 Auto-review를 ChatGPT 계정 로그인 사용자에게 무료로 제공한다고 보도했다. 오픈AI 공식 도움말도 안전 검토가 요금제 사용량에서 차감되지 않는다고 확인하며, 적용 가능한 승인 요청을 별도 에이전트가 검토하는 기능이라고 설명한다.",
+          "significance": "장기 코딩 작업에서 반복 승인 부담을 줄이는 안전 검토의 비용 장벽이 낮아졌다. 새 검토 방식 자체의 최초 출시가 아니라 기존 기능의 무료화이며, 작업공간 제한을 제거하거나 모든 승인 요청을 대체하는 것은 아니다.",
+          "published_date": "2026-10-07",
+          "published_at": "2026-10-07T15:53:43+09:00",
+          "published_precision": "timestamp",
+          "published_timezone": "Asia/Seoul",
+          "published_date_kst": "2026-10-07",
+          "date_basis": "AI타임스 HTML article:published_time·NewsArticle.datePublished 모두 2026-10-07T15:53:43+09:00. 최초 발행과 수정 값이 동일하다. 기사 발행일을 쓰며, 인용된 미국 공지일 10월 6일과 구분했다.",
+          "supporting_sources": [
+            {
+              "url": "https://help.openai.com/en/articles/11369540-using-codex-with-your-chatgpt-plan",
+              "note": "공식 Auto-review 절에서 ChatGPT 로그인 사용자의 안전 검토 무료·요금제 한도 미차감 및 제한 유지 확인. 날짜 있는 최초 발표 근거가 아니라 내용 검증 근거.",
+              "source": "OpenAI Help Center: Using Codex with your ChatGPT plan"
+            },
+            {
+              "url": "https://learn.chatgpt.com/docs/sandboxing/auto-review",
+              "note": "공식 개발자 문서 URL이 이 주소로 이동. 별도 검토 에이전트와 작업공간 제한의 관계를 확인.",
+              "source": "OpenAI: Auto-review guide"
+            },
+            {
+              "url": "https://alignment.openai.com/auto-review/",
+              "note": "2026-04-30 기존 기능 설명. 이번 뉴스가 안전 검토 방식의 최초 공개라는 오해를 배제하는 데 사용.",
+              "source": "OpenAI Alignment: Auto-review of agent actions without synchronous human oversight"
+            },
+            {
+              "url": "https://x.com/thsottiaux/status/2107368734981517634",
+              "note": "AI타임스의 embedded post 링크를 원문 HTML에서 확인. X 직접 읽기는 403으로 불가하여 게시시각·전문 직접 확인했다고 주장하지 않음.",
+              "source": "Tibo Sottiaux의 원래 공지 링크"
+            }
+          ],
+          "verification_note": "국내 매체 보도 시각은 초 단위 검증. 원래 X 공지는 직접 접근 불가했지만 무료화의 실질적 내용은 OpenAI 공식 도움말로 대조했다. 기존 기능의 무료화로 서술해 최초 출시와 구분했다. 원문 하단의 국내 소재지·서울 신문 등록 정보를 확인해 국내 매체/기관 기준으로 분류했다.",
+          "published_time_precision": "second",
+          "published_at_kst": "2026-10-07T15:53:43+09:00",
+          "topics": [
+            "코딩 에이전트",
+            "안전 검토",
+            "사용 비용"
+          ]
         }
       ],
       "sources": [
         {
-          "label": "IT조선 · 업스테이지 프로필: 문서 처리·솔라·사람의 검토를 연결한 업무 에이전트",
-          "url": "https://it.chosun.com/news/articleView.html?idxno=2023092171433"
-        },
-        {
-          "label": "Anthropic · Anthropic, 사이버 보안 접근을 3단계로 나누고 Glasswing 통합",
-          "url": "https://www.anthropic.com/news/cyber-verification-program"
+          "label": "Sierra · Meta·Sierra, 개인 에이전트와 기업을 잇는 공개 규약 추진",
+          "url": "https://sierra.ai/blog/introducing-personal-agent-protocol"
         },
         {
           "label": "TechCrunch · Hark Pro 공개…클라우드 컴퓨터·기억·선제 제안을 결합",
           "url": "https://techcrunch.com/2026/10/06/hark-releases-an-ai-personal-assistant-with-a-focus-on-privacy/"
         },
         {
-          "label": "Sierra · Meta·Sierra, 개인 에이전트와 기업을 잇는 공개 규약 추진",
-          "url": "https://sierra.ai/blog/introducing-personal-agent-protocol"
+          "label": "Anthropic · Anthropic, 사이버 보안 접근을 3단계로 나누고 Glasswing 통합",
+          "url": "https://www.anthropic.com/news/cyber-verification-program"
+        },
+        {
+          "label": "IT조선 · 업스테이지 프로필: 문서 처리·솔라·사람의 검토를 연결한 업무 에이전트",
+          "url": "https://it.chosun.com/news/articleView.html?idxno=2023092171433"
+        },
+        {
+          "label": "정보통신신문 · 워크데이코리아, 인사·재무 에이전트와 파트너 생태계 확대 전략 제시",
+          "url": "https://www.koit.co.kr/news/articleView.html?idxno=209383"
+        },
+        {
+          "label": "AI타임스 · 코덱스 Auto-review 안전 검토, ChatGPT 로그인 사용자에게 무료화",
+          "url": "https://www.aitimes.com/news/articleView.html?idxno=216032"
         }
       ]
     },
@@ -1954,7 +2691,7 @@
       ]
     }
   ],
-  "collected_at": "2026-10-07T00:13:58Z",
+  "collected_at": "2026-10-10T00:11:58Z",
   "region_basis": "매체 소재지 기준: 국내 한국 매체는 domestic, 해외 매체는 international. 기사 언어와 기업 국적은 분류 기준이 아닙니다.",
-  "editorial_cutoff": "2026-10-07T00:00:00Z"
+  "editorial_cutoff": "2026-10-10T00:00:00Z"
 }
